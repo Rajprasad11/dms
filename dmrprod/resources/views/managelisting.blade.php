@@ -99,7 +99,7 @@
 											<td>{{$fetch->model}}</td>
 											<td>{{$fetch->car_locality}}</td>
 											<td>{{$fetch->car_owner_name}}</td>
-											<td><a href="{{url('update/')}}"><i class="fa fa-pencil"></i></a></td>
+											<td><a href="{{url('update/'.$fetch->car_id)}}"><i class="fa fa-pencil"></i></a></td>
 											<td><a href="{{url('view/'.$fetch->car_id)}}"><i class="fa fa-eye"></i></a></td>
 											<td><a href="{{url('delete/'.$fetch->car_id)}}"><i class="fa fa-trash"></i></a></td>
 										</tr>

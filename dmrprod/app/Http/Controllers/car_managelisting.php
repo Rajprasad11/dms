@@ -14,7 +14,7 @@ class car_managelisting extends Controller
 {
 	public function index()
 	{
-		return view('index');
+		return view('dashboard');
 	}
 	public function managelisting()
 	{
@@ -86,5 +86,60 @@ class car_managelisting extends Controller
 	{
 		$update = DB::connection('dmsmysql')->table('dms_car_listings')->where('car_id',$id)->first();
 		return view('detail_list',compact('update'));
+	}
+	public function update_car_listing($id)
+	{
+		$update =DB::connection('dmsmysql')->table('dms_car_listings')->where('car_id',$id)->first();
+		return view('update_car_listing',compact('update'));
+	}
+	public function edit_car_listing()
+	{
+		$up = new dms_car_list();
+		$data = array(
+		'mileage'=>Input::get('mileage'),
+		'transmission'=>Input::get('transmission'),
+		'engine_displacement'=>Input::get('engine_displacement'),
+		'kilometer_run'=>Input::get('kilometer_run'),
+		'days_to_sell'=>Input::get('days_to_sell'),
+		'vin'=>Input::get('vin'),
+		'seatingcapacity'=>Input::get('seatingcapacity'),
+		'status'=>Input::get('status'),
+		'peak_power'=>Input::get('peak_power'),
+		'peaktorque'=>Input::get('peaktorque'),
+		'steering_adjustment'=>Input::get('steering_adjustment'),
+		'body_type'=>Input::get('body_type'),
+		'fuel_capacity'=>Input::get('fuel_capacity'),
+		'registration_year'=>Input::get('registration_year'),
+		'make'=>Input::get('make'),
+		'model'=>Input::get('model'),
+		'variant'=>Input::get('variant'),
+		'place'=>Input::get('place'),
+		'kms_done'=>Input::get('kms_done'),
+		'colors'=>Input::get('colors'),
+		'owner_type'=>Input::get('owner_type'),
+		'air_conditioner'=>Input::get('air_conditioner'),
+		'central_locking'=>Input::get('central_locking'),
+		'cd_player'=>Input::get('cd_player'),
+		'power_steering'=>Input::get('power_steering'),
+		'power_windows'=>Input::get('power_windows'),
+		'steering_mounted_controls'=>Input::get('steering_mounted_controls'),
+		'rear_ac_vent'=>Input::get('rear_ac_vent'),
+		'rear_wiper'=>Input::get('rear_wiper'),
+		'leather_seats'=>Input::get('leather_seats'),
+		'electrically_adjustable_mirrors'=>Input::get('electrically_adjustable_mirrors'),
+		'airbag'=>Input::get('airbag'),
+		'max_exp_price'=>Input::get('max_exp_price'),
+		'min_exp_price'=>Input::get('min_exp_price'),
+		'car_address_1'=>Input::get('car_address_1'),
+		'car_address_2'=>Input::get('car_address_2'),
+		'car_owner_name'=>Input::get('car_owner_name'),
+		'car_owner_email'=>Input::get('car_owner_email'),
+		'car_owner_mobile'=>Input::get('car_owner_mobile'),
+		'car_locality'=>Input::get('car_locality'),
+		'car_latitude'=>Input::get('car_latitude'),
+		'car_longitude'=>Input::get('car_longitude'));
+		  $up->where('id',Input::get('id'))->update($data);
+		  return redirect('managelisting');	
+
 	}
 }

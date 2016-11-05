@@ -1,5 +1,5 @@
 <div class="brand clearfix">
-		<a href="index.html" class="logo"><img src="{{URL::asset('img/logo.png')}}" class="img-responsive" alt=""></a>
+		<a href="{{'dashboard'}}" class="logo"><img src="{{URL::asset('img/logo.png')}}" class="img-responsive" alt=""></a>
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
 			<li class="ts-account">

@@ -2,7 +2,7 @@
 		<nav class="ts-sidebar">
 			<ul class="ts-sidebar-menu">
 				<li class="ts-label">Main</li>
-				<li class="open"><a href="{{url('index')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li class="open"><a href="{{url('dashboard')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li><a href="#"><i class="fa fa-desktop"></i> All Listing</a>
 					<ul>
 						<li><a href="{{url('managelisting')}}">Manage Listing</a></li>
