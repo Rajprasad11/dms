@@ -7,6 +7,8 @@ use App\dms_car_listings;
 use App\dms_car_list;
 use Illuminate\Support\Facades\Input;
 use DB;
+use Response;
+
 /**
 * 
 */
@@ -71,7 +73,8 @@ class car_managelisting extends Controller
 		$s->car_latitude=Input::get('car_latitude');
 		$s->car_longitude=Input::get('car_longitude');
 		$s->save();
-		return redirect('managelisting');
+		
+		return Response::json(array('sucess'=>true,'data'=>1))
 	}
 	public function delete_car_listing($id)
 	{
@@ -140,6 +143,5 @@ class car_managelisting extends Controller
 		'car_longitude'=>Input::get('car_longitude'));
 		  $up->where('id',Input::get('id'))->update($data);
 		  return redirect('managelisting');	
-
 	}
 }

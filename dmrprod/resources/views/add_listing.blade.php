@@ -66,7 +66,7 @@
 								<div class="panel-body">
 									<div class="col-sm-3">	
                                			<div class="form-group">
-											<input type="text" name="mileage" class="form-control" placeholder="Mileage">
+											<input type="text" name="mileage" id="mileage" class="form-control" placeholder="Mileage">
 										</div>    
 									</div>
 									<div class="col-sm-3">	
@@ -371,7 +371,7 @@
 												</div>
 												</div>
 											
-											<div class="form-group"><a class="collapsed" role="button" data-toggle="tooltip"><button class="btn btn-primary pull-right" type="submit">Submit</button></a></div>
+											<div class="form-group"><a class="collapsed" role="button" data-toggle="tooltip"><button class="btn btn-primary pull-right" id="submit" type="button">Submit</button></a></div>
 			 
 											</div>
 										</div>
@@ -400,6 +400,26 @@
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/upload.js"></script>
+	<script type="text/javascript" src="{{url('jquery.min.js')}}"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#submit').click(function(){
+				var mileage = $('#mileage').val();
+				$.ajax({
+					url:'add_car_listing_store',
+					type:'post',
+					data:{_token:csrf_token,mileage:mileage},
+
+					success:function(response){
+						if(response.data);
+						{
+							window.location.href='http://localhost/dms_pro/dms/dmrprod/public/dashboard';
+						}
+					}
+				});
+			});
+		});
+	</script>
 	
 </body>
 
