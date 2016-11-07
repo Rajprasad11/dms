@@ -26,20 +26,20 @@ class registercontroller extends Controller
     }
 
     public function store(registervalidation $request){
-    	$dealer=dms_dealers::create(Request::all());
-    	$fname=$request->input('d_fname');
-    	$email=$request->input('d_email');
+        $dealer=dms_dealers::create(Request::all());
+        $fname=$request->input('d_fname');
+        $email=$request->input('d_email');
         //$id=$dealer->id;
-    	$data = array('id' => $id,'fname' => $fname ,'email' => $email);
-    	
-    	Mail::send('mailmessage',
-    				array('name'=>'Falconnect Technologies'),
-    				function($message) use ($data)
-    				{
-						$message->to($data['email'],$data['fname'],$data['id'])->subject('Falconnect register Password creation');
-					});
-    	
-    	return Redirect::route('mailsend',['id'=>$dealer->id]);
+        $data = array('fname' => $fname ,'email' => $email);
+        
+        Mail::send('mailmessage',
+                    array('name'=>'Falconnect Technologies'),
+                    function($message) use ($data)
+                    {
+                        $message->to($data['email'],$data['fname'])->subject('Falconnect register Password creation');
+                    });
+        
+        return Redirect::route('mailsend',['id'=>$dealer->id]);
     }
 
     public function mailsend(Request $req, $id){
