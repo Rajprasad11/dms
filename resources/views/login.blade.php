@@ -11,22 +11,21 @@
 	<title>DMS</title>
 
 	<!-- Font awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
 	<!-- Sandstone Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
 	<!-- Bootstrap Datatables -->
-	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/dataTables.bootstrap.min.css')}}">
 	<!-- Bootstrap social button library -->
-	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap-social.css')}}">
 	<!-- Bootstrap select -->
-	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap-select.css')}}">
 	<!-- Bootstrap file input -->
-	<link rel="stylesheet" href="css/fileinput.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/fileinput.min.css')}}">
 	<!-- Awesome Bootstrap checkbox -->
-	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="{{URL::asset('css/awesome-bootstrap-checkbox.css')}}">
 	<!-- Admin Stye -->
-	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -84,16 +83,15 @@
 	<div class="container"><p class="text-center pt-2x text-light">Copy Right 2016. Designed by Falconnect</p></div>
 	</div>
 	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="jsbootstrap-select.min.js"><script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
-
+	<script src="{{URL::asset('js/jquery.min.js')}}"></script>
+	<script src="{{URL::asset('jsbootstrap-select.min.js')}}"></script>
+	<script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/jquery.dataTables.min.js')}}"></script>
+	<script src="{{URL::asset('js/dataTables.bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/Chart.min.js')}}"></script>
+	<script src="{{URL::asset('js/fileinput.js')}}"></script>
+	<script src="{{URL::asset('js/chartData.js')}}"></script>
+	<script src="{{URL::asset('js/main.js')}}"></script>
 </body>
 
 </html>
