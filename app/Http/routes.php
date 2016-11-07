@@ -34,6 +34,9 @@ Route::get('/registration', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('login','registercontroller@login');
+Route::post('loginprocess','registercontroller@loginprocess');
+Route::get('show/{manuser}',array('as'=>'show','uses'=>'registercontroller@show'));
 
 Route::get('create','registercontroller@create');
 Route::post('store','registercontroller@store');
@@ -44,3 +47,4 @@ Route::get('mailsend/{id}',array('as'=>'mailsend','uses'=>'registercontroller@ma
 
 Route::get('passwordactivation/{id}',array('as'=>'passwordactivation','uses'=>'registercontroller@passwordconfirm'));
 Route::post('passwordconfirm','registercontroller@passwordconfirm');
+
