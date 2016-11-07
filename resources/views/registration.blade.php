@@ -11,21 +11,21 @@
 	<title>DMS</title>
 
 	<!-- Font awesome -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/font-awesome.min.css')}}">
 	<!-- Sandstone Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
 	<!-- Bootstrap Datatables -->
-	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/dataTables.bootstrap.min.css')}}">
 	<!-- Bootstrap social button library -->
-	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap-social.css')}}">
 	<!-- Bootstrap select -->
-	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<link rel="stylesheet" href="{{URL::asset('css/bootstrap-select.css')}}">
 	<!-- Bootstrap file input -->
-	<link rel="stylesheet" href="css/fileinput.min.css">
+	<link rel="stylesheet" href="{{URL::asset('css/fileinput.min.css')}}">
 	<!-- Awesome Bootstrap checkbox -->
-	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<link rel="stylesheet" href="{{URL::asset('css/awesome-bootstrap-checkbox.css')}}">
 	<!-- Admin Stye -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
 
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -61,13 +61,19 @@
 									<input type="tel" name="d_mobile" placeholder="Contact Number" class="form-control mb">
 									<input type="text" name="d_code" placeholder="Dealer Register Number" class="form-control mb">
                                     <div class="form-group">
-									<select class="form-control" name="d_city">
-												<option>Select your City</option>
-												<option>Chennai</option>
-												<option>Trichy</option>
-												<option>Ooty</option>
-												<option>Madurai</option>
-									</select></div>
+									<select class="form-control" name="city_name">
+									<option>Select your City</option>
+										<?php
+										$d_citylist=DB::table('master_city')->get();
+                                    	foreach ($d_citylist as $city) { 
+										?>
+											<option value="<?php echo $city->city_id;?>"><?php echo $city->city_name;?></option>
+										<?php
+										 }
+										?>
+												
+									</select>
+									</div>
 
 									<button class="btn btn-primary btn-block" type="submit">REGISTER NOW</button>
 </form>
@@ -87,15 +93,15 @@
 	</div>
 	
 	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
+	<script src={{URL::asset('js/jquery.min.js')}}"></script>
+	<script src="{{URL::asset('js/bootstrap-select.min.js')}}"></script>
+	<script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/jquery.dataTables.min.js')}}"></script>
+	<script src="{{URL::asset('js/dataTables.bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/Chart.min.js')}}"></script>
+	<script src="{{URL::asset('js/fileinput.js')}}"></script>
+	<script src="{{URL::asset('js/chartData.js')}}"></script>
+	<script src="{{URL::asset('js/main.no-js')}}"></script>
 
 </body>
 
