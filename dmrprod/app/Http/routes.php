@@ -32,10 +32,7 @@ Route::get('/login', function () {
 
 Route::get('create','registercontroller@create');
 Route::post('store','registercontroller@store');
-
 Route::get('mailsend/{id}',array('as'=>'mailsend','uses'=>'registercontroller@mailsend'));
-
-//Route::get('mailsend/{id}',function())
-
-Route::get('passwordactivation/{id}',array('as'=>'passwordactivation','uses'=>'registercontroller@passwordconfirm'));
+Route::get('passwordactivation/{id}',array('as'=>'passwordactivation',
+	'uses'=>'registercontroller@passwordconfirm'));
 Route::post('passwordconfirm','registercontroller@passwordconfirm');
