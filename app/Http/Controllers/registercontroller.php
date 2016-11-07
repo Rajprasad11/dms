@@ -29,19 +29,27 @@ class registercontroller extends Controller
         $dealer=dms_dealers::create(Request::all());
         $fname=$request->input('d_fname');
         $email=$request->input('d_email');
-        //$id=$dealer->id;
-        $data = array('fname' => $fname ,'email' => $email);
         
-        Mail::send('mailmessage',
-                    array('name'=>'Falconnect Technologies'),
+
+        $maildata=DB::table('master_email_templates')->where('email_type_id','=',1)->get();
+        //dd($maildata);
+        foreach ($maildata as $row) {
+            $mail_subject=$row->email_subject;
+            $mail_message=$row->email_message;
+        }
+            
+        $data = array('fname' => $fname ,'email' => $email,'mail_subject' => $mail_subject );
+        
+        Mail::raw($mail_message.$data['fname'],
+                    
                     function($message) use ($data)
                     {
-                        $message->to($data['email'],$data['fname'])->subject('Falconnect register Password creation');
+                        $message->to($data['email'],$data['fname'])->subject($data['mail_subject']);
                     });
         
         return Redirect::route('mailsend',['id'=>$dealer->id]);
     }
-
+    
     public function mailsend(Request $req, $id){
         return view('password_activation', ['id' => $id]);
        //return view('password_activation');
