@@ -74,7 +74,7 @@ class car_managelisting extends Controller
 		$s->car_longitude=Input::get('car_longitude');
 		$s->save();
 		
-		return Response::json(array('sucess'=>true,'data'=>1))
+		return Response::json(array('sucess'=>true,'data'=>1));
 	}
 	public function delete_car_listing($id)
 	{
