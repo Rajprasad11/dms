@@ -371,7 +371,7 @@
 												</div>
 												</div>
 											
-											<div class="form-group"><a class="collapsed" role="button" data-toggle="tooltip"><button class="btn btn-primary pull-right" id="submit" type="button">Submit</button></a></div>
+											<div class="form-group"><a class="collapsed" role="button" data-toggle="tooltip"><button class="btn btn-primary pull-right" id="submit" type="submit">Submit</button></a></div>
 			 
 											</div>
 										</div>
@@ -409,7 +409,6 @@
 					url:'add_car_listing_store',
 					type:'post',
 					data:{_token:csrf_token,mileage:mileage},
-
 					success:function(response){
 						if(response.data);
 						{

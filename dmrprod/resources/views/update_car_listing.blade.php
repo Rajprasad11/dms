@@ -315,7 +315,6 @@
 				
               </div></div>
 			  <div class="col-sm-6"><h3 class="page-title">Price Range</h3>
-			  <form method="get" class="form-horizontal">
 			  <div class="form-group">
 											<div class="row">
 												<div class="col-xs-6">
@@ -336,16 +335,13 @@
 									<div class="panel panel-default">
 										<div class="panel-heading" role="tab" id="headingThree">
 											<h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-          Contact Information
-        </a>
-      </h4>
+					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+					          Contact Information
+					        </a>
+					      </h4>
 										</div>
 										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-											<div class="panel-body">
-												
-			  
-											
+											<div class="panel-body">			
 												<div class="col-xs-3">
 												<div class="form-group">
 													<input type="text" value="{{$update->car_owner_name}}" name="car_owner_name" class="form-control" placeholder="Name">
@@ -390,16 +386,16 @@
 					</div>
 				</div></div>-->
 	<!-- Loading Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap-select.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.dataTables.min.js"></script>
-	<script src="js/dataTables.bootstrap.min.js"></script>
-	<script src="js/Chart.min.js"></script>
-	<script src="js/fileinput.js"></script>
-	<script src="js/chartData.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/upload.js"></script>
+	<script src="{{URL::asset('js/jquery.min.js')}}"></script>
+	<script src="{{URL::asset('js/bootstrap-select.min.js')}}"></script>
+	<script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/jquery.dataTables.min.js')}}"></script>
+	<script src="{{URL::asset('js/dataTables.bootstrap.min.js')}}"></script>
+	<script src="{{URL::asset('js/Chart.min.js')}}"></script>
+	<script src="{{URL::asset('js/fileinput.js')}}"></script>
+	<script src="{{URL::asset('js/chartData.js')}}"></script>
+	<script src="{{URL::asset('js/main.js')}}"></script>
+	<script src="{{URL::asset('js/upload.js')}}"></script>
 	
 </body>
 

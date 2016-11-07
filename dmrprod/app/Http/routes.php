@@ -36,3 +36,6 @@ Route::get('mailsend/{id}',array('as'=>'mailsend','uses'=>'registercontroller@ma
 Route::get('passwordactivation/{id}',array('as'=>'passwordactivation',
 	'uses'=>'registercontroller@passwordconfirm'));
 Route::post('passwordconfirm','registercontroller@passwordconfirm');
+
+
+Route::post('test','Api\api@test');

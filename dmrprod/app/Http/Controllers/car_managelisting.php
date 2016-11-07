@@ -73,9 +73,16 @@ class car_managelisting extends Controller
 		$s->car_latitude=Input::get('car_latitude');
 		$s->car_longitude=Input::get('car_longitude');
 		$s->save();
-		
-		return Response::json(array('sucess'=>true,'data'=>1));
+		return redirect('managelisting');
+		/*print  Response::json(array('sucess'=>true,'data'=>1));*/
 	}
+
+	public function api_test()
+	{
+
+		print  Response::json(array('sucess'=>true,'data'=>1));
+	}
+
 	public function delete_car_listing($id)
 	{
 
@@ -97,7 +104,7 @@ class car_managelisting extends Controller
 	}
 	public function edit_car_listing()
 	{
-		$up = new dms_car_list();
+		$up = new dms_car_listings();
 		$data = array(
 		'mileage'=>Input::get('mileage'),
 		'transmission'=>Input::get('transmission'),
@@ -141,7 +148,7 @@ class car_managelisting extends Controller
 		'car_locality'=>Input::get('car_locality'),
 		'car_latitude'=>Input::get('car_latitude'),
 		'car_longitude'=>Input::get('car_longitude'));
-		  $up->where('id',Input::get('id'))->update($data);
-		  return redirect('managelisting');	
+		 $up->where('car_id',Input::get('id'))->update($data);
+		 return redirect('managelisting');	
 	}
 }
