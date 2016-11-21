@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="theme-color" content="#3e454c">
+
+        <title>DMS</title>
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Sandstone Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Bootstrap Datatables -->
+        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+        <!-- Bootstrap social button library -->
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+        <!-- Bootstrap select -->
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <!-- Bootstrap file input -->
+        <link rel="stylesheet" href="css/fileinput.min.css">
+        <!-- Awesome Bootstrap checkbox -->
+        <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+        <!-- Admin Stye -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="brand clearfix">
+            <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
+            <span class="menu-btn"><i class="fa fa-bars"></i></span>
+            <ul class="ts-profile-nav">
+                <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                <li class="ts-account">
+                    <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
+                    <ul>
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="#">Edit Account</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+        <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="buy.html">Buy</a></li>
+                            <li><a href="inventory.html">Sell</a></li>
+                            <li class="active"><a href="myprofile.html">Manage</a></li>
+                            <li><a href="myaccount.html">Communications</a></li>
+                            <li><a href="detail-list.html">Reports</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav></div>
+        <div class="brand1 clearfix hidden-md hidden-lg"><nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle mobile-view" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Main Menu</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search.html">Search</a></li>
+                                    <li><a href="save.html">Saved Cars</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test"  href="myquery.html">My Queries <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="bids.html">Bids Posted</a></li>
+                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="inventory.html">My Inventory</a></li>
+                                    <li><a href="myposting.html">My Postings</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="myauction.html">My Auctions <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="queries.html">Queries Received</a></li>
+                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myprofile.html">My Profile</a></li>
+                                    <li><a href="mybranch.html">My Branches</a></li>
+                                    <li><a href="myleads.html">My Leads</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="mycustomer.html">My Customer <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="Mycontact.html">My Contacts</a></li>
+                                    <li><a href="myuser.html">My Users</a></li>
+                                    <li><a href="subscription.html">Subscriptions</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Groups</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="#">Promotions<span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>--></li>
+                                    <li><a href="#">Notifications</a></li>
+                                    <li><a href="#">Messages</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="#">Inventory</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="#">Expenses<span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">dropdown</a></li>
+                                          <li><a href="#">dropdown</a></li>
+                                          </ul>--></li>
+                                    <li><a href="#">Profit & Loss</a></li>
+                                    <li><a href="#">User Reports</a></li>
+
+                                </ul>
+                            </li></ul>
+                    </div>
+                </div>
+            </nav></div>
+        <div class="ts-main-content">
+            <nav class="ts-sidebar">
+                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <!--<li class="ts-label">Search</li>
+                    <li>
+                            <input type="text" class="ts-sidebar-search" placeholder="Search here...">
+                    </li>-->
+                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
+                    <li><a href="myleads.html"><i class="fa fa-list"></i> My Leads</a>
+                        <!--<ul>
+                                <li><a href="managelisting.html">Menu1</a></li>
+                                <li><a href="listing.html">Menu2</a></li>
+                                </ul>-->
+                    </li>
+                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
+                    <li><a href="mycontact.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
+                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
+                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
+                </ul>
+                <!-- Account from above -->
+                <ul class="ts-profile-nav ts-sidebar-menu">
+                    <li class="ts-account">
+                        <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="#">Edit Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                    <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                </ul>
+            </nav>
+            <div class="content-wrapper myprofile">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="content-header col-sm-12">
+                            <ol class="breadcrumb">
+                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                                <li class="active">My Cutomers</li>
+                            </ol>
+                        </div><div class="col-xs-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Manage Customers</div>
+                                <div class="panel-body">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#profile"  data-toggle="tab" aria-expanded="false">Customer Profile</a></li>
+                                        <li ><a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a></li>
+                                        <li><a href="#interactive" data-toggle="tab" aria-expanded="true">Interactive</a></li>
+
+                                    </ul>
+                                    <br>
+                                    <div id="myTabContent" class="tab-content">
+                                        <div class="tab-pane fade active in" id="profile">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-sm-2 col-xs-12">
+                                                        <div class="row addimage">
+                                                            <div class="form-group">
+                                                                <input class="myclass" type="file" data-value="2" id="uploadimage2" style="opacity: 0;">
+                                                                <label for="myclass" class="file-5"><i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                                                </label>
+                                                            </div> 
+                                                            <img id="myImg2" src="" class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-10 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-xs-12">
+                                                                <div class="panel panel-info">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">Current Address<span class="pull-right detail-icon editdiv"  data-value="1"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+
+                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="1" aria-hidden="true"></i></p>
+                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="1" aria-hidden="true"></i></p>
+                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv1">       
+                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd1">
+                                                                                <span class="input-group-btn">
+                                                                                    <button class="btn btn-primary" type="button">Save</button>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-sm-6 col-xs-12">
+                                                                <div class="panel panel-info">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">Id<span class="pull-right detail-icon editdiv"  data-value="2"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+
+                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="2" aria-hidden="true"></i></p>
+                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="2" aria-hidden="true"></i></p>
+                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv2">       
+                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd2">
+                                                                                <span class="input-group-btn">
+                                                                                    <button class="btn btn-primary" type="button">Save</button>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-xs-12">
+                                                                <div class="panel panel-info">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">Phone Number<span class="pull-right detail-icon editdiv"  data-value="3"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+
+                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
+                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
+                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv3">       
+                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd3">
+                                                                                <span class="input-group-btn">
+                                                                                    <button class="btn btn-primary" type="button">Save</button>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 col-xs-12">
+                                                                <div class="panel panel-info">
+                                                                    <div class="panel-heading">
+                                                                        <h4 class="panel-title">Email Id<span class="pull-right detail-icon editdiv"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                    </div>
+                                                                    <div class="panel-body">
+                                                                        <div class="row">
+
+                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
+                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
+                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv4">       
+                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd4">
+                                                                                <span class="input-group-btn">
+                                                                                    <button class="btn btn-primary" type="button">Save</button>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="activity">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="interactive">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row dash-footer">
+                    <div class="clearfix pt pb">
+                        <div class="col-md-12">
+                            <em>Designed by <a href="#">Falconnect</a></em>
+                        </div>
+                    </div>
+                </div></div>
+            <!-- Loading Scripts -->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap-select.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.dataTables.min.js"></script>
+            <script src="js/dataTables.bootstrap.min.js"></script>
+            <script src="js/Chart.min.js"></script>
+            <script src="js/fileinput.js"></script>
+            <script src="js/chartData.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/menu.js"></script>
+            <script>
+                $(document).on('click', '.myclass', function () {
+                    var datavalue = $(this).attr('data-value');
+                    $("#uploadimage" + datavalue).on('change', function () {
+                        var count = document.getElementById("uploadimage" + datavalue);
+                        console.log(count);
+                        for (var i = 0; i < count.files.length; ++i)
+                        {
+                            var name = count.files.item(i).name;
+                            if (this.files && this.files[i]) {
+                                var reader = new FileReader();
+                                reader.onload = imageIsLoaded;
+                                reader.readAsDataURL(this.files[i]);
+                            }
+                        }
+                        function imageIsLoaded(e) {
+                            $('#myImg' + datavalue).attr('src', e.target.result);
+                        }
+                        ;
+                        $(".file-5 i").hide();
+                    });
+
+                });
+            </script>
+            <script>
+
+                $('.file-5,.addimage img').on('click', function () {
+                    $('.myclass').trigger('click');
+                });
+            </script>
+            <script>
+
+                $('.editdiv').on('click', function () {
+                    var datavalue = $(this).attr('data-value');
+                    var valueedit = $(this).parent("p").text();
+                    $('.editadddiv' + datavalue).removeClass("hidden");
+                    $('#editadd' + datavalue).val(valueedit);
+                });
+            </script>
+    </body>
+
+</html>
