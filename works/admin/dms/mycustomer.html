@@ -236,12 +236,26 @@
                                     <br>
                                     <div id="myTabContent" class="tab-content">
                                         <div class="tab-pane fade active in" id="details">
+
                                             <span class="inputani col-xs-4">
-                                                <input class="inputfield" type="text" id="input-25" />
-                                                <label class="inputlabel" for="input-25">
+                                                <input class="inputfield" type="text" id="input-26" />
+                                                <label class="inputlabel" for="input-26">
                                                     <span class="inputlabelcontent">Bird's Color</span>
                                                 </label>
                                             </span>
+                                            <span class="inputani col-xs-4">
+                                                <input class="inputfield" type="text" id="input-27" />
+                                                <label class="inputlabel" for="input-27">
+                                                    <span class="inputlabelcontent">Bird's Color</span>
+                                                </label>
+                                            </span>
+                                            <span class="inputani col-xs-4">
+                                                <input class="inputfield" type="text" id="input-28" />
+                                                <label class="inputlabel" for="input-28">
+                                                    <span class="inputlabelcontent">Bird's Color</span>
+                                                </label>
+                                            </span>
+
                                             <div class="col-xs-12">
                                                 <div class="row">
                                                     <div class="col-sm-2 col-xs-12">
@@ -349,7 +363,29 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="documents">
-                                            documents
+                                            <div class="col-xs-12 card">
+                                                <h2 class="page-title"><span class="detail-title1">Add Document Details</span></h2>
+                                                <div id="field1" class="col-xs-10 fields">
+                                                    <span class="inputani col-xs-4">
+                                                        <input class="inputfield" type="text" id="docname" />
+                                                        <label class="inputlabel" for="docname">
+                                                            <span class="inputlabelcontent">Document Name</span>
+                                                        </label>
+                                                    </span>
+                                                    <span class="inputani col-xs-4">
+                                                        <input class="inputfield" type="file" id="docfile" />
+                                                        <label class="inputlabel" for="docfile">
+                                                            <span class="inputlabelcontent">Select Document</span>
+                                                        </label>
+                                                    </span>
+                                                </div>
+                                                <div class="col-xs-2">
+                                                    <button id="b1" class="btn add-more btn-primary pull-right" type="button">+</button>
+                                                </div>
+                                                <div class="pull-left col-xs-12 modal-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i>
+                                                        Save Documents
+                                                    </button></div>
+                                            </div>
 
                                         </div>
                                         <div class="tab-pane fade" id="interaction">
@@ -357,12 +393,59 @@
                                         </div>
 
                                         <div class="tab-pane fade" id="address">
-                                            <span class="input input--ichiro">
-                                                <input class="inputfield" type="text" id="input-25" />
-                                                <label class="inputlabel inputlabel--ichiro" for="input-25">
-                                                    <span class="inputlabelcontent">Bird's Color</span>
-                                                </label>
-                                            </span>
+                                            <div class="col-xs-12 card">
+                                                <h2 class="page-title"><span class="detail-title1">Add Address Details</span></h2>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="addressde" />
+                                                    <label class="inputlabel" for="addressde">
+                                                        <span class="inputlabelcontent">Address</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <select class="form-control inputfield" id="type">
+                                                        <option value="">Select Address Type </option>
+                                                        <option value="1">Office</option>
+                                                        <option value="2">Residence</option>
+                                                        <option value="3">Primary</option>
+                                                    </select>
+                                                    <label class="inputlabel" for="type">
+                                                        <span class="inputlabelcontent">Type</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="locality" />
+                                                    <label class="inputlabel" for="locality">
+                                                        <span class="inputlabelcontent">Locality</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="pincode" />
+                                                    <label class="inputlabel" for="pincode">
+                                                        <span class="inputlabelcontent">Pincode</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="landmark" />
+                                                    <label class="inputlabel" for="landmark">
+                                                        <span class="inputlabelcontent">Landmark</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="city" />
+                                                    <label class="inputlabel" for="city">
+                                                        <span class="inputlabelcontent">City</span>
+                                                    </label>
+                                                </span>
+                                                <span class="inputani col-xs-4">
+                                                    <input class="inputfield" type="text" id="state" />
+                                                    <label class="inputlabel" for="state">
+                                                        <span class="inputlabelcontent">State</span>
+                                                    </label>
+                                                </span>
+                                                <div class="pull-left col-xs-12 modal-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i>
+                                                        Save address
+                                                    </button></div>
+                                            </div>
                                         </div>
 
                                     </div>
@@ -444,6 +527,22 @@
                     if (inputEl.value.trim() !== '') {
                         classie.add(inputEl.parentNode, 'input--filled');
                     }
+                    if (inputEl.value.trim() !== '') {
+                        classie.add(inputEl.parentNode, 'input--filled');
+                    }
+
+                    // events:
+                    inputEl.addEventListener('focus', onInputFocus);
+                    inputEl.addEventListener('blur', onInputBlur);
+                });
+                [].slice.call(document.querySelectorAll('select.inputfield')).forEach(function (inputEl) {
+                    // in case the input is already filled..
+                    if (inputEl.value.trim() !== '') {
+                        classie.add(inputEl.parentNode, 'input--filled');
+                    }
+                    if (inputEl.value.trim() !== '') {
+                        classie.add(inputEl.parentNode, 'input--filled');
+                    }
 
                     // events:
                     inputEl.addEventListener('focus', onInputFocus);
@@ -460,7 +559,50 @@
                     }
                 }
             })();
+
+
+            $(document).ready(function () {
+
+                var next = 1;
+                $(".add-more").click(function (e) {
+                    e.preventDefault();
+                    var addto = "#field" + next;
+                    var addRemove = "#field" + (next);
+                    next = next + 1;
+                    var newIn = '<div id="field' + next + '" class="col-xs-10 fields">' +
+                            '<span class="inputani col-xs-4">' +
+                            ' <input class="inputfield" type="text" id="docname' + next + '" />' +
+                            ' <label class="inputlabel" for="docname' + next + '">' +
+                            '   <span class="inputlabelcontent">Document Name</span>' +
+                            ' </label>' +
+                            ' </span>' +
+                            ' <span class="inputani col-xs-4">' +
+                            ' <input class="inputfield" type="file" id="docfile' + next + '" />' +
+                            '  <label class="inputlabel" for="docfile' + next + '">' +
+                            '   <span class="inputlabelcontent">Select Document</span>' +
+                            '  </label>' +
+                            ' </span>' +
+                            ' </div>';
+                    var newInput = $(newIn);
+                    var removeBtn = '<div class="col-xs-2 fields"><button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field" class="col-xs-12"></div>';
+                    var removeButton = $(removeBtn);
+                    $(addto).after(newInput);
+                    $(addRemove).after(removeButton);
+
+                    $('.remove-me').click(function (e) {
+                        e.preventDefault();
+//                        $(this).parent().parent().remove();
+                        var fieldNum = this.id.charAt(this.id.length - 1);
+                        var fieldID = "#field" + fieldNum;
+                        $(this).remove();
+                        $(fieldID).remove();
+                    });
+                });
+
+            });
+
         </script>
+
     </body>
 
 </html>

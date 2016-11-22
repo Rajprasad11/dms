@@ -1457,20 +1457,28 @@ table .label
 .file-5{background: #fff;height: 150px;width: 100%;text-align: center;display: table;position: relative;cursor: pointer;}
 .file-5 i{font-size: 60px;width: 100%;display: table-cell;vertical-align: middle;}
 
+
 .inputfield {
-    position: relative;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 100;
     display: block;
-    float: right;
-    padding: 0.8em;
-    width: 60%;
-    border: none;
-    border-radius: 0;
-    background: #f0f0f0;
-    color: #aaa;
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    -webkit-appearance: none; /* for box shadows to show on iOS */
+    padding: 0 0.55em;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background: #fff;
+    color: #000;border:1px solid #aaa;border-radius: 6px;
+    opacity: 0;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
 }
+
+
 
 .inputfield:focus {
     outline: none;background: #fff;border:1px solid #aaa;
@@ -1483,7 +1491,7 @@ table .label
     display: inline-block;
     padding: 0 1em;
     color: #000;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 90.25%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1502,46 +1510,12 @@ table .label
     width: 100%;border-bottom: 1px solid #aaa;
 }
 
-.graphic {
-    position: absolute;
-    top: 0;
-    left: 0;
-    fill: none;
-}
-
-.icon {
-    color: #ddd;
-    font-size: 150%;
-}
-
-/* Ichiro */
 .inputani {
-    margin-top: 2em;position: relative;
+    position: relative;
     z-index: 1;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top;margin: 30px 0px;
 }
-
-.inputfield {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    z-index: 100;
-    display: block;
-    padding: 0 0.55em;
-    width: calc(100% - 8px);
-    height: calc(100% - 8px);
-    background: #f0f0f0;
-    color: #7F8994;
-    opacity: 0;
-    -webkit-transform: scale3d(1, 0, 1);
-    transform: scale3d(1, 0, 1);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-    transition: opacity 0.3s, transform 0.3s;
-}
-
 
 
 .inputlabel::before {
@@ -1589,3 +1563,5 @@ table .label
     -webkit-transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1);
     transform: translate3d(0, -3.15em, 0) scale3d(0.8, 0.8, 1) translateZ(1px);
 }
+.card{box-shadow: 0px 0px 3px #000;padding: 10px;}
+.fields{padding: 15px 10px;}
