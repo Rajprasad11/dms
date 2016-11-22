@@ -194,25 +194,54 @@
             </nav>
             <div class="content-wrapper myprofile">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="content-header col-sm-12">
-                            <ol class="breadcrumb">
-                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
-                                <li class="active">My Cutomers</li>
-                            </ol>
-                        </div><div class="col-xs-12">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">Manage Customers</div>
+                    <div class="content-header col-sm-12">
+                        <div class="input-group mb searching col-sm-6">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">Filter by</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#contains">All Cars</a></li>
+                                    <li><a href="#its_equal">Bid cars</a></li>
+                                    <li><a href="#greather_than">List cars</a></li>
+                                    <li><a href="#less_than">Manage cars</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#all">Anything</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">         
+                            <input type="text" class="form-control" name="x" placeholder="Search term...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
+                        </div>
+                        <ol class="breadcrumb">
+                            <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                            <li class="active">Subscription</li>
+                        </ol>
+                    </div>
+                    <div class="col-xs-12">
+
+                        <h2 class="page-title">Manage Customers</h2>
+                        <div class="row">
+                            <div class="col-md-12 subscription">
+
                                 <div class="panel-body">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#profile"  data-toggle="tab" aria-expanded="false">Customer Profile</a></li>
-                                        <li ><a href="#activity" data-toggle="tab" aria-expanded="true">Activity</a></li>
-                                        <li><a href="#interactive" data-toggle="tab" aria-expanded="true">Interactive</a></li>
-
+                                        <li class="active"><a href="#details"  data-toggle="tab" aria-expanded="false">Contact Details</a></li>
+                                        <li ><a href="#documents" data-toggle="tab" aria-expanded="true">Documents</a></li>
+                                        <li><a href="#interaction" data-toggle="tab" aria-expanded="true">Interactions</a></li>
+                                        <li><a href="#address" data-toggle="tab" aria-expanded="true">Address</a></li>
                                     </ul>
                                     <br>
                                     <div id="myTabContent" class="tab-content">
-                                        <div class="tab-pane fade active in" id="profile">
+                                        <div class="tab-pane fade active in" id="details">
+                                            <span class="inputani col-xs-4">
+                                                <input class="inputfield" type="text" id="input-25" />
+                                                <label class="inputlabel" for="input-25">
+                                                    <span class="inputlabelcontent">Bird's Color</span>
+                                                </label>
+                                            </span>
                                             <div class="col-xs-12">
                                                 <div class="row">
                                                     <div class="col-sm-2 col-xs-12">
@@ -317,15 +346,25 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                            <div class="tab-pane fade" id="activity">
-
-                                            </div>
-                                            <div class="tab-pane fade" id="interactive">
-                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="documents">
+                                            documents
 
                                         </div>
+                                        <div class="tab-pane fade" id="interaction">
+                                            interaction
+                                        </div>
+
+                                        <div class="tab-pane fade" id="address">
+                                            <span class="input input--ichiro">
+                                                <input class="inputfield" type="text" id="input-25" />
+                                                <label class="inputlabel inputlabel--ichiro" for="input-25">
+                                                    <span class="inputlabelcontent">Bird's Color</span>
+                                                </label>
+                                            </span>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -334,64 +373,94 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <div class="row dash-footer">
-                    <div class="clearfix pt pb">
-                        <div class="col-md-12">
-                            <em>Designed by <a href="#">Falconnect</a></em>
-                        </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row dash-footer">
+                <div class="clearfix pt pb">
+                    <div class="col-md-12">
+                        <em>Designed by <a href="#">Falconnect</a></em>
                     </div>
-                </div></div>
-            <!-- Loading Scripts -->
-            <script src="js/jquery.min.js"></script>
-            <script src="js/bootstrap-select.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery.dataTables.min.js"></script>
-            <script src="js/dataTables.bootstrap.min.js"></script>
-            <script src="js/Chart.min.js"></script>
-            <script src="js/fileinput.js"></script>
-            <script src="js/chartData.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/menu.js"></script>
-            <script>
-                $(document).on('click', '.myclass', function () {
-                    var datavalue = $(this).attr('data-value');
-                    $("#uploadimage" + datavalue).on('change', function () {
-                        var count = document.getElementById("uploadimage" + datavalue);
-                        console.log(count);
-                        for (var i = 0; i < count.files.length; ++i)
-                        {
-                            var name = count.files.item(i).name;
-                            if (this.files && this.files[i]) {
-                                var reader = new FileReader();
-                                reader.onload = imageIsLoaded;
-                                reader.readAsDataURL(this.files[i]);
-                            }
+                </div>
+            </div></div>
+        <!-- Loading Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script>
+            $(document).on('click', '.myclass', function () {
+                var datavalue = $(this).attr('data-value');
+                $("#uploadimage" + datavalue).on('change', function () {
+                    var count = document.getElementById("uploadimage" + datavalue);
+                    console.log(count);
+                    for (var i = 0; i < count.files.length; ++i)
+                    {
+                        var name = count.files.item(i).name;
+                        if (this.files && this.files[i]) {
+                            var reader = new FileReader();
+                            reader.onload = imageIsLoaded;
+                            reader.readAsDataURL(this.files[i]);
                         }
-                        function imageIsLoaded(e) {
-                            $('#myImg' + datavalue).attr('src', e.target.result);
-                        }
-                        ;
-                        $(".file-5 i").hide();
-                    });
-
+                    }
+                    function imageIsLoaded(e) {
+                        $('#myImg' + datavalue).attr('src', e.target.result);
+                    }
+                    ;
+                    $(".file-5 i").hide();
                 });
-            </script>
-            <script>
 
-                $('.file-5,.addimage img').on('click', function () {
-                    $('.myclass').trigger('click');
-                });
-            </script>
-            <script>
+            });
+        </script>
+        <script>
 
-                $('.editdiv').on('click', function () {
-                    var datavalue = $(this).attr('data-value');
-                    var valueedit = $(this).parent("p").text();
-                    $('.editadddiv' + datavalue).removeClass("hidden");
-                    $('#editadd' + datavalue).val(valueedit);
+            $('.file-5,.addimage img').on('click', function () {
+                $('.myclass').trigger('click');
+            });
+        </script>
+        <script>
+
+            $('.editdiv').on('click', function () {
+                var datavalue = $(this).attr('data-value');
+                var valueedit = $(this).parent("p").text();
+                $('.editadddiv' + datavalue).removeClass("hidden");
+                $('#editadd' + datavalue).val(valueedit);
+            });
+        </script>
+
+        <script>
+            (function () {
+                // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+                if (!String.prototype.trim) {
+                    (function () {
+                        // Make sure we trim BOM and NBSP
+                        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                        String.prototype.trim = function () {
+                            return this.replace(rtrim, '');
+                        };
+                    })();
+                }
+
+                [].slice.call(document.querySelectorAll('input.inputfield')).forEach(function (inputEl) {
+                    // in case the input is already filled..
+                    if (inputEl.value.trim() !== '') {
+                        classie.add(inputEl.parentNode, 'input--filled');
+                    }
+
+                    // events:
+                    inputEl.addEventListener('focus', onInputFocus);
+                    inputEl.addEventListener('blur', onInputBlur);
                 });
-            </script>
+
+                function onInputFocus(ev) {
+                    classie.add(ev.target.parentNode, 'input--filled');
+                }
+
+                function onInputBlur(ev) {
+                    if (ev.target.value.trim() === '') {
+                        classie.remove(ev.target.parentNode, 'input--filled');
+                    }
+                }
+            })();
+        </script>
     </body>
 
 </html>
