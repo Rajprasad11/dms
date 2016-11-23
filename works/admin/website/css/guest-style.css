@@ -12,6 +12,7 @@ html, body {
     background: #f7f7f7;
     font-family: robotoregular;
 }
+a,a:focus{outline: none}
 body{font-family: robotoregular;}
 .guestheader_div{position: fixed;top: 0px;left:0px;z-index: 1;background: #fff;z-index: 3;box-shadow: 0px 0px 3px #000;}
 .guestlogo{padding: 10px;}
@@ -533,11 +534,11 @@ body{font-family: robotoregular;}
 
 
 .login-page {
-   float: left;
+    float: left;
     width: 100%;
 }
-.selectbuy {width: 100%!important;}
-.selectorder{display: none;}
+.closeplan{float: right;text-align: right;cursor: pointer;background: #ed1b24;padding: 10px;margin: 10px;color:#fff;}
+.plandetail{float: right;text-align: right;cursor: pointer;background: #ed1b24;padding: 10px;margin: 10px;color:#fff;}
 .bk-img {
     position: relative;
     width: 100%;padding: 80px 20px 20px 20px;
@@ -553,7 +554,7 @@ body{font-family: robotoregular;}
                               color: #fff;}
 .bk-light input{margin: 15px 0px;}
 
-.ordersum{background: #fff;margin-top: 10px;}
+.ordersum{background: #fff;}
 .ordersum p{text-align: left;color:#000;font-weight: 600;    margin-bottom: -5px;}
 .ordersum em{text-align: left;color:#000;font-weight: normal;text-transform: uppercase;}
 .ordersum p mark{color:#23527c;font-weight: 600;font-size: 30px;background: none;}
@@ -569,13 +570,13 @@ body{font-family: robotoregular;}
     margin-top: 0px;
     margin-bottom: 15px;}
 
-.radiostylebtn{border: 1px solid #aaa;border-radius: 6px;padding: 10px;position: relative;}
+.radiostylebtn{border-bottom: 1px solid #aaa;padding: 10px;position: relative;}
 .radiostylebtn input[type=radio]{
     position: absolute;
     visibility: hidden;
 }
 
-.radiostylebtn span{color: #23527c;font-size: 20px;font-weight: 600;padding-left: 24px;}
+.radiostylebtn span{color: #23527c;font-size: 16px;font-weight: 600;padding-left: 24px;}
 .radiostylebtn p{    text-align: left;
                      margin: 10px 0px;
                      text-transform: capitalize;}
@@ -584,7 +585,7 @@ body{font-family: robotoregular;}
     display: block;
     position: relative;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 20px;
     margin: 0px auto;
     height: 30px;
@@ -771,6 +772,6 @@ a.socialIcon:hover, .socialHoverClass {
     .navbar-toggle {padding: 12px 0px;}
     .radiostylebtn label,.radiostylebtn span{font-size: 16px;}.bk-light h2, .ordersum h2{font-size: 20px;}
     .radiostylebtn{border: none;}.ordersum p mark{font-size: 20px;}.orderdiv p{font-size: 12px;}
-    
+
 }
 @media only screen and (max-width: 408px) {.navbar-toggle {padding: 12px 0px;}}
