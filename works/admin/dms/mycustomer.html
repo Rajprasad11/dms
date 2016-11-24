@@ -32,7 +32,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-        <style>.clonedInput{border:1px solid #000;width: 100%;float:left;}</style>
+
     </head>
 
     <body>
@@ -236,237 +236,324 @@
                                     <br>
                                     <div id="myTabContent" class="tab-content">
                                         <div class="tab-pane fade active in" id="details">
-                                            <div class="adddiv">
-                                                <div id="clonedInput1" class="clonedInput">
-                                                    <div id="field1" class="col-xs-10 fields">
-                                                        <span class="inputani col-xs-4">
-                                                            <input class="inputfield" type="text" id="docname" />
-                                                            <label class="inputlabel" for="docname">
-                                                                <span class="inputlabelcontent">Document Name</span>
-                                                            </label>
-                                                        </span>
-                                                        <span class="inputani col-xs-4">
-                                                            <input class="inputfield" type="file" id="docfile" />
-                                                            <label class="inputlabel" for="docfile">
-                                                                <span class="inputlabelcontent">Select Document</span>
-                                                            </label>
-                                                        </span>
-                                                    </div>
+                                            <div class="col-xs-12 card">
+                                                <h2 class="page-title"><span class="detail-title1">Contact Details</span></h2>
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-sm-2 col-xs-12">
+                                                            <div class="row addimage">
+                                                                <div class="form-group">
+                                                                    <input class="myclass imageUploader" type="file" data-value="2" id="uploadimage2" style="opacity: 0;">
+                                                                    <label for="myclass" class="file-5"><i class="fa fa-file-image-o" aria-hidden="true"></i>
+                                                                    </label>
+                                                                </div> 
+                                                                <img id="myImg2" src="" class="img-responsive">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-10 col-xs-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">	
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Select Customer Type</label>
+                                                                        <select class="form-control">
+                                                                            <option value="">Select Customer Type</option>
+                                                                            <option value="Customer">Customer</option>
+                                                                            <option value="Lead">Lead</option>
+                                                                            <option value="Vendor">Vendor</option>
+                                                                            <option value="Broker">Broker</option>
+                                                                        </select>
+                                                                    </div>     
+                                                                </div>
+                                                                <div class="col-sm-6 col-xs-12">	
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>First Name</label>
+                                                                        <input type="text" value="" class="form-control" placeholder="First Name">
+                                                                    </div>     
+                                                                </div>
+                                                                <div class="col-sm-6 col-xs-12">	
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Last Name</label>
+                                                                        <input type="text" class="form-control" placeholder="Last Name">
+                                                                    </div>     
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <div class="panel panel-info">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">Gender</h4>
+                                                                        </div>
+                                                                        <div class="panel-body">
+                                                                            <div class="row">
 
-                                                    <div class="actions">
-                                                        <button class="clone">Clone</button> 
-                                                        <button class="remove">Remove</button>
-                                                    </div>
-                                                </div>
+                                                                                <div class="col-sm-4 col-xs-12">	
+                                                                                    <div class="checkbox checkbox-info">
+                                                                                        <input type="radio" id="bCheckbox1" name="price-filter">
+                                                                                        <label for="bCheckbox1">
+                                                                                            Male 
+                                                                                        </label>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-sm-4 col-xs-12">	
+                                                                                    <div class="checkbox checkbox-info">
+                                                                                        <input type="radio" id="bCheckbox2" name="price-filter">
+                                                                                        <label for="bCheckbox2">
+                                                                                            Female 
+                                                                                        </label>
+                                                                                    </div>   
+                                                                                </div>
+                                                                                <div class="col-xs-12 col-sm-4">	
+                                                                                    <div class="form-group">
+                                                                                        <select class="form-control">
+                                                                                            <option value="">Select Designation</option>
+                                                                                            <option value="Customer">Mr</option>
+                                                                                            <option value="Lead">Mrs</option>
+                                                                                            <option value="Vendor">Miss</option>
+                                                                                            <option value="Broker">Dr</option>
+                                                                                        </select>
+                                                                                    </div>     
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6 col-xs-12">
+                                                                    <div class="panel panel-info">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">Phone Number<span class="pull-right detail-icon editdiv"  data-value="3"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                        </div>
+                                                                        <div class="panel-body">
+                                                                            <div class="row">
 
-                                            </div>
+                                                                                <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
+                                                                                <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
+                                                                                <div class="input-group mb searching col-xs-12 hidden editadddiv3">       
+                                                                                    <input type="text" class="form-control" name="x" placeholder="" id="editadd3">
+                                                                                    <span class="input-group-btn">
+                                                                                        <button class="btn btn-info" type="button">Save</button>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6 col-xs-12">
+                                                                    <div class="panel panel-info">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">Email Id<span class="pull-right detail-icon editdiv"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                        </div>
+                                                                        <div class="panel-body">
+                                                                            <div class="row">
 
-                                            <div class="col-xs-12">
-                                                <div class="row">
-                                                    <div class="col-sm-2 col-xs-12">
-                                                        <div class="row addimage">
-                                                            <div class="form-group">
-                                                                <input class="myclass" type="file" data-value="2" id="uploadimage2" style="opacity: 0;">
-                                                                <label for="myclass" class="file-5"><i class="fa fa-file-image-o" aria-hidden="true"></i>
-                                                                </label>
-                                                            </div> 
-                                                            <img id="myImg2" src="" class="img-responsive">
+                                                                                <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
+                                                                                <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
+                                                                                <div class="input-group mb searching col-xs-12 hidden editadddiv4">       
+                                                                                    <input type="text" class="form-control" name="x" placeholder="" id="editadd4">
+                                                                                    <span class="input-group-btn">
+                                                                                        <button class="btn btn-primary" type="button">Save</button>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12">   
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Business Name</label>
+                                                                        <input type="text" class="form-control" placeholder="Business Name">
+                                                                    </div> 
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <div class="panel panel-info">
+                                                                        <div class="panel-heading">
+                                                                            <h4 class="panel-title">Id<span class="pull-right detail-icon editdiv"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
+                                                                        </div>
+                                                                        <div class="panel-body">
+                                                                            <div class="row">
+                                                                                <div class="col-xs-12 col-sm-4">	
+                                                                                    <div class="form-group field-wrapper1">
+                                                                                        <label>ID Type</label>
+                                                                                        <select class="form-control">
+                                                                                            <option value="">ID Type</option>
+                                                                                        </select>
+                                                                                    </div>     
+                                                                                </div>
+                                                                                <div class="col-xs-12 col-sm-4">   <div class="form-group field-wrapper1">
+                                                                                        <label>ID Number</label>
+                                                                                        <input type="text" class="form-control" placeholder="ID Number">
+                                                                                    </div> 
+                                                                                </div>
+                                                                                <div class="col-sm-4 col-xs-12"><div class='input-group date field-wrapper1' id='datetimepicker5'>
+                                                                                        <label>Date of Birth</label>
+                                                                                        <input type='text' class="form-control" placeholder="D.O.B" />
+                                                                                        <span class="input-group-addon">
+                                                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-sm-10 col-xs-12">
-                                                        <div class="row">
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                <div class="panel panel-info">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">Current Address<span class="pull-right detail-icon editdiv"  data-value="1"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
-                                                                    </div>
-                                                                    <div class="panel-body">
-                                                                        <div class="row">
 
-                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="1" aria-hidden="true"></i></p>
-                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="1" aria-hidden="true"></i></p>
-                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv1">       
-                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd1">
-                                                                                <span class="input-group-btn">
-                                                                                    <button class="btn btn-primary" type="button">Save</button>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                    <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
 
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                <div class="panel panel-info">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">Id<span class="pull-right detail-icon editdiv"  data-value="2"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
-                                                                    </div>
-                                                                    <div class="panel-body">
-                                                                        <div class="row">
-
-                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="2" aria-hidden="true"></i></p>
-                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="2" aria-hidden="true"></i></p>
-                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv2">       
-                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd2">
-                                                                                <span class="input-group-btn">
-                                                                                    <button class="btn btn-primary" type="button">Save</button>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                <div class="panel panel-info">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">Phone Number<span class="pull-right detail-icon editdiv"  data-value="3"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
-                                                                    </div>
-                                                                    <div class="panel-body">
-                                                                        <div class="row">
-
-                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
-                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="3" aria-hidden="true"></i></p>
-                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv3">       
-                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd3">
-                                                                                <span class="input-group-btn">
-                                                                                    <button class="btn btn-primary" type="button">Save</button>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                <div class="panel panel-info">
-                                                                    <div class="panel-heading">
-                                                                        <h4 class="panel-title">Email Id<span class="pull-right detail-icon editdiv"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span></h4>
-                                                                    </div>
-                                                                    <div class="panel-body">
-                                                                        <div class="row">
-
-                                                                            <p class="branch-text"> chennai 600032.     &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
-                                                                            <p class="branch-text">karaikudi address   &nbsp;&nbsp;&nbsp;<i class="fa fa-pencil-square editdiv" data-value="4" aria-hidden="true"></i></p>
-                                                                            <div class="input-group mb searching col-xs-12 hidden editadddiv4">       
-                                                                                <input type="text" class="form-control" name="x" placeholder="" id="editadd4">
-                                                                                <span class="input-group-btn">
-                                                                                    <button class="btn btn-primary" type="button">Save</button>
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                </form>                                                
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="documents">
-                                            <div class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Add Document Details</span></h2>
-
-                                                <div class="placeholder">
-                                                    <div class="template">
-                                                        <div id="field1" class="col-xs-10 fields">
-                                                            <span class="inputani col-xs-4">
-                                                                <input class="inputfield" type="text" id="docname" />
-                                                                <label class="inputlabel" for="docname">
-                                                                    <span class="inputlabelcontent">Document Name</span>
-                                                                </label>
-                                                            </span>
-                                                            <span class="inputani col-xs-4">
-                                                                <input class="inputfield" type="file" id="docfile" />
-                                                                <label class="inputlabel" for="docfile">
-                                                                    <span class="inputlabelcontent">Select Document</span>
-                                                                </label>
-                                                            </span>
-
-                                                            <div class="actions">
-                                                                <button type="button" name="Submit" onclick="Add();">Add new item</button>
-                                                            </div>
+                                            <div id="contactDocuments" class="col-xs-12 card">
+                                                <h2 class="page-title"><span class="detail-title1">Document Details</span></h2>
+                                                <form>
+                                                    <div class="col-xs-12 document">
+                                                        <div class="col-xs-12 col-sm-6">   
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Document Name</label>
+                                                                <input type="text" class="form-control" placeholder="Document Name">
+                                                            </div> 
                                                         </div>
-                                                    </div> <!-- template -->
-                                                </div> <!-- placeholder -->
+                                                        <div class="col-sm-6 col-xs-12">
+                                                            <input type="file" class="BSbtninfo"/></div>
 
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
 
-
-
-                                                <div class="pull-left col-xs-12 modal-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i>
-                                                        Save Documents
-                                                    </button></div>
+                                                </form>
                                             </div>
-
                                         </div>
                                         <div class="tab-pane fade" id="interaction">
-                                            interaction
+                                            <div id="contactDocuments" class="col-xs-12 card">
+                                                <h2 class="page-title"><span class="detail-title1">Interactions</span></h2>
+                                            </div>
                                         </div>
 
                                         <div class="tab-pane fade" id="address">
                                             <div class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Add Address Details</span></h2>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="addressde" />
-                                                    <label class="inputlabel" for="addressde">
-                                                        <span class="inputlabelcontent">Address</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <select class="form-control inputfield" id="type">
-                                                        <option value="">Select Address Type </option>
-                                                        <option value="1">Office</option>
-                                                        <option value="2">Residence</option>
-                                                        <option value="3">Primary</option>
-                                                    </select>
-                                                    <label class="inputlabel" for="type">
-                                                        <span class="inputlabelcontent">Type</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="locality" />
-                                                    <label class="inputlabel" for="locality">
-                                                        <span class="inputlabelcontent">Locality</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="pincode" />
-                                                    <label class="inputlabel" for="pincode">
-                                                        <span class="inputlabelcontent">Pincode</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="landmark" />
-                                                    <label class="inputlabel" for="landmark">
-                                                        <span class="inputlabelcontent">Landmark</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="city" />
-                                                    <label class="inputlabel" for="city">
-                                                        <span class="inputlabelcontent">City</span>
-                                                    </label>
-                                                </span>
-                                                <span class="inputani col-xs-4">
-                                                    <input class="inputfield" type="text" id="state" />
-                                                    <label class="inputlabel" for="state">
-                                                        <span class="inputlabelcontent">State</span>
-                                                    </label>
-                                                </span>
-                                                <div class="pull-left col-xs-12 modal-footer"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker"></i>
-                                                        Save address
-                                                    </button></div>
-                                            </div>
-                                        </div>
+                                                <h2 class="page-title"><span class="detail-title1">Address Details</span></h2>
+                                                <div class="col-xs-12">
+                                                    <button type="button" class="editAdd btn btn-primary pull-right"  name="Submit">+</button>
+                                                    <form>
+                                                        <div class="col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Address</label>
+                                                                <input type="text" class="form-control" readonly="readonly" value="address details" placeholder="Address">
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-4">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Select Address Type</label>
+                                                                <select class="form-control">
+                                                                    <option value="">Select Address Type</option>
+                                                                    <option value="1" selected="">Office</option>
+                                                                    <option value="2">Residence</option>
+                                                                    <option value="3">Primary</option>
+                                                                </select>
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Locality</label>
+                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Locality">
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Pincode</label>
+                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Pincode">
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>Landmark</label>
+                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Landmark">
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>City</label>
+                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="City">
+                                                            </div>     
+                                                        </div>
+                                                        <div class="col-sm-4 col-xs-12">	
+                                                            <div class="form-group field-wrapper1">
+                                                                <label>State</label>
+                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="State">
+                                                            </div>     
+                                                        </div>
+                                                    </form>
+                                                </div>
 
+                                                <div class="col-xs-12">
+                                                    <div class="panel panel-info" >
+                                                        <div class="panel-heading">
+                                                            <h4 class="panel-title" >Add New Address</h4>
+                                                        </div>
+
+                                                        <div class="panel-body" id="contactAddress">
+                                                            <span class="pull-right detail-icon cloneAdd" style="cursor: pointer"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                                                            <div id="contactAddressClones" class="cloneSet contactAddressC">
+                                                                <span class="pull-right detail-icon cloneRemove" style="cursor: pointer"  data-value="4"><i class="fa fa-minus-circle" aria-hidden="true"></i></span>                                                  <form>
+                                                                    <div class="col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Address</label>
+                                                                            <input type="text" class="form-control" placeholder="Address">
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-xs-12 col-sm-4">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Select Address Type</label>
+                                                                            <select class="form-control">
+                                                                                <option value="">Select Address Type</option>
+                                                                                <option value="1">Office</option>
+                                                                                <option value="2">Residence</option>
+                                                                                <option value="3">Primary</option>
+                                                                            </select>
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Locality</label>
+                                                                            <input type="text" class="form-control" placeholder="Locality">
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Pincode</label>
+                                                                            <input type="text" class="form-control" placeholder="Pincode">
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Landmark</label>
+                                                                            <input type="text" class="form-control" placeholder="Landmark">
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>City</label>
+                                                                            <input type="text" class="form-control" placeholder="City">
+                                                                        </div>     
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>State</label>
+                                                                            <input type="text" class="form-control" placeholder="State">
+                                                                        </div>     
+                                                                    </div>
+
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -483,71 +570,20 @@
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script>
-                                                                    $(document).on('click', '.myclass', function () {
-                                                                        var datavalue = $(this).attr('data-value');
-                                                                        $("#uploadimage" + datavalue).on('change', function () {
-                                                                            var count = document.getElementById("uploadimage" + datavalue);
-                                                                            console.log(count);
-                                                                            for (var i = 0; i < count.files.length; ++i)
-                                                                            {
-                                                                                var name = count.files.item(i).name;
-                                                                                if (this.files && this.files[i]) {
-                                                                                    var reader = new FileReader();
-                                                                                    reader.onload = imageIsLoaded;
-                                                                                    reader.readAsDataURL(this.files[i]);
-                                                                                }
-                                                                            }
-                                                                            function imageIsLoaded(e) {
-                                                                                $('#myImg' + datavalue).attr('src', e.target.result);
-                                                                            }
-                                                                            ;
-                                                                            $(".file-5 i").hide();
-                                                                        });
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="js/label-slide.js" type="text/javascript"></script>
+        <script src="js/dealerplus.js"></script>
 
-                                                                    });
-        </script>
         <script>
+            $('.BSbtninfo').filestyle({
 
-            $('.file-5,.addimage img').on('click', function () {
-                $('.myclass').trigger('click');
+                buttonName: 'btn-info',
+
+                buttonText: ' Select a File'
             });
-        </script>
-        <script>
-
-            $('.editdiv').on('click', function () {
-                var datavalue = $(this).attr('data-value');
-                var valueedit = $(this).parent("p").text();
-                $('.editadddiv' + datavalue).removeClass("hidden");
-                $('#editadd' + datavalue).val(valueedit);
-            });
-            var regex = /^(.+?)(\d+)$/i;
-            var cloneIndex = $(".clonedInput").length;
-            function clone() {
-                $(this).parent(".actions").parent(".clonedInput").clone()
-                        .prependTo($(this).parent(".actions").parent(".clonedInput").parent(".adddiv"))
-                        .attr("id", "clonedInput" + cloneIndex)
-                        .find("*")
-                        .each(function () {
-                            var id = this.id || "";
-                            var match = id.match(regex) || [];
-                            if (match.length == 3) {
-                                this.id = match[1] + (cloneIndex);
-                            }
-                        })
-                        .on('click', 'button.clone', clone)
-                        .on('click', 'button.remove', remove);
-                cloneIndex++;
-            }
-            function remove() {
-                $(this).parent(".actions").parent(".clonedInput").remove();
-            }
-            $("button.clone").on("click", clone);
-
-            $("button.remove").on("click", remove);
 
         </script>
-
     </body>
 
 </html>
