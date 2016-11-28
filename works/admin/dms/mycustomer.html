@@ -194,393 +194,532 @@
             </nav>
             <div class="content-wrapper myprofile">
                 <div class="container-fluid">
-                    <div class="content-header col-sm-12">
-                        <div class="input-group mb searching col-sm-6">
-                            <div class="input-group-btn search-panel">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                    <span id="search_concept">Filter by</span> <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#contains">All Cars</a></li>
-                                    <li><a href="#its_equal">Bid cars</a></li>
-                                    <li><a href="#greather_than">List cars</a></li>
-                                    <li><a href="#less_than">Manage cars</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#all">Anything</a></li>
-                                </ul>
-                            </div>
-                            <input type="hidden" name="search_param" value="all" id="search_param">         
-                            <input type="text" class="form-control" name="x" placeholder="Search term...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                            </span>
-                        </div>
-                        <ol class="breadcrumb">
-                            <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
-                            <li class="active">Subscription</li>
-                        </ol>
-                    </div>
-                    <div class="col-xs-12">
-
-                        <h2 class="page-title">Manage Customers</h2>
-                        <div class="row">
-                            <div class="col-md-12 subscription">
-
-                                <div class="panel-body">
-                                    <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#details"  data-toggle="tab" aria-expanded="false">Contact Details</a></li>
-                                        <li ><a href="#documents" data-toggle="tab" aria-expanded="true">Documents</a></li>
-                                        <li><a href="#interaction" data-toggle="tab" aria-expanded="true">Interactions</a></li>
-                                        <li><a href="#address" data-toggle="tab" aria-expanded="true">Address</a></li>
+                    <div class="row">
+                        <div class="content-header col-xs-12">
+                            <div class="input-group mb searching col-sm-6">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search_concept">Filter by</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#contains">All Cars</a></li>
+                                        <li><a href="#its_equal">Bid cars</a></li>
+                                        <li><a href="#greather_than">List cars</a></li>
+                                        <li><a href="#less_than">Manage cars</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#all">Anything</a></li>
                                     </ul>
-                                    <br>
-                                    <div id="myTabContent" class="tab-content">
-                                        <div class="tab-pane fade active in" id="details">
-                                            <div class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Contact Details</span></h2>
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-sm-2 col-xs-12">
-                                                            <div class="row addimage">
-                                                                <div class="form-group">
-                                                                    <input class="myclass imageUploader" type="file" data-value="2" id="uploadimage2" style="opacity: 0;">
-                                                                    <label for="myclass" class="file-5"><i class="fa fa-file-image-o" aria-hidden="true"></i>
-                                                                    </label>
-                                                                </div> 
-                                                                <img id="myImg2" src="" class="img-responsive">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-sm-10 col-xs-12">
-                                                            <div class="row">
-                                                                <div class="col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Select Customer Type</label>
-                                                                        <select class="form-control">
-                                                                            <option value="">Select Customer Type</option>
-                                                                            <option value="Customer">Customer</option>
-                                                                            <option value="Lead">Lead</option>
-                                                                            <option value="Vendor">Vendor</option>
-                                                                            <option value="Broker">Broker</option>
-                                                                        </select>
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>First Name</label>
-                                                                        <input type="text" value="" class="form-control" placeholder="First Name">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Last Name</label>
-                                                                        <input type="text" class="form-control" placeholder="Last Name">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-xs-12">
-                                                                    <div class="panel panel-info">
-                                                                        <div class="panel-heading">
-                                                                            <h4 class="panel-title">Gender</h4>
-                                                                        </div>
-                                                                        <div class="panel-body">
-                                                                            <div class="row">
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                            <ol class="breadcrumb">
+                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                                <li class="active">Contacts</li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12">
 
-                                                                                <div class="col-sm-4 col-xs-12">	
-                                                                                    <div class="checkbox checkbox-info">
-                                                                                        <input type="radio" id="bCheckbox1" name="price-filter">
-                                                                                        <label for="bCheckbox1">
-                                                                                            Male 
-                                                                                        </label>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-xs-12">	
-                                                                                    <div class="checkbox checkbox-info">
-                                                                                        <input type="radio" id="bCheckbox2" name="price-filter">
-                                                                                        <label for="bCheckbox2">
-                                                                                            Female 
-                                                                                        </label>
-                                                                                    </div>   
-                                                                                </div>
-                                                                                <div class="col-xs-12 col-sm-4">	
-                                                                                    <div class="form-group">
-                                                                                        <select class="form-control">
-                                                                                            <option value="">Select Designation</option>
-                                                                                            <option value="Customer">Mr</option>
-                                                                                            <option value="Lead">Mrs</option>
-                                                                                            <option value="Vendor">Miss</option>
-                                                                                            <option value="Broker">Dr</option>
-                                                                                        </select>
-                                                                                    </div>     
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">
-                                                                    <div class="panel panel-info">
-                                                                        <div class="panel-heading">
-                                                                            <h4 class="panel-title">Phone Number</h4>
-                                                                        </div>
-                                                                        <div class="panel-body">
-                                                                            <div class="row">
-                                                                                <div  id="contactphone">
-                                                                                    <div class="col-xs-12">
-                                                                                        <div class="form-group">
-                                                                                            <input type="text" class="form-control" value="9876543210" readonly="readonly"/>
-                                                                                            <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
-                                                                                    <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                            <h2 class="page-title col-xs-12">Manage Contacts</h2>
+                            <div class="row">
+                                <div class="col-xs-12 subscription">
 
-                                                                                    <div id="contactphoneClones" class="cloneSet contactAddressC col-xs-12">
-                                                                                        <div class="col-xs-12">
-                                                                                            <div class="form-group">
-                                                                                                <input type="text" class="form-control" placeholder="Enter Phone Number"/>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
+                                    <div class="panel-body row">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#details"  data-toggle="tab" aria-expanded="false">Contact Details</a></li>
+                                            <li ><a href="#documents" data-toggle="tab" aria-expanded="true">Documents</a></li>
+                                            <li><a href="#interaction" data-toggle="tab" aria-expanded="true">Interactions</a></li>
+                                            <li><a href="#address" data-toggle="tab" aria-expanded="true">Address</a></li>
+                                        </ul>
+                                        <br>
+                                        <div id="myTabContent" class="tab-content">
+                                            <div class="tab-pane fade active in" id="details">
+                                                <div class="col-xs-12 card">
+                                                    <h2 class="page-title col-xs-12"><span class="detail-title1">Contact Details</span></h2>
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-sm-2 col-xs-12">
+                                                                <div class="addimage">
+                                                                    <div class="form-group">
+                                                                        <div>
+                                                                            <img src="img/addimage.png" class="image">
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">
-                                                                    <div class="panel panel-info">
-                                                                        <div class="panel-heading">
-                                                                            <h4 class="panel-title">Email Id</h4>
-                                                                        </div>
-                                                                        <div class="panel-body">
-                                                                            <div class="row">
-                                                                                <div  id="contactemail">
-                                                                                    <div class="col-xs-12">
-                                                                                        <div class="form-group">
-                                                                                            <input type="text" class="form-control" value="email@email.com" readonly="readonly"/>
-                                                                                            <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
-                                                                                    <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-
-                                                                                    <div id="contactemailClones" class="cloneSet contactAddressC col-xs-12">
-                                                                                        <div class="col-xs-12">
-                                                                                            <div class="form-group">
-                                                                                                <input type="text" class="form-control" placeholder="Enter email id"/>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-12">   
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Business Name</label>
-                                                                        <input type="text" class="form-control" placeholder="Business Name">
                                                                     </div> 
                                                                 </div>
-                                                                <div class="col-xs-12">
-                                                                    <div class="panel panel-info">
-                                                                        <div class="panel-heading">
-                                                                            <h4 class="panel-title">Id</h4>
-                                                                        </div>
-                                                                        <div class="panel-body">
-                                                                            <div class="row">
-                                                                                <div class="col-xs-12 col-sm-4">	
-                                                                                    <div class="form-group field-wrapper1">
-                                                                                        <label>ID Type</label>
-                                                                                        <select class="form-control">
-                                                                                            <option value="">ID Type</option>
-                                                                                        </select>
-                                                                                    </div>     
-                                                                                </div>
-                                                                                <div class="col-xs-12 col-sm-4">   <div class="form-group field-wrapper1">
-                                                                                        <label>ID Number</label>
-                                                                                        <input type="text" class="form-control" placeholder="ID Number">
-                                                                                    </div> 
-                                                                                </div>
-                                                                                <div class="col-sm-4 col-xs-12"><div class='input-group date field-wrapper1' id='datetimepicker5'>
-                                                                                        <label>Date of Birth</label>
-                                                                                        <input type='text' class="form-control" placeholder="D.O.B" />
-                                                                                        <span class="input-group-addon">
-                                                                                            <span class="glyphicon glyphicon-calendar"></span>
-                                                                                        </span>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                <div class="fileUpload btn btn-primary">
+                                                                    <span>Change Image</span>
+                                                                    <input type="file" class="upload"  id="profile_image" />
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
-
-                                                </form>                                                
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="documents">
-                                            <div  class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Document Details</span></h2>
-                                                <form>
-                                                    <div  id="contactdocument">
-                                                        <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
-                                                        <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-                                                        <div id="contactdocumentClones" class="cloneSet contactAddressC">
-                                                            <div class="col-xs-12 document">
-                                                                <div class="col-xs-12 col-sm-6">   
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Document Name</label>
-                                                                        <input type="text" class="form-control" placeholder="Document Name">
-                                                                    </div> 
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">
-                                                                    <input type="file" class="BSbtninfo"/></div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>  
-                                                    <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
-
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="interaction">
-                                            <div id="contactDocuments" class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Interactions</span></h2>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-pane fade" id="address">
-                                            <div class="col-xs-12 card">
-                                                <h2 class="page-title"><span class="detail-title1">Address Details</span></h2>
-                                                <div class="col-xs-12" id="field-wrapper1"> 
-
-                                                    <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
-                                                    <div class="col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>Address</label>
-                                                            <input type="text" class="form-control" readonly="readonly" value="address details" placeholder="Address">
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-4">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>Select Address Type</label>
-                                                            <select class="form-control">
-                                                                <option value="">Select Address Type</option>
-                                                                <option value="1" selected="">Office</option>
-                                                                <option value="2">Residence</option>
-                                                                <option value="3">Primary</option>
-                                                            </select>
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>Locality</label>
-                                                            <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Locality">
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>Pincode</label>
-                                                            <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Pincode">
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>Landmark</label>
-                                                            <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Landmark">
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>City</label>
-                                                            <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="City">
-                                                        </div>     
-                                                    </div>
-                                                    <div class="col-sm-4 col-xs-12">	
-                                                        <div class="form-group field-wrapper1">
-                                                            <label>State</label>
-                                                            <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="State">
-                                                        </div>     
-                                                    </div>
-                                                    </form>
-                                                </div>
-
-                                                <div class="col-xs-12">
-                                                    <div class="panel panel-info" >
-                                                        <div class="panel-heading">
-                                                            <h4 class="panel-title" >Add New Address</h4>
-                                                        </div>
-
-                                                        <div class="panel-body" id="contactAddress">
-
-                                                            <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
-                                                            <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
-
-
-
-                                                            <!--                                                            <span class="pull-right detail-icon cloneAdd" style="cursor: pointer"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
-                                                                                                                       <span class="pull-right detail-icon cloneRemove" style="cursor: pointer"  data-value="4"><i class="fa fa-minus-circle" aria-hidden="true"></i></span>-->
-                                                            <div id="contactAddressClones" class="cloneSet contactAddressC">
-                                                                <form>
+                                                            <div class="col-sm-10 col-xs-12">
+                                                                <div class="row">
                                                                     <div class="col-xs-12">	
                                                                         <div class="form-group field-wrapper1">
-                                                                            <label>Address</label>
-                                                                            <input type="text" class="form-control" placeholder="Address">
-                                                                        </div>     
-                                                                    </div>
-                                                                    <div class="col-xs-12 col-sm-4">	
-                                                                        <div class="form-group field-wrapper1">
-                                                                            <label>Select Address Type</label>
+                                                                            <label>Select Customer Type</label>
                                                                             <select class="form-control">
-                                                                                <option value="">Select Address Type</option>
-                                                                                <option value="1">Office</option>
-                                                                                <option value="2">Residence</option>
-                                                                                <option value="3">Primary</option>
+                                                                                <option value="">Select Customer Type</option>
+                                                                                <option value="Customer">Customer</option>
+                                                                                <option value="Lead">Lead</option>
+                                                                                <option value="Vendor">Vendor</option>
+                                                                                <option value="Broker">Broker</option>
                                                                             </select>
                                                                         </div>     
                                                                     </div>
-                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                    <div class="col-sm-6 col-xs-12">	
                                                                         <div class="form-group field-wrapper1">
-                                                                            <label>Locality</label>
-                                                                            <input type="text" class="form-control" placeholder="Locality">
+                                                                            <label>First Name</label>
+                                                                            <input type="text" value="" class="form-control" placeholder="First Name">
                                                                         </div>     
                                                                     </div>
-                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                    <div class="col-sm-6 col-xs-12">	
                                                                         <div class="form-group field-wrapper1">
-                                                                            <label>Pincode</label>
-                                                                            <input type="text" class="form-control" placeholder="Pincode">
+                                                                            <label>Last Name</label>
+                                                                            <input type="text" class="form-control" placeholder="Last Name">
                                                                         </div>     
                                                                     </div>
-                                                                    <div class="col-sm-4 col-xs-12">	
-                                                                        <div class="form-group field-wrapper1">
-                                                                            <label>Landmark</label>
-                                                                            <input type="text" class="form-control" placeholder="Landmark">
-                                                                        </div>     
-                                                                    </div>
-                                                                    <div class="col-sm-4 col-xs-12">	
-                                                                        <div class="form-group field-wrapper1">
-                                                                            <label>City</label>
-                                                                            <input type="text" class="form-control" placeholder="City">
-                                                                        </div>     
-                                                                    </div>
-                                                                    <div class="col-sm-4 col-xs-12">	
-                                                                        <div class="form-group field-wrapper1">
-                                                                            <label>State</label>
-                                                                            <input type="text" class="form-control" placeholder="State">
-                                                                        </div>     
-                                                                    </div>
+                                                                    <div class="col-xs-12">
+                                                                        <div class="panel panel-info">
+                                                                            <div class="panel-heading">
+                                                                                <h4 class="panel-title">Gender</h4>
+                                                                            </div>
+                                                                            <div class="panel-body">
+                                                                                <div class="row">
 
-                                                                </form>
+                                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                                        <div class="checkbox checkbox-info">
+                                                                                            <input type="radio" id="bCheckbox1" name="price-filter">
+                                                                                            <label for="bCheckbox1">
+                                                                                                Male 
+                                                                                            </label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="col-sm-4 col-xs-12">	
+                                                                                        <div class="checkbox checkbox-info">
+                                                                                            <input type="radio" id="bCheckbox2" name="price-filter">
+                                                                                            <label for="bCheckbox2">
+                                                                                                Female 
+                                                                                            </label>
+                                                                                        </div>   
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-4">	
+                                                                                        <div class="form-group">
+                                                                                            <select class="form-control">
+                                                                                                <option value="">Select Designation</option>
+                                                                                                <option value="Customer">Mr</option>
+                                                                                                <option value="Lead">Mrs</option>
+                                                                                                <option value="Vendor">Miss</option>
+                                                                                                <option value="Broker">Dr</option>
+                                                                                            </select>
+                                                                                        </div>     
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-xs-12">
+                                                                        <div class="panel panel-info">
+                                                                            <div class="panel-heading">
+                                                                                <h4 class="panel-title">Phone Number</h4>
+                                                                            </div>
+                                                                            <div class="panel-body">
+                                                                                <div class="row">
+                                                                                    <div  id="contactphone">
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <input type="text" class="form-control" value="9876543210" readonly="readonly"/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <input type="text" class="form-control" value="9876543210" readonly="readonly"/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <input type="text" class="form-control" value="9876543210" readonly="readonly"/>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 col-xs-12">
+                                                                        <div class="panel panel-info">
+                                                                            <div class="panel-heading">
+                                                                                <h4 class="panel-title">Email Id</h4>
+                                                                            </div>
+                                                                            <div class="panel-body">
+                                                                                <div class="row">
+                                                                                    <div  id="contactemail">
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <input type="text" class="form-control" value="email@email.com" readonly="readonly"/>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-xs-12">
+                                                                                            <div class="form-group">
+                                                                                                <input type="text" class="form-control" value="email@email.com" readonly="readonly"/>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-12">   
+                                                                        <div class="form-group field-wrapper1">
+                                                                            <label>Business Name</label>
+                                                                            <input type="text" class="form-control" placeholder="Business Name">
+                                                                        </div> 
+                                                                    </div>
+                                                                    <div class="col-xs-12">
+                                                                        <div class="panel panel-info">
+                                                                            <div class="panel-heading">
+                                                                                <h4 class="panel-title">Id</h4>
+                                                                            </div>
+                                                                            <div class="panel-body">
+                                                                                <div class="row">
+                                                                                    <div class="col-xs-12 col-sm-4">	
+                                                                                        <div class="form-group field-wrapper1">
+                                                                                            <label>ID Type</label>
+                                                                                            <select class="form-control">
+                                                                                                <option value="">ID Type</option>
+                                                                                            </select>
+                                                                                        </div>     
+                                                                                    </div>
+                                                                                    <div class="col-xs-12 col-sm-4">   <div class="form-group field-wrapper1">
+                                                                                            <label>ID Number</label>
+                                                                                            <input type="text" class="form-control" placeholder="ID Number">
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                    <div class="col-sm-4 col-xs-12"><div class='input-group date field-wrapper1' id='datetimepicker5'>
+                                                                                            <label>Date of Birth</label>
+                                                                                            <input type='text' class="form-control" placeholder="D.O.B" />
+                                                                                            <span class="input-group-addon">
+                                                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
+
+                                                        <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
+
+                                                    </form>                                                
                                                 </div>
-                                                <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
+                                            </div>
+                                            <div class="tab-pane fade" id="documents">
+                                                <div  class="col-xs-12 card">
+                                                    <h2 class="page-title col-xs-12"><span class="detail-title1">Document Details</span></h2>
+                                                    <form>
+                                                        <div id="contactdocument">
+                                                            
+                                                         <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                                            <div id="contactdocumentClones" class="cloneSet contactAddressC">
+                                                                <div class="col-xs-12 document">
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-sm-6">   
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Document Name</label>
+                                                                                <input type="text" class="form-control" placeholder="Document Name">
+                                                                            </div> 
+                                                                        </div>
+                                                                        <div class="col-sm-5 col-xs-12 mt">
+                                                                            <input type="file" class="BSbtninfo" style="width: 100%;"/></div>
+                                                                            <div class="col-sm-1 col-xs-12"> <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>  </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>  
+                                                        <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
+
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="interaction">
+                                                <div id="contactDocuments" class="col-xs-12 card">
+                                                    <h2 class="page-title col-xs-12"><span class="detail-title1">Interactions</span></h2>
+                                                </div>
                                             </div>
 
+                                            <div class="tab-pane fade" id="address">
+                                                <div class="col-xs-12 card">
+                                                    <h2 class="page-title col-xs-12"><span class="detail-title1">Address Details</span></h2>
+
+
+                                                    <div class="col-xs-12">
+                                                        <div class="panel panel-info" >
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" >Add New Address</h4>
+                                                            </div>
+
+                                                            <div class="panel-body" id="contactAddress1">
+
+                                                                <div class="col-xs-12" id="field-wrapper1"> 
+                                                                    <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                                                    <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                                                    <div class="row">
+
+                                                                        <div class="col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Address</label>
+                                                                                <input type="text" class="form-control" readonly="readonly" value="address details" placeholder="Address">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-4">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Select Address Type</label>
+                                                                                <select class="form-control">
+                                                                                    <option value="">Select Address Type</option>
+                                                                                    <option value="1" selected="">Office</option>
+                                                                                    <option value="2">Residence</option>
+                                                                                    <option value="3">Primary</option>
+                                                                                </select>
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Locality</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Locality">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Pincode</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Pincode">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Landmark</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Landmark">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>City</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="City">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>State</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="State">
+                                                                            </div>     
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-info" >
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" >Add New Address</h4>
+                                                            </div>
+
+                                                            <div class="panel-body" id="contactAddress2">
+
+                                                                <div class="col-xs-12" id="field-wrapper2"> 
+                                                                    <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                                                    <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                                                    <div class="row">
+
+                                                                        <div class="col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Address</label>
+                                                                                <input type="text" class="form-control" readonly="readonly" value="address details" placeholder="Address">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-4">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Select Address Type</label>
+                                                                                <select class="form-control">
+                                                                                    <option value="">Select Address Type</option>
+                                                                                    <option value="1" selected="">Office</option>
+                                                                                    <option value="2">Residence</option>
+                                                                                    <option value="3">Primary</option>
+                                                                                </select>
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Locality</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Locality">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Pincode</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Pincode">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Landmark</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Landmark">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>City</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="City">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>State</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="State">
+                                                                            </div>     
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="panel panel-info" >
+                                                            <div class="panel-heading">
+                                                                <h4 class="panel-title" >Add New Address</h4>
+                                                            </div>
+
+                                                            <div class="panel-body" id="contactAddress3">
+
+                                                                <div class="col-xs-12" id="field-wrapper3"> 
+                                                                    <button type="button" class="btn btn-primary pull-right editAdd" title="Edit Address"  name="Submit"><i class="fa fa-edit" aria-hidden="true"></i></button>
+                                                                    <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                                                    <div class="row">
+
+                                                                        <div class="col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Address</label>
+                                                                                <input type="text" class="form-control" readonly="readonly" value="address details" placeholder="Address">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-xs-12 col-sm-4">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Select Address Type</label>
+                                                                                <select class="form-control">
+                                                                                    <option value="">Select Address Type</option>
+                                                                                    <option value="1" selected="">Office</option>
+                                                                                    <option value="2">Residence</option>
+                                                                                    <option value="3">Primary</option>
+                                                                                </select>
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Locality</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Locality">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Pincode</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Pincode">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>Landmark</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="Landmark">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>City</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="City">
+                                                                            </div>     
+                                                                        </div>
+                                                                        <div class="col-sm-4 col-xs-12">	
+                                                                            <div class="form-group field-wrapper1">
+                                                                                <label>State</label>
+                                                                                <input type="text" class="form-control" value="address details" readonly="readonly" placeholder="State">
+                                                                            </div>     
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--                                                         <div class="panel panel-info" >
+                                                                                                                    <div class="panel-heading">
+                                                                                                                        <h4 class="panel-title" >Add New Address</h4>
+                                                                                                                    </div>
+                                                        
+                                                                                                                    <div class="panel-body" id="contactAddress">
+                                                        
+                                                                                                                        <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>
+                                                                                                                        <button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                                        
+                                                        
+                                                        
+                                                                                                                                                                                    <span class="pull-right detail-icon cloneAdd" style="cursor: pointer"  data-value="4"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                                                                                                                                                                                   <span class="pull-right detail-icon cloneRemove" style="cursor: pointer"  data-value="4"><i class="fa fa-minus-circle" aria-hidden="true"></i></span>
+                                                                                                                        <div id="contactAddressClones" class="cloneSet contactAddressC">
+                                                        
+                                                                                                                            <div class="col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>Address</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="Address">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-xs-12 col-sm-4">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>Select Address Type</label>
+                                                                                                                                    <select class="form-control">
+                                                                                                                                        <option value="">Select Address Type</option>
+                                                                                                                                        <option value="1">Office</option>
+                                                                                                                                        <option value="2">Residence</option>
+                                                                                                                                        <option value="3">Primary</option>
+                                                                                                                                    </select>
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-sm-4 col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>Locality</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="Locality">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-sm-4 col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>Pincode</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="Pincode">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-sm-4 col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>Landmark</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="Landmark">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-sm-4 col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>City</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="City">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                                                                                            <div class="col-sm-4 col-xs-12">	
+                                                                                                                                <div class="form-group field-wrapper1">
+                                                                                                                                    <label>State</label>
+                                                                                                                                    <input type="text" class="form-control" placeholder="State">
+                                                                                                                                </div>     
+                                                                                                                            </div>
+                                                        
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>-->
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -613,7 +752,13 @@
 
                 buttonText: ' Select a File'
             });
+            $(function () {
+                $('#profile_image').change(function (e) {
 
+                    var img = URL.createObjectURL(e.target.files[0]);
+                    $('.image').attr('src', img);
+                });
+            });
         </script>
     </body> 
 

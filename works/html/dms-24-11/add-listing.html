@@ -317,7 +317,7 @@
                                                         <option value="3">Lavender</option>
                                                     </select>
                                                 </div>     </div>   
-                                            
+
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Location</label>
@@ -339,19 +339,12 @@
                                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                         <div class="panel-body">
                                             <div class="col-sm-8 image-upload">
-                                                <!--<div class="form-group">
-                                                    <div class="col-sm-2 imge-add">
-                                                        <input class="inputfile inputfile-5" type="file" multiple>
-                                                        <label class="myclass" for="uploadimage1" data-value="1"><figure><i class="img-icon fa fa-plus-circle"></i></figure> <span>Choose a file&hellip;</span></label><br/>
-                                                        <img id="myImg1" src="" class="img-responsive">
 
-                                                    </div>
-                                                </div>-->
                                                 <form action="/file-upload" class="dropzone">
-  <div class="fallback">
-    <input name="file" type="file" multiple />
-  </div>
-</form>
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple />
+                                                    </div>
+                                                </form>
 
                                             </div>
                                             <div class="col-sm-3">
@@ -360,7 +353,8 @@
                                                         <button class="btn btn-primary" type="submit">Save changes</button>
                                                     </a> </div></div>
                                         </div>
-                                    </div></div>
+                                    </div>
+                                </div>
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingThree">
                                         <h4 class="panel-title">
@@ -417,7 +411,7 @@
                                                         <div class="progress-bar" style="width: 45%"></div>
                                                     </div></div>
                                             </div>
-                                             <div class="col-sm-12 document">
+                                            <div class="col-sm-12 document">
                                                 <div class="col-sm-3">
                                                     <label>Permit Document</label>
                                                 </div>
@@ -456,11 +450,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group col-sm-2">
-                                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
-                                                            <label class="onoffswitch-label" for="myonoffswitch1">
-                                                                <span class="onoffswitch-inner onoffswitch-inner1"></span>
-                                                                <span class="onoffswitch-switch onoffswitch-switch1"></span>
-                                                            </label></div>
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+                                                    <label class="onoffswitch-label" for="myonoffswitch1">
+                                                        <span class="onoffswitch-inner onoffswitch-inner1"></span>
+                                                        <span class="onoffswitch-switch onoffswitch-switch1"></span>
+                                                    </label></div>
                                             </div>  
                                             <div class="hr-dashed1 col-xs-12"></div>
                                             <div class="col-xs-12">
@@ -872,13 +866,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-4"><div class="checkbox checkbox-primary">
-                                                            <input id="Auction" class="onlinep" type="checkbox">
-                                                            <label for="Auction" class="onlinepcheck">
-                                                                Send Invitation
-                                                            </label>
-                                                        </div></div>
+                                                                <input id="Auction" class="onlinep" type="checkbox">
+                                                                <label for="Auction" class="onlinepcheck">
+                                                                    Send Invitation
+                                                                </label>
+                                                            </div></div>
                                                     </div>
-                                                    
+
                                                 </div>
 
                                             </div>
@@ -956,13 +950,13 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-sm-4"><div class="checkbox checkbox-primary">
-                                                            <input id="Auction" class="onlinep" type="checkbox">
-                                                            <label for="Auction" class="onlinepcheck">
-                                                                Send Invitation
-                                                            </label>
-                                                        </div></div>
+                                                                <input id="Auction" class="onlinep" type="checkbox">
+                                                                <label for="Auction" class="onlinepcheck">
+                                                                    Send Invitation
+                                                                </label>
+                                                            </div></div>
                                                     </div>
-                                                    
+
                                                 </div></div>
                                         </div>
                                         <div class="col-sm-12 button-online">
@@ -990,7 +984,7 @@
             <script src="js/dataTables.bootstrap.min.js"></script>
             <script src="js/Chart.min.js"></script>
             <script src="js/fileinput.js"></script>
-           <script src="js/main.js"></script>
+            <script src="js/main.js"></script>
             <script src="js/label-slide.js" type="text/javascript"></script>
             <script src="js/custom-file-input.js" type="text/javascript"></script>
             <script src="js/bootstrap-datetimepicker.min.js"></script>
@@ -1017,27 +1011,27 @@
                 $("#deal1").click(function () {
                     $(".add-auction").slideUp();
                 });
-               
+
             </script>
             <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
             <script src="js/dropzone.js" type="text/javascript"></script>
             <script>
-                
+
                 $(document).ready(function () {
                     $(".onlinep").click(function () {
                         $(this).parent().parent().parent().children(".prog-onile").children(".progress").toggle(this.checked);
                     });
                 });
-                 $('.BSbtninfo').filestyle({
- 
-buttonName : 'btn-info',
- 
-buttonText : ' Select a File'
- 
-});
-$(".BSbtninfo").click(function(){
-    $(this).parent().parent().children(".prog-onile").children(".progress").show(2000);
-});
+                $('.BSbtninfo').filestyle({
+
+                    buttonName: 'btn-info',
+
+                    buttonText: ' Select a File'
+
+                });
+                $(".BSbtninfo").click(function () {
+                    $(this).parent().parent().children(".prog-onile").children(".progress").show(2000);
+                });
             </script>
     </body>
 

@@ -15,18 +15,14 @@ $(document).on('click', '.cloneAdd', function ($this) {
     var oCloneParent = $(this).parent().attr('id');
     document.getElementById(oCloneId).appendChild(oClone);
     if ($('#' + oCloneId + 'Rows').length > 0) {
-        $(this).parent().children(".cloneRemove").show();
+        $('.cloneRemove').show();
     }
 
 });
 
 $(document).on('click', '.cloneRemove', function ($this) {
     cloneCounter--;
-    var oCloneId = $(this).parent().attr('id');
-    $('#' + oCloneId + 'Rows:nth-last-child(1)').remove();
-    if ($('#' + oCloneId + 'Rows').length == 0) {
-        $(this).hide();
-    }
+    $(this).parents("#contactdocumentRows").remove();
 });
 $(document).ready(function () {
     $('.cloneRemove').hide();
@@ -35,14 +31,9 @@ $(document).ready(function () {
 $(document).on('click', '.editAdd', function ($this) {
     var editId = $(this).parent().attr('id');
     var parentInputs = document.getElementById(editId);
-
     $("#" + editId + " input").each(function () {
-
-        if (!isNaN(this.value)) {
-            $(this).attr('readOnly', false);
-            $(this).attr('class', 'editEnabled')
-        }
+        $(this).attr('readOnly', false);
+        $(this).attr('class', 'editEnabled form-control');
     });
-
 });
 
