@@ -2310,3 +2310,5 @@ label.show
     span.detail-title1{font-size: 18px;}
     .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus, .nav-tabs>li>a{font-size: 11px}
 }
+.mypostingimg{max-height: 200px;}
+.mypostingimg img{max-height: 200px;}
