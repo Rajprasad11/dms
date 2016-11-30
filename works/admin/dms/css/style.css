@@ -2312,3 +2312,9 @@ label.show
 }
 .mypostingimg{max-height: 200px;}
 .mypostingimg img{max-height: 200px;}
+.table tbody>tr>td{
+    vertical-align: top;
+}
+.table tbody>tr>td.vert-align{
+    vertical-align: middle;
+}
