@@ -1068,18 +1068,7 @@ border: 1px solid #d3d8d7;
     padding-right: 0px;
     text-align: center;
 }
-.dash-footer
-{
-    background: #2c3136;
-    border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 0px;
-    text-align: center;
 
-    color:#fff;
-}
 /*** Filter tag ***/
 .tag .close{
     font-size:11px;
