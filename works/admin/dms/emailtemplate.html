@@ -11,12 +11,14 @@
 
         <title>DMS</title>
         <style>
-            body{float:left;width: 80%;padding: 0px;margin: 0px 10%;background: #8e8f9b;font-family: arial;}
+            .whole_body{float:left;width: 80%;padding: 0px;margin: 0px 10%;background: #8e8f9b;font-family: arial;}
             p{line-height: 22px;font-size: 12px;}
             .body_content{float: left;width:80%;background: #ededff;margin:5%;padding: 5%;}
             .logodiv{float: left;width:100%;}
             .logodiv .logo{width: 150px;float: left;}
+            .logodiv2 .logo1{width: 70px;float: right;}
             .logodiv .logo img{max-width: 100%;}
+            .logodiv .logo1 img{max-width: 100%;}
             .mail_banner{float: left;width:90%;margin:10px 5% 0px 5%;background: #23527c;padding:0;height: 130px;position: relative}
             .mail_banner img{max-width: 70px;position: absolute;margin: auto;top: 0;bottom: 0;left: 0;right: 0;
                              -ms-transform: rotate(20deg); /* IE 9 */
@@ -30,42 +32,50 @@
             button{padding: 10px;border: none;background: #ee1b24;color: #fff;font-weight: bold;margin: auto;left:0;right: 0;outline: none;}
             .footerdiv{float: left;width: 70%;background: transparent;margin: 0px 5% 10px 5%;padding: 0px 10% 50px 10%;text-align: center;}
             .footerdiv ul{padding: 0px;}.footerdiv ul li{list-style: none;display: inline;}
-            .footerdiv ul li img{max-width: 35px;}
+            .footerdiv ul li img{max-width: 35px;}.logodiv1{width: 50%;float: left;}.logodiv2{width:50%;float:right;}
         </style>
     </head>
-
     <body>
-        <div class="body_content">
-
-            <div class="logodiv"><a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
-            <div class="mail_content">
-                <div class="mail_banner">
-                    <!--<img src="img/mail_msg.png"/>-->
-                    <img src="img/msgbox.png"/>
-                </div>
-                <div class="mail_msg">
-                    <h5><b>Dear [Dealer Name]</b></h5>
-                    <p>Congrats! Your account has been created on DealerPlus</p>
-                    <div class="bntdiv">
-                        <button>Verify Your Email</button>
+        <div class="whole_body">
+            <div class="body_content">
+                <div class="logodiv">
+                    <div class="logodiv1">
+                        <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
+                    </div>
+                    <div class="logodiv2">
+                        <a href="index.html" class="logo1" title="Download it on Google Play"><img src="img/googleemail.png" class="img-responsive" alt=""></a>
+                        <a href="index.html" class="logo1" title="Download it on App Store"><img src="img/appemail.png" class="img-responsive" alt=""></a>
                     </div>
                 </div>
-                <div class="mail_footer">
-                    <p>Thanks,</p>
-                    <p>Dealer Plus</p>
+                <div class="mail_content">
+                    <div class="mail_banner">
+                        <!--<img src="img/mail_msg.png"/>-->
+                        <img src="img/msgbox.png"/>
+                    </div>
+                    <div class="mail_msg">
+                        <h5><b>Dear [Dealer Name]</b></h5>
+                        <p>Congrats! Your account has been created on DealerPlus</p>
+                        <div class="bntdiv">
+                            <button>Verify Your Email</button>
+                        </div>
+                    </div>
+                    <div class="mail_footer">
+                        <p>Thanks,</p>
+                        <p>Dealer Plus</p>
+                    </div>
                 </div>
-            </div>
-            <div class="footerdiv">
-                <h5><b>Connect With DealerPlus</b></h5>
-                <ul>
-                    <li><img  src="img/facebook.png"/></li>
-                    <li><img  src="img/twitter.png"/></li>
-                    <li><img  src="img/youtube.png"/></li>
-                    <li><img  src="img/googleplus.png"/></li>
-                </ul>
-                <p>Copyright &copy; 2016 DealerPlus All right Reserved</p>
-                <p>For more info log on to <a href="">Dealerplus.in</a></p>
-                <p><a href="">Privacy Policy</a></p><p><a href="">Terms and Conditions</a></p>
+                <div class="footerdiv">
+                    <h5><b>Connect With DealerPlus</b></h5>
+                    <ul>
+                        <li><img  src="img/facebook.png"/></li>
+                        <li><img  src="img/twitter.png"/></li>
+                        <li><img  src="img/youtube.png"/></li>
+                        <li><img  src="img/googleplus.png"/></li>
+                    </ul>
+                    <p>Copyright &copy; 2016 DealerPlus All right Reserved</p>
+                    <p>For more info log on to <a href="">Dealerplus.in</a></p>
+                    <p><a href="">Privacy Policy</a></p><p><a href="">Terms and Conditions</a></p>
+                </div>
             </div>
         </div>
     </body> 
