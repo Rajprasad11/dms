@@ -2490,3 +2490,6 @@ a.socialIcon:hover, .socialHoverClass {
     font-size: 11px;
     color: #fff;
 }
+.table .vert-align>tr>td{
+    vertical-align: middle;
+}
