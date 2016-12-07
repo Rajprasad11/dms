@@ -2576,9 +2576,9 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .jumbotron small {color: #FFF;}
 .well textarea{height: 133px;resize: none;}
 .footer{background: #23527c;padding: 60px 0px;color:#fff;font-size: 16px;}
-/**
- * Responsive Bootstrap Tabs
- */
+
+ /** Responsive Bootstrap Tabs*/
+ 
 @media screen and (max-width: 768px) {
     #myTabContent h2{font-size: 14px;}#myTabContent p{font-size: 14px;}
     .nav-tabs-responsive > li {display: none;width: 23%;}
