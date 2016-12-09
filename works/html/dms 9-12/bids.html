@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 
     <head>
         <meta charset="UTF-8">
@@ -22,8 +22,6 @@
         <!-- Bootstrap select -->
         <link rel="stylesheet" href="css/bootstrap-select.css">
         <!-- Bootstrap file input -->
-        <link rel="stylesheet" href="css/fileinput.min.css">
-        <!-- Awesome Bootstrap checkbox -->
         <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
         <!-- Admin Stye -->
         <link rel="stylesheet" href="css/style.css">
@@ -40,20 +38,6 @@
             <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
             <span class="menu-btn"><i class="fa fa-bars"></i></span>
             <ul class="ts-profile-nav">
-                <li class="top-search hidden-xs hidden-sm"><div class="input-group-btn search-panel">
-                        <select class="btn btn-primary">
-                            <option value="">Filter</option>
-                            <option value="1">Inventory</option>
-                            <option value="2">Custom</option>
-                            <option value="3">Dealers</option>
-                            <option value="4">Cars</option>
-                        </select>
-                    </div>
-                    <input type="hidden" name="search_param" value="all" class="" id="search_param">         
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                    </span></li>
                 <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
                 <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
                 <li class="ts-account">
@@ -63,19 +47,16 @@
                         <li><a href="#">Edit Account</a></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
-
                 </li>
             </ul>
-
         </div>
         <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="myNavbar1">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li class="active"><a href="buy.html">Buy</a></li>
+                            <li><a href="buy.html">Buy</a></li>
                             <li><a href="inventory.html">Sell</a></li>
-                            <li><a href="myprofile.html">Manage</a></li>
+                            <li class="active"><a href="myprofile.html">Manage</a></li>
                             <li><a href="myaccount.html">Communications</a></li>
                             <li><a href="detail-list.html">Reports</a></li>
                         </ul>
@@ -183,17 +164,21 @@
                     <li>
                             <input type="text" class="ts-sidebar-search" placeholder="Search here...">
                     </li>-->
-                    <li><a href="search.html"><i class="fa fa-search"></i> Search</a></li>
-                    <li><a href="save.html"><i class="fa fa-car"></i> Saved Cars</a>
+                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
+                    <li><a href="myleads.html"><i class="fa fa-list"></i> My Leads</a>
+                        <!--<ul>
+                                <li><a href="managelisting.html">Menu1</a></li>
+                                <li><a href="listing.html">Menu2</a></li>
+                                </ul>-->
                     </li>
-                    <li><a href="myquery.html"><i class="fa fa-question-circle"></i> My Queries</a></li>
-                    <li><a class="sub-active" href="bids.html"><i class="fa fa-bitbucket-square"></i> Bids Posted</a></li>
-                    <li><a href="fund.html"><i class="fa fa-money"></i> Apply Inventory Funding</a></li>
-
+                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
+                    <li><a href="mycontact.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
+                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
+                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
                 </ul>
                 <!-- Account from above -->
                 <ul class="ts-profile-nav ts-sidebar-menu">
-
                     <li class="ts-account">
                         <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
                     <li><a href="myaccount.html">My Account</a></li>
@@ -202,205 +187,711 @@
                     <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
                     <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
                 </ul>
-
-
             </nav>
-            <div class="content-wrapper">
+            <div class="content-wrapper myprofile">
                 <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="content-header col-sm-12">
-                            <div class="input-group mb searching col-sm-6 hidden-md hidden-lg">
-                                <div class="input-group-btn search-panel">
-                                    <select class="btn btn-primary">
-                                        <option value="">Filter</option>
-                                        <option value="1">Inventory</option>
-                                        <option value="2">Custom</option>
-                                        <option value="3">Dealers</option>
-                                        <option value="4">Cars</option></select>
-                                </div>
-                                <input type="hidden" name="search_param" value="all" id="search_param">         
-                                <input type="text" class="form-control" name="x" placeholder="Search term...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
+                    <div class="content-header col-sm-12">
+                        <div class="input-group mb searching col-sm-6">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span id="search_concept">Filter by</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#contains">All Cars</a></li>
+                                    <li><a href="#its_equal">Bid cars</a></li>
+                                    <li><a href="#greather_than">List cars</a></li>
+                                    <li><a href="#less_than">Manage cars</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#all">Anything</a></li>
+                                </ul>
                             </div>
-                            <ol class="breadcrumb">
-                                <li><a href="index.html"><i class="fa fa-dashboard"></i> Buy</a></li>
-                                <li class="active">Bids Posted</li>
-                            </ol>
+                            <input type="hidden" name="search_param" value="all" id="search_param">         
+                            <input type="text" class="form-control" name="x" placeholder="Search term...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span>
                         </div>
-                        <div class="col-xs-12">
+                        <ol class="breadcrumb">
+                            <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                            <li class="active">Bid Posted</li>
+                        </ol>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-md-12" id="no-more-tables">
 
+                            <ul class="nav nav-tabs inventory-list">
+                                <li class="active"><a href="#all" data-toggle="tab" aria-expanded="true">All</a></li>
+                                <li><a href="#live" data-toggle="tab" aria-expanded="false">Live Auction</a></li>
+                                <li><a href="#closed" data-toggle="tab" aria-expanded="true">Closed Auction</a></li>
+                                <li><a href="#opening" data-toggle="tab" aria-expanded="true">Upcoming Auction </a></li>
 
-                            <h2 class="page-title">Bids Posted</h2>
+                            </ul>
+                            <br>
+                            <div id="myTabContent" class="tab-content">
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>Car Name</th>
-                                                <th>Image</th>
-                                                <th>bid amount</th>
-                                                <th>Status</th>
-                                                <th>View</th>
-                                            </tr>
+                                <div class="tab-pane fade active in" id="all">
+                                    <table id="zctb" class="display table table-striped table-bordered table-hover postingdetailtabel" cellspacing="0" width="100%">
+
+                                        <thead class="hidden-xs">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <col>
+                                        <col>
+                                        <tr class="hidden-xs">
+                                            <th rowspan="2">S.no</th>
+                                            <th rowspan="2">Car Image</th>
+                                            <th rowspan="2">Car Details</th>
+                                            <th colspan="4" scope="colgroup">Auction Detail</th>
+                                            <th colspan="2" scope="colgroup">Bid Details</th>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <th>Auction Name</th>
+                                            <th>Auction Days</th>
+                                            <th>Time Left</th>
+                                            <th>Auction Status</th>
+                                            <th>Bid Amount</th>
+                                            <th>Bid Status</th>
+                                        </tr>
                                         </thead>
-                                        <tfoot>
+                                        <tbody class="vert-align text-center">
                                             <tr>
-                                                <th>Car Name</th>
-                                                <th>Image</th>
-                                                <th>last bid amount</th>
-                                                <th>Status</th>
-                                                <th>View</th>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>                                             
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status">
+                                                    <p class="btn btn-sm btn-instagram">Upcoming</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Highest Bid</P>
+                                                </td>
                                             </tr>
-                                        </tfoot>
-                                        <tbody>
                                             <tr>
-                                                <td data-title="Car Name">Tiger Nixon</td>
-                                                <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                                <td>Rs.5000</td>
-                                                <td><p class="label label-success">Completed</p></td>
-                                                <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                                <!--popup-->
-                                        <div class="modal fade" id="popup" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
 
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                        <h4 class="modal-title" id="myModalLabel">Bid Product Details</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="row" id="bid-hide">
-                                                            <div class="form-group col-xs-12">
-                                                                <div class="col-sm-10 col-xs-8">
-                                                                    <input type="text" placeholder="Bid Your Amount Here" class="form-control">
-                                                                </div>
-                                                                <div class="col-xs-2"><button type="button"  class="btn btn-primary bidding">Submit</button></div>
-                                                            </div>
-                                                            <div class="hr-dashed"></div></div>
-
-                                                        <div class="row">
-                                                            <div class="col-xs-4"><p class="text-center"><img class="img-responsive" src="img/car1.jpg" alt=""/></p></div>
-                                                            <div class="col-xs-8 bid-title">
-                                                                <div class="form-group">
-                                                                    <label class="col-xs-4 text-primary">Rajesh</label>
-                                                                    <div class="col-xs-8">
-                                                                        <p class="text-default">Rs.5500 <span class="bid-time">(19:50)</span></p>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label class="col-xs-4 text-primary">XXXXXX</label>
-                                                                    <div class="col-xs-8">
-                                                                        <p class="text-default">Rs.5200 <span class="bid-time">(19:50)</span></p>
-                                                                    </div>
-                                                                </div>	
-                                                                <div class="form-group">
-                                                                    <label class="col-sm-4 text-primary">yyyyyyyyyyyyyyyyyyyyyyyyyyy</label>
-                                                                    <div class="col-sm-8">
-                                                                        <p class="text-default">Rs.5050 <span class="bid-time">(19:50)</span></p>
-                                                                    </div>
-                                                                </div>	
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button"  class="btn btn-primary bidding">Bid Now</button>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        </tr>
-                                        <tr>
-                                            <td>Garrett Winters</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-success">Completed</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-
-
-                                        </tr>
-                                        <tr>
-                                            <td>Ashton Cox</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-danger">Active</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cedric Kelly</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-danger">Active</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Airi Satou</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-success">Completed</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Brielle Williamson</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-danger">Active</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Herrod Chandler</td>
-                                            <td><img class="img-responsive" width="50px;" src="img/car1.jpg" alt=""/></td>
-                                            <td>Rs.5000</td>
-                                            <td><p class="label label-success">Completed</p></td>
-                                            <td class="view"><a href="#" data-toggle="modal" data-target="#popup"><i class="fa fa-eye"></i></a></td>
-                                        </tr>
-
+                                                <td data-title="Car Details">  <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-success">Live</P>
+                                                </td>  
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Outbid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-pinterest">Closed</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Won</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-pinterest">Closed</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Lost</P>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                                <div class="tab-pane fade" id="live">
+                                    <table id="zctb" class="display table table-striped table-bordered table-hover postingdetailtabel" cellspacing="0" width="100%">
 
+                                        <thead class="hidden-xs">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <col>
+                                        <col>
+                                        <tr class="hidden-xs">
+                                            <td rowspan="2">S.no</td>
+                                            <td rowspan="2">Car Image</td>
+                                            <td rowspan="2">Car Details</td>
+                                            <th colspan="4" scope="colgroup">Auction Details</th>
+                                            <td colspan="2" scope="colgroup">Bid Details</td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <th>Auction Name</th>
+                                            <th>Auction Days</th>
+                                            <th>Time Left</th>
+                                            <th>Auction Status</th>
+                                            <th>Bid Amount</th>
+                                            <th>Bid Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="vert-align text-center">
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>                                             
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status">
+                                                    <p class="btn btn-sm btn-success">Live</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Highest Bid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
 
+                                                <td data-title="Car Details">  <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-success">Live</P>
+                                                </td>  
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Outbid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-success">Live</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Won</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                   <p class="btn btn-sm btn-success">Live</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Lost</P>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="closed">
+                                    <table id="zctb" class="display table table-striped table-bordered table-hover postingdetailtabel" cellspacing="0" width="100%">
+
+                                        <thead class="hidden-xs">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <col>
+                                        <col>
+                                        <tr class="hidden-xs">
+                                            <td rowspan="2">S.no</td>
+                                            <td rowspan="2">Car Image</td>
+                                            <td rowspan="2">Car Details</td>
+                                            <th colspan="4" scope="colgroup">Auction Details</th>
+                                            <td colspan="2" scope="colgroup">Bid Details</td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <th>Auction Name</th>
+                                            <th>Auction Days</th>
+                                            <th>Time Left</th>
+                                            <th>Auction Status</th>
+                                            <th>Bid Amount</th>
+                                            <th>Bid Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="vert-align text-center">
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>                                             
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status">
+                                                    <p class="btn btn-sm btn-pinterest">Closed</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Highest Bid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+
+                                                <td data-title="Car Details">  <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                            <p class="btn btn-sm btn-pinterest">Closed</p>
+                                                </td>  
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Outbid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-pinterest">Closed</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Won</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-pinterest">Closed</P>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Lost</P>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="opening">
+                                    <table id="zctb" class="display table table-striped table-bordered table-hover postingdetailtabel" cellspacing="0" width="100%">
+
+                                        <thead class="hidden-xs">
+                                        <col>
+                                        <col>
+                                        <col>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <colgroup span="2"></colgroup>
+                                        <col>
+                                        <col>
+                                        <tr class="hidden-xs">
+                                            <td rowspan="2">S.no</td>
+                                            <td rowspan="2">Car Image</td>
+                                            <td rowspan="2">Car Details</td>
+                                            <th colspan="4" scope="colgroup">Auction Details</th>
+                                            <td colspan="2" scope="colgroup">Bid Details</td>
+                                        </tr>
+                                        <tr class="hidden-xs">
+                                            <th>Auction Name</th>
+                                            <th>Auction Days</th>
+                                            <th>Time Left</th>
+                                            <th>Auction Status</th>
+                                            <th>Bid Amount</th>
+                                            <th>Bid Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="vert-align text-center">
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>                                             
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status">
+                                                    <p class="btn btn-sm btn-instagram">Upcoming</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Highest Bid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+
+                                                <td data-title="Car Details">  <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-instagram">Upcoming</p>
+                                                </td>  
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Outbid</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                   <p class="btn btn-sm btn-instagram">Upcoming</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Won</P>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td data-title="S.no">1</td>
+                                                <td data-title="Car Image"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/>
+                                                </td>
+                                                <td data-title="Car Details">
+                                                    <h4>Car Name</h4><h4>Make, Model, Varient, Year</h4>
+                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                    <a href="detail-list.html" class="btn btn-sm btn-success">View Details</a>
+                                                </td>
+                                                <td  data-title="Auction Name">
+                                                    Auction
+                                                </td>
+                                                <td  data-title="Auction Days">
+                                                    35
+                                                </td>
+                                                <td  data-title="Time Left">
+                                                    12 hrs 8 mins
+                                                </td>
+                                                <td data-title="Auction Status" class="vert-align text-center">
+                                                    <p class="btn btn-sm btn-instagram">Upcoming</p>
+                                                </td>
+                                                <td data-title="Bid Amount">
+                                                    <h5>Rs.3,60,000</h5>
+                                                </td>
+                                                <td data-title="Bid Status">
+                                                    <p class="btn btn-sm btn-brand">Lost</P>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row dash-footer">
+
+                            <!--<div class="hr-dashed"></div>-->
+                            <div class="col-xs-12 col-lg-8 col-md-9 col-sm-9 park-diva">
+                                <div class="col-sm-3 col-xs-12">
+                                    <h5><b>Overview</b></h5>
+                                    <p><a href="about.html">About</a></p>
+                                    <p><a href="feedback.html">Feedback</a></p>
+                                    <p><a href="contactus.html">Contact Us</a></p>
+                                    <p><a href="faqs.html">FAQs</a></p>
+                                </div>
+                                <div class="col-sm-2 col-xs-12">
+                                    <h5><b>Service</b></h5>
+                                    <p><a href="advertise.html">Advertise</a></p>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <h5><b>Others</b></h5>
+                                    <p><a href="privacy_policy.html">Privacy Policy</a></p>
+                                    <p><a href="terms_conditions.html">Terms And Conditions</a></p>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <h5><b>Feel free to contact us</b></h5>
+                                    <p><a href=""><i class="fa fa-phone"></i> 987654321</a></p>
+                                    <p><a href="">Support@dealerplus.in</a></p>
 
                                 </div>
                             </div>
+                            <div class="col-xs-12 col-lg-4 col-md-3 col-sm-3 downloadsec">
+                                <div class="col-xs-12">    
+                                    <h5><a href=""><i class="fa fa-download" aria-hidden="true"></i> Download Dealer Plus Mobile App</a></h5>
+                                </div>
+                                <div class="col-xs-12  footerlogo"><a href=""><img src="img/google_play2.png" class="img-responsive"/></a></div>
+                                <div class="col-xs-12  footerlogo"><a href=""><img src="img/app_store2.png" class="img-responsive"/></a></div>
+                            </div>
+                            <!--<div class="col-xs-12 hr-dashed"></div>-->
+                            <div class="col-xs-12 lastfooter">
+                                <div class="col-sm-8 col-xs-12"> <em>Copyright &copy; <a href="#"> 2016 Dealer Plus</a></em></div>
+                                <div class="col-sm-4 col-xs-12">  <ul class="social-network social-circle pull-right col-xs-12">
+                                        <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+                                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <!--<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
+                                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul></div>
 
+                            </div>
                         </div>
                     </div>
-
-
-                </div>
+                </footer>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row dash-footer">
-                <div class="clearfix pt pb">
-                    <div class="col-xs-12">
-                        <em>Designed by <a href="#">Falconnect</a></em>
-                    </div>
-                </div>
-            </div></div>
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap-select.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.dataTables.min.js"></script>
-        <script src="js/dataTables.bootstrap.min.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script src="js/fileinput.js"></script>
-        <script src="js/chartData.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/menu.js"></script>
-        <script>
-            $(".bidding").click(function () {
-                $("#bid-hide").slideDown(1000);
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $('.BSbtninfo').filestyle({
+
+                buttonName: 'btn-info',
+
+                buttonText: ' Upload Documents'
+            });
+            $(function () {
+                $('.date').datetimepicker();
             });
         </script>
-    </body>
+
+    </body> 
 
 </html>
