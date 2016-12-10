@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="theme-color" content="#3e454c">
+
+        <title>DMS</title>
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Sandstone Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Bootstrap Datatables -->
+        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+        <!-- Bootstrap select -->
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <!-- Awesome Bootstrap checkbox -->
+        <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+        <!-- Admin Stye -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="brand clearfix">
+            <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
+            <span class="menu-btn"><i class="fa fa-bars"></i></span>
+            <ul class="ts-profile-nav">
+                <li class="top-search hidden-xs hidden-sm"><div class="input-group-btn search-panel">
+                        <select class="btn btn-primary">
+                            <option value="">Filter</option>
+                            <option value="1">Inventory</option>
+                            <option value="2">Customer</option>
+                            <option value="3">Dealers</option>
+                            <option value="4">Cars</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span></li>
+                <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                <li class="ts-account">
+                    <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
+                    <ul>
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="#">Edit Account</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+        <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="myNavbar1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="buy.html">Buy</a></li>
+                            <li class="active"><a href="inventory.html">Sell</a></li>
+                            <li><a href="managelisting.html">Manage</a></li>
+                            <li><a href="myaccount.html">Communications</a></li>
+                            <li><a href="detail-list.html">Reports</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav></div>
+        <div class="brand1 clearfix hidden-md hidden-lg"><nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle mobile-view" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Main Menu</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search.html">Search</a></li>
+                                    <li><a href="save.html">Saved Cars</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test"  href="myquery.html">My Queries <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="bids.html">Bids Posted</a></li>
+                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="inventory.html">My Inventory</a></li>
+                                    <li><a href="myposting.html">My Postings</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="myauction.html">My Auctions <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="queries.html">Queries Received</a></li>
+                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myprofile.html">My Profile</a></li>
+                                    <li><a href="mybranch.html">My Branches</a></li>
+                                    <li><a href="myleads.html">My Leads</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="mycustomer.html">My Customer <span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>-->
+                                    </li>
+                                    <li><a href="Mycontact.html">My Contacts</a></li>
+                                    <li><a href="myuser.html">My Users</a></li>
+                                    <li><a href="subscription.html">Subscriptions</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Groups</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="#">Promotions<span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          <li><a href="#">2nd level dropdown</a></li>
+                                          </ul>--></li>
+                                    <li><a href="#">Notifications</a></li>
+                                    <li><a href="#">Messages</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="#">Inventory</a></li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" href="#">Expenses<span class="caret"></span></a>
+                                        <!--<ul class="dropdown-menu">
+                                          <li><a href="#">dropdown</a></li>
+                                          <li><a href="#">dropdown</a></li>
+                                          </ul>--></li>
+                                    <li><a href="#">Profit & Loss</a></li>
+                                    <li><a href="#">User Reports</a></li>
+
+                                </ul>
+                            </li></ul>
+                    </div>
+                </div>
+            </nav></div>
+
+        <div class="ts-main-content">
+            <nav class="ts-sidebar">
+                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <li><a href="inventory.html"><i class="fa fa-sellsy"></i>My Inventory</a></li>
+                    <li><a href="myposting.html"><i class="fa fa-dropbox"></i> My Postings</a>
+                        <!--<ul>
+                                <li><a href="managelisting.html">Manage Listing</a></li>
+                                <li><a href="listing.html">Buy Listing</a></li>
+                                </ul>-->
+                    </li>
+                    <li><a href="#"><i class="fa fa-archive"></i> My Auction</a></li>
+                    <li><a href="#"><i class="fa fa-question"></i>Queries Received</a></li>
+                    <li><a href="#"><i class="fa fa-ticket"></i> Apply Loan For Customers</a></li>
+                </ul>
+                <!-- Account from above -->
+                <ul class="ts-profile-nav ts-sidebar-menu">
+
+                    <li class="ts-account">
+                        <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="#">Edit Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                    <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                </ul>
+
+            </nav>
+            <div class="content-wrapper add-product">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="content-header col-sm-12">
+                            <div class="input-group mb searching col-sm-6 hidden-md hidden-lg">
+                                <div class="input-group-btn search-panel">
+                                    <select class="btn btn-primary">
+                                        <option value="">Filter</option>
+                                        <option value="1">Inventory</option>
+                                        <option value="2">Custom</option>
+                                        <option value="3">Dealers</option>
+                                        <option value="4">Cars</option></select>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                            <ol class="breadcrumb">
+                                <li><a href="index.html"><i class="fa fa-dashboard"></i> Buy</a></li>
+                                <li class="active">Add Listing</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-12">
+                            <h2 class="page-title">Add Listing</h2>
+                            <div class="panel-group add-list" id="accordion" role="tablist" aria-multiselectable="true">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Basic Info <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Registration Year</label>
+                                                    <select class="form-control">
+                                                        <option value="">Registration Year</option>
+                                                        <option value="1">2012</option>
+                                                        <option value="2">2011</option>
+                                                        <option value="3">2010</option>
+                                                        <option value="4">2009</option>
+                                                        <option value="5">2008</option>
+                                                    </select>
+                                                </div>     </div>      
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Make</label>
+                                                    <select class="form-control">
+                                                        <option value="">Make</option>
+                                                        <option value="1">Renault</option>
+                                                        <option value="2">Audi</option>
+                                                        <option value="3">BMW</option>
+                                                    </select>
+                                                </div>     </div>   
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Model</label>
+                                                    <select class="form-control">
+                                                        <option value="">Model</option>
+                                                        <option value="1">Duster</option>
+                                                        <option value="2">Captur</option>
+                                                        <option value="3">Lodgy</option>
+                                                    </select>
+                                                </div>     </div>   
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Variant</label>
+                                                    <select class="form-control">
+                                                        <option value="">Variant</option>
+                                                        <option value="1">First Edition</option>
+                                                        <option value="2">Prestige</option>
+                                                    </select>
+                                                </div>     </div> 
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Kms Done</label>
+                                                    <input type="text" class="form-control" placeholder="Kms Done">
+                                                </div>     </div>  
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Mileage</label>
+                                                    <input type="text" class="form-control" placeholder="Mileage">
+                                                </div>     </div>
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Ownership</label>
+                                                    <select class="form-control">
+                                                        <option value="">Ownership</option>
+                                                        <option value="0">First Owner</option>
+                                                        <option value="1">Second Owner</option>
+                                                    </select>
+                                                </div>     </div> 
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Car Status</label>
+                                                    <select class="form-control">
+                                                        <option value="">Car Status</option>
+                                                        <option value="1">Good</option>
+                                                        <option value="2">Medium</option>
+                                                        <option value="3">Excellent</option>
+                                                    </select>
+                                                </div>     </div>
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Color</label>
+                                                    <select class="form-control">
+                                                        <option value="">Color</option>
+                                                        <option value="1">Gray</option>
+                                                        <option value="2">Green</option>
+                                                        <option value="3">Lavender</option>
+                                                    </select>
+                                                </div>     </div>   
+
+                                            <div class="col-sm-3">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Location</label>
+                                                    <input type="text" class="form-control" placeholder="Location">
+                                                </div>     </div>      
+                                            <div class="col-sm-6">
+                                                <div class="form-group pull-right"><a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"><button class="btn btn-primary" type="submit">Save changes</button></a> </div></div>									
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a href="#collapseTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo">
+                                                Image and Videos <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <div class="col-sm-12 image-upload">
+                                                <div class="form-group">
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="1" id="uploadimage1" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg1" src="" class="img-responsive">
+							<label class="img-lab">Profile Pic</label>
+                                                        </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="2" id="uploadimage2" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                         <img id="myImg2" src="" class="img-responsive">
+							<label class="img-lab">Front View (bumper, bonnet, fr-windshield,headlights, grill)</label>
+                                                        </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="3" id="uploadimage3" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg3" src="" class="img-responsive">
+							<label class="img-lab">Front Windscreen</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="4" id="uploadimage4" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg4" src="" class="img-responsive">
+							<label class="img-lab">Front Underbody</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="5" id="uploadimage5" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg5" src="" class="img-responsive">
+							<label class="img-lab">Right Side (fender, doors, qtr panel)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="6" id="uploadimage6" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg6" src="" class="img-responsive">
+							<label class="img-lab">Right Quarter Panel</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="7" id="uploadimage7" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg7" src="" class="img-responsive">
+							<label class="img-lab">Front Right Side Interior View</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="8" id="uploadimage8" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg8" src="" class="img-responsive">
+							<label class="img-lab">Rear (bumper, dicky door, rr-windshield, tail lights)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="9" id="uploadimage9" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg9" src="" class="img-responsive">
+							<label class="img-lab">Left Side (fender, doors, qtr Panel)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="10" id="uploadimage10" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg10" src="" class="img-responsive">
+							<label class="img-lab">Left Quarter Panel</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="11" id="uploadimage11" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg11" src="" class="img-responsive">
+							<label class="img-lab">Engine Compartment</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="12" id="uploadimage12" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg12" src="" class="img-responsive">
+							<label class="img-lab">Dashboard ( from rear seat)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="13" id="uploadimage13" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg13" src="" class="img-responsive">
+							<label class="img-lab">Odometer Reading (with engine on from driver seat)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="14" id="uploadimage14" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg14" src="" class="img-responsive">
+							<label class="img-lab">ABC Pedals ( from driver seat)</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="15" id="uploadimage15" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg15" src="" class="img-responsive">
+							<label class="img-lab">Front Door Trim</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="16" id="uploadimage16" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                            <img id="myImg16" src="" class="img-responsive">
+							<label class="img-lab">Front Right Tyre</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="17" id="uploadimage17" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                            <img id="myImg17" src="" class="img-responsive">
+							<label class="img-lab">Rear Right Tyre</label>
+                                                         		
+                                                        
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="18" id="uploadimage18" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg18" src="" class="img-responsive">
+							<label class="img-lab">Boot / Dicky</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="19" id="uploadimage19" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg19" src="" class="img-responsive">
+							<label class="img-lab">Front Left Tyre</label>
+                                                         							
+                                                    </div>
+                                                    <div class="col-sm-2 imge-add">
+                                                        <input class="myclass" type="file" data-value="20" id="uploadimage20" />
+                                                        <input class="inputfile inputfile-5" type="file" />
+                                                        <img id="myImg20" src="" class="img-responsive">
+							<label class="img-lab">Odometer Reading (with engine on from driver seat)</label>
+                                                         							
+                                                    </div>
+                                                </div>
+                                           
+                                        </div>
+                                             <div class="col-sm-3">
+                                                <div class="form-group field-wrapper1">
+                                                    <a href="#collapseThree" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseThree">
+                                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                                    </a> </div></div>
+                                    </div></div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a href="#collapseThree" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseThree">
+                                                Documents <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div class="panel-body row">
+
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>RC</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>Insurance</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>RTO</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>FC</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>NOC</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-3">
+                                                    <label>Permit Document</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                             <div id="uploaddocument">
+<button type="button" class="btn btn-primary pull-right cloneAdd" title="Add New Address"  name="Submit"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+                                                            <div id="uploaddocumentClones" class="cloneSet">
+                                            <div class="col-sm-12 document">
+                                               
+                                                <div class="col-sm-3">
+                                                    <input type="text" class="form-control" placeholder="Document Name">
+                                                </div>
+                                                <div class="col-sm-5"><input type="file" class="BSbtninfo"/>
+                                                
+                                                </div>
+                                                <div class="col-sm-3 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                                    <div class="col-sm-1 col-xs-12"> <button type="button" class="btn btn-danger pull-right cloneRemove" title="Remove Last Address"  name="Submit"><i class="fa fa-minus-circle" aria-hidden="true"></i></button>  </div>            
+                                            </div></div></div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group pull-right">
+                                                    <a href="#collapseFour" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseFour">
+                                                        <button class="btn btn-primary" type="submit">Save changes</button>
+                                                    </a> </div></div>
+                                        </div></div></div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingFour">
+                                        <h4 class="panel-title">
+                                            <a href="#collapseFour" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseFour">
+                                                Pricing Information <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                        <div class="panel-body row">
+                                            <div class="col-xs-12">
+                                                <div class="col-sm-4"><h4>Type of Inventory</h4></div>
+                                                <div class="form-group col-sm-6">
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="park" value="option1" name="radioInline" checked="">
+                                                        <label for="park"> Park and Sell </label>
+                                                    </div>
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="own" value="option2" name="radioInline">
+                                                        <label for="own"> Own </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-sm-2">
+                                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+                                                    <label class="onoffswitch-label" for="myonoffswitch1">
+                                                        <span class="onoffswitch-inner onoffswitch-inner1"></span>
+                                                        <span class="onoffswitch-switch onoffswitch-switch1"></span>
+                                                    </label></div>
+                                            </div>  
+                                            <div class="hr-dashed1 col-xs-12"></div>
+                                            <div class="col-xs-12">
+                                                <div class="col-sm-6 col-xs-12 own-div">
+                                                    <h4 class="page-title1">Purchase Information</h4>
+                                                    <div class="row"><div class="col-sm-4"><label>Purchased From</label></div>
+                                                        <div class="col-sm-8"><div class="col-sm-7"><select class="form-control">
+                                                                    <option value="">Customer</option>
+                                                                    <option value="1">Dealer</option>
+                                                                    <option value="2">Broker</option>
+                                                                    <option value="3">Car Wale</option>
+                                                                    <option value="4">OLX</option>
+                                                                    <option value="5">Quickr</option>
+                                                                    <option value="6">Others</option>
+                                                                </select></div>
+                                                            <div class="col-sm-5"><input type="text" class="form-control"></div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>Purchase Price</label></div>
+                                                        <div class="col-sm-8"><input type="text" class="form-control"></div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>Purchased Date</label></div>
+                                                        <div class="col-sm-8"><div class='input-group date' id='datetimepicker4'>
+                                                                <input type='text' class="form-control" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </span>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Keys Received</label></div>
+                                                        <div class="col-sm-8"><div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="keyy" value="option1" name="radiokey" checked="">
+                                                                <label for="keyy"> Yes </label>
+                                                            </div>
+                                                            <div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="keyn" value="option2" name="radiokey">
+                                                                <label for="keyn">No</label>
+                                                            </div></div></div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Document Received</label></div>
+                                                        <div class="col-sm-8"><div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="docuy" value="option1" name="radiodoc" checked="">
+                                                                <label for="docuy"> Yes </label>
+                                                            </div>
+                                                            <div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="docun" value="option2" name="radiodoc">
+                                                                <label for="docun">No</label>
+                                                            </div></div></div>
+                                                </div>  
+                                                <div class="col-sm-6 col-xs-12 park-div">
+                                                    <h4 class="page-title1">Purchase Information</h4>
+                                                    <div class="row"><div class="col-sm-4"><label>Received From </label></div>
+                                                        <div class="col-sm-8"><div class="col-sm-7"><select class="form-control">
+                                                                    <option value="">Customer</option>
+                                                                    <option value="1">Dealer</option>
+                                                                    <option value="2">Broker</option>
+                                                                    <option value="3">Car Wale</option>
+                                                                    <option value="4">OLX</option>
+                                                                    <option value="5">Quickr</option>
+                                                                    <option value="6">Others</option>
+                                                                </select></div>
+                                                            <div class="col-sm-5"><input type="text" class="form-control"></div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="hr-dashed"></div>
+
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>From Date</label></div>
+                                                        <div class="col-sm-8"><div class='input-group date' id='datetimepicker5'>
+                                                                <input type='text' class="form-control" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </span>
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+
+                                                        <div class="col-sm-4"><label>Starting Km</label></div>
+                                                        <div class="col-sm-8">
+                                                            <input type='text' class="form-control" />
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>Fuel Indication</label></div>
+                                                        <div class="col-sm-8">
+                                                            <input type='text' class="form-control" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>Customer Asking Price</label></div>
+                                                        <div class="col-sm-8"><div class='input-group'>
+                                                                <span class="input-group-addon">
+                                                                    Rs.
+                                                                </span>
+                                                                <input type='text' class="form-control" />
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row"> 
+                                                        <div class="col-sm-4"><label>Dealer Markup Price</label></div>
+                                                        <div class="col-sm-8"><div class='input-group'>
+                                                                <span class="input-group-addon">
+                                                                    Rs.
+                                                                </span>
+                                                                <input type='text' class="form-control" />
+                                                            </div></div>
+                                                    </div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Keys Received</label></div>
+                                                        <div class="col-sm-8"><div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="keyy" value="option1" name="radiorkey" checked="">
+                                                                <label for="keyy"> Yes </label>
+                                                            </div>
+                                                            <div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="keyn" value="option2" name="radiorkey">
+                                                                <label for="keyn">No</label>
+                                                            </div></div></div>
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Document Received</label></div>
+                                                        <div class="col-sm-8"><div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="docuy" value="option1" name="radiordoc" checked="">
+                                                                <label for="docuy"> Yes </label>
+                                                            </div>
+                                                            <div class="radio radio-primary radio-inline">
+                                                                <input type="radio" id="docun" value="option2" name="radiordoc">
+                                                                <label for="docun">No</label>
+                                                            </div></div></div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <h4 class="page-title1">Expenses</h4>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Refurbishment Cost</label></div>
+                                                        <div class="col-sm-6"><div class='input-group'>
+                                                                <span class="input-group-addon">
+                                                                    Rs.
+                                                                </span>
+                                                                <input type='text' class="form-control" />
+                                                            </div></div></div>
+
+                                                    <div class="hr-dashed"></div>
+                                                    <div class="row">
+                                                        <div class="col-sm-4"><label>Transport Cost</label></div>
+                                                        <div class="col-sm-6"><div class='input-group'>
+                                                                <span class="input-group-addon">
+                                                                    Rs.
+                                                                </span>
+                                                                <input type='text' class="form-control" />
+                                                            </div></div>
+                                                    </div>
+
+                                                    <div id="field1"><div class="hr-dashed"></div>
+                                                        <div class="row">
+                                                            <div class="col-sm-4"><input type="text" class="form-control" name="" /></div>
+                                                            <div class="col-sm-6"><div class='input-group'>
+                                                                    <span class="input-group-addon">
+                                                                        Rs.
+                                                                    </span>
+                                                                    <input type="text" class="form-control" />
+                                                                </div></div>
+                                                            <div class="col-sm-2"><button class="btn add-more cloneAdd" type="button">+</button></div>
+                                                        </div></div>
+
+                                                </div>
+                                            </div>
+                                            <div class="hr-dashed1 col-xs-12"></div>
+                                            <div class="col-xs-12">
+
+                                                <div class="col-sm-6"><img class="img-responsive" src="img/meter.png" alt=""/></div>
+                                                <div class="col-sm-6">
+                                                    <h4 class="page-title1">Markup Price</h4>
+                                                    <div class="form-group">
+                                                        <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" id="park" value="option1" name="Rate" checked="">
+                                                            <label for="park"> Percentage </label>  </div>
+                                                          <div class="radio radio-primary radio-inline">
+                                                            <input type="radio" id="own" value="option2" name="Rate">
+                                                            <label for="own"> Absolute </label> </div>
+                                                        </div>
+                                                    <div class="form-group  col-sm-6">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    %
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div> </div>
+                                                        <div class="form-group  col-sm-6">
+                                                        <div class="input-group">
+                                                                <span class="input-group-addon">
+                                                                    Rs.
+                                                                </span>
+                                                                <input type="text" class="form-control">
+                                                            </div></div>
+                                                    <div class="form-group"><label>Sale Price</label><input type="text" class="form-control"/></div>
+                                                    <div class="form-group pull-right"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
+                                                </div>
+                                            </div> </div>
+
+                                    </div>
+
+                                </div>
+                           <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading-waranty">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#waranty" aria-expanded="true" aria-controls="collapseOne">
+                                                Certification, Inspection & Warranty<span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="waranty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <h4 class="page-title1">Certification Report</h4>
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Inspection Agency</label>
+                                                    <select class="form-control">
+                                                        <option value="">Inspection Agency</option>
+                                                        <option value="1">Self</option>
+                                                        <option value="2">TrustMark</option>
+                                                        <option value="3">Others</option>
+                                                        
+                                                    </select>
+                                                </div>     </div>      
+                                            <div class="col-sm-6">
+                                                 <div class="form-group field-wrapper1 input-group date" id='datetimepicker5'>
+                                                    <label>Inspection Date</label>
+                                               <input type='text' class="form-control" placeholder="Inspection Date" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </span>
+                                                            </div>
+                                                </div>   
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Certificate Id</label>
+                                                    <input type="text" class="form-control" placeholder="Certificate Id">
+                                                </div>     </div>   
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Certificate Url</label>
+                                                    <input type="text" class="form-control" placeholder="Certificate Url">
+                                                </div>     </div> 
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-2">
+                                                    <label>Certificate Report</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                             </div>
+                                            <h4 class="page-title1">Service Warranty Report</h4>
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Service Agency</label>
+                                                    <select class="form-control">
+                                                        <option value="">Service Agency</option>
+                                                        <option value="1">Self</option>
+                                                        <option value="2">Others</option>
+                                                        
+                                                    </select>
+                                                </div>     </div>      
+                                            <div class="col-sm-6">
+                                                 <div class="form-group field-wrapper1 input-group date" id='datetimepicker5'>
+                                                    <label>Last Service Date</label>
+                                               <input type='text' class="form-control" placeholder="Inspection Date" />
+                                                                <span class="input-group-addon">
+                                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                                </span>
+                                                            </div>
+                                                </div>   
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Certificate Id</label>
+                                                    <input type="text" class="form-control" placeholder="Certificate Id">
+                                                </div>     </div>   
+                                            <div class="col-sm-6">	
+                                                <div class="form-group field-wrapper1">
+                                                    <label>Certificate Url</label>
+                                                    <input type="text" class="form-control" placeholder="Certificate Url">
+                                                </div>     </div> 
+                                            <div class="col-sm-12 document">
+                                                <div class="col-sm-2">
+                                                    <label>Certificate Report</label>
+                                                </div>
+                                                <div class="col-sm-6"><input type="file" class="BSbtninfo"/></div>
+                                             </div>
+                                            
+                                            <div class="col-sm-6">
+                                                <div class="form-group pull-right"><a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
+                                            </div>									
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Engine & Specification <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Transmission</label>
+                                                <input type="text" class="form-control" placeholder="Transmission">
+                                            </div>     </div>      
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Engine Displacement</label>
+                                                <input type="text" class="form-control" placeholder="Engine Displacement">
+                                            </div>     </div>   
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Vin</label>
+                                                <input type="text" class="form-control" placeholder="Vin">
+                                            </div>     </div>   
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Seating Capacity</label>
+                                                <select class="form-control">
+                                                    <option value="">Seating Capacity</option>
+                                                    <option value="1">8</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">9</option>
+                                                    <option value="4">6</option>
+                                                    <option value="5">4</option>
+                                                </select>
+                                            </div>     </div> 
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Peak Power</label>
+                                                <input type="text" class="form-control" placeholder="Peak Power">
+                                            </div>     </div>  
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Peak Torque</label>
+                                                <input type="text" class="form-control" placeholder="Peak Torque">
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Steering Adjustment</label>
+                                                <input type="text" class="form-control" placeholder="Steering Adjustment">
+                                            </div>     </div> 
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Body Type</label>
+                                                <select class="form-control">
+                                                    <option value="">Body Type</option>
+                                                    <option value="1">Sedan</option>
+                                                    <option value="2">Hatchback</option>
+                                                    <option value="3">Suv</option>
+                                                    <option value=4>Coupe</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Air Conditioner</label>
+                                                <select class="form-control">
+                                                    <option value="">Air Conditioner</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>   
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Central Locking</label>
+                                                <select class="form-control">
+                                                    <option value="">Central Locking</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>CD Player</label>
+                                                <select class="form-control">
+                                                    <option value="">CD Player</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>  
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Power Steering</label>
+                                                <select class="form-control">
+                                                    <option value="">Power Steering</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Power Windows</label>
+                                                <select class="form-control">
+                                                    <option value="">Power Windows</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Steering Controls</label>
+                                                <select class="form-control">
+                                                    <option value="">Steering Controls</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Rear AC Vent</label>
+                                                <select class="form-control">
+                                                    <option value="">Rear AC Vent</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Rear Wiper</label>
+                                                <select class="form-control">
+                                                    <option value="">Rear Wiper</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Leather Seats</label>
+                                                <select class="form-control">
+                                                    <option value="">Leather Seats</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Electrical mirror</label>
+                                                <select class="form-control">
+                                                    <option value="">Electrical mirror</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">	
+                                            <div class="form-group field-wrapper1">
+                                                <label>Air bag</label>
+                                                <select class="form-control">
+                                                    <option value="">Air bag</option>
+                                                    <option value="1">Yes</option>
+                                                    <option value="2">No</option>
+                                                </select>
+                                            </div>     </div>
+                                        <div class="col-sm-3">
+                                            <div class="form-group pull-left"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>								
+
+                                            <div class="form-group pull-right"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><button class="btn btn-primary" type="submit">Skip</button></a> </div></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingSix">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Online Portals <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                    <div class="panel-body">
+                                        <div class="container"><h2 class="tab-title">Dealer Plus</h2>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="deal1" value="option1" name="Dealer" checked="">
+                                                        <label for="deal1"> Listing </label>
+                                                    </div>
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="deal2" value="option2" name="Dealer">
+                                                        <label for="deal2"> Auction </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-sm-12 add-auction">
+                                                    <div class="col-sm-3"><input type="text" class="form-control" Placeholder="Min Price" /></div>
+                                                    <div class="col-sm-3"><div class='input-group date' id='datetimepicker6'>
+                                                            <input type="text" class="form-control" Placeholder="Startdate" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div></div>
+                                                    <div class="col-sm-3">
+                                                        <div class='input-group date' id='datetimepicker7'>
+                                                            <input type="text" class="form-control" Placeholder="End Date" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4"><div class="checkbox checkbox-primary">
+                                                            <input id="Auction" class="onlinep" type="checkbox">
+                                                            <label for="Auction" class="onlinepcheck">
+                                                                Send Invitation
+                                                            </label>
+                                                        </div></div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="container"><h2 class="tab-title">Listings</h2>
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-3"><div class="checkbox checkbox-primary">
+                                                        <input id="checkbox1" class="onlinep" type="checkbox">
+                                                        <label for="checkbox1" class="onlinepcheck">
+                                                            OLX
+                                                        </label>
+                                                    </div></div>
+                                                <div class="col-sm-6 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 45%"></div>
+                                                    </div></div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-3"><div class="checkbox checkbox-primary">
+                                                        <input id="checkbox2" class="onlinep" type="checkbox">
+                                                        <label for="checkbox2" class="onlinepcheck">
+                                                            Car Wale
+                                                        </label>
+                                                    </div></div>
+                                                <div class="col-sm-6 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 25%"></div>
+                                                    </div></div></div>
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-3"><div class="checkbox checkbox-primary">
+                                                        <input id="checkbox3" class="onlinep" type="checkbox">
+                                                        <label for="checkbox3" class="onlinepcheck">
+                                                            Car Dekho
+                                                        </label>
+                                                    </div></div>
+                                                <div class="col-sm-6 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 75%"></div>
+                                                    </div></div></div>
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-3"><div class="checkbox checkbox-primary">
+                                                        <input id="checkbox4" type="checkbox" class="onlinep">
+                                                        <label for="checkbox4" class="onlinepcheck">
+                                                            Quickr
+                                                        </label>
+                                                    </div></div>
+                                                <div class="col-sm-6 prog-onile"><div class="progress progress-striped active">
+                                                        <div class="progress-bar" style="width: 60%"></div>
+                                                    </div></div></div>
+
+                                        </div>
+                                        <div class="container"><h2 class="tab-title">Other Auction</h2>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="Auct1" value="option1" name="Auction" checked="">
+                                                        <label for="Auct1"> Chola e-Auction </label>
+                                                    </div>
+                                                    <div class="radio radio-primary radio-inline">
+                                                        <input type="radio" id="Auct2" value="option2" name="Auction">
+                                                        <label for="Auct2">Edigg </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-sm-12 add-auction1">
+                                                    <div class="col-sm-3"><input type="text" class="form-control" Placeholder="Min Price" /></div>
+                                                    <div class="col-sm-3"><div class='input-group date' id='datetimepicker6'>
+                                                            <input type="text" class="form-control" Placeholder="Startdate" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div></div>
+                                                    <div class="col-sm-3">
+                                                        <div class='input-group date' id='datetimepicker7'>
+                                                            <input type="text" class="form-control" Placeholder="End Date" />
+                                                            <span class="input-group-addon">
+                                                                <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4"><div class="checkbox checkbox-primary">
+                                                            <input id="Auction" class="onlinep" type="checkbox">
+                                                            <label for="Auction" class="onlinepcheck">
+                                                                Send Invitation
+                                                            </label>
+                                                        </div></div>
+                                                </div>
+
+                                            </div></div>
+                                    </div>
+                                    <div class="col-sm-12 button-online">
+                                        <div class="form-group pull-right"><a role="button"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
+                                        <div class="form-group pull-right"><a role="button"><button class="btn btn-primary" type="submit">Save & Post</button></a> </div>
+                                    </div>
+
+                                </div></div></div>
+                    </div></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row dash-footer">
+                <div class="clearfix pt pb">
+                    <div class="col-md-12">
+                        <em>Designed by <a href="#">Falconnect</a></em>
+                    </div>
+                </div>
+            </div></div>
+        <!-- Loading Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap.min.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/fileinput.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/label-slide.js" type="text/javascript"></script>
+        <script src="js/custom-file-input.js" type="text/javascript"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/addelement.js"></script>
+        <script src="js/upload.js"></script>
+        <script src="js/dealerplus.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('.date').datetimepicker();
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#park").click(function () {
+                    $(".own-div").hide().slow;
+                    $(".park-div").show().slow;
+                });
+                $("#own").click(function () {
+                    $(".own-div").show().slow;
+                    $(".park-div").hide().slow;
+                });
+            });
+            $("#deal2").click(function () {
+                $(".add-auction").slideDown();
+            });
+            $("#deal1").click(function () {
+                $(".add-auction").slideUp();
+            });
+
+        </script>
+        <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="js/dropzone.js" type="text/javascript"></script>
+        <script>
+
+            $(document).ready(function () {
+                $(".onlinep").click(function () {
+                    $(this).parent().parent().parent().children(".prog-onile").children(".progress").toggle(this.checked);
+                });
+            });
+            $('.BSbtninfo').filestyle({
+
+                buttonName: 'btn-info',
+
+                buttonText: ' Select a File'
+
+            });
+            $(".BSbtninfo").click(function () {
+                $(this).parent().parent().children(".prog-onile").children(".progress").show(2000);
+            });
+        </script>
+    </body>
+
+</html>
