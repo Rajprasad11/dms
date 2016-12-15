@@ -509,6 +509,10 @@
                 $(this).parent().parent().parent().parent().parent().parent().children(".all-list").children(".list-detail").children(".sale").children(".list-offer").html("Bid Posted");
                 $(this).parent().parent().parent().parent().parent().removeClass("all-list-bid");
             });
+            $(".dropdown-toggle").click(function(){
+               $(this).parent(".dropdown").ToggleClass("open");
+//               $(this).children(".dropdown-menu").slideToggle();
+            });
         </script>
     </body>
 
