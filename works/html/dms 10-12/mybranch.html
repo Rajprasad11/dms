@@ -36,12 +36,120 @@
     </head>
 
     <body>
-        <div class="brand clearfix">
-            <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
-            <span class="menu-btn"><i class="fa fa-bars"></i></span>
-            <ul class="ts-profile-nav">
-                <li class="top-search hidden-xs hidden-sm"><div class="input-group-btn search-panel">
-                        <select class="btn btn-primary">
+        
+        
+       <div class="brand container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-8"><a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
+                <span class="menu-btn"><i class="fa fa-bars"></i></span>
+                <span class="searching-click hidden-sm hidden-md hidden-lg"><a href="#" class="search-click"><i class="fa fa-search"></i></a></span>
+                <div class="col-sm-9 col-xs-9"><ul class="ts-profile-nav row">
+                        
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="inventory.html">Sell</a></li>
+                        <li class="active"><a href="myprofile.html">Manage</a></li>
+                        <li><a href="#">Communications</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+
+                        <li class="ts-account">
+                            <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Hi Jeeva <i class="fa fa-angle-down hidden-side"></i></a>
+                            <ul>
+                                <li><a href="myaccount.html">My Account</a></li>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+
+                        </li>
+                    </ul></div>
+            </div>
+            
+        </div>
+        <div class="ts-main-content">
+            <nav class="ts-sidebar">
+                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a class="sub-active" href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-list"></i> My Leads</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
+                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
+                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
+                </ul>
+                <!-- Account from above -->
+                <ul class="ts-profile-nav ts-sidebar-menu">
+                    
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search.html">Search</a></li>
+                                    <li><a href="saved.html">Saved Cars</a></li>
+                                    <li><a class="test"  href="myquery.html">My Queries</a></li>
+                                    <li><a href="bids.html">Bids Posted</a></li>
+                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="inventory.html">My Inventory</a></li>
+                                    <li><a href="myposting.html">My Postings</a></li>
+                                    <li><a class="test" href="myauction.html">My Auctions</a></li>
+                                    <li><a href="queries.html">Queries Received</a></li>
+                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myprofile.html">My Profile</a></li>
+                                    <li><a href="mybranch.html">My Branches</a></li>
+                                    <li><a href="myleads.html">My Leads</a></li>
+                                    <li><a class="test" href="mycustomer.html">My Customer</a></li>
+                                    <li><a href="Mycontact.html">My Contacts</a></li>
+                                    <li><a href="myuser.html">My Users</a></li>
+                                    <li><a href="subscription.html">Subscriptions</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Groups</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a class="test" href="#">Promotions</a></li>
+                                    <li><a href="#">Notifications</a></li>
+                                    <li><a href="#">Messages</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="#">Inventory</a></li>
+                                    <li><a class="test" href="#">Expenses</a></li>
+                                    <li><a href="#">Profit & Loss</a></li>
+                                    <li><a href="#">User Reports</a></li>
+
+                                </ul>
+                            </li>
+                    <li class="ts-account"><a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="#">Edit Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                    <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                </ul>
+</nav>
+            <div class="content-wrapper myprofile">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="content-header col-xs-12">
+                            <div class="row top-search" id="search-slide">
+                    <div class="input-group-btn search-panel">
+                        <select class="col-xs-12 col-sm-12 btn btn-primary">
                             <option value="">Filter</option>
                             <option value="1">Inventory</option>
                             <option value="2">Customer</option>
@@ -53,183 +161,7 @@
                     <input type="text" class="form-control" name="x" placeholder="Search term...">
                     <span class="input-group-btn">
                         <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                    </span></li>
-                <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
-                <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
-                <li class="ts-account">
-                    <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
-                    <ul>
-                        <li><a href="myaccount.html">My Account</a></li>
-                        <li><a href="#">Edit Account</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-
-                </li>
-            </ul>
-
-        </div>
-        <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="myNavbar1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li><a href="buy.html">Buy</a></li>
-                            <li><a href="inventory.html">Sell</a></li>
-                            <li class="active"><a href="myprofile.html">Manage</a></li>
-                            <li><a href="myaccount.html">Communications</a></li>
-                            <li><a href="detail-list.html">Reports</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav></div>
-        <div class="brand1 clearfix hidden-md hidden-lg"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle mobile-view" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Main Menu</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="search.html">Search</a></li>
-                                    <li><a href="save.html">Saved Cars</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test"  href="myquery.html">My Queries <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="bids.html">Bids Posted</a></li>
-                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="inventory.html">My Inventory</a></li>
-                                    <li><a href="myposting.html">My Postings</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="myauction.html">My Auctions <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="queries.html">Queries Received</a></li>
-                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="myprofile.html">My Profile</a></li>
-                                    <li><a class="sub-active" href="mybranch.html">My Branches</a></li>
-                                    <li><a href="myleads.html">My Leads</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="mycustomer.html">My Customer <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="Mycontact.html">My Contacts</a></li>
-                                    <li><a href="myuser.html">My Users</a></li>
-                                    <li><a href="subscription.html">Subscriptions</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">My Groups</a></li>
-                                    <li><a href="#">Marketing</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Promotions<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>--></li>
-                                    <li><a href="#">Notifications</a></li>
-                                    <li><a href="#">Messages</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Sales</a></li>
-                                    <li><a href="#">Inventory</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Expenses<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">dropdown</a></li>
-                                          <li><a href="#">dropdown</a></li>
-                                          </ul>--></li>
-                                    <li><a href="#">Profit & Loss</a></li>
-                                    <li><a href="#">User Reports</a></li>
-
-                                </ul>
-                            </li></ul>
-                    </div>
-                </div>
-            </nav></div>
-        <div class="ts-main-content">
-            <nav class="ts-sidebar">
-                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
-                    <!--<li class="ts-label">Search</li>
-                    <li>
-                            <input type="text" class="ts-sidebar-search" placeholder="Search here...">
-                    </li>-->
-                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
-                    <li><a class="sub-active" href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
-                    <li><a href="myleads.html"><i class="fa fa-list"></i> My Leads</a>
-                        <!--<ul>
-                                <li><a href="managelisting.html">Menu1</a></li>
-                                <li><a href="listing.html">Menu2</a></li>
-                                </ul>-->
-                    </li>
-                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
-                    <li><a href="mycontact.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
-                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
-                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
-                </ul>
-                <!-- Account from above -->
-                <ul class="ts-profile-nav ts-sidebar-menu">
-
-                    <li class="ts-account">
-                        <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
-                    <li><a href="myaccount.html">My Account</a></li>
-                    <li><a href="#">Edit Account</a></li>
-                    <li><a href="#">Logout</a></li>
-                    <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
-                    <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
-                </ul>
-
-
-            </nav>
-            <div class="content-wrapper myprofile">
-                <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="content-header col-xs-12">
-                            <div class="input-group mb searching col-sm-6 hidden-md hidden-lg">
-                                <div class="input-group-btn search-panel">
-                                    <select class="btn btn-primary">
-                                        <option value="">Filter</option>
-                                        <option value="1">Inventory</option>
-                                        <option value="2">Custom</option>
-                                        <option value="3">Dealers</option>
-                                        <option value="4">Cars</option></select>
-                                </div>
-                                <input type="hidden" name="search_param" value="all" id="search_param">         
-                                <input type="text" class="form-control" name="x" placeholder="Search term...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div>
+                    </span></div>
                             <ol class="breadcrumb">
                                 <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
                                 <li class="active">My Branches</li>
@@ -326,9 +258,22 @@
         <script src="js/dataTables.bootstrap.min.js"></script>
         <script src="js/label-slide.js" type="text/javascript"></script>
         <script src="js/fileinput.js"></script>
+        <script> $(document).ready(function () {
+                          $("#search-slide").slideUp(0);
+            });</script>
         <script src="js/main.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/dealerplus.js" type="text/javascript"></script>
+        <script>
+           $(".search-click").click(function () {
+               $("#search-slide").slideToggle();
+            });
+            $(".dropdown-toggle").click(function(){
+               $(this).parent(".dropdown").ToggleClass("open");
+//               $(this).children(".dropdown-menu").slideToggle();
+            });
+            
+        </script>
     </body>
 
 </html>

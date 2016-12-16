@@ -702,18 +702,15 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap.min.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script src="js/fileinput.js"></script>
-        <script src="js/chartData.js"></script>
-        <script src="js/main.js"></script>
+       <script src="js/fileinput.js"></script>
+       <script> $(document).ready(function () {
+                          $("#search-slide").slideUp(0);
+            });</script>
         <script src="js/endless.js"></script>
         <script src="js/menu.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#search-slide").slideUp(0);
-            });
-
-            $(".search-click").click(function () {
+        <script src="js/main.js"></script>
+       <script>
+           $(".search-click").click(function () {
                $("#search-slide").slideToggle();
             });
             $(".dropdown-toggle").click(function(){

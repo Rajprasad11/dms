@@ -2908,3 +2908,6 @@ h4.pro-title { font-size:24px; color:rgba(0, 4, 51, 0.96); text-transform:capita
 .bio-table td {text-align: left;font-size: 15px;}
 .bio-table>tbody>tr>td { border:0px solid;color: rgb(0, 4, 51); font-size:15px;}
 .responsiv-table { border:0px solid;}
+.count-tab{
+    color: #ee1b24;
+}
