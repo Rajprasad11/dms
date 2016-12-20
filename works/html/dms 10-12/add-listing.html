@@ -31,166 +31,104 @@
     </head>
 
     <body>
-        <div class="brand clearfix">
-            <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
-            <span class="menu-btn"><i class="fa fa-bars"></i></span>
-            <ul class="ts-profile-nav">
-                <li class="top-search hidden-xs hidden-sm"><div class="input-group-btn search-panel">
-                        <select class="btn btn-primary">
-                            <option value="">Filter</option>
-                            <option value="1">Inventory</option>
-                            <option value="2">Customer</option>
-                            <option value="3">Dealers</option>
-                            <option value="4">Cars</option>
-                        </select>
-                    </div>
-                    <input type="hidden" name="search_param" value="all" class="" id="search_param">         
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                    </span></li>
-                <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
-                <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
-                <li class="ts-account">
-                    <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
-                    <ul>
-                        <li><a href="myaccount.html">My Account</a></li>
-                        <li><a href="#">Edit Account</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
+       
+        
+        <div class="brand container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-8"><a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
+                <span class="menu-btn"><i class="fa fa-bars"></i></span>
+                <span class="searching-click hidden-sm hidden-md hidden-lg"><a href="#" class="search-click"><i class="fa fa-search"></i></a></span>
+                <div class="col-sm-9 col-xs-9"><ul class="ts-profile-nav row">
+                        
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li class="active"><a href="inventory.html">Sell</a></li>
+                        <li><a href="myprofile.html">Manage</a></li>
+                        <li><a href="#">Communications</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
 
-                </li>
-            </ul>
+                        <li class="ts-account">
+                            <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Hi Jeeva <i class="fa fa-angle-down hidden-side"></i></a>
+                            <ul>
+                                <li><a href="myaccount.html">My Account</a></li>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
 
+                        </li>
+                    </ul></div>
+            </div>
+            
         </div>
-        <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="myNavbar1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li><a href="buy.html">Buy</a></li>
-                            <li class="active"><a href="inventory.html">Sell</a></li>
-                            <li><a href="managelisting.html">Manage</a></li>
-                            <li><a href="myaccount.html">Communications</a></li>
-                            <li><a href="detail-list.html">Reports</a></li>
-                        </ul>
 
-                    </div>
-                </div>
-            </nav></div>
-        <div class="brand1 clearfix hidden-md hidden-lg"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle mobile-view" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Main Menu</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy<span class="caret"></span></a>
+        <div class="ts-main-content">
+            <nav class="ts-sidebar">
+                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <li><a class="sub-active" href="inventory.html"><i class="fa fa-sellsy"></i>My Inventory</a></li>
+                    <li><a href="myposting.html"><i class="fa fa-dropbox"></i> My Postings</a></li>
+                    <li><a href="myauction.html"><i class="fa fa-archive"></i> My Auction</a></li>
+                    <li><a href="queries.html"><i class="fa fa-question"></i>Queries Received</a></li>
+                    <li><a href="apply-loan.html"><i class="fa fa-ticket"></i> Apply Loan For Customers</a></li>
+
+                </ul>
+                <!-- Account from above -->
+                <ul class="ts-profile-nav ts-sidebar-menu">
+                    
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="search.html">Search</a></li>
-                                    <li><a href="save.html">Saved Cars</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test"  href="myquery.html">My Queries <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
+                                    <li><a href="saved.html">Saved Cars</a></li>
+                                    <li><a class="test"  href="myquery.html">My Queries</a></li>
                                     <li><a href="bids.html">Bids Posted</a></li>
                                     <li><a href="fund.html">Apply Inventory Funding</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell<span class="caret"></span></a>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="inventory.html">My Inventory</a></li>
                                     <li><a href="myposting.html">My Postings</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="myauction.html">My Auctions <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
+                                    <li><a class="test" href="myauction.html">My Auctions</a></li>
                                     <li><a href="queries.html">Queries Received</a></li>
                                     <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage <span class="caret"></span></a>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="myprofile.html">My Profile</a></li>
                                     <li><a href="mybranch.html">My Branches</a></li>
                                     <li><a href="myleads.html">My Leads</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="mycustomer.html">My Customer <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
+                                    <li><a class="test" href="mycustomer.html">My Customer</a></li>
                                     <li><a href="Mycontact.html">My Contacts</a></li>
                                     <li><a href="myuser.html">My Users</a></li>
                                     <li><a href="subscription.html">Subscriptions</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication <span class="caret"></span></a>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">My Groups</a></li>
                                     <li><a href="#">Marketing</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Promotions<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>--></li>
+                                    <li><a class="test" href="#">Promotions</a></li>
                                     <li><a href="#">Notifications</a></li>
                                     <li><a href="#">Messages</a></li>
 
                                 </ul>
                             </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports <span class="caret"></span></a>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Sales</a></li>
                                     <li><a href="#">Inventory</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Expenses<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">dropdown</a></li>
-                                          <li><a href="#">dropdown</a></li>
-                                          </ul>--></li>
+                                    <li><a class="test" href="#">Expenses</a></li>
                                     <li><a href="#">Profit & Loss</a></li>
                                     <li><a href="#">User Reports</a></li>
 
                                 </ul>
-                            </li></ul>
-                    </div>
-                </div>
-            </nav></div>
-
-        <div class="ts-main-content">
-            <nav class="ts-sidebar">
-                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
-                    <li><a href="inventory.html"><i class="fa fa-sellsy"></i>My Inventory</a></li>
-                    <li><a href="myposting.html"><i class="fa fa-dropbox"></i> My Postings</a>
-                        <!--<ul>
-                                <li><a href="managelisting.html">Manage Listing</a></li>
-                                <li><a href="listing.html">Buy Listing</a></li>
-                                </ul>-->
-                    </li>
-                    <li><a href="#"><i class="fa fa-archive"></i> My Auction</a></li>
-                    <li><a href="#"><i class="fa fa-question"></i>Queries Received</a></li>
-                    <li><a href="#"><i class="fa fa-ticket"></i> Apply Loan For Customers</a></li>
-                </ul>
-                <!-- Account from above -->
-                <ul class="ts-profile-nav ts-sidebar-menu">
-
-                    <li class="ts-account">
-                        <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
+                            </li>
+                    <li class="ts-account"><a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
                     <li><a href="myaccount.html">My Account</a></li>
                     <li><a href="#">Edit Account</a></li>
                     <li><a href="#">Logout</a></li>
@@ -324,7 +262,7 @@
                                                     <input type="text" class="form-control" placeholder="Location">
                                                 </div>     </div>      
                                             <div class="col-sm-6">
-                                                <div class="form-group pull-right"><a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"><button class="btn btn-primary" type="submit">Save changes</button></a> </div></div>									
+                                                <div class="form-group pull-right"><a href="#collapseTwo" class="btn btn-primary" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo">Save changes</a> </div></div>									
                                         </div>
                                     </div>
                                 </div>
@@ -343,117 +281,117 @@
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="1" id="uploadimage1" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg1" src="" class="img-responsive">
+                                                        <img id="myImg1" src="" class="img-responsive" alt="img1">
 							<label class="img-lab">Profile Pic</label>
                                                         </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="2" id="uploadimage2" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                         <img id="myImg2" src="" class="img-responsive">
+                                                         <img id="myImg2" src="" class="img-responsive" alt="img2">
 							<label class="img-lab">Front View (bumper, bonnet, fr-windshield,headlights, grill)</label>
                                                         </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="3" id="uploadimage3" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg3" src="" class="img-responsive">
+                                                        <img id="myImg3" src="" class="img-responsive" alt="img3">
 							<label class="img-lab">Front Windscreen</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="4" id="uploadimage4" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg4" src="" class="img-responsive">
+                                                        <img id="myImg4" src="" class="img-responsive" alt="img4">
 							<label class="img-lab">Front Underbody</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="5" id="uploadimage5" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg5" src="" class="img-responsive">
+                                                        <img id="myImg5" src="" class="img-responsive" alt="img5">
 							<label class="img-lab">Right Side (fender, doors, qtr panel)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="6" id="uploadimage6" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg6" src="" class="img-responsive">
+                                                        <img id="myImg6" src="" class="img-responsive" alt="img6">
 							<label class="img-lab">Right Quarter Panel</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="7" id="uploadimage7" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg7" src="" class="img-responsive">
+                                                        <img id="myImg7" src="" class="img-responsive" alt="img7">
 							<label class="img-lab">Front Right Side Interior View</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="8" id="uploadimage8" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg8" src="" class="img-responsive">
+                                                        <img id="myImg8" src="" class="img-responsive" alt="img8">
 							<label class="img-lab">Rear (bumper, dicky door, rr-windshield, tail lights)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="9" id="uploadimage9" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg9" src="" class="img-responsive">
+                                                        <img id="myImg9" src="" class="img-responsive" alt="img9">
 							<label class="img-lab">Left Side (fender, doors, qtr Panel)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="10" id="uploadimage10" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg10" src="" class="img-responsive">
+                                                        <img id="myImg10" src="" class="img-responsive" alt="img10">
 							<label class="img-lab">Left Quarter Panel</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="11" id="uploadimage11" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg11" src="" class="img-responsive">
+                                                        <img id="myImg11" src="" class="img-responsive" alt="img11">
 							<label class="img-lab">Engine Compartment</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="12" id="uploadimage12" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg12" src="" class="img-responsive">
+                                                        <img id="myImg12" src="" class="img-responsive" alt="img12">
 							<label class="img-lab">Dashboard ( from rear seat)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="13" id="uploadimage13" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg13" src="" class="img-responsive">
+                                                        <img id="myImg13" src="" class="img-responsive" alt="img13">
 							<label class="img-lab">Odometer Reading (with engine on from driver seat)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="14" id="uploadimage14" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg14" src="" class="img-responsive">
+                                                        <img id="myImg14" src="" class="img-responsive" alt="img14">
 							<label class="img-lab">ABC Pedals ( from driver seat)</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="15" id="uploadimage15" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg15" src="" class="img-responsive">
+                                                        <img id="myImg15" src="" class="img-responsive" alt="img15">
 							<label class="img-lab">Front Door Trim</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="16" id="uploadimage16" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                            <img id="myImg16" src="" class="img-responsive">
+                                                            <img id="myImg16" src="" class="img-responsive" alt="img16">
 							<label class="img-lab">Front Right Tyre</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="17" id="uploadimage17" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                            <img id="myImg17" src="" class="img-responsive">
+                                                            <img id="myImg17" src="" class="img-responsive" alt="img17">
 							<label class="img-lab">Rear Right Tyre</label>
                                                          		
                                                         
@@ -461,21 +399,21 @@
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="18" id="uploadimage18" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg18" src="" class="img-responsive">
+                                                        <img id="myImg18" src="" class="img-responsive" alt="img18">
 							<label class="img-lab">Boot / Dicky</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="19" id="uploadimage19" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg19" src="" class="img-responsive">
+                                                        <img id="myImg19" src="" class="img-responsive" alt="img19">
 							<label class="img-lab">Front Left Tyre</label>
                                                          							
                                                     </div>
                                                     <div class="col-sm-2 imge-add">
                                                         <input class="myclass" type="file" data-value="20" id="uploadimage20" />
                                                         <input class="inputfile inputfile-5" type="file" />
-                                                        <img id="myImg20" src="" class="img-responsive">
+                                                        <img id="myImg20" src="" class="img-responsive" alt="img20">
 							<label class="img-lab">Odometer Reading (with engine on from driver seat)</label>
                                                          							
                                                     </div>
@@ -1218,7 +1156,7 @@
                                 </div></div></div>
                     </div></div>
             </div>
-        </div>
+                </div></div>
         <div class="container-fluid">
             <div class="row dash-footer">
                 <div class="clearfix pt pb">
