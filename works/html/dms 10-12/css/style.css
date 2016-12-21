@@ -72,6 +72,7 @@ li, input, button, li >a , li > span
 .btn i {
     position: relative;
     top: -2px;
+    color:#fff;
 }
 .btn.text-left {
     text-align: left;
@@ -266,6 +267,7 @@ li, input, button, li >a , li > span
     margin-bottom: 18px;
 }
 .mb-0x {
+
     margin-bottom: 0 !important;
 }
 .mb-2x {
@@ -2912,78 +2914,50 @@ h4.pro-title { font-size:24px; color:rgba(0, 4, 51, 0.96); text-transform:capita
     color: #ee1b24;
 }
 
-
-
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+.content{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: #ddd;
+
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 10px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: auto;
+	outline: none;
 }
 
-button.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+#voiceBtn {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+  transform: scale(2.0, 2.0);
+  -webkit-transform: scale(2.0, 2.0);
+  -moz-transform: scale(2.0, 2.0);
+  border: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
-button.accordion.active:after {
-    content: "\2212";
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-
-.accordsec .panel {
-    /*padding: 0 18px;*/
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.6s ease-in-out;
-    opacity: 0;margin: 0;
-}
-
-.accordsec .panel.show {
-    opacity: 1;
-    max-height: 500px;  
-}
-
-.compare{background: #f8f8ff;padding: 15px;border-bottom: 1px solid #ccc;}
-.leftcompare{width: 40%;float: left;font-weight: bold;}
-.rightcompare{width: 60%;float: left;}
-.rightcomparethree div{width: 31%;float:left;margin: 1%;}
-.carcompareimg {width: 100%!important;height: 130px;position: relative;float: left;}
-.carcompareimg img{max-height: 100%;max-width: 100%;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto}
-.carcompareimage{position: relative;box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.33);padding: 10px;border: 1px solid #ccc;}
-.arrow{      position: absolute;
-             display: block;
-             width: 0;
-             height: 0;
-             border-color: transparent;
-             border-style: solid;
-             border-top-color: rgba(0,0,0,.25);
-             bottom: -22px;
-             left: 10%;
-             margin-left: -11px;
-             border-top-color: #999; 
-             border-bottom-width: 0;    border-width: 11px;}
-.arrow:after{    content: "";
-                 border-width: 10px;bottom: 1px;
-                 margin-left: -10px;
-                 border-color: transparent;
-                 border-style: solid;
-                 border-top-color: #f8f8ff;
-                 border-bottom-width: 0;position: absolute;
-                 display: block;
-                 width: 0;
-                 height: 0;
+.group-profile
+{
+    font-size: 30px;
+    
 }
