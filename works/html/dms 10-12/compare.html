@@ -140,408 +140,1478 @@
                 </ul>
             </nav>
             <div class="content-wrapper myprofile">
-                <div class="container-fluid">
-                    <div class="content-header col-sm-12">
-                        <div class="row top-search" id="search-slide">
-                            <div class="input-group-btn search-panel">
-                                <select class="col-xs-12 col-sm-12 btn btn-primary">
-                                    <option value="">Filter</option>
-                                    <option value="1">Inventory</option>
-                                    <option value="2">Customer</option>
-                                    <option value="3">Dealers</option>
-                                    <option value="4">Cars</option>
-                                </select>
-                            </div>
-                            <input type="hidden" name="search_param" value="all" class="" id="search_param">         
-                            <input type="text" class="form-control" name="x" placeholder="Search term...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                            </span></div>
-                        <ol class="breadcrumb">
-                            <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
-                            <li class="active">Compare</li>
-                        </ol>
-                    </div>
-                    <div class="col-xs-12">
-                        <h2 class="page-title">Used Car Comparison</h2>
+                <div class="content-header col-sm-12">
+                    <div class="row top-search" id="search-slide">
+                        <div class="input-group-btn search-panel">
+                            <select class="col-xs-12 col-sm-12 btn btn-primary">
+                                <option value="">Filter</option>
+                                <option value="1">Inventory</option>
+                                <option value="2">Customer</option>
+                                <option value="3">Dealers</option>
+                                <option value="4">Cars</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                        <input type="text" class="form-control" name="x" placeholder="Search term...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span></div>
+                    <ol class="breadcrumb">
+                        <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                        <li class="active">Compare</li>
+                    </ol>
+                </div>
+                <div class="col-xs-12">
+                    <h2 class="page-title">Used Car Comparison</h2>
 
-                        <div class="row">
-                            <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="compare col-xs-12">
+                                <div class="leftcompare col-xs-3"></div>
+                                <div class="rightcomparethree rightcompare col-xs-9 text-center">
+                                    <div class="carcompareimage">
+                                        <div class="carcompareimg">
+                                            <img src="img/inventory-management1.png"/>
+                                        </div>
+                                        <b>Car Name</b>
+                                        <p>2.9 Lakhs</p>
+                                        <a href="" class="btn btn-primary btn-sm">Get Seller Details</a>
+                                        <span class="arrow"></span>
+                                    </div>
+                                    <div class="carcompareimage">
+                                        <div class="carcompareimg">
+                                            <img src="img/inventory-management1.png"/>
+                                        </div>
+                                        <b>Car Name</b>
+                                        <p>2.9 Lakhs</p>
+                                        <a href="" class="btn btn-primary btn-sm">Get Seller Details</a>
+                                        <span class="arrow"></span>
+                                    </div>
+                                    <div class="carcompareimage">
+                                        <div class="carcompareimg">
+                                            <img src="img/inventory-management1.png"/>
+                                        </div>
+                                        <b>Car Name</b>
+                                        <p>2.9 Lakhs</p>
+                                        <a href="" class="btn btn-primary btn-sm">Get Seller Details</a>
+                                        <span class="arrow"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">OVERVIEW</button>
+                            <div class="panel">
                                 <div class="compare col-xs-12">
-                                    <div class="leftcompare col-xs-3"></div>
-                                    <div class="rightcomparethree rightcompare col-xs-9">
-                                        <div class="carcompareimage">
-                                            <div class="carcompareimg">
-                                                <img src="img/inventory-management1.png"/>
-                                            </div>
-                                            <b>Car Name</b>
-                                            <p>2.9 Lakhs</p>
-                                            <a href="" class="btn btn-primary">Get Seller Details</a>
-                                            <span class="arrow"></span>
-                                        </div>
-                                        <div class="carcompareimage">
-                                            <div class="carcompareimg">
-                                                <img src="img/inventory-management1.png"/>
-                                            </div>
-                                            <b>Car Name</b>
-                                            <p>2.9 Lakhs</p>
-                                            <a href="" class="btn btn-primary">Get Seller Details</a>
-                                            <span class="arrow"></span>
-                                        </div>
-                                        <div class="carcompareimage">
-                                            <div class="carcompareimg">
-                                                <img src="img/inventory-management1.png"/>
-                                            </div>
-                                            <b>Car Name</b>
-                                            <p>2.9 Lakhs</p>
-                                            <a href="" class="btn btn-primary">Get Seller Details</a>
-                                            <span class="arrow"></span>
-                                        </div>
+                                    <div class="leftcompare">Picture</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div data-toggle="modal" data-target="#picture" style="cursor: pointer">1 (View Now)</div>
+                                        <div data-toggle="modal" data-target="#picture" style="cursor: pointer">5 (View Now)</div>
+                                        <div data-toggle="modal" data-target="#picture" style="cursor: pointer">8 (View Now)</div>                                                
+                                    </div>
+                                </div>
+
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Expected Price</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Ex-showroom Price(*New Car)</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Registration City</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Chennai</div>
+                                        <div>Chennai</div>
+                                        <div>Chennai</div>                                                
+                                    </div>
+                                </div>
+
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Model Year</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>2007</div>
+                                        <div>2007</div>
+                                        <div>2007</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No. of Owners</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">KMs Driven</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>43,617</div>
+                                        <div>43,617</div>
+                                        <div>43,617</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Fuel Type</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Petrol</div>
+                                        <div>Petrol</div>
+                                        <div>Petrol</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Mileage-City(*New Car)</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Mileage-Highway(*New Car)</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Transmission</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Manual</div>
+                                        <div>Manual</div>
+                                        <div>Manual</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Insurance</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Comprehensive</div>
+                                        <div>Comprehensive</div>
+                                        <div>Comprehensive</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Finance</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Yes <a href="">APPLY NOW</a></div>
+                                        <div>Yes <a href="">APPLY NOW</a></div>
+                                        <div>Yes <a href="">APPLY NOW</a></div>                                              
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 accordsec">
-                                <button class="accordion">OVERVIEW</button>
-                                <div class="panel">
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Picture</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div data-toggle="modal" data-target="#picture" style="cursor: pointer">picture 1</div>
-                                            <div data-toggle="modal" data-target="#picture" style="cursor: pointer">picture 2</div>
-                                            <div data-toggle="modal" data-target="#picture" style="cursor: pointer">picture 3</div>                                                
-                                        </div>
+                        </div>
+
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR SPECIFICATION</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Color</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Black</div>
+                                        <div>Black</div>
+                                        <div>Black</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Expected Price</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>2.9 Lakh</div>
-                                            <div>2.9 Lakh</div>
-                                            <div>2.9 Lakh</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Gear Box</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>5 speed</div>
+                                        <div>5 speed</div>
+                                        <div>5 speed</div>                                              
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Ex-showroom Price(*New Car)</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>2.9 Lakh</div>
-                                            <div>2.9 Lakh</div>
-                                            <div>2.9 Lakh</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Drive type</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>FWD</div>
+                                        <div>FWD</div>
+                                        <div>FWD</div>                                               
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Registration City</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Chennai</div>
-                                            <div>Chennai</div>
-                                            <div>Chennai</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Seating Capacity</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Color</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Black</div>
-                                            <div>Black</div>
-                                            <div>Black</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Steering type</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>Power</div>
+                                        <div>Power</div>
+                                        <div>Power</div>                                               
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Model Year</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>2007</div>
-                                            <div>2007</div>
-                                            <div>2007</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Turning Radius</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>5.1 m</div>
+                                        <div>5.1 m</div>
+                                        <div>5.1 m</div>                                               
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">No. of Owners</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>1</div>
-                                            <div>2</div>
-                                            <div>3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Top Speed</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>191.7 kmph</div>
+                                        <div>191.7 kmph</div>
+                                        <div>191.7 kmph</div>                                               
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">KMs Driven</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>43,617</div>
-                                            <div>43,617</div>
-                                            <div>43,617</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Acceleration</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>9.89 seconds</div>
+                                        <div>9.89 seconds</div>
+                                        <div>9.89 seconds</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Fuel Type</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Petrol</div>
-                                            <div>Petrol</div>
-                                            <div>Petrol</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Tyre type</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>195/60 R15 Tubeless,Radial</div>
+                                        <div>175/65 R14 Tubeless,Radial</div>
+                                        <div>175/65 R14 Tubeless,Radial</div>                                              
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Mileage-City(*New Car)</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>9.8 kmpl*</div>
-                                            <div>9.8 kmpl*</div>
-                                            <div>9.8 kmpl*</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No of doors</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Mileage-Highway(*New Car)</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>9.8 kmpl*</div>
-                                            <div>9.8 kmpl*</div>
-                                            <div>9.8 kmpl*</div>                                                
-                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">ENGINE</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Engine Type</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>In-Line Engine</div>
+                                        <div>FC Petrol Engine</div>
+                                        <div>FC Petrol Engine</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Transmission</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Manual</div>
-                                            <div>Manual</div>
-                                            <div>Manual</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Displacement</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1794</div>
+                                        <div>1794</div>
+                                        <div>1794</div>                                              
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Insurance</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Comprehensive</div>
-                                            <div>Comprehensive</div>
-                                            <div>Comprehensive</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Max Power</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>125@6,000 (PS@rpm)</div>                                             
+                                        <div>125@6,000 (PS@rpm)</div>                                             
+                                        <div>125@6,000 (PS@rpm)</div>                                             
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Finance</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>Yes APPLY NOW</div>
-                                            <div>Yes APPLY NOW</div>
-                                            <div>Yes APPLY NOW</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Max Torque</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>16.1@4,200 (kgm@rpm)</div>
+                                        <div>16.1@4,200 (kgm@rpm)</div>
+                                        <div>16.1@4,200 (kgm@rpm)</div>                                              
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No Of Cylinders</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Valves per Cylinder</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Valve configuration</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>DOHC</div>
+                                        <div>DOHC</div>
+                                        <div>DOHC</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Fuel Supply System</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>EFI (Electronic Fuel Injection)</div>
+                                        <div>PGM-FI (Programmed Fuel Injection)</div>
+                                        <div>MPFI</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Turbo Charger</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>No</div>
+                                        <div>No</div>
+                                        <div>No</div>                                              
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Super Charger</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>No</div>
+                                        <div>No</div>
+                                        <div>No</div>                                                
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-xs-12 accordsec">
-                                <button class="accordion">STANDARD FEATURES</button>
-                                <div class="panel">
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Air Conditioner</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR DIMENSIONS</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Length</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>                                               
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">CD Player</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Width</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">AntiLock Braking System</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Height</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Power Steering</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Wheel Base</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Power Windows</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Gross Weight</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>4,530 kg</div>
+                                        <div>4,530 kg</div>
+                                        <div>4,530 kg</div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Leather Seats</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>                                    
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR INTERIOR FEATURES</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Air Conditioner</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Central Locking</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable Steering</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
                                     </div>
-
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Leather Steering Wheel</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Heater</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Digital Clock</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 accordsec">
-                                <button class="accordion">ENGINE</button>
-                                <div class="panel">
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Engine Type</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR COMFORT</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power steering</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
                                     </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Engine Description</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Engine Displacement(cc)</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">No. of Cylinders</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Maximum Power</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Maximum Torque</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Valves Per Cylinder</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Valve Configuration</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Fuel Supply System</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Bore x Stroke</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Compression Ratio</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Turbo Charger</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="compare col-xs-12">
-                                        <div class="leftcompare">Super Charger</div>
-                                        <div class="rightcomparethree rightcompare">
-                                            <div>picture 1</div>
-                                            <div>picture 2</div>
-                                            <div>picture 3</div>                                                
-                                        </div>
-                                    </div>
-
                                 </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power windows front</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power windows rear</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Remote trunk opener</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Remote fuel lid opener</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Low fuel warning light</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear reading lamp</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat headrest</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat center arm rest</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Height adjustable front seat belts</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Cup holders front</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Cup holders rear</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear a/c vents</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Parking sensors</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR SAFETY</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Anti lock braking system</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                   
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Central locking</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Child safety lock</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Driver airbags</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Passenger airbag</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat belts</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Seat belt warning</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable seats</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Crash sensor</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Anti theft device</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Immobilizer</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR EXTERIOR</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable Head lights</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power adjustable exterior rear view mirror</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Electric folding rear view mirror</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rain sensing wipers</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window wiper</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Alloy wheels</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div>15 Inch</div>
+                                        <div>15 Inch</div>
+                                        <div>15 Inch</div> 
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Tinted glass</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Front fog lights</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window wiper</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window defogger</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR ENTERTAINMENT</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">CD Player</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Radio</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Audio</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Bluetooth</div>
+                                    <div class="rightcomparethree rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                   
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="compare col-xs-12">
+                                <div class="leftcompare col-xs-3"></div>
+                                <div class="rightcomparetwo rightcompare col-xs-9 text-center">
+                                    <div class="carcompareimage">
+                                        <div class="carcompareimg">
+                                            <img src="img/inventory-management1.png"/>
+                                        </div>
+                                        <b>Car Name</b>
+                                        <p>2.9 Lakhs</p>
+                                        <a href="" class="btn btn-primary btn-sm">Get Seller Details</a>
+                                        <span class="arrow"></span>
+                                    </div>
+                                    <div class="carcompareimage">
+                                        <div class="carcompareimg">
+                                            <img src="img/inventory-management1.png"/>
+                                        </div>
+                                        <b>Car Name</b>
+                                        <p>2.9 Lakhs</p>
+                                        <a href="" class="btn btn-primary btn-sm">Get Seller Details</a>
+                                        <span class="arrow"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">OVERVIEW</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Picture</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div data-toggle="modal" data-target="#picture" style="cursor: pointer">1 (View Now)</div>
+                                        <div data-toggle="modal" data-target="#picture" style="cursor: pointer">5 (View Now)</div>
+                                    </div>
+                                </div>
+
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Expected Price</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Ex-showroom Price(*New Car)</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>2.9 Lakh</div>
+                                        <div>2.9 Lakh</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Registration City</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Chennai</div>
+                                        <div>Chennai</div>
+                                    </div>
+                                </div>
+
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Model Year</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>2007</div>
+                                        <div>2007</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No. of Owners</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>2</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">KMs Driven</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>43,617</div>
+                                        <div>43,617</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Fuel Type</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Petrol</div>
+                                        <div>Petrol</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Mileage-City(*New Car)</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Mileage-Highway(*New Car)</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>9.8 kmpl*</div>
+                                        <div>9.8 kmpl*</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Transmission</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Manual</div>
+                                        <div>Manual</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Insurance</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Comprehensive</div>
+                                        <div>Comprehensive</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Finance</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Yes <a href="">APPLY NOW</a></div>
+                                        <div>Yes <a href="">APPLY NOW</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR SPECIFICATION</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Color</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Black</div>
+                                        <div>Black</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Gear Box</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>5 speed</div>
+                                        <div>5 speed</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Drive type</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>FWD</div>
+                                        <div>FWD</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Seating Capacity</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Steering type</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>Power</div>
+                                        <div>Power</div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Turning Radius</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>5.1 m</div>
+                                        <div>5.1 m</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Top Speed</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>191.7 kmph</div>
+                                        <div>191.7 kmph</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Acceleration</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>9.89 seconds</div>
+                                        <div>9.89 seconds</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Tyre type</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>195/60 R15 Tubeless,Radial</div>
+                                        <div>175/65 R14 Tubeless,Radial</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No of doors</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>1</div>
+                                        <div>2</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">ENGINE</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Engine Type</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>In-Line Engine</div>
+                                        <div>FC Petrol Engine</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Displacement</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>1794</div>
+                                        <div>1794</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Max Power</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>125@6,000 (PS@rpm)</div>                                             
+                                        <div>125@6,000 (PS@rpm)</div>                                             
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Max Torque</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>16.1@4,200 (kgm@rpm)</div>
+                                        <div>16.1@4,200 (kgm@rpm)</div>                                              
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">No Of Cylinders</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>1</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Valves per Cylinder</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>1</div>
+                                        <div>3</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Valve configuration</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>DOHC</div>
+                                        <div>DOHC</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Fuel Supply System</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>EFI (Electronic Fuel Injection)</div>
+                                        <div>MPFI</div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Turbo Charger</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>No</div>
+                                        <div>No</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Super Charger</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>No</div>
+                                        <div>No</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR DIMENSIONS</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Length</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Width</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Height</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Wheel Base</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>4,530 mm</div>
+                                        <div>4,530 mm</div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Gross Weight</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div>4,530 kg</div>
+                                        <div>4,530 kg</div>
+                                    </div>
+                                </div>                                    
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR INTERIOR FEATURES</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Air Conditioner</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable Steering</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Leather Steering Wheel</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Heater</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Digital Clock</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR COMFORT</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power steering</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power windows front</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power windows rear</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Remote trunk opener</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Remote fuel lid opener</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Low fuel warning light</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear reading lamp</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat headrest</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat center arm rest</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Height adjustable front seat belts</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Cup holders front</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Cup holders rear</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear a/c vents</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Parking sensors</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR SAFETY</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Anti lock braking system</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                   
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Central locking</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Child safety lock</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Driver airbags</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Passenger airbag</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear seat belts</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Seat belt warning</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable seats</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Crash sensor</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Anti theft device</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Immobilizer</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR EXTERIOR</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Adjustable Head lights</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Power adjustable exterior rear view mirror</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Electric folding rear view mirror</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>                                              
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rain sensing wipers</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window wiper</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Alloy wheels</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Tinted glass</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Front fog lights</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window wiper</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                               
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Rear window defogger</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 accordsec">
+                            <button class="accordion">CAR ENTERTAINMENT</button>
+                            <div class="panel">
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">CD Player</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Radio</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Audio</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-close" aria-hidden="true"></i></div>                                                  
+                                    </div>
+                                </div>
+                                <div class="compare col-xs-12">
+                                    <div class="leftcompare">Bluetooth</div>
+                                    <div class="rightcomparetwo rightcompare">
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>
+                                        <div><i class="fa fa-check" aria-hidden="true"></i></div>                                                
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <footer>
-                    <div class="container-fluid">
-                        <div class="row dash-footer">
+                <footer class="col-xs-12">
 
-                            <!--<div class="hr-dashed"></div>-->
-                            <div class="col-xs-12 col-lg-8 col-md-9 col-sm-9 park-diva">
-                                <div class="col-sm-3 col-xs-12">
-                                    <h5><b>Overview</b></h5>
-                                    <p><a href="about.html">About</a></p>
-                                    <p><a href="feedback.html">Feedback</a></p>
-                                    <p><a href="contactus.html">Contact Us</a></p>
-                                    <p><a href="faqs.html">FAQs</a></p>
-                                </div>
-                                <div class="col-sm-2 col-xs-12">
-                                    <h5><b>Service</b></h5>
-                                    <p><a href="advertise.html">Advertise</a></p>
-                                </div>
-                                <div class="col-sm-3 col-xs-12">
-                                    <h5><b>Others</b></h5>
-                                    <p><a href="privacy_policy.html">Privacy Policy</a></p>
-                                    <p><a href="terms_conditions.html">Terms And Conditions</a></p>
-                                </div>
-                                <div class="col-sm-4 col-xs-12">
-                                    <h5><b>Feel free to contact us</b></h5>
-                                    <p><a href=""><i class="fa fa-phone"></i> 987654321</a></p>
-                                    <p><a href="">Support@dealerplus.in</a></p>
+                    <div class="row dash-footer">
 
-                                </div>
+                        <!--<div class="hr-dashed"></div>-->
+                        <div class="col-xs-12 col-lg-8 col-md-9 col-sm-9 park-diva">
+                            <div class="col-sm-3 col-xs-12">
+                                <h5><b>Overview</b></h5>
+                                <p><a href="about.html">About</a></p>
+                                <p><a href="feedback.html">Feedback</a></p>
+                                <p><a href="contactus.html">Contact Us</a></p>
+                                <p><a href="faqs.html">FAQs</a></p>
                             </div>
-                            <div class="col-xs-12 col-lg-4 col-md-3 col-sm-3 downloadsec">
-                                <div class="col-xs-12">    
-                                    <h5><a href=""><i class="fa fa-download" aria-hidden="true"></i> Download Dealer Plus Mobile App</a></h5>
-                                </div>
-                                <div class="col-xs-12  footerlogo"><a href=""><img src="img/google_play2.png" class="img-responsive"/></a></div>
-                                <div class="col-xs-12  footerlogo"><a href=""><img src="img/app_store2.png" class="img-responsive"/></a></div>
+                            <div class="col-sm-2 col-xs-12">
+                                <h5><b>Service</b></h5>
+                                <p><a href="advertise.html">Advertise</a></p>
                             </div>
-                            <!--<div class="col-xs-12 hr-dashed"></div>-->
-                            <div class="col-xs-12 lastfooter">
-                                <div class="col-sm-8 col-xs-12"> <em>Copyright &copy; <a href="#"> 2016 Dealer Plus</a></em></div>
-                                <div class="col-sm-4 col-xs-12">  <ul class="social-network social-circle pull-right col-xs-12">
-                                        <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
-                                        <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                        <!--<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
-                                        <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    </ul></div>
+                            <div class="col-sm-3 col-xs-12">
+                                <h5><b>Others</b></h5>
+                                <p><a href="privacy_policy.html">Privacy Policy</a></p>
+                                <p><a href="terms_conditions.html">Terms And Conditions</a></p>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <h5><b>Feel free to contact us</b></h5>
+                                <p><a href=""><i class="fa fa-phone"></i> 987654321</a></p>
+                                <p><a href="">Support@dealerplus.in</a></p>
 
                             </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-3 col-sm-3 downloadsec">
+                            <div class="col-xs-12">    
+                                <h5><a href=""><i class="fa fa-download" aria-hidden="true"></i> Download Dealer Plus Mobile App</a></h5>
+                            </div>
+                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/google_play2.png" class="img-responsive"/></a></div>
+                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/app_store2.png" class="img-responsive"/></a></div>
+                        </div>
+                        <!--<div class="col-xs-12 hr-dashed"></div>-->
+                        <div class="col-xs-12 lastfooter">
+                            <div class="col-sm-8 col-xs-12"> <em>Copyright &copy; <a href="#"> 2016 Dealer Plus</a></em></div>
+                            <div class="col-sm-4 col-xs-12">  <ul class="social-network social-circle pull-right col-xs-12">
+                                    <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <!--<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul></div>
+
                         </div>
                     </div>
                 </footer>
@@ -644,8 +1714,6 @@
                     this.nextElementSibling.classList.toggle("show");
                 }
             }
-            //            var comparesec = $('.rightcompare').children.length;
-            //            alert(comparesec);
         </script>
     </body> 
 

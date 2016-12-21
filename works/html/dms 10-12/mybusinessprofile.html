@@ -112,6 +112,7 @@
                         </div>
 
                         <div class="col-xs-12">
+
                             <div class="profile-head row">
                                 <div class="col-md- col-sm-4 col-xs-12">
                                     <img src="img/ts-avatar.jpg" class="img-responsive" alt="Dealer Name"/>
@@ -154,94 +155,182 @@
 
                                 <!-- Tab panes -->
                                 <div class="tab-content col-xs-12">
-                                    <div class="tab-pane fade row card" id="profile">
+                                    <div class="tab-pane fade active in row card" id="profile">
                                         <div class="col-xs-12">
                                             <div class="row">
-                                                <div class="col-md-12">
+                                                <div class="col-xs-12">
                                                     <h4 class="pro-title">My Business Profile</h4>
                                                 </div><!--col-md-12 close-->
 
 
-                                                <div class="col-md-6">
+                                                <div class="col-sm-8 col-xs-12">
+                                                    <ul id="listing">
 
-                                                    <div class="table-responsive responsiv-table">
-                                                        <table class="table bio-table">
-                                                            <tbody>
-                                                                <tr>      
-                                                                    <td>Name</td>
-                                                                    <td>: Name</td> 
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Dealership Name</td>
-                                                                    <td>: Dealership Name</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Landline No</td>
-                                                                    <td>: 47467</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Fax No</td>
-                                                                    <td>: 327498237489</td>       
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Mobile No</td>
-                                                                    <td>: 345345345</td> 
-                                                                </tr>
+                                                        <li class="panel panel-primary alert">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-xs-12 col-sm-4"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li class="good-deal"><i data-toggle="tooltip" title="" data-original-title="Good deal" data-placement="left" class="fa fa-thumbs-o-up"></i></li>
+                                                                        <li><img src="img/online.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li>
+                                                                    </ul>
+                                                                    <ul class="detail-wishlist col-xs-2">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-12 email">
+                                                                    <h4 class="col-xs-12 col-sm-12 email-alert">Get Email alerts for new listing this search</h4>
+                                                                </div>
+                                                            </div>
 
-                                                            </tbody>
-                                                        </table>
-                                                    </div><!--table-responsive close-->
+                                                        </li>
+                                                        <li class="panel panel-primary alert bidding">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-xs-12 col-sm-4"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-xs-12 col-sm-8 list-detail list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span id="bid" class="list-offer">Auction, Make offer</span></p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li><img src="img/online1.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-auction.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+                                                                <div class="col-xs-12 email">
+                                                                    <h4 class="col-xs-12 col-sm-12 email-alert">Get Email alerts for new listing this search</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="all-list-bid" id="bid">
+                                                                <button type="button" class="close1"><i class="fa fa-remove"></i></button>
+                                                                <form><div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="mail" class="form-control">
+                                                                            <span class="input-group-btn"><button id="close-bid" onclick="myFunction()" type="button" class="btn btn-warning">Bid</button></span>
+                                                                        </div></div></form></div>
+
+                                                        </li>
+
+                                                        <li class="panel panel-primary alert bidding">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span id="list-offer" class="list-offer">Auction, Make offer</span></p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li class="good-deal"><i data-toggle="tooltip" title="" data-original-title="Good deal" data-placement="left" class="fa fa-thumbs-o-up"></i></li>
+                                                                        <li><img src="img/online1.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-auction.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="all-list-bid" id="bid">
+                                                                <button type="button" class="close1"><i class="fa fa-remove"></i></button>
+                                                                <form><div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="mail" class="form-control">
+                                                                            <span class="input-group-btn"><button id="close-bid" onclick="myFunction()" type="button" class="btn btn-warning">Bid</button></span>
+                                                                        </div></div></form></div>
+
+                                                        </li>
+                                                        <li class="panel panel-primary alert">
+
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4><p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale">Listing , <span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                                    <ul class="view-buttons pull-right"><li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+
                                                 </div><!--col-md-6 close-->
 
-                                                <div class="col-md-6">
-
-                                                    <div class="table-responsive responsiv-table">
-                                                        <table class="table bio-table">
+                                                <div class="col-sm-4 col-xs-12 card businesscon">
+                                                    <div class="col-xs-12">
+                                                        <h4>About Us</h4>
+                                                        <p>Our revolutionary DMS is here to make your job easier than ever with our ground-breaking technology and our high domain expertise. It has never been easier than now to add/manage your stock inventory and posting them on multiple platforms with just one click of a button. Our latest innovation in this field of used car market is bound to be extremely beneficial and time saving for you, while your time on advertising is cut down to nearly 95% also your sales numbers will drastically improve as we are partnered with almost all the major classified and marketplace platforms. With just one click your stock is displayed to millions of potentials buyers!</p>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7775.259104962695!2d80.25971612276848!3d12.995529463360684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfalconnect!5e0!3m2!1sen!2sin!4v1480317457160" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <div class="col-xs-12">
+                                                        <table class="table">
                                                             <tbody>
-                                                                <tr>  
-                                                                    <td>Email Id</td>
-                                                                    <td>: sample@gmail.com</td> 
-                                                                </tr>
                                                                 <tr>    
-                                                                    <td>Line of Business</td>
+                                                                    <td><b>Line of Business</b></td>
                                                                     <td>: Car Dealership/Broker</td>       
                                                                 </tr>
                                                                 <tr>    
-                                                                    <td>Dealership Type</td>
+                                                                    <td><b>Dealership Type</b></td>
                                                                     <td>: New Cars/Used Cars</td>       
                                                                 </tr>
                                                                 <tr>    
-                                                                    <td>Designation</td>
+                                                                    <td><b>Designation</b></td>
                                                                     <td>: </td>       
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Company status</td>
+                                                                    <td><b>Company status</b></td>
                                                                     <td>: Individual /Proprietor / Partnership / Private Ltd / Others</td> 
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Dealership Started</td>
+                                                                    <td><b>Dealership Started</b></td>
                                                                     <td>: Date</td> 
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Company Logo</td>
+                                                                    <td><b>Company Logo</b></td>
                                                                     <td>: Date</td> 
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Company Incorporation Documents</td>
+                                                                    <td><b>Company Incorporation Documents</b></td>
                                                                     <td>: Date</td> 
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>PAN Number</td>
+                                                                    <td><b>PAN Number</b></td>
                                                                     <td>: Date</td> 
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>Preferences</td>
+                                                                    <td><b>Preferences</b></td>
                                                                     <td>: Date</td> 
                                                                 </tr>
 
                                                             </tbody>
                                                         </table>
-                                                    </div><!--table-responsive close-->
+                                                    </div>
+
                                                 </div><!--col-md-6 close-->
 
                                             </div><!--row close-->
@@ -253,7 +342,7 @@
                                     </div><!--tab-pane close-->
 
 
-                                    <div class="tab-pane fade active in row card" id="change">
+                                    <div class="tab-pane fade  row card" id="change">
                                         <div class="col-xs-12 fom-main">
                                             <div class="col-xs-12">
                                                 <div class="row">
@@ -431,11 +520,11 @@
                                                             <div class="col-xs-12 col-sm-6 mt">
                                                                 <label> Upload Company Logo</label>
                                                                 <input type="file" class="BSbtninfo"/></div>
-                    
+
                                                             <div class="col-xs-12 col-sm-6 mt">
                                                                 <label> Upload Company Incorporation Documents</label>
                                                                 <input type="file" class="BSbtninfo"/></div>
-                                  
+
                                                             <!-- Button -->
                                                             <div class="form-group col-xs-10 mt">
                                                                 <div class="col-xs-6">
@@ -514,12 +603,12 @@
         <script src="js/label-slide.js" type="text/javascript"></script>
         <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
         <script>
-            //tab js//
-            $(document).ready(function (e) {
-                $("#flip").click(function () {
-                    $("#panel").slideToggle("5000");
-                });
-            });
+                                                                                //tab js//
+                                                                                $(document).ready(function (e) {
+                                                                                    $("#flip").click(function () {
+                                                                                        $("#panel").slideToggle("5000");
+                                                                                    });
+                                                                                });
 
         </script>
         <script>
