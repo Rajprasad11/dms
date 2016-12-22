@@ -1,171 +1,78 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="theme-color" content="#3e454c">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="theme-color" content="#3e454c">
+	
+	<title>DMS</title>
 
-        <title>DMS</title>
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Sandstone Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Datatables -->
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+	<!-- Bootstrap social button library -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+	<!-- Bootstrap select -->
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+	<!-- Bootstrap file input -->
+	<link rel="stylesheet" href="css/fileinput.min.css">
+	<!-- Awesome Bootstrap checkbox -->
+	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+	<!-- Admin Stye -->
+	<link rel="stylesheet" href="css/style.css">
 
-        <!-- Font awesome -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- Sandstone Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Bootstrap Datatables -->
-        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
-        <!-- Bootstrap social button library -->
-        <link rel="stylesheet" href="css/bootstrap-social.css">
-        <!-- Bootstrap select -->
-        <link rel="stylesheet" href="css/bootstrap-select.css">
-        <!-- Bootstrap file input -->
-        <link rel="stylesheet" href="css/fileinput.min.css">
-        <!-- Awesome Bootstrap checkbox -->
-        <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
-        <!-- Admin Stye -->
-        <link rel="stylesheet" href="css/style.css">
-
-        <!--[if lt IE 9]>
+	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    </head>
+</head>
 
-    <body>
-        <div class="brand clearfix">
-            <a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a>
-            <span class="menu-btn"><i class="fa fa-bars"></i></span>
-            <ul class="ts-profile-nav">
-                <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
-                <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
-                <li class="ts-account">
-                    <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
-                    <ul>
-                        <li><a href="myaccount.html">My Account</a></li>
-                        <li><a href="#">Edit Account</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
+<body>
+	
 
-                </li>
-            </ul>
+<div class="brand container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-8"><a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
+                <span class="menu-btn"><i class="fa fa-bars"></i></span>
+                <span class="searching-click hidden-sm hidden-md hidden-lg"><a href="#" class="search-click"><i class="fa fa-search"></i></a></span>
+                <div class="col-sm-9 col-xs-9"><ul class="ts-profile-nav row">
+                        
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="inventory.html">Sell</a></li>
+                        <li class="active"><a href="myprofile.html">Manage</a></li>
+                        <li><a href="group.html">Communications</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
 
+                        <li class="ts-account">
+                            <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Hi Jeeva <i class="fa fa-angle-down hidden-side"></i></a>
+                            <ul>
+                                <li><a href="myaccount.html">My Account</a></li>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+
+                        </li>
+                    </ul></div>
+            </div>
+            
         </div>
-        <div class="brand1 clearfix hidden-sm hidden-xs"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="myNavbar1">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Dashboard</a></li>
-                            <li><a href="buy.html">Buy</a></li>
-                            <li><a href="inventory.html">Sell</a></li>
-                            <li class="active"><a href="myprofile.html">Manage</a></li>
-                            <li><a href="myaccount.html">Communications</a></li>
-                            <li><a href="detail-list.html">Reports</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </nav></div>
-        <div class="brand1 clearfix hidden-md hidden-lg"><nav class="navbar navbar-inverse">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle mobile-view" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Main Menu</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="search.html">Search</a></li>
-                                    <li><a href="save.html">Saved Cars</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test"  href="myquery.html">My Queries <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="bids.html">Bids Posted</a></li>
-                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="inventory.html">My Inventory</a></li>
-                                    <li><a href="myposting.html">My Postings</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="myauction.html">My Auctions <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="queries.html">Queries Received</a></li>
-                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="myprofile.html">My Profile</a></li>
-                                    <li><a href="mybranch.html">My Branches</a></li>
-                                    <li><a href="myleads.html">My Leads</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="mycustomer.html">My Customer <span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>-->
-                                    </li>
-                                    <li><a href="Mycontact.html">My Contacts</a></li>
-                                    <li><a href="myuser.html">My Users</a></li>
-                                    <li><a href="subscription.html">Subscriptions</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">My Groups</a></li>
-                                    <li><a href="#">Marketing</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Promotions<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          <li><a href="#">2nd level dropdown</a></li>
-                                          </ul>--></li>
-                                    <li><a href="#">Notifications</a></li>
-                                    <li><a href="#">Messages</a></li>
-
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Sales</a></li>
-                                    <li><a href="#">Inventory</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="test" href="#">Expenses<span class="caret"></span></a>
-                                        <!--<ul class="dropdown-menu">
-                                          <li><a href="#">dropdown</a></li>
-                                          <li><a href="#">dropdown</a></li>
-                                          </ul>--></li>
-                                    <li><a href="#">Profit & Loss</a></li>
-                                    <li><a href="#">User Reports</a></li>
-
-                                </ul>
-                            </li></ul>
-                    </div>
-                </div>
-            </nav></div>
-        <div class="ts-main-content">
-            <nav class="ts-sidebar">
-                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
-                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+	<div class="ts-main-content">
+		<nav class="ts-sidebar">
+			<ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <li><a class="sub-active" href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a href="mybuss-profile.html"><i class="fa fa-user"></i> My Business Profile</a></li>
                     <li><a href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
                     <li><a href="mycustomer.html"><i class="fa fa-list"></i> My Leads</a></li>
                     <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
@@ -173,8 +80,61 @@
                     <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
                     <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
                 </ul>
-                <!-- Account from above -->
-                <ul class="ts-profile-nav ts-sidebar-menu">
+				<!-- Account from above -->
+				<ul class="ts-profile-nav ts-sidebar-menu">
+                    
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="search.html">Search</a></li>
+                                    <li><a href="saved.html">Saved Cars</a></li>
+                                    <li><a class="test"  href="myquery.html">My Queries</a></li>
+                                    <li><a href="bids.html">Bids Posted</a></li>
+                                    <li><a href="fund.html">Apply Inventory Funding</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="inventory.html">My Inventory</a></li>
+                                    <li><a href="myposting.html">My Postings</a></li>
+                                    <li><a class="test" href="myauction.html">My Auctions</a></li>
+                                    <li><a href="queries.html">Queries Received</a></li>
+                                    <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myprofile.html">My Profile</a></li>
+                                    <li><a href="mybranch.html">My Branches</a></li>
+                                    <li><a href="myleads.html">My Leads</a></li>
+                                    <li><a class="test" href="mycustomer.html">My Customer</a></li>
+                                    <li><a href="Mycontact.html">My Contacts</a></li>
+                                    <li><a href="myuser.html">My Users</a></li>
+                                    <li><a href="subscription.html">Subscriptions</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My Groups</a></li>
+                                    <li><a href="#">Marketing</a></li>
+                                    <li><a class="test" href="#">Promotions</a></li>
+                                    <li><a href="#">Notifications</a></li>
+                                    <li><a href="#">Messages</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="#">Inventory</a></li>
+                                    <li><a class="test" href="#">Expenses</a></li>
+                                    <li><a href="#">Profit & Loss</a></li>
+                                    <li><a href="#">User Reports</a></li>
+
+                                </ul>
+                            </li>
                     <li class="ts-account"><a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
                     <li><a href="myaccount.html">My Account</a></li>
                     <li><a href="#">Edit Account</a></li>
@@ -183,488 +143,146 @@
                     <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
                 </ul>
 
+			
+		</nav>
+		<div class="content-wrapper myprofile">
+			<div class="container-fluid">
 
-            </nav>
-            <div class="content-wrapper myprofile">
-                <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="content-header col-sm-12">
-                            <div class="input-group mb searching col-sm-6">
-                                <div class="input-group-btn search-panel">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                        <span id="search_concept">Filter by</span> <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="#contains">All Cars</a></li>
-                                        <li><a href="#its_equal">Bid cars</a></li>
-                                        <li><a href="#greather_than">List cars</a></li>
-                                        <li><a href="#less_than">Manage cars</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="#all">Anything</a></li>
-                                    </ul>
-                                </div>
-                                <input type="hidden" name="search_param" value="all" id="search_param">         
-                                <input type="text" class="form-control" name="x" placeholder="Search term...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                                </span>
-                            </div>
-                            <ol class="breadcrumb">
-                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
-                                <li class="active">My Business Profile</li>
-                            </ol>
-                        </div>
-                        <!--                        <div class="col-xs-12">
-                                                    <div class="col-sm-4 col-xs-12">
-                                                        <div class="addimage">
-                                                            <img src="img/ts-avatar.jpg"/> 
-                                                        </div>
-                                                        <div class="col-xs-12">
-                                                            <label>Name:</label>
-                                                            <p>JOHN DOE</p>
-                                                        </div>
-                                                        <div class="col-xs-12">
-                                                            <label>E-MAIL:</label>
-                                                            <p>PERSONAL@WEBSITE.COM</p>
-                                                        </div>
-                                                        <div class="col-xs-12">
-                                                            <label>PHONE NUMBER:</label>
-                                                            <p>+(555) 176 245 221</p>
-                                                        </div>
-                                                        <div class="col-xs-12">
-                                                            <label>WEBSITE:</label>
-                                                            <p>WWW.JOHNDOE.COM</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-8 col-xs-12"></div>
-                                                </div>-->
-                        <div class="col-xs-12">
-                            <div class="profile-head row">
-                                <div class="col-md- col-sm-4 col-xs-12">
-                                    <img src="img/ts-avatar.jpg" class="img-responsive" />
-                                    <h6>Name</h6>
-                                </div><!--col-md-4 col-sm-4 col-xs-12 close-->
-
-
-                                <div class="col-md-5 col-sm-5 col-xs-12">
-                                    <h5>Name</h5>
-                                    <p>Dealership Name</p>
-                                    <ul>
-                                        <li><span class="glyphicon glyphicon-phone-alt"></span> Landline No</li>
-                                        <li><span class="glyphicon glyphicon-print"></span> Fax No</li>
-                                        <li><span class="glyphicon glyphicon-phone"></span> Mobile No</li>
-                                        <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">sample@gmail.com</a></li>
-
-                                    </ul>
-
-
-                                </div><!--col-md-8 col-sm-8 col-xs-12 close-->
-
-
-
-
-                            </div><!--profile-head close-->
-                            <div id="sticky" class="col-xs-12">
-
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs nav-menu" role="tablist">
-                                    <li class="active">
-                                        <a href="#profile" role="tab" data-toggle="tab">
-                                            <i class="fa fa-male"></i> Profile
-                                        </a>
-                                    </li>
-                                    <li><a href="#change" role="tab" data-toggle="tab">
-                                            <i class="fa fa-key"></i> Edit Profile
-                                        </a>
-                                    </li>
-                                </ul><!--nav-tabs close-->
-
-                                <!-- Tab panes -->
-                                <div class="tab-content col-xs-12">
-                                    <div class="tab-pane fade active in row card" id="profile">
-                                        <div class="col-xs-12">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h4 class="pro-title">My Business Profile</h4>
-                                                </div><!--col-md-12 close-->
-
-
-                                                <div class="col-md-6">
-
-                                                    <div class="table-responsive responsiv-table">
-                                                        <table class="table bio-table">
-                                                            <tbody>
-                                                                <tr>      
-                                                                    <td>Name</td>
-                                                                    <td>: Name</td> 
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Dealership Name</td>
-                                                                    <td>: Dealership Name</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Landline No</td>
-                                                                    <td>: 47467</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Fax No</td>
-                                                                    <td>: 327498237489</td>       
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Mobile No</td>
-                                                                    <td>: 345345345</td> 
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div><!--table-responsive close-->
-                                                </div><!--col-md-6 close-->
-
-                                                <div class="col-md-6">
-
-                                                    <div class="table-responsive responsiv-table">
-                                                        <table class="table bio-table">
-                                                            <tbody>
-                                                                <tr>  
-                                                                    <td>Email Id</td>
-                                                                    <td>: sample@gmail.com</td> 
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Line of Business</td>
-                                                                    <td>: Car Dealership/Broker</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Dealership Type</td>
-                                                                    <td>: New Cars/Used Cars</td>       
-                                                                </tr>
-                                                                <tr>    
-                                                                    <td>Designation</td>
-                                                                    <td>: </td>       
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Company status</td>
-                                                                    <td>: Individual /Proprietor / Partnership / Private Ltd / Others</td> 
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Dealership Started</td>
-                                                                    <td>: Date</td> 
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Company Logo</td>
-                                                                    <td>: Date</td> 
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Company Incorporation Documents</td>
-                                                                    <td>: Date</td> 
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>PAN Number</td>
-                                                                    <td>: Date</td> 
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Preferences</td>
-                                                                    <td>: Date</td> 
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div><!--table-responsive close-->
-                                                </div><!--col-md-6 close-->
-
-                                            </div><!--row close-->
-
-
-
-
-                                        </div><!--container close-->
-                                    </div><!--tab-pane close-->
-
-
-                                    <div class="tab-pane fade row card" id="change">
-                                        <div class="col-xs-12 fom-main">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <h2 class="register">Edit Your Profile</h2>
-                                                </div><!--col-sm-12 close-->
-
-                                            </div><!--row close-->
-                                            <br />
-                                            <div class="row">
-
-                                                <form class="form-horizontal main_form text-left" action=" " method="post"  id="contact_form">
-                                                    <fieldset>
-
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Name</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label" >Dealership Name</label> 
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Text input-->
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Landline Number</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Fax Number</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Mobile Number</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Email Id</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-
-                                                        <div class="form-group col-md-12"> 
-                                                            <label class="col-md-10 control-label">Line Of Business</label>
-                                                            <div class="col-md-12 selectContainer">
-                                                                <div class="input-group">
-                                                                    <select name="state" class="form-control selectpicker" >
-                                                                        <option value=" " >Line Of Business</option>
-                                                                        <option>Car Dealership</option>
-                                                                        <option>Broker</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                        <!-- Select Basic -->
-
-                                                        <div class="form-group col-md-12"> 
-                                                            <label class="col-md-10 control-label">Dealership Type</label>
-                                                            <div class="col-md-12 selectContainer">
-                                                                <div class="input-group">
-                                                                    <select name="state" class="form-control selectpicker" >
-                                                                        <option value=" " >Dealership Type</option>
-                                                                        <option>New Cars</option>
-                                                                        <option>Used Cars</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Designation</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group col-md-12"> 
-                                                            <label class="col-md-10 control-label">Company Status</label>
-                                                            <div class="col-md-12 selectContainer">
-                                                                <div class="input-group">
-                                                                    <select name="state" class="form-control selectpicker" >
-                                                                        <option value=" " >Company Status</option>
-                                                                        <option>Individual</option>
-                                                                        <option>Proprietor</option>
-                                                                        <option>Partnership</option>
-                                                                        <option>Private Ltd</option>
-                                                                        <option>Others</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">Dealership Started</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">About Us</label>
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Text input-->
-
-                                                        <div class="form-group col-md-12">
-                                                            <label class="col-md-10 control-label">PAN Number</label>  
-                                                            <div class="col-md-12 inputGroupContainer">
-                                                                <div class="input-group">
-                                                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group col-md-12"> 
-                                                            <label class="col-md-10 control-label">Preferences</label>
-                                                            <div class="col-md-12 selectContainer">
-                                                                <div class="input-group">
-                                                                    <select name="state" class="form-control selectpicker" >
-                                                                        <option value=" " >Preferences</option>
-                                                                        <option>1 year</option>
-                                                                        <option>2 years</option>
-                                                                        <option >3 years</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-
-                                                        <!-- upload profile picture -->
-                                                        <div class="col-md-12 text-left">
-                                                            <div class="uplod-picture">
-                                                                <span class="btn btn-default uplod-file">
-                                                                    Upload Company Logo <input type="file" />
-                                                                </span>
-                                                                <span class="btn btn-default uplod-file">
-                                                                    Upload Company Incorporation Documents <input type="file" />
-                                                                </span>
-                                                            </div><!--uplod-picture close-->
-                                                        </div><!--col-md-12 close-->
-                                                        <!-- Button -->
-                                                        <div class="form-group col-md-10">
-                                                            <div class="col-md-6">
-                                                                <button type="submit" class="btn btn-warning submit-button" >Save</button>
-                                                                <button type="reset" class="btn btn-warning submit-button" >Cancel</button>
-
-                                                            </div>
-                                                        </div>
-                                                    </fieldset>
-                                                </form>
-                                            </div><!--row close-->
-                                        </div><!--container close -->          
-                                    </div><!--tab-pane close-->
-                                </div><!--tab-content close-->
-                            </div><!--container close-->
-                        </div>
+				<div class="row">
+				<div class="content-header col-sm-12">
+         <div class="row top-search" id="search-slide">
+                    <div class="input-group-btn search-panel">
+                        <select class="col-xs-12 col-sm-12 btn btn-primary">
+                            <option value="">Filter</option>
+                            <option value="1">Inventory</option>
+                            <option value="2">Customer</option>
+                            <option value="3">Dealers</option>
+                            <option value="4">Cars</option>
+                        </select>
                     </div>
-                </div>
-                <footer class="col-xs-12">
-                    <div class="row dash-footer">
-                        <!--<div class="hr-dashed"></div>-->
-                        <div class="col-xs-12 col-lg-8 col-md-9 col-sm-9 park-diva">
-                            <div class="col-sm-3 col-xs-12">
-                                <h5><b>Overview</b></h5>
-                                <p><a href="about.html">About</a></p>
-                                <p><a href="feedback.html">Feedback</a></p>
-                                <p><a href="contactus.html">Contact Us</a></p>
-                                <p><a href="faqs.html">FAQs</a></p>
-                            </div>
-                            <div class="col-sm-2 col-xs-12">
-                                <h5><b>Service</b></h5>
-                                <p><a href="advertise.html">Advertise</a></p>
-                            </div>
-                            <div class="col-sm-3 col-xs-12">
-                                <h5><b>Others</b></h5>
-                                <p><a href="privacy_policy.html">Privacy Policy</a></p>
-                                <p><a href="terms_conditions.html">Terms And Conditions</a></p>
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <h5><b>Feel free to contact us</b></h5>
-                                <p><a href=""><i class="fa fa-phone"></i> 987654321</a></p>
-                                <p><a href="">Support@dealerplus.in</a></p>
-
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-lg-4 col-md-3 col-sm-3 downloadsec">
-                            <div class="col-xs-12">    
-                                <h5><a href=""><i class="fa fa-download" aria-hidden="true"></i> Download Dealer Plus Mobile App</a></h5>
-                            </div>
-                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/google_play2.png" class="img-responsive"/></a></div>
-                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/app_store2.png" class="img-responsive"/></a></div>
-                        </div>
-                        <!--<div class="col-xs-12 hr-dashed"></div>-->
-                        <div class="col-xs-12 lastfooter">
-                            <div class="col-sm-8 col-xs-12"> <em>Copyright &copy; <a href="#"> 2016 Dealer Plus</a></em></div>
-                            <div class="col-sm-4 col-xs-12">  <ul class="social-network social-circle pull-right col-xs-12">
-                                    <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
-                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <!--<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
-                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                </ul></div>
-
-                        </div>
-
-                    </div>
-                </footer>   
-            </div>
-
+                    <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span></div>
+          <ol class="breadcrumb">
+            <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+            <li class="active">My Profile</li>
+          </ol>
         </div>
+					<div class="col-xs-12">
+					
+						<h2 class="page-title">My Profile</h2>
+					<div class="col-xs-8 col-xs-offset-2">
+						<div class="panel panel-primary">
+							<div class="panel-heading">Account Details</div>
+							<div class="panel-body">
+								<form method="get" class="form-horizontal">
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Name</label>
+										<div class="col-sm-10">
+											<input type="text" value="xxxx" class="form-control mb" disabled="">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Mail Id</label>
+										<div class="col-sm-10">
+											<input type="mail" value="example@mail.com" class="form-control mb" disabled="">
+										</div>
+									</div>
+									<div class="form-group">
+												<label class="col-sm-2 control-label">Password</label>
+												<div class="col-sm-10">
+													<input value="******" class="form-control" name="password" disabled="">
+												</div>
+											</div>
+									<div class="hr-dashed"></div>
+									<div class="form-group">
+												<label class="col-sm-2 control-label">Gender
+													<br>
+												</label>
+												<div class="col-sm-10">
+													<div class="checkbox checkbox-inline checkbox-info">
+														<input type="radio" id="inlineCheckbox1" value="Male" name="gender" checked disabled="">
+														<label for="inlineCheckbox1"><i class="fa fa-male"></i> Male </label>
+													</div>
+													</div>
+											</div>
+									
+									<div class="hr-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Contact Number</label>
 
-        <!-- Loading Scripts -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap-select.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.dataTables.min.js"></script>
-        <script src="js/dataTables.bootstrap.min.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script src="js/fileinput.js"></script>
-        <script src="js/chartData.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/menu.js"></script>
-        <script>
-            //tab js//
-            $(document).ready(function (e) {
-                $("#flip").click(function () {
-                    $("#panel").slideToggle("5000");
-                });
+										<div class="col-sm-10">
+											<div class="input-group mb"><span class="input-group-addon">+91</span>
+												<input type="tel" value="9876543210" class="form-control" disabled="">
+											</div>
+											
+										</div>
+									</div>
+									
+								<div class="hr-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Description</label>
+										<div class="col-sm-10">
+											<textarea class="form-control" rows="3" disabled="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</textarea>
+										</div>
+									</div>
+									<div class="hr-dashed"></div>
+<div class="form-group">
+<label class="col-sm-2 control-label">Photo</label>
+                <img src="img/ts-avatar.jpg" alt=""/>
+              </div>
+              <div class="hr-dashed"></div>
+									<div class="form-group">
+										<label class="col-sm-2 control-label">Select</label>
+										<div class="col-sm-10">
+											<select class="selectpicker" disabled="">
+												<optgroup label="Picnic">
+													<option>Mustard</option>
+													<option>Ketchup</option>
+													<option>Relish</option>
+												</optgroup>
+												<optgroup label="Camping">
+													<option>Tent</option>
+													<option>Flashlight</option>
+													<option>Toilet Paper</option>
+												</optgroup>
+											</select>
+</div>
+									</div>
+									<div class="hr-dashed"></div>
+									
+								</form>
 
-            });
-
-        </script>
-    </body>
+							</div>
+						</div>
+</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+<div class="container-fluid">
+<div class="row dash-footer">
+					<div class="clearfix pt pb">
+						<div class="col-md-12">
+							<em>Designed by <a href="#">Falconnect</a></em>
+						</div>
+					</div>
+				</div></div>
+	<!-- Loading Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+        <script src="js/dealerplus.js" type="text/javascript"></script>
+        
+	<script src="js/fileinput.js"></script>
+        
+	<script src="js/main.js"></script>
+        
+    <script src="js/menu.js"></script>
+</body>
 
 </html>

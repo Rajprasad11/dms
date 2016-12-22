@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+                $("#search-slide").slideUp(0);
+            });
 $(function () {
     $('.date').datetimepicker();
 });
@@ -38,3 +40,11 @@ $(document).on('click', '.editAdd', function ($this) {
     });
 });
 
+
+            $(".search-click").click(function () {
+               $("#search-slide").slideToggle();
+            });
+            $(".dropdown-toggle").click(function(){
+               $(this).parent(".dropdown").ToggleClass("open");
+//               $(this).children(".dropdown-menu").slideToggle();
+            });
