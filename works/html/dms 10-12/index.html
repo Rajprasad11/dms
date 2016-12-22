@@ -95,16 +95,16 @@
                     </span></div>
             </div>
         </div>
- <div class="ts-main-content dashbord-home">
+        <div class="ts-main-content dashbord-home">
             <nav class="ts-sidebar hidden-md hidden-lg">
 
                 <ul class="ts-profile-nav ts-sidebar-menu">
-<li class="active"><a href="index.html">Dashboard</a></li>
-                        <li><a href="buy.html">Buy</a></li>
-                        <li><a href="inventory.html">Sell</a></li>
-                        <li><a href="myprofile.html">Manage</a></li>
-                        <li><a href="#">Communications</a></li>
-                        <li><a href="#">Reports</a></li>
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li><a href="buy.html">Buy</a></li>
+                    <li><a href="inventory.html">Sell</a></li>
+                    <li><a href="myprofile.html">Manage</a></li>
+                    <li><a href="#">Communications</a></li>
+                    <li><a href="#">Reports</a></li>
                     <li class="ts-account">
                         <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
                     <li><a href="myaccount.html">My Account</a></li>
@@ -152,6 +152,7 @@
                                     </div>
                                 </div></div>
                             <div class="hr-dashed"></div>
+
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="row">
@@ -210,6 +211,79 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="row">
+                                <div class="col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading"><i class="fa fa-car text-success"></i> Inventory Summary</div>
+                                        <div class="panel-body">
+                                <div class="col-5">
+                                    <h3 class="text-center text-5x mt-2x">Total Inventory</h3>
+                                    <p class="text-danger text-4x text-center mt-2x">200</p>
+                                    <p class="text-center">New Post : <span class="text-success">20%</span></p>
+                                 <p class="text-center">New User : <span class="text-success">70%</span> </p>
+                                  <p class="text-center">New Bids : <span class="text-success">10%</span></p>
+                                </div>
+                                            
+                                    
+                                <div class="col-5">
+                                    <div class="chart chart-doughnut">
+                                                        <canvas id="chart-area3" />
+                                                        
+                                                    </div>
+                                    <p class="text-center text-primary text-3x"><i class="fa fa-picture-o"></i></p>
+<!--                                                    <ul class="chart-dot-list">
+                                                        <li class="a1">Photos</li>
+                                                         <li class="a3">Remain</li>
+                                                    </ul>-->
+<p class="text-1x text-center text-danger">20% With Photos</p>
+                                                </div>
+                                          
+                                    
+                                <div class="col-5">
+                                    <div class="chart chart-doughnut">
+                                                        <canvas id="chart-area6" />
+                                                    </div>
+                                    <p class="text-center text-primary text-3x"><i class="fa fa-video-camera"></i></p>
+                                    <p class="text-1x text-center text-danger">20% With Video</p>
+<!--                                               <ul class="chart-dot-list">
+                                                        <li class="a1">date 1</li>
+                                                        <li class="a2">data 2</li>
+                                                        <li class="a3">data 3</li>
+                                                    </ul>-->
+                                        </div>
+                                    
+                                <div class="col-5">
+                                    
+                                                    
+                                               
+                                                    <div class="chart chart-doughnut">
+                                                        <canvas id="chart-area5" />
+                                                    </div>
+                                     <p class="text-center text-primary text-3x"><i class="fa fa-money"></i></p>
+                                    <p class="text-1x text-center text-danger">20% With Pricing</p>
+<!--                                    <ul class="chart-dot-list">
+                                                        <li class="a1">date 1</li>
+                                                        <li class="a2">data 2</li>
+                                                        <li class="a3">data 3</li>
+                                                    </ul>-->
+                                                </div>
+                                            <div class="col-5">
+                                    <div class="chart chart-doughnut">
+                                                        <canvas id="chart-area4" />
+                                                    </div>
+                                    <ul class="chart-dot-list">
+                                                        <li class="a1">Drafts</li>
+                                                        <li class="a2">Ready for sale</li>
+                                                        <li class="a3">Posted</li>
+                                                    </ul>
+                                                </div>
+                                           
+                                    </div>
+                                    <div class="panel-footer"> <p class="pb-2x"><a href="#" class="btn btn-primary pull-right">View More</a></p></div>
+                                </div>
+                            </div>
+</div>
                             <div class="hr-dashed"></div>
                             <div class="row">
                                 <div class="col-md-6">
@@ -278,7 +352,35 @@
         <script src="js/fileinput.js"></script>
         <script src="js/main.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/Chart.min.js"></script>
+        <script src="js/chartData.js"></script>
+        <script>
 
+            window.onload = function () {
+
+                // Line chart from swirlData for dashReport
+                var ctx = document.getElementById("dashReport").getContext("2d");
+                window.myLine = new Chart(ctx).Line(swirlData, {
+                    responsive: true,
+                    scaleShowVerticalLines: false,
+                    scaleBeginAtZero: true,
+                    multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
+                });
+
+                // Pie Chart from doughutData
+                var doctx = document.getElementById("chart-area3").getContext("2d");
+                window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive: true});
+
+                // Dougnut Chart from doughnutData
+                var doctx = document.getElementById("chart-area4").getContext("2d");
+                window.myDoughnut = new Chart(doctx).Doughnut(polarData, {responsive: true});
+                var doctx = document.getElementById("chart-area5").getContext("2d");
+                window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive: true});
+                var doctx = document.getElementById("chart-area6").getContext("2d");
+                window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive: true});
+
+            }
+        </script>
         <script>
             $(document).ready(function () {
                 $("#search-slide").slideUp(0);
