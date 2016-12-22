@@ -2949,10 +2949,10 @@ button.accordion.active:after {content: "\2212";}
              border-top-color: #f8f8ff;border-bottom-width: 0;position: absolute;display: block;width: 0;height: 0;}
 .businesscon p{text-align: justify;font-size: 15px;}
 @media only screen and (max-width: 768px) {.rightcomparethree div{width: 98%;float:left;margin: 1%;}
-                                           .rightcomparetwo div{width: 98%;float:left;margin: 1%;}.leftcompare,.rightcompare{width: 100%;}.arrow{display: 
-                                                                                                                                                     none;}}
+                                           .rightcomparetwo div{width: 98%;float:left;margin: 1%;}.leftcompare,.rightcompare{width: 100%;}
+                                           .arrow{display: none;}}
 
-=======
+
 .content{
 	width: 80%;
 	margin: 0 auto;
