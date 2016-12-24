@@ -26,24 +26,19 @@ var swirlData = {
 
 var doughnutData = [
     {
-        value: 300,
+        value: 20,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Red"
+        label: "Photos"
     },
-    {
-        value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
-    },
+    
     {
         value: 100,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Yellow"
+        label: "Remain"
     }
-]
+];
 
 var radarData = {
     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
@@ -126,4 +121,4 @@ var barChartData = {
             data: [28, 48, 40, 19, 86, 27, 90]
         }
     ]
-}
+};
