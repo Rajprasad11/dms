@@ -66,8 +66,8 @@
             </div>
 
         </div>
- 
-        
+
+
         <div class="ts-main-content">
             <nav class="ts-sidebar">
                 <ul class="ts-sidebar-menu hidden-sm hidden-xs">
@@ -146,7 +146,21 @@
             <div class="content-wrapper myprofile">
                 <div class="container-fluid">
                     <div class="content-header">
-                   
+                        <div class="row top-search" id="search-slide">
+                            <div class="input-group-btn search-panel">
+                                <select class="col-xs-12 col-sm-12 btn btn-primary">
+                                    <option value="">Filter</option>
+                                    <option value="1">Inventory</option>
+                                    <option value="2">Customer</option>
+                                    <option value="3">Dealers</option>
+                                    <option value="4">Cars</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                            <input type="text" class="form-control" name="x" placeholder="Search term...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                            </span></div>
                         <ol class="breadcrumb">
                             <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
                             <li class="active">Sold</li>
@@ -361,6 +375,8 @@
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/dealerplus.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/bootstrap-datetimepicker.min.js"></script>
         <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
         <script type="text/javascript">
