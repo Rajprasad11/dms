@@ -151,20 +151,21 @@
                 <div class="container-fluid">
                     <div class="content-header col-sm-12">
                         <div class="row top-search" id="search-slide">
-                    <div class="input-group-btn search-panel">
-                        <select class="col-xs-12 col-sm-12 btn btn-primary">
-                            <option value="">Filter</option>
-                            <option value="1">Inventory</option>
-                            <option value="2">Customer</option>
-                            <option value="3">Dealers</option>
-                            <option value="4">Cars</option>
-                        </select>
-                    </div>
-                    <input type="hidden" name="search_param" value="all" class="" id="search_param">         
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                    </span></div>
+                                <div class="input-group-btn search-panel">
+                                    <select class="col-xs-12 col-sm-12 btn btn-primary">
+                                        <option value="">Filter</option>
+                                        <option value="1">Inventory</option>
+                                        <option value="2">Customer</option>
+                                        <option value="3">Dealers</option>
+                                        <option value="4">Cars</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
                         <ol class="breadcrumb">
                             <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
                             <li class="active">Bid Posted</li>
@@ -832,6 +833,7 @@
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/dealerplus.js"></script>
         <script src="js/main.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/bootstrap-datetimepicker.min.js"></script>
@@ -847,19 +849,7 @@
                 $('.date').datetimepicker();
             });
         </script>
-<script>
-            $(document).ready(function () {
-                $("#search-slide").slideUp(0);
-            });
 
-            $(".search-click").click(function () {
-               $("#search-slide").slideToggle();
-            });
-            $(".dropdown-toggle").click(function(){
-               $(this).parent(".dropdown").ToggleClass("open");
-//               $(this).children(".dropdown-menu").slideToggle();
-            });
-        </script>
     </body> 
 
 </html>
