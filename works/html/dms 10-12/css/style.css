@@ -2598,8 +2598,7 @@ a.socialIcon:hover, .socialHoverClass {color:#44BCDD;}
 .lastfooter{background: #183055;padding: 20px 15px;margin-top: 20px;}.lastfooter a{color:#fff;}
 
 @media only screen and (max-width: 768px) {
-    .downloadsec{text-align: left;border-top: 1px solid #fff;;}
-    .footerlogo img{left: 15px;right: auto;}ul.social-network {text-align: left;margin-top: 20px;}}
+    .downloadsec{border-top: 1px solid #fff;;}}ul.social-network {margin-top: 20px;}}
 
 .branch-border{border-left: 1px dashed #333;}
 .label-list1{padding: 5px 11px;border-left:3px solid #ee1b24;background-color: #183055;position: absolute;right: 15px;
