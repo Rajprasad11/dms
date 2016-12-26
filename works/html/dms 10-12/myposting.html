@@ -674,6 +674,25 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                     <nav aria-label="...">
+                        <ul class="pagination pagination-md pull-right">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                                 </div>
 
 
@@ -745,23 +764,12 @@
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap.min.js"></script>
         <script src="js/fileinput.js"></script>
-        <script> $(document).ready(function () {
-                $("#search-slide").slideUp(0);
-            });</script>
+       <script src="js/dealerplus.js"></script>
+        
         <script src="js/endless.js"></script>
         <script src="js/menu.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            $(".search-click").click(function () {
-                $("#search-slide").slideToggle();
-            });
-            $(".dropdown-toggle").click(function () {
-                $(this).parent(".dropdown").ToggleClass("open");
- //               $(this).children(".dropdown-menu").slideToggle();
-            });
-
-        </script>
-    </body>
+            </body>
 
 
 </html>
