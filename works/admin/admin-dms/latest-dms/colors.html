@@ -10,7 +10,10 @@
         <link rel="stylesheet" href="css/admin-style.css" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
         <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/color-picker.css" rel="stylesheet" type="text/css"/>
 
+        <script src="js/new.js"  type="text/javascript"></script>
+        <script src="js/color-picker.js"  type="text/javascript"></script>
     </head>
     <body>
         <div class="container body">
@@ -107,87 +110,52 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default col-xs-12 ">
-                    <div class="col-lg-3 col-xs-12 searchform">
-                        <span>Keyword</span>
-                        <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12 searchform">
-                        <span>User Status</span>
-                        <select name="user_active" title="User Status" id=""><option value="">Does not matter</option><option value="0">Inactive</option><option value="1">Active</option></select>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12 searchform">
-                        <span>Is Email Verified</span>
-                        <select name="user_active" title="User Status" id=""><option value="">Does not matter</option><option value="0">Yes</option><option value="1">No</option></select>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-xs-12 searchform">
-                        <span>Subscription Plans</span>
-                        <select name="user_active" title="User Status" id=""><option value="">Does not matter</option><option value="0">Seller</option><option value="1">Dealer</option></select>
-                    </div>
-                    <div class="col-xs-12 buttondiv">
-                        <div class="row">
-                            <input type="submit" name="btn_submit" id="btn_submit" title="" value="Search">
-                            <input type="button" name="cancel_search" style="cursor:pointer; margin-left:10px;" class="cancel_search" title="" value="Show All">
-                        </div>
-                    </div>
-                </div>
                 <div id="no-more-tables" class="col-xs-12" >
                     <div class="panel panel-default row">
-                        <div class="col-xs-12 buttondiv">
-                            <button>Seller</button>
-                            <button>Dealers</button>
-                            <button>Buyers</button>
-                            <button>Service Centers</button>
+                        <div class="col-xs-12">
+                            <h2>Color List</h2>
                         </div>
+                        <div class="col-xs-12">
+                            <a href="#" class="btn btn-primary pull-right" title="Edit" data-toggle="modal" data-target="#popup">Add Color</a>
+                        </div>
+
                         <div class="panel-body">
                             <table id="zctb" class="display table table-striped table-bordered table-hover datable" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
                                         <th>S.no</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Subscription Plan</th>
-                                        <th>Joined On</th>
-                                        <th>Is Email Verified</th>
+                                        <th>Color Name</th>
+                                        <th>Color Code</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
                                         <th>S.no</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Subscription Plan</th>
-                                        <th>Joined On</th>
-                                        <th>Is Email Verified</th>
+                                        <th>Color Name</th>
+                                        <th>Color Code</th>
                                         <th>Action</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr>
-                                        <td>Tiger Nixon</td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td>Edinburgh</td>
-                                        <td>7th</td>
-                                        <td>No</td>
-                                        <td>
-                                            <span class="edit"><a href="#"><i class="fa fa-pencil-square-o"></i></a></span>
-                                            <span class="view"><a href="#"><i class="fa fa-eye"></i></a></span>
-                                            <span class="delete"><a href="#"><i class="fa fa-trash"></i></a></span>
+                                        <td>1</td>
+                                        <td>Abyss Grey Metallic</td>
+                                        <td>#2e2d33</td>
+                                        <td> 
+                                            <span class="view"><a href="#" title="Activate"><i class="fa fa-check" aria-hidden="true"></i></a></span>
+                                            <span class="edit" data-toggle="modal" data-target="#popup"><a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a></span>
+                                            <span class="delete"><a href="#" title="Delete"><i class="fa fa-trash"></i></a></span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Garrett Winters</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>Edinburgh</td>
-                                        <td>8th</td>
-                                        <td>Yes</td>
-                                        <td>
-                                            <span class="edit"><a href="#"><i class="fa fa-pencil-square-o"></i></a></span>
-                                            <span class="view"><a href="#"><i class="fa fa-eye"></i></a></span>
-                                            <span class="delete"><a href="#"><i class="fa fa-trash"></i></a></span>
+                                        <td>2</td>
+                                        <td>Alabaster Silver</td>
+                                        <td>#7b8386</td>
+                                        <td> 
+                                            <span class="view"><a href="#" title="Activate"><i class="fa fa-check" aria-hidden="true"></i></a></span>
+                                            <span class="edit" data-toggle="modal" data-target="#popup"><a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a></span>
+                                            <span class="delete"><a href="#" title="Delete"><i class="fa fa-trash"></i></a></span>
                                         </td>
                                     </tr>
 
@@ -199,6 +167,7 @@
                 </div>
 
             </section>
+
             <footer class="col-xs-12 footerdiv">
                 <div class="container-fluid">
                     <div class="row dash-footer">
@@ -210,12 +179,63 @@
                     </div></div>
 
             </footer>
+
+
+
+
+
+
         </div>
+        <div class="modal fade" id="popup" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add Color</h4>
+                    </div>
+                    <form method="post">
+                        <div class="modal-body">
+                            <div class="row">                             
+                                <div class="col-xs-12 searchform">
+                                    <span>Color Name(English)</span>
+                                    <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
+                                </div>
+                                <div class="col-xs-12 searchform">
+                                    <span>Color Name(Arabic)</span>
+                                    <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
+                                </div>
+                                <div class="col-xs-12 searchform">
+                                    <span>Select Color</span>
+                                    <fieldset class="color-picker">
+                                        <select class="format hidden">
+                                            <option selected>Hex</option>
+                                        </select>
+                                        <input class="color" type="text" value="#376f34"/>
+                                        <div class="spectrum">
+                                            <div>
+                                                <div class="pin"></div>
+                                            </div>
+                                        </div>
+                                        <input class="luminosity" type="range" min="0" max="100" />
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary send-again">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
     </body>
     <!-- jQuery library -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
     <!-- data table -->
     <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>

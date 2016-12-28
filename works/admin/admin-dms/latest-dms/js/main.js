@@ -1,32 +1,26 @@
- $(document).ready(function () {
-	 
- 	$(".ts-sidebar-menu li a").each(function () {
- 		if ($(this).next().length > 0) {
- 			$(this).addClass("parent");
- 		};
- 	})
- 	var menux = $('.ts-sidebar-menu li a.parent');
- 	$('<div class="more"><i class="fa fa-angle-down"></i></div>').insertBefore(menux);
- 	$('.more').click(function () {
- 		$(this).parent('li').toggleClass('open');
- 	});
-	$('.parent').click(function (e) {
-		e.preventDefault();
- 		$(this).parent('li').toggleClass('open');
- 	});
- 	$('.menu-btn').click(function () {
- 		$('nav.ts-sidebar').toggleClass('menu-open');
- 	});
-	 
-	 
-	 $('#zctb').DataTable();
-	 
-	 
-	 $("#input-43").fileinput({
-		showPreview: false,
-		allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
-		elErrorContainer: "#errorBlock43"
-			// you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
-	});
+$(document).ready(function () {
 
- });
+
+    $('#zctb').DataTable();
+
+
+    $(window).resize(function () {
+
+        ellipses1 = $("#bc1 :nth-child(2)")
+        if ($("#bc1 a:hidden").length > 0) {
+            ellipses1.show()
+        } else {
+            ellipses1.hide()
+        }
+
+        ellipses2 = $("#bc2 :nth-child(2)")
+        if ($("#bc2 a:hidden").length > 0) {
+            ellipses2.show()
+        } else {
+            ellipses2.hide()
+        }
+
+    })
+
+
+});

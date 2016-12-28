@@ -10,10 +10,6 @@
         <link rel="stylesheet" href="css/admin-style.css" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
         <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
-
-
-
     </head>
     <body>
         <div class="container body">
@@ -49,6 +45,13 @@
                                 <a href="manageuser.html" class="dropdown-toggle" data-toggle="dropdown">Manage Users <span class="caret"></span></a>				
                                 <ul class="dropdown-menu mega-dropdown-menu">
                                     <li><a href="manageuser.html">Manage User</a></li>
+                                </ul>				
+                            </li>
+                            <li class="dropdown mega-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Content <span class="caret"></span></a>				
+                                <ul class="dropdown-menu mega-dropdown-menu">
+                                    <li><a href="carmodel.html">Manage Car Models</a></li>
+                                    <li><a href="#">Manage Car Variants</a></li>
                                 </ul>				
                             </li>
                             <li class="dropdown mega-dropdown">
@@ -89,7 +92,7 @@
                 </nav>
             </div>
             <section class="bodycontent col-xs-12">
-                <h1> Car Model Management </h1>
+                <h1> User Management </h1>
                 <div class="panel panel-default">
                     <div id="bc1" class="btn-group btn-breadcrumb">
                         <a href="#" class="btn btn-default"><i class="fa fa-home"></i></a>
@@ -103,80 +106,47 @@
                     </div>
                 </div>
 
-                <div class="panel panel-default col-xs-12 ">    
-                    <div class="col-lg-4 col-xs-12 searchform">
-                        <span>Keyword</span>
-                        <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12 searchform">
-                        <span>Car Make</span>
-                        <select name="user_active" title="User Status" id=""><option value="">Does not matter</option><option value="0">Yes</option><option value="1">No</option></select>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 col-xs-12 searchform">
-                        <span>Model Status</span>
-                        <select name="user_active" title="User Status" id=""><option value="">Does not matter</option><option value="0">Inactive</option><option value="1">Active</option></select>
-                    </div>
-
-                    <div class="col-xs-12 buttondiv">
-                        <div class="row">
-                            <input type="submit" name="btn_submit" id="btn_submit" title="" value="Search">
-                            <input type="button" name="cancel_search" style="cursor:pointer; margin-left:10px;" class="cancel_search" title="" value="Show All">
-                        </div>
-                    </div>
-                </div>
                 <div id="no-more-tables" class="col-xs-12" >
                     <div class="panel panel-default row">
                         <div class="col-xs-12">
-                        <h2>Car Model List</h2>
+                            <h2>Cities List In Tamilnadu of India</h2>
+                        </div>
+                        <div class="col-xs-12">
+                            <a href="#" title="Edit" data-toggle="modal" data-target="#addcity" class="btn btn-primary pull-right"><i class="fa fa-plus-square"></i> Add City</a>
                         </div>
                         <div class="panel-body">
                             <table id="zctb" class="display table table-striped table-bordered table-hover datable" cellspacing="0" width="100%">
                                 <thead>
                                     <tr>
                                         <th>S.no</th>
-                                        <th>Image</th>
-                                        <th>Model Name</th>
-                                        <th>Make Name</th>
+                                        <th>City Name</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
                                     <tr>
                                         <th>S.no</th>
-                                        <th>Image</th>
-                                        <th>Model Name</th>
-                                        <th>Make Name</th>
+                                        <th>City Name</th>
                                         <th>Action</th>
                                     </tr>
                                 </tfoot>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td><img src="img/slider.jpg" alt="car Image" /></td>
-                                        <td>System Architect</td>
-                                        <td>Edinburgh</td>
-                                        <td class="btntd">
-                                            <a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Delete</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Image</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Videos</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Features</a>
+                                        <td>Chennai</td>
+                                        <td> 
+                                            <span class="edit"><a href="#" title="Edit" data-toggle="modal" data-target="#addcity"><i class="fa fa-pencil-square-o"></i> Edit</a></span>
+                                            <span class="delete"><a href="#" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></span>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td><img src="img/ts-avatar.jpg" alt="Car Image" /></td>
-                                        <td>Tokyo</td>
-                                        <td>Edinburgh</td>
-                                        <td class="btntd">
-                                            <a href="#"><i class="fa fa-pencil-square-o"></i> Edit</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Delete</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Image</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Videos</a>
-                                            <a href="#"><i class="fa fa-trash"></i> Add Features</a>
+                                        <td>Madurai</td>
+                                        <td> 
+                                            <span class="edit"><a href="#" title="Edit" data-toggle="modal" data-target="#addcity"><i class="fa fa-pencil-square-o"></i> Edit</a></span>
+                                            <span class="delete"><a href="#" title="Delete"><i class="fa fa-trash" aria-hidden="true"></i> Delete</a></span>
                                         </td>
                                     </tr>
-
                                 </tbody>
                             </table>
                         </div>
@@ -185,6 +155,7 @@
                 </div>
 
             </section>
+
             <footer class="col-xs-12 footerdiv">
                 <div class="container-fluid">
                     <div class="row dash-footer">
@@ -196,38 +167,48 @@
                     </div></div>
 
             </footer>
+
+
+
+
+
+
         </div>
+        <div class="modal fade" id="addcity" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Add State</h4>
+                    </div>
+                    <form method="post">
+                        <div class="modal-body">
+                            <div class="row">                             
+                                <div class="col-xs-12 searchform">
+                                    <span>City Name</span>
+                                    <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary send-again">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
     </body>
     <!-- jQuery library -->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
     <!-- data table -->
     <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>
     <script src="js/main.js"  type="text/javascript"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(window).resize(function () {
-
-                ellipses1 = $("#bc1 :nth-child(2)")
-                if ($("#bc1 a:hidden").length > 0) {
-                    ellipses1.show()
-                } else {
-                    ellipses1.hide()
-                }
-
-                ellipses2 = $("#bc2 :nth-child(2)")
-                if ($("#bc2 a:hidden").length > 0) {
-                    ellipses2.show()
-                } else {
-                    ellipses2.hide()
-                }
-
-            })
-
-        });
-    </script>
 
 </html>
