@@ -2607,7 +2607,7 @@ div[data-role="editor-toolbar"] {
 
 }
 .brand .ts-profile-nav .ts-account > a {
-    width: 180px;
+    width: 170px;
 	text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
