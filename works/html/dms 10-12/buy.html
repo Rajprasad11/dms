@@ -69,12 +69,7 @@
         <div class="ts-main-content">
             <nav class="ts-sidebar">
                 <ul class="ts-sidebar-menu hidden-sm hidden-xs">
-                    <!--<li class="ts-label">Search</li>
-                    <li>
-                            <input type="text" class="ts-sidebar-search" placeholder="Search here...">
-                    </li>-->
-
-                    <li><a class="sub-active" href="search.html"><i class="fa fa-search"></i> Search</a></li>
+                   <li><a class="sub-active" href="search.html"><i class="fa fa-search"></i> Search</a></li>
                     <li><a href="saved.html"><i class="fa fa-car"></i> Saved Cars</a>
                     </li>
                     <li><a href="myquery.html"><i class="fa fa-question-circle"></i> My Queries</a></li>
@@ -311,18 +306,20 @@
                     </div>
                 </div>
             </div>
-
+        </div>
             <!-- Loading Scripts -->
+            
             <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script src="js/jquery.form-validator.min.js" type="text/javascript"></script>
+        <script src="js/dealerplus.js"></script>
+        <script src="js/label-slide.js" type="text/javascript"></script>
+        <script src="js/main.js"></script>
+           <script src="js/fileinput.js"></script>
             <script src="js/bootstrap-select.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/dealerplus.js" type="text/javascript"></script>
-            <script src="js/jquery.dataTables.min.js"></script>
-            <script src="js/dataTables.bootstrap.min.js"></script>
-            <script src="js/fileinput.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/menu.js"></script>
-            <script>
+             <script>
                 $(document).ready(function () {
                     $("#budget").click(function () {
                         $(".bymodel").hide().slow;
@@ -335,52 +332,7 @@
                 });
 
             </script>
-            <script>
-                $(function ()
-                {
-                    var onClass = "on";
-                    var showClass = "show";
-
-                    $("input, select, textarea")
-                            .bind("checkval", function ()
-                            {
-                                var label = $(this).prev("label");
-
-                                if (this.value !== "")
-                                    label.addClass(showClass);
-
-                                else
-                                    label.removeClass(showClass);
-                            })
-                            .on("keyup", function ()
-                            {
-                                $(this).trigger("checkval");
-                            })
-                            .on("focus", function ()
-                            {
-                                $(this).prev("label").addClass(onClass);
-                            })
-                            .on("blur", function ()
-                            {
-                                $(this).prev("label").removeClass(onClass);
-                            })
-                            .trigger("checkval");
-
-                    $("select")
-                            .on("change", function ()
-                            {
-                                var $this = $(this);
-
-                                if ($this.val() == "")
-                                    $this.addClass("watermark");
-
-                                else
-                                    $this.removeClass("watermark");
-
-                                $this.trigger("checkval");
-                            })
-                            .change();
-                });</script>
+           
 
     </body>
 
