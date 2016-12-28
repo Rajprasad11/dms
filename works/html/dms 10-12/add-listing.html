@@ -164,6 +164,7 @@
                         </div>
                         <div class="col-md-12">
                             <h2 class="page-title">Add Listing</h2>
+                            
                             <div class="panel-group add-list" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab" id="headingOne">
@@ -174,11 +175,11 @@
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body">
+                                        <form><div class="panel-body">
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Registration Year</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Registration Year</option>
                                                         <option value="1">2012</option>
                                                         <option value="2">2011</option>
@@ -190,7 +191,7 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Make</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Make</option>
                                                         <option value="1">Renault</option>
                                                         <option value="2">Audi</option>
@@ -200,7 +201,7 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Model</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Model</option>
                                                         <option value="1">Duster</option>
                                                         <option value="2">Captur</option>
@@ -210,7 +211,7 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Variant</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Variant</option>
                                                         <option value="1">First Edition</option>
                                                         <option value="2">Prestige</option>
@@ -219,17 +220,17 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Kms Done</label>
-                                                    <input type="text" class="form-control" placeholder="Kms Done">
+                                                    <input type="text" class="form-control data-number" placeholder="Kms Done" data-validation="required,length" data-validation-length="5-8"  data-validation-optional="false">
                                                 </div>     </div>  
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Mileage</label>
-                                                    <input type="text" class="form-control" placeholder="Mileage">
+                                                    <input type="text" class="form-control data-number" placeholder="Mileage" data-validation="required,length" data-validation-length="5-8"  data-validation-optional="false">
                                                 </div>     </div>
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Ownership</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Ownership</option>
                                                         <option value="0">First Owner</option>
                                                         <option value="1">Second Owner</option>
@@ -238,7 +239,7 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Car Status</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Car Status</option>
                                                         <option value="1">Good</option>
                                                         <option value="2">Medium</option>
@@ -248,7 +249,7 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Color</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" data-validation="required" data-validation-optional="false">
                                                         <option value="">Color</option>
                                                         <option value="1">Gray</option>
                                                         <option value="2">Green</option>
@@ -259,11 +260,13 @@
                                             <div class="col-sm-3">	
                                                 <div class="form-group field-wrapper1">
                                                     <label>Location</label>
-                                                    <input type="text" class="form-control" placeholder="Location">
+                                                    <input type="text" class="form-control" placeholder="Location" data-validation="required" data-validation-optional="false">
                                                 </div>     </div>      
                                             <div class="col-sm-6">
-                                                <div class="form-group pull-right"><a href="#collapseTwo" class="btn btn-primary" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo">Save changes</a> </div></div>									
-                                        </div>
+                                                <div class="form-group pull-right">
+                                               <a href="#collapseTwo" class="aria-primary btn" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"> save changes</a> 
+            <button class="btn aria-validate" type="submit">Save changes validate</button></div></div>									
+                                            </div></form>
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
@@ -426,6 +429,7 @@
                                                         <button class="btn btn-primary" type="submit">Save changes</button>
                                                     </a> </div></div>
                                         </div></div>
+                                </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingThree">
                                             <h4 class="panel-title">
@@ -517,13 +521,13 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
-                                                <a href="#collapseFour" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseFour">
+                                                <a href="#collapseFour" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseFour">
                                                     Pricing Information <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                                            <div class="panel-body row">
+                                            <form><div class="panel-body row">
                                                 <div class="col-xs-12">
                                                     <div class="col-sm-4"><h4>Type of Inventory</h4></div>
                                                     <div class="form-group col-sm-6">
@@ -548,7 +552,7 @@
                                                     <div class="col-sm-6 col-xs-12 own-div">
                                                         <h4 class="page-title1">Purchase Information</h4>
                                                         <div class="row"><div class="col-sm-4"><label>Purchased From</label></div>
-                                                            <div class="col-sm-8"><div class="col-sm-7"><select class="form-control">
+                                                            <div class="col-sm-8"><div class="col-sm-7"><select class="form-control" data-validation="required" data-validation-optional="false">
                                                                         <option value="">Customer</option>
                                                                         <option value="1">Dealer</option>
                                                                         <option value="2">Broker</option>
@@ -557,19 +561,19 @@
                                                                         <option value="5">Quickr</option>
                                                                         <option value="6">Others</option>
                                                                     </select></div>
-                                                                <div class="col-sm-5"><input type="text" class="form-control"></div>
+                                                                <div class="col-sm-5"><input type="text" class="form-control" data-validation="required" data-validation-optional="false"></div>
                                                             </div>
                                                         </div> 
                                                         <div class="hr-dashed"></div>
                                                         <div class="row"> 
                                                             <div class="col-sm-4"><label>Purchase Price</label></div>
-                                                            <div class="col-sm-8"><input type="text" class="form-control"></div>
+                                                            <div class="col-sm-8"><input type="text" class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"></div>
                                                         </div>
                                                         <div class="hr-dashed"></div>
                                                         <div class="row"> 
                                                             <div class="col-sm-4"><label>Purchased Date</label></div>
                                                             <div class="col-sm-8"><div class='input-group date' id='datetimepicker4'>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control" data-validation="required" data-validation-optional="true"/>
                                                                     <span class="input-group-addon">
                                                                         <span class="glyphicon glyphicon-calendar"></span>
                                                                     </span>
@@ -601,7 +605,7 @@
                                                     <div class="col-sm-6 col-xs-12 park-div">
                                                         <h4 class="page-title1">Purchase Information</h4>
                                                         <div class="row"><div class="col-sm-4"><label>Received From </label></div>
-                                                            <div class="col-sm-8"><div class="col-sm-7"><select class="form-control">
+                                                            <div class="col-sm-8"><div class="col-sm-7"><select class="form-control" data-validation="required" data-validation-optional="false">
                                                                         <option value="">Customer</option>
                                                                         <option value="1">Dealer</option>
                                                                         <option value="2">Broker</option>
@@ -610,7 +614,7 @@
                                                                         <option value="5">Quickr</option>
                                                                         <option value="6">Others</option>
                                                                     </select></div>
-                                                                <div class="col-sm-5"><input type="text" class="form-control"></div>
+                                                                <div class="col-sm-5"><input type="text" class="form-control" data-validation="required" data-validation-optional="false"></div>
                                                             </div>
                                                         </div> 
                                                         <div class="hr-dashed"></div>
@@ -618,7 +622,7 @@
                                                         <div class="row"> 
                                                             <div class="col-sm-4"><label>From Date</label></div>
                                                             <div class="col-sm-8"><div class='input-group date' id='datetimepicker5'>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control" data-validation="required" data-validation-optional="true" />
                                                                     <span class="input-group-addon">
                                                                         <span class="glyphicon glyphicon-calendar"></span>
                                                                     </span>
@@ -629,7 +633,7 @@
 
                                                             <div class="col-sm-4"><label>Starting Km</label></div>
                                                             <div class="col-sm-8">
-                                                                <input type='text' class="form-control" />
+                                                                <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                             </div>
 
                                                         </div>
@@ -637,7 +641,7 @@
                                                         <div class="row"> 
                                                             <div class="col-sm-4"><label>Fuel Indication</label></div>
                                                             <div class="col-sm-8">
-                                                                <input type='text' class="form-control" />
+                                                                <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                             </div>
                                                         </div>
                                                         <div class="hr-dashed"></div>
@@ -647,7 +651,7 @@
                                                                     <span class="input-group-addon">
                                                                         Rs.
                                                                     </span>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                                 </div></div>
                                                         </div>
                                                         <div class="hr-dashed"></div>
@@ -657,7 +661,7 @@
                                                                     <span class="input-group-addon">
                                                                         Rs.
                                                                     </span>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                                 </div></div>
                                                         </div>
                                                         <div class="hr-dashed"></div>
@@ -691,7 +695,7 @@
                                                                     <span class="input-group-addon">
                                                                         Rs.
                                                                     </span>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                                 </div></div></div>
 
                                                         <div class="hr-dashed"></div>
@@ -701,7 +705,7 @@
                                                                     <span class="input-group-addon">
                                                                         Rs.
                                                                     </span>
-                                                                    <input type='text' class="form-control" />
+                                                                    <input type='text' class="form-control data-number" data-validation="required, length" data-validation-optional="false" data-validation-length="6-8"/>
                                                                 </div></div>
                                                         </div>
 
@@ -712,7 +716,7 @@
                                                                         <span class="input-group-addon">
                                                                             Rs.
                                                                         </span>
-                                                                        <input type="text" class="form-control" />
+                                                                        <input type="text" class="form-control" data-validation="required" data-validation-optional="false"/>
                                                                     </div></div>
                                                                 <div class="col-sm-2"><button class="btn add-more cloneAdd" type="button">+</button></div>
                                                             </div></div>
@@ -748,17 +752,17 @@
                                                                 <input type="text" class="form-control">
                                                             </div></div>
                                                         <div class="form-group"><label>Sale Price</label><input type="text" class="form-control"/></div>
-                                                        <div class="form-group pull-right"><a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
+                                                        <div class="form-group pull-right"><a role="button" data-toggle="collapse" class="aria-primary btn" data-parent="#accordion" href="#waranty" aria-expanded="false" aria-controls="collapseFive">Save changes</a> <button class="btn aria-validate" type="submit">Save changes validate</button></div>
                                                     </div>
                                                 </div> </div>
-
+</form>
                                         </div>
 
                                     </div>
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="heading-waranty">
                                             <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#waranty" aria-expanded="true" aria-controls="collapseOne">
+                                                <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#waranty" aria-expanded="true" aria-controls="collapseOne">
                                                     Certification, Inspection & Warranty<span class="pull-right"><i class="fa fa-chevron-down"></i></span>
                                                 </a>
                                             </h4>
@@ -840,7 +844,7 @@
                                                 </div>
 
                                                 <div class="col-sm-6">
-                                                    <div class="form-group pull-right"><a href="#collapseTwo" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
+                                                    <div class="form-group pull-right"><a href="#collapseFive" data-toggle="collapse" data-parent="#accordion"  aria-expanded="false" aria-controls="collapseTwo"><button class="btn btn-primary" type="submit">Save changes</button></a> </div>
                                                 </div>									
                                             </div>
                                         </div>
@@ -848,7 +852,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingFive">
                                             <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                <a role="button" class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                                     Engine & Specification <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
                                                 </a>
                                             </h4>
@@ -1018,7 +1022,7 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingSix">
                                             <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                <a role="button" class="collapsed"  data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                                     Online Portals <span class="pull-right"><i class="fa fa-chevron-down"></i></span>
                                                 </a>
                                             </h4>
@@ -1202,32 +1206,16 @@
                                     </ul></div>
 
                             </div>
-
                         </div>
+                        
                     </footer>
-                </div></div>
+                </div></div></div>
 
 
             <!-- Loading Scripts -->
             <script src="js/jquery.min.js"></script>
             <script src="js/bootstrap-select.min.js"></script>
             <script src="js/bootstrap.min.js"></script>
-            <script src="js/dealerplus.js" type="text/javascript"></script>
-            <script src="js/jquery.dataTables.min.js"></script>
-            <script src="js/dataTables.bootstrap.min.js"></script>
-            <script src="js/Chart.min.js"></script>
-            <script src="js/fileinput.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/label-slide.js" type="text/javascript"></script>
-            <script src="js/custom-file-input.js" type="text/javascript"></script>
-            <script src="js/bootstrap-datetimepicker.min.js"></script>
-            <script src="js/addelement.js"></script>
-            <script src="js/upload.js"></script>
-            <script type="text/javascript">
-                $(function () {
-                    $('.date').datetimepicker();
-                });
-            </script>
             <script>
                 $(document).ready(function () {
                     $("#park").click(function () {
@@ -1247,8 +1235,17 @@
                 });
 
             </script>
+            <script src="js/label-slide.js" type="text/javascript"></script>
+            <script src="js/jquery.form-validator.min.js" type="text/javascript"></script>
+            <script src="js/dealerplus.js" type="text/javascript"></script>
+            <script src="js/fileinput.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/custom-file-input.js" type="text/javascript"></script>
+            <script src="js/bootstrap-datetimepicker.min.js"></script>
+            <script src="js/addelement.js"></script>
+           
+        
             <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
-            <script src="js/dropzone.js" type="text/javascript"></script>
             <script>
 
                 $(document).ready(function () {
