@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="css/angular-material.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/bootstrap-theme.css">
+  
+</head>
+
+<body ng-app="BlankApp" ng-cloak>
+
+ <md-content layout-padding>
+<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+			<img src="images/logo.png" >
+		</section>
+			 
+ <br>
+  <form layout-align="center" layout-padding>
+   
+			<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+				<md-icon style="color:#333;" class="material-icons">business</md-icon>
+				<input style="border-color:#CCC;" placeholder="Dealer Company Name" aria-label="Phone Number" type="text">
+			</md-input-container>
+			
+			<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+				<md-icon style="color:#333;" class="material-icons">person</md-icon>
+				<input style="border-color:#CCC;" placeholder="First Name" aria-label="First Name" type="text">
+			</md-input-container>
+			
+			
+			<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+				<md-icon style="color:#333;" class="material-icons">mail</md-icon>
+				<input style="border-color:#CCC;" placeholder="Email Id" aria-label="Email Id" type="text">
+			</md-input-container>
+			
+			
+			<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+				<md-icon style="color:#333;" class="material-icons">call</md-icon>
+				<input style="border-color:#CCC;" placeholder="Contact" aria-label="Contact" type="text">
+			</md-input-container>
+			
+			<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+				<md-icon style="color:#333;" class="material-icons">room</md-icon>
+				<input style="border-color:#CCC;" placeholder="Select Your City" aria-label="Select Your City" type="text">
+			</md-input-container>
+		
+  </form>
+  
+			    <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+					<!--<md-button style="background-color:#FF0000; width:100%;" class="md-raised md-primary padding">Register Now</md-button>-->
+					<button class="btn btn-red"><a href="register.html" class="text-white">Register Now</a></button>
+				</section>
+				
+				<section class="top-padding" layout="row" layout-sm="column" layout-align="center center" layout-wrap=""><br>
+					<p class="footer"><b>Don,t have an account? <span class="font-red">
+					<a href="login.html" class="text-design"> <span class="link-color">Login Now</a></span></b></p>
+				</section>
+				
+				
+  
+</md-content layout-padding>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <script src="js/angular-aria.min.js"></script>
+  <script src="js/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="js/angular-material.min.js"></script>
+
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">
+       angular.module('BlankApp', ['ngMaterial']);
+  </script>
+  
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
