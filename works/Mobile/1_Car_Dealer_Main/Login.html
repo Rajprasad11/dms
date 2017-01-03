@@ -1,0 +1,73 @@
+<html lang="en" >
+   <head>
+		<title>Login</title>
+      <link rel="stylesheet" href="css/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style2.css">
+	 
+
+
+</head>
+
+   <body ng-app="firstApplication"> 
+
+    <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+	  <md-content layout-padding>
+	  <div class="col-xs-12">
+	   <section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+			<img src="images/logo.png" >
+		</section>
+			 
+			   <br>
+			   <br>
+		
+
+		<form name="projectForm">
+		
+			 <md-input-container class="md-icon-float md-block">
+				<md-icon style="color:#333;" class="material-icons">person</md-icon>
+				<label style="color:#CCC;">Email</label>
+				<input style="border-color:#CCC;" type="text">
+			</md-input-container>
+			
+			
+			 <md-input-container class="md-icon-float md-block">
+				<md-icon style="color:#333;" class="material-icons">lock</md-icon>
+				<label style="color:#CCC;">Password</label>
+				<input style="border-color:#CCC;" type="text">
+			</md-input-container>
+				 
+			</form>
+				
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+			<md-button class="md-raised md-primary padding btn-red">Login</md-button>
+			</section>
+				
+			<section class="top-padding" layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+				<p class="footer">Don,t have an account? <span class="font-red"><a href="#" class="text-design"> <span class="link-color">Sign Up</a></span></p>
+			</section>
+	 </div>
+	</md-content>
+	  </div>
+
+		   <script src="js/angular.min.js"></script>
+		  <script src="js/angular-animate.min.js"></script>
+		  <script src="js/angular-aria.min.js"></script>
+		  <script src="js/angular-messages.min.js"></script>
+		  <script src="js/angular-material.min.js"></script>
+		
+			 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+			</script>
+
+	  
+ </body>
+</html>
