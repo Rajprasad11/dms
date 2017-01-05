@@ -3193,3 +3193,27 @@ figure.effect-ming:hover img {opacity: 0.4;}
     background-color: #333;
     height: 176px;
 }
+.comm-button i
+{
+    padding-top:4px;
+    font-size:25px;
+    color:#fff;
+}
+.add-list-buttons
+{
+       position: fixed;
+    top: 11%;
+    bottom: 86px;
+    z-index: 1000;
+/*    background-color: rgba(134, 131, 131, 0.66);*/
+    width: 60px;
+    right: 1px;
+    padding: 5px;
+    float: left;
+    height: 200px;
+}
+.comm-button
+{
+    
+    margin-top:10px;
+}
