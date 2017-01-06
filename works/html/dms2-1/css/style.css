@@ -2631,8 +2631,6 @@ div[data-role="editor-toolbar"] {
 
 
 
-
-
 /**Added by nandhini**/
 
 .addimage{border: 1px solid #ccc;position: relative;margin: 10px 0px;height:150px;}
@@ -2692,9 +2690,9 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .guestnav {position: relative;min-height: 30px;margin-bottom: 0px;border: 1px solid transparent;
            border-image-source: initial;border-image-slice: initial;border-image-width: initial;border-image-outset: initial;
            border-image-repeat: initial;border-radius: 0px;float: right}
-.guestnav .nav>li:nth-last-child(1){background: #2dcc70;}
+.guestnav .nav>li:nth-last-child(1){background: #23527c;}
 .guestnav .nav>li:nth-last-child(1) a{color:#fff;}
-.guestnav .nav>li:nth-last-child(1) a:hover {color:#23527c;}
+.guestnav .nav>li:nth-last-child(1) a:hover {color:#ed1b24;}
 .guestnav .nav>li:nth-last-child(2){background: #ed1b24;}
 .guestnav .nav>li:nth-last-child(2) a{color:#fff;}
 .guestnav .nav>li:nth-last-child(2) a:hover {color:#23527c;}
@@ -2738,7 +2736,7 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .homeh1 a{padding: 19px 43px;color: #FFF;font-size: 21px;margin: 3px;box-shadow: 0px 0px 3px #fff;
           border-radius: 6px;text-decoration: none;  transition: all 0.6s ease 0s;}
 .homeh1 a:hover{  box-shadow: 0px 0px 8px #fff;  transition: all 0.6s ease 0s;}
-.signup{background: #e64d3d;}.signin{background: #2dcc70;}
+.signup{background: #e64d3d;}.signin{background: #23527c;}
 .section1{background: #fff;padding: 80px 20px;}
 .section1 .icons{width: 100%;text-align: center;}
 .section1 .icons i{color: #fff;font-size: 70px;background: #23527c;padding: 40px;border-radius: 50%;margin: 15px;}
@@ -2770,24 +2768,24 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .section4 p::before{position: absolute;top: 0;left: -6px;width: 10px;height: 10px;background: #ed1b24;content: '';border-radius: 50%;}
 
 /*pricing table*/
-.pricingTable{text-align: center;background: #eeeeee;transition: all 0.6s ease 0s;margin-top: -149px;}
+.pricingTable{text-align: center;background: #fff;transition: all 0.6s ease 0s;margin-top: -149px;}
 .pricingTable:hover{margin-top: -161px;transition: all 0.6s ease 0s;box-shadow: 0px 0px 19px #000;}
 .pricingTable > .pricingTable-header{color:#fff;}
 .pricingTable .pricingTable-header > .heading{display: block;padding: 20px 0;background: #23527c;}
 .pricingTable .pricingTable-header > .heading > h3{margin: 0 0 12px 0;text-transform: uppercase;font-weight: bold;}
 .pricingTable .pricingTable-header > .heading > .glyphicon{font-size: 70px;opacity: 0.5;}
-.pricingTable .pricingTable-header > .price-value{display: block;background: #23527c;margin: 20px 0;padding: 10px 0;
+.pricingTable .pricingTable-header > .price-value{display: block;background: #23527c;margin: 0px 0;padding: 10px 0;
                                                   font-size: 47px;font-weight: bold;}
 .pricingTable .pricingTable-header > .price-value > .month{display: block;font-size: 14px;}
 .pricingTable > .pricingContent{text-transform: capitalize;}
 .pricingTable > .pricingContent > ul{list-style: none;padding: 0;margin-bottom: 0;}
-.pricingTable > .pricingContent > ul > li{border-bottom: 1px solid #cdcdcd;padding: 10px 20px;text-align: left;
+.pricingTable > .pricingContent > ul > li{border-bottom: 1px solid #cdcdcd;padding: 0px;text-align: left;
                                           position: relative;z-index: 1;font-weight: 500;font-size: 17px;overflow: hidden;}
-.pricingTable > .pricingContent > ul > li i{font-weight: 600;}
+.pricingTable > .pricingContent > ul > li i{font-weight: 600;background: #eeeeee;}
 .pricingTable > .pricingContent > ul > li:after{content: "";width: 100%;height:100%;position: absolute;top:0;left:-100%;
                                                 background: #d9dee2;z-index: -5;transition: all 0.4s ease 0s;}
 .pricingTable > .pricingContent > ul > li:hover:after{left:0;transition: all 0.4s ease 0s;}
-.pricingTable .pricingTable-sign-up{padding: 20px 0;}
+.pricingTable .pricingTable-sign-up{padding: 0px 0;}
 .pricingTable .pricingTable-sign-up > .btn-block{padding: 15px 0;text-transform: uppercase;font-size: 16px;font-weight: bold;
                                                  border-radius: 0px;border: 1px solid #23527c;background: #e6e6e6;position: relative;transition: all 0.6s ease 0s;}
 .pricingTable .pricingTable-sign-up > .btn-block:before{content: "";position: absolute;top:0;left:0;width: 100%;height:0;
@@ -2797,8 +2795,8 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .pricingTable .pricingTable-sign-up > .btn-block:hover{z-index: 1;color:#fff;transition: all 0.6s ease 0s;}
 .pricingTable .pricingTable-sign-up > .btn-block:hover:before,
 .pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #23527c;height:50%;transition: all 0.6s ease 0s;}
-.pricingContent .true{color: #288650;padding: 5px;border-radius: 50%;font-size: 20px;}
-.pricingContent .false{color: #a04137;padding: 5px;border-radius: 50%;font-size: 20px;}
+.pricingContent .true{color: #288650;padding: 15px;font-size: 20px;}
+.pricingContent .false{color: #a04137;padding: 15px 17px;font-size: 20px;}
 .basictable .pricingTable .pricingTable-header > .heading{background: #e64d3d;}
 .goldtable .pricingTable .pricingTable-header > .heading{background: #2dcc70;}
 .premiumtable .pricingTable .pricingTable-header > .heading{background: #1b7c9d;}
@@ -2914,10 +2912,10 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .profile-head ul li span { color:#ffffff;padding-right: 10px;}
 .profile-head ul li a { color:#ffffff;}
 .profile-head h6 {width: 100%;text-align: center;font-weight: 100;color: #fff;font-size: 15px;text-transform: uppercase;margin-bottom: 0;}
-.profile-info a{background: #fff;text-shadow:0px 0px 0px #fff;color:#000; padding: 5px;margin: 7px 5px 0px 5px;border-radius: 3px!important;float:left;width:auto;text-align: center}
+.profile-info a{background: #fff;text-shadow:0px 0px 0px #fff;color:#000; padding: 5px;margin: 0px 5px;border-radius: 3px!important;float:left;width:auto;}
 .profile-info{position: relative;height: 100%;}
 .profile-info .social {position: absolute;bottom: 14px;right:75px;}
-.profile-info .social ul {float:right;margin: 0px 5px;}
+.profile-info .social ul {background: rgba(0, 0, 0, 0.46);float:right;border: 1px solid rgba(255, 255, 255, 0.38);margin: 0px 5px;}
 .profile-info .social ul li{width: auto;float: right;margin: 0px;}
 .profile-info .social ul li a{padding: 0px;margin: 0px;}
 .profile-info .social ul li a i{font-size: 27px;}
@@ -2925,7 +2923,7 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .profile-info .addcover ul {background: rgba(0, 0, 0, 0.46);float:right;border: 1px solid rgba(255, 255, 255, 0.38);}
 .profile-info .addcover ul li{width: auto;float: right;}
 .profile-info .addcover ul li a{background: transparent;padding: 0px;margin: 0px;}
-.profile-info .addcover ul li i{font-size: 40px;cursor: pointer;}
+.profile-info .addcover ul li a i{font-size: 40px;}
 
 
 
@@ -3004,32 +3002,6 @@ figure.effect-ming:hover figcaption::before,figure.effect-ming:hover p {opacity:
                                                                         transform: scale3d(1,1,1);}
 figure.effect-ming:hover figcaption {background-color: rgba(0, 0, 0, 0.54);}
 figure.effect-ming:hover img {opacity: 0.4;}
-
-
-.box-icon {height: 200px;position: relative;}
-.box-icon img {position: absolute;max-height: 80%;max-width: 90%;top:0px;bottom:0px;left:0px;right:0px;margin:auto;}
-.info h3 {font-size: 18px;text-transform: uppercase;}
-.info h3 span{font-size: 18px;}
-.dealerseachlist ul { list-style:none;padding: 0;}
-.dealerseachlist ul li { display:block; color:#000;padding:5px;font-weight: 400;font-size: 15px;}
-.dealerseachlist ul li:hover span { color:rgb(0, 4, 51);}
-.dealerseachlist ul li span { color:#000;padding-right: 10px;}
-.dealerseachlist ul li a { color:#000;}
-.box {border-radius: 3px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      padding: 10px 25px 25px;display: block;margin: 20px 0px;}
-.dealerseachlist-cont{background: #ee1b24;margin-top: 20px;padding: 10px 0px;color:#fff;text-align: center;border: 3px double #fff;}
-.dealerseachlist a{background:#23527c;color:#fff;padding:10px; margin: 5px 5px 10px 5px; }
-.footermenubanner{height: 300px;}
-.footermenu{margin-top: -100px;position: relative;}
-.footermenu h1{margin-top: 15px;text-transform: uppercase;text-align: center;padding-top: 20px;padding-bottom: 20px;
-               font-size: 35px;font-weight: bold;color: #fff;background:#183055 }
-.footermenu p{font-size: 16px;letter-spacing: 1px; word-spacing: 1px;text-indent: 3em;line-height: 26px;
-              padding: 30px 0px;text-align: justify;}
-
-.addcoverul{position: absolute;width: 200px;top: -62px;right: 0px;border: none;background: #fff!important;color: #000;text-align: left;}
-.addcoverul li{color: #000!important;float: left!important;text-shadow: none!important;text-align: left!important;}
-.addcoverul li a{ color: #000!important;}
-.addcoverul li a i{font-size: 16px!important;}
 /**
 * Responsive Bootstrap Tabs
 */
@@ -3093,13 +3065,53 @@ figure.effect-ming:hover img {opacity: 0.4;}
     .profile-info .addcover,.profile-info .social{position: relative;right: auto;bottom:auto;width:100%;}
     .profile-info a{width:100%;margin: 5px;}.grid figure figcaption,figure.effect-ming p{padding:5px}
     figure.effect-ming figcaption::before{top:0px;bottom: 0px;left: 0px;right: 0px;}figure.effect-ming h2{padding-top: 170px;}
-    .bk-light .nav-tabs > li > a{font-size: 11px;}.info h3 {font-size: 15px;}.info h3 span{font-size: 12px;}
-    .box-icon{height:100px;}
+    .bk-light .nav-tabs > li > a{font-size: 11px;}
 }
 @media only screen and (max-width: 408px) {.navbar-toggle {padding: 12px 0px;}}
 
+.box-icon {
+    background-color: #183055;
+    border-radius: 50%!important;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+    position: relative;
+}
+.box-icon img {
+    position: absolute;max-height: 90%;max-width: 90%;top:0px;bottom:0px;left:0px;right:0px;margin:auto;    border-radius: 50%!important;
+}
+.info h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.info h4 {
+    font-size: 18px;
+}
+.dealerseachlist ul { list-style:none;padding: 0;}
+.dealerseachlist ul li { display:block; color:#000;padding:5px;font-weight: 400;font-size: 15px;}
+.dealerseachlist ul li:hover span { color:rgb(0, 4, 51);}
+.dealerseachlist ul li span { color:#000;padding-right: 10px;}
+.dealerseachlist ul li a { color:#000;}
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: center;
+    display: block;
+    margin: 60px 0px 20px 0px;
+}
+.dealerseachlist-cont{background: #23527c;margin-top: 20px;
+    padding: 10px 0px;}
 
 
+.footermenubanner{height: 300px;}
+.footermenu{margin-top: -100px;position: relative;}
+.footermenu h1{margin-top: 15px;text-transform: uppercase;text-align: center;padding-top: 20px;padding-bottom: 20px;
+               font-size: 35px;font-weight: bold;color: #fff;background:#183055 }
+.footermenu p{font-size: 16px;letter-spacing: 1px; word-spacing: 1px;text-indent: 3em;line-height: 26px;
+              padding: 30px 0px;text-align: justify;}
+@media only screen and (max-width: 408px) {.navbar-toggle {padding: 12px 0px;}}
 .count-star{
     color: red;
     position: relative;
@@ -3216,4 +3228,39 @@ figure.effect-ming:hover img {opacity: 0.4;}
 {
     
     margin-top:10px;
+}
+.chat-title{
+        padding: 2px 10px;
+    /* position: absolute; */
+
+    margin-right: 10px;
+    /* top: 67px; */
+    float: left;
+    clear: both;
+    color: #fff;
+    width:100%;
+        padding: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.chat-title span{    background-color: rgb(0, 25, 165) !important; padding: 10px;}
+        
+.chat-title1{
+    
+
+    margin-right: 10px;
+    /* top: 67px; */
+    float: left;
+    clear: both;
+    color: #fff;
+    width:100%;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.chat-title1 span{  float: right;  background-color: rgb(0, 25, 165) !important; padding: 10px;    margin-right: 3%;}
+.chat-body1 aside{padding:8px 10px;float: left;}
+.group-msg .chat-body1 p, .group-msg .chat-body p
+{
+    width:97%;
+    float:left;
 }
