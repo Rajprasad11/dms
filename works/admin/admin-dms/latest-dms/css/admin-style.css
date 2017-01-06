@@ -12,9 +12,9 @@ html, body { height: 100%;background: #f7f7f7;font-family: robotoregular;}
 body{font-family: robotoregular;}
 .container {width: 100%;padding: 0;float:left;}	
 .blueback{background: #2a3f54;
-         /*background:#003e87;*/
+          /*background:#003e87;*/
 }
- a,a:hover,a:focus,a:active{text-decoration: none;}
+a,a:hover,a:focus,a:active{text-decoration: none;}
 .redback{background:#ed1b24}.body{float:left;}
 h2{font-size:25px;color:#23527c;font-weight: 600;margin-bottom: 40px;}
 
@@ -158,9 +158,9 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
     #no-more-tables thead tr {position: absolute;top: -9999px;left: -9999px;}
     #no-more-tables tr { border: 1px solid #ccc; }
     #no-more-tables td {border: none;border-bottom: 1px solid #eee;position: relative;padding-left: 50%;
-        white-space: normal;text-align:left;}
+                        white-space: normal;text-align:left;}
     #no-more-tables td:before {position: absolute;top: 6px;left: 6px;width: 45%;padding-right: 10px;white-space: nowrap;
-        text-align:left;font-weight: bold;}
+                               text-align:left;font-weight: bold;}
     #no-more-tables td:before { content: attr(data-title); }
 }
 
@@ -291,7 +291,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 .regisform select{width: 100%;outline: none;border-radius: 0px;  border: 2px solid #ccc;padding: 10px;}
 .regisform input{width: 100%;outline: none;border-radius: 0px;  border: 2px solid #ccc;padding: 10px;}
 .regisform{margin: 10px 0px;}
-.regisform span{color:#23527c;font-weight: bold;margin-bottom: 5px;float: left;}
+.regisform p{color:#23527c;font-weight: bold;margin-bottom: 5px;float: left;}
+.regisform p span,#charNum{color:#ed1b24}
 .regisform textarea{width: 100%;outline: none;border-radius: 0px;  border: 2px solid #ccc;height: 100px;resize: none;}
 
 
@@ -302,8 +303,8 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 .buttondiv input:hover{  background: #ed1b24;-webkit-transition: .5s all ease-in-out;-moz-transition: .5s all ease-in-out;
                          -o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;}
 .buttondiv button{background: #f7f7f7;border: none;color: #000;margin:20px 5px;
-    padding: 10px 20px;border: 1px solid #23527c;border-radius: 3px;-webkit-transition: .5s all ease-in-out;
-    -moz-transition: .5s all ease-in-out;-o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;
+                  padding: 10px 20px;border: 1px solid #23527c;border-radius: 3px;-webkit-transition: .5s all ease-in-out;
+                  -moz-transition: .5s all ease-in-out;-o-transition: .5s all ease-in-out;transition: .5s all ease-in-out;
 }
 .buttondiv button:hover{  background: #23527c; color:#fff;-webkit-transition: .5s all ease-in-out;
                           -moz-transition: .5s all ease-in-out;-o-transition: .5s all ease-in-out;
@@ -313,3 +314,169 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 
 /*add colors*/
 #zctb .color-picker{margin: 0px;}
+
+
+
+
+#editor {
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate; 
+    border: 1px solid rgb(204, 204, 204); 
+    padding: 10px; 
+    box-sizing: content-box; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+    overflow: auto;
+    outline: none;
+}
+
+#voiceBtn {
+    width: 20px;
+    color: transparent;
+    background-color: transparent;
+    transform: scale(2.0, 2.0);
+    -webkit-transform: scale(2.0, 2.0);
+    -moz-transform: scale(2.0, 2.0);
+    border: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.group-profile
+{
+    font-size: 30px;
+
+}
+.col-5{
+    width:20%;
+    float:left;
+}
+.view-dash
+{
+    font-size: 20px;
+    vertical-align: middle;
+
+}
+.brand .ts-profile-nav .ts-account > a {
+    width: 170px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.form-control:focus {
+    border-color: #4285f4 !important;}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+
+    font-size: 12px;
+}
+
+
+.btn {
+    font-size:14px;
+    border-radius:0px;
+}
+.btn-primary{background:#183055}
+.btn i {
+    position: relative;
+    top: -2px;
+    color:#fff;
+}
+.btn.text-left {
+    text-align: left;
+}
+.btn-brand {
+    background: #37a6c4;
+    color: #fff;
+}
+.btn-brand:hover {
+    color: #fff;
+    background: #2c849c;
+}
+.btn-dark {
+    background: #272727;
+    color: #fff;
+}
+.btn-dark:hover {
+    color: #fff;
+    background: #2c849c;
+}
+.btn-red {
+    background: #4f5362;
+    color: #fff;
+}
+.btn-red:hover {
+    color: #fff;
+    background: #383b46;
+}
+.btn-alt {
+    background: #f0f0f0;
+    color: #222;
+}
+.btn-alt:hover {
+    color: #fff;
+    background: #2c849c;
+}
+
+
+#editor {
+    max-height: 250px;
+    height: 250px;
+    background-color: white;
+    border-collapse: separate; 
+    border: 1px solid rgb(204, 204, 204); 
+    padding: 10px; 
+    box-sizing: content-box; 
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+    box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+    border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+    overflow: auto;
+    outline: none;
+}
+
+#voiceBtn {
+    width: 20px;
+    color: transparent;
+    background-color: transparent;
+    transform: scale(2.0, 2.0);
+    -webkit-transform: scale(2.0, 2.0);
+    -moz-transform: scale(2.0, 2.0);
+    border: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.group-profile
+{
+    font-size: 30px;
+
+}
+.view-dash
+{
+    font-size: 20px;
+    vertical-align: middle;
+
+}
+
+.addbtn{margin-top: 10px;}
+.addbtn i{margin-top: 6px;
+    float: left;
+    margin-right: 5px;}

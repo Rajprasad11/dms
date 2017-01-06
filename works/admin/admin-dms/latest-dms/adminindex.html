@@ -13,7 +13,7 @@
         <div class="container body">
             <header  id="header" class="col-xs-12">
                 <div id="top" class="col-xs-12">
-                    <div class="logo col-xs-6"><a title="Administration Home" href="adminindex.html"><img alt="Dealer Plus" title="" src="img/dlogo.jpg" class="img-responsive" width="250"></a> </h2></div>
+                    <div class="logo col-xs-6"><a title="Administration Home" href="adminindex.html"><img alt="Dealer Plus" title="" src="img/dlogo.jpg" class="img-responsive" width="250"></a> </div>
                     <div class="navmenu col-xs-3 pull-right text-right">
                         <div class="dropdown">
                             <a href="loginadmin.html" style="float: right;text-align: right"><i class="fa fa-power-off"></i></a><p class="dropdown-toggle" data-toggle="dropdown"><span>Welcome</span>    &nbsp;&nbsp;DealerPlus Admin&nbsp;&nbsp;</p> 
@@ -48,7 +48,16 @@
                                     <li><a href="countries.html">Manage Countries/states</a></li>
                                 </ul>				
                             </li>
-                            <li><a href="#">Change Password</a></li>
+                            <li class="dropdown mega-dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CMS Management <span class="caret"></span></a>				
+                                <ul class="dropdown-menu mega-dropdown-menu">
+                                    <li><a href="cms_pagecontent.html">Manage Page Content</a></li>
+                                    <li><a href="emailtemplates.html">Manage Email Template</a></li>
+                                    <li><a href="smstemplates.html">Manage SMS Template</a></li>
+                                    <li><a href="faq.html">Manage Faqs</a></li>
+                                </ul>				
+                            </li>
+                            <li><a href="change_password.html">Change Password</a></li>
                         </ul>
 
                     </div><!-- /.nav-collapse -->
@@ -103,7 +112,7 @@
                 <div id="no-more-tables" >
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <table id="zctb" class="display table table-striped table-bordered table-hover datable" cellspacing="0" width="100%">
+                            <table id="zctb" class="display table table-striped table-bordered table-hover datable" >
                                 <thead>
                                     <tr>
                                         <th>Name</th>
@@ -269,14 +278,15 @@
 
             </footer>
         </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- data table -->
+        <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+        <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/main.js"  type="text/javascript"></script>
     </body>
     <!-- jQuery library -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-    <!-- data table -->
-    <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/main.js"  type="text/javascript"></script>
 
 </html>
