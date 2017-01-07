@@ -44,9 +44,9 @@
                 <div class="col-sm-9 col-xs-9"><ul class="ts-profile-nav row">
 
                         <li><a href="index.html">Dashboard</a></li>
-                        <li><a href="buy.html">Buy</a></li>
+                        <li class="active"><a href="buy.html">Buy</a></li>
                         <li><a href="inventory.html">Sell</a></li>
-                        <li class="active"><a href="myprofile.html">Manage</a></li>
+                        <li><a href="myprofile.html">Manage</a></li>
                         <li><a href="group.html">Communications</a></li>
                         <li><a href="#">Reports</a></li>
                         <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
@@ -70,14 +70,17 @@
         <div class="ts-main-content">
             <nav class="ts-sidebar">
                 <ul class="ts-sidebar-menu hidden-sm hidden-xs">
-                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
-                    <li><a href="mybuss-profile.html"><i class="fa fa-user"></i> My Business Profile</a></li>
-                    <li><a class="sub-active" href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
-                    <li><a href="mycustomer.html"><i class="fa fa-list"></i> My Leads</a></li>
-                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
-                    <li><a href="mycustomer.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
-                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
-                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
+                    <!--<li class="ts-label">Search</li>
+                    <li>
+                            <input type="text" class="ts-sidebar-search" placeholder="Search here...">
+                    </li>-->
+                    <li><a href="search.html"><i class="fa fa-search"></i> Search</a></li>
+                    <li><a href="saved.html"><i class="fa fa-car"></i> Saved Cars</a>
+                    </li>
+                    <li><a class="sub-active" href="myquery.html"><i class="fa fa-question-circle"></i> My Queries</a></li>
+                    <li><a href="bids.html"><i class="fa fa-bitbucket-square"></i> Bids Posted</a></li>
+                    <li><a href="fund.html"><i class="fa fa-money"></i> Apply Inventory Funding</a></li>
+
                 </ul>
                 <!-- Account from above -->
                 <ul class="ts-profile-nav ts-sidebar-menu">
@@ -93,8 +96,7 @@
                             <li><a href="fund.html">Apply Inventory Funding</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
                         <ul class="dropdown-menu">
                             <li><a href="inventory.html">My Inventory</a></li>
                             <li><a href="myposting.html">My Postings</a></li>
@@ -107,9 +109,9 @@
                         <ul class="dropdown-menu">
                             <li><a href="myprofile.html">My Profile</a></li>
                             <li><a href="mybranch.html">My Branches</a></li>
-                            <li><a href="mycontact.html">My Leads</a></li>
-                            <li><a class="test" href="mycontact.html">My Customer</a></li>
-                            <li><a href="mycontact.html">My Contacts</a></li>
+                            <li><a href="myleads.html">My Leads</a></li>
+                            <li><a class="test" href="mycustomer.html">My Customer</a></li>
+                            <li><a href="Mycontact.html">My Contacts</a></li>
                             <li><a href="myuser.html">My Users</a></li>
                             <li><a href="subscription.html">Subscriptions</a></li>
                         </ul>
@@ -141,12 +143,18 @@
                     <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
                     <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
                 </ul>
+                <ul class="ts-sidebar-shortlist hidden-sm hidden-xs">
+                    <li><a href="saved.html"><div><i class="fa fa-heart"></i> <span class="add-count">(1)</span></div><div>Shortlist</div></a></li>
+                    <li><a href="saved.html"> <div><i class="fa fa-eye"></i> <span class="add-count">(5)</span></div><div>Recent View</div></a></li>
+                    <li><a href="comparetwo.html"><div><i class="fa fa-balance-scale"></i> <span class="add-count">(11)</span></div>
+                            <div>Compare</div> </a></li></ul>
+
             </nav>
-            <div class="content-wrapper myprofile">
+            <div class="content-wrapper">
                 <div class="container-fluid">
 
                     <div class="row">
-                        <div class="content-header col-xs-12">
+                        <div class="content-header col-sm-12">
                             <div class="row top-search" id="search-slide">
                                 <div class="input-group-btn search-panel">
                                     <select class="col-xs-12 col-sm-12 btn btn-primary">
@@ -163,99 +171,86 @@
                                     <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                 </span></div>
                             <ol class="breadcrumb">
-                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
-                                <li class="active">My Branches</li>
+                                <li><a href="index.html"><i class="fa fa-dashboard"></i> Buy</a></li>
+                                <li class="active">My Query</li>
                             </ol>
                         </div>
                         <div class="col-xs-12">
 
-                            <h2 class="page-title">Add Branches</h2>
+
+                            <h2 class="page-title">Sent Queries</h2>
+
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="panel-body myprof-tab">
-                                        <div class="col-xs-12">
-                                            <div class="col-xs-12">
-                                                <div class="panel panel-info">
-                                                    <div class="panel-heading">
-                                                        <h4 class="panel-title">Add New Branch</h4>
-                                                    </div>
-
-                                                    <div class="panel-body" id="contactAddress1">
-
-                                                        <div class="col-xs-12"> 
-
-                                                            <div class="row">
-
-                                                                <div class="col-xs-12 col-sm-6">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label class="show">Dealership Name</label>
-                                                                        <input type="text" class="form-control" placeholder="Dealership Name">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label class="show">Contact Number</label>
-                                                                        <input type="text" class="form-control" placeholder="Contact Number">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label class="show">Address</label>
-                                                                        <input type="text" class="form-control" placeholder="Address">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>State</label>
-                                                                        <input type="text" class="form-control" placeholder="State">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>City</label>
-                                                                        <input type="text" class="form-control" placeholder="City">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Pincode</label>
-                                                                        <input type="text" class="form-control" placeholder="Pincode">
-                                                                    </div>     
-                                                                </div>
-
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="form-group field-wrapper1">
-                                                                        <label>Mail Id</label>
-                                                                        <input type="mail" class="form-control" placeholder="Mail ID">
-                                                                    </div>     
-                                                                </div>
-                                                                <div class="col-sm-6 col-xs-12">	
-                                                                    <div class="checkbox checkbox-info form-group">
-                                                                        <input type="radio" id="inlineCheckbox1">
-                                                                        <label for="inlineCheckbox1">Service Center </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-12">	
-                                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62186.45814851698!2d80.2200839071993!3d13.05770534313555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1480584335085" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>   
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
+                                <div class="col-xs-12">
+                                   <div class="col-sm-8 col-xs-12 col-sm-offset-2">
+                                        <div class="panel panel-primary myquery">
+                                            <div class="panel-heading">
+                                                <h4>Group Name</h4>
+                                                <p>member1, member2, member3, member4, member5, member6, member7, member8</p>
                                             </div>
-                                            <button type="submit" class="btn btn-primary col-sm-3 col-lg-2 pull-right">Save</button>
-                                        </div>
+                                            <div class="panel-body msg-box">
+                                                <div class="member_list message group-msg">
+                                                    <ul><li class="left clearfix">
+                                                            <span class="chat-img1 pull-left">
+                                                                <img src="img/car1.jpg" alt="User" class="img-circle">
+                                                            </span>
+                                                            <div class="chat-body1 clearfix">
+                                                                 <aside class="chat-title"><span>member1</span></aside>
+                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                                                                <div class="chat_time pull-right">09:40PM</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="left clearfix admin_chat">
+                                                            <span class="chat-img1 pull-right">
+                                                                <img src="img/car1.jpg" alt="User" class="img-circle">
+                                                            </span>
+                                                            <div class="chat-body clearfix">
+                                                                <aside class="chat-title1"><span>member1</span></aside>
+                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                                                                <div class="chat_time pull-left">09:40PM</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="left clearfix admin_chat">
+                                                            <span class="chat-img1 pull-right">
+                                                                <img src="img/car1.jpg" alt="User" class="img-circle">
+                                                            </span>
+                                                            <div class="chat-body clearfix">
+                                                                 <span class="chat-title1">member1</span>
+                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                                                                <div class="chat_time pull-left">09:40PM</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="left clearfix">
+                                                            <span class="chat-img1 pull-left">
+                                                                <img src="img/car1.jpg" alt="User" class="img-circle">
+                                                            </span>
+                                                            <div class="chat-body1 clearfix">
+                                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.</p>
+                                                                <div class="chat_time pull-right">09:40PM</div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
 
+                                                </div>
+                                                <div class="message_write">
+                                                    <textarea class="form-control" placeholder="Type a message"></textarea>
+                                                    <div class="chat_bottom"><div class="col-sm-6 pull-left ">
+                                                            <p class="btn btn-sm btn-primary"><i class="fa fa-cloud-upload"></i> Add Files</p>
+                                                            <span class="upload_btn"></span>
+                                                            <input name="file"  id="doc-msg" type="file" multiple /> </div>
+                                                        <div class="col-sm-6"><a href="#" class="pull-right btn-sm btn btn-primary"> Send</a></div></div>
+                                                </div>
+                                            </div></div>
 
                                     </div>
 
+
                                 </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
+
 
                 </div>
                 <footer class="col-xs-12">
@@ -309,18 +304,38 @@
                 </footer>
             </div>
         </div>
+
+
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap-select.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap.min.js"></script>
-        <script src="js/label-slide.js" type="text/javascript"></script>
+        <script src="js/Chart.min.js"></script>
         <script src="js/fileinput.js"></script>
+        <script src="js/chartData.js"></script>
         <script src="js/main.js"></script>
         <script src="js/menu.js"></script>
-        <script src="js/dealerplus.js" type="text/javascript"></script>
+        <script>
+            $(".send-again").click(function () {
+                $("#bid-hide").slideDown(1000);
+            });
+            $("#doc-msg").change(function (e) {
+                var fu1 = $("#doc-msg");
+                var ful1 = fu1.val().replace(/C:\\fakepath\\/i, '');
+                $(".upload_btn").text(ful1);
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $("#search-slide").slideUp(0);
+            });
+
+            $(".search-click").click(function () {
+                $("#search-slide").slideToggle();
+            });
+        </script>
 
     </body>
-
 </html>
