@@ -48,7 +48,9 @@
                             <li class="dropdown mega-dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage Content <span class="caret"></span></a>				
                                 <ul class="dropdown-menu mega-dropdown-menu">
+                                    <li><a href="carmake.html">Manage Car make</a></li>
                                     <li><a href="carmodel.html">Manage Car Models</a></li>
+                                    <li><a href="carvariant.html">Manage Car Variant</a></li>
                                     <li><a href="colors.html">Manage Colors</a></li>
                                     <li><a href="countries.html">Manage Countries/states</a></li>
                                 </ul>				
@@ -142,6 +144,7 @@
                                     <input type="text" name="keyword" value="" title="Keyword (email,first name,last name)">
                                 </div>
 
+
                             </div>
                         </div>
                         <div class="col-xs-12">
@@ -154,7 +157,19 @@
                                     <p>Short Description</p>
                                     <textarea></textarea>
                                 </div>
-
+                                <div class="col-lg-6 col-xs-12">
+                                    <div class="addimage">
+                                        <div class="form-group">
+                                            <div>
+                                                <img src="img/addimage.png" class="image">
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="fileUpload btn-primary">
+                                        <span>Add/Change Image</span>
+                                        <input type="file" class="upload"  id="profile_image" />
+                                    </div>
+                                </div>
                                 <div class="col-xs-12 buttondiv">
                                     <div class="row">
                                         <input type="submit" name="btn_submit" id="btn_submit" title="" value="Save">
@@ -188,6 +203,15 @@
         <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
         <script src="js/dataTables.bootstrap.min.js" type="text/javascript"></script>
         <script src="js/main.js"  type="text/javascript"></script>
+             <script>
+
+            $(function () {
+                $('#profile_image').change(function (e) {
+                    var img = URL.createObjectURL(e.target.files[0]);
+                    $('.image').attr('src', img);
+                });
+            });
+        </script>
     </body>
 
 
