@@ -21,6 +21,12 @@ $(document).ready(function () {
 
     try {
         $('#zctb').DataTable();
+        $("#input-43").fileinput({
+        showPreview: false,
+        allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
+        elErrorContainer: "#errorBlock43"
+                // you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
+    });
 
     } catch (err) {
 
@@ -29,11 +35,6 @@ $(document).ready(function () {
 
 
 
-    $("#input-43").fileinput({
-        showPreview: false,
-        allowedFileExtensions: ["zip", "rar", "gz", "tgz"],
-        elErrorContainer: "#errorBlock43"
-                // you can configure `msgErrorClass` and `msgInvalidFileExtension` as well
-    });
+    
 
 });
