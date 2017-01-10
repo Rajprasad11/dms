@@ -1,9 +1,13 @@
 $(document).ready(function () {
                 $("#search-slide").slideUp(0);
             });
-$(function () {
+
+try {
     $('.date').datetimepicker();
-});
+    
+} catch (err) {
+
+}
 
 $('input').bind("cut copy paste",function(e) {
           e.preventDefault();
