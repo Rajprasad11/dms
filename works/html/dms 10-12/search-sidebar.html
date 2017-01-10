@@ -46,7 +46,7 @@
                         <li class="active"><a href="buy.html">Buy</a></li>
                         <li><a href="inventory.html">Sell</a></li>
                         <li><a href="myprofile.html">Manage</a></li>
-                        <li><a href="group.html">Communications</a></li>
+                        <li><a href="#">Communications</a></li>
                         <li><a href="#">Reports</a></li>
                         <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
                         <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
@@ -74,14 +74,15 @@
                     <li>
                             <input type="text" class="ts-sidebar-search" placeholder="Search here...">
                     </li>-->
-                    <li><a href="buy.html"><i class="fa fa-search"></i> Search</a></li>
-                    <li><a class="sub-active" href="saved.html"><i class="fa fa-car"></i> Saved Cars</a>
+                    <li><a class="sub-active" href="buy.html"><i class="fa fa-search"></i> Search</a></li>
+                    <li><a href="saved.html"><i class="fa fa-car"></i> Saved Cars</a>
                     </li>
                     <li><a href="myquery.html"><i class="fa fa-question-circle"></i> My Queries</a></li>
                     <li><a href="bids.html"><i class="fa fa-bitbucket-square"></i> Bids Posted</a></li>
                     <li><a href="fund.html"><i class="fa fa-money"></i> Apply Inventory Funding</a></li>
 
                 </ul>
+
                 <!-- Account from above -->
                 <ul class="ts-profile-nav ts-sidebar-menu">
 
@@ -148,12 +149,14 @@
                     <li><a href="saved.html"> <div><i class="fa fa-eye"></i> <span class="add-count">(5)</span></div><div>Recent View</div></a></li>
                     <li><a href="comparetwo.html"><div><i class="fa fa-balance-scale"></i> <span class="add-count">(11)</span></div>
                             <div>Compare</div> </a></li></ul>
+
             </nav>
             <div class="content-wrapper">
                 <div class="container-fluid">
 
                     <div class="row">
                         <div class="content-header col-sm-12">
+
                             <div class="row top-search" id="search-slide">
                                 <div class="input-group-btn search-panel">
                                     <select class="col-xs-12 col-sm-12 btn btn-primary">
@@ -169,19 +172,24 @@
                                 <span class="input-group-btn">
                                     <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
                                 </span></div>
+
                             <ol class="breadcrumb">
                                 <li><a href="index.html"><i class="fa fa-dashboard"></i> Buy</a></li>
-                                <li class="active">Saved cars</li>
+                                <li class="active">Search</li>
                             </ol>
                         </div>
                         <div class="col-xs-12">
-                            <div class="top-filters container-fluid">
+                            <div class="top-filters container-fluid"><select class="btn btn-primary col-xs-4">
+                                    <option value="">City</option>
+                                    <option value="1" title="Dutser">Chennai</option>
+                                    <option value="2" title="Captur">Madurai</option>
+                                    <option value="3" title="Lodgy">Ooty</option></select>
 
-                                <div class="col-sm-4 col-xs-12"><div class="input-group">
-                                        <input type="text" placeholder="Enter Car Name" class="form-control">
+                                <div class="col-xs-4"><div class="input-group">
+                                        <input type="text" placeholder="Enter your pincode" class="form-control">
                                         <span class="input-group-btn"><button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button></span>
                                     </div></div>
-                                <div class="col-sm-3 col-xs-12 pull-right"><span>Sort by</span>&nbsp;&nbsp;<select class="btn btn-primary">
+                                <div class="col-xs-3 pull-right"><span>Sort by</span>&nbsp;&nbsp;<select class="btn btn-primary">
                                         <optgroup label="Price">
                                             <option>High To Low</option>
                                             <option>Low To High</option>
@@ -198,7 +206,9 @@
                                             <option>Most Viewed</option>
                                             <option>least Viewed</option>
                                         </optgroup>
-                                    </select></div>
+                                    </select>
+
+                                </div>
                             </div>
 
                             <!--<h2 class="page-title">Buy Listings</h2>-->
@@ -212,7 +222,31 @@
                                    <a href="search2.html" id="grid" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th"></span>Grid</a>
                     </div>
                             </div>-->
+                                <div class="row">
+                                    <div class="col-xs-12 tags-top"><ul class="tag"><li class="alert alert-default col-xs-2">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-remove"></i></button>
+                                                <p><span class="filter-tag">Make:</span> Audi</p>
+                                            </li>
+                                            <li class="alert alert-default col-xs-2">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-remove"></i></button>
+                                                <p><span class="filter-tag">Model:</span> BMW</p>
+                                            </li>
+                                            <li class="alert alert-default col-xs-2">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-remove"></i></button>
+                                                <p><span class="filter-tag">Fuel:</span> Diesel</p>
+                                            </li>
+                                            <li class="alert alert-default col-xs-2">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-remove"></i></button>
+                                                <p><span class="filter-tag">Year:</span> 2018</p>
+                                            </li>
+                                            <li class="alert alert-default col-xs-2">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-remove"></i></button>
+                                                <p><span class="filter-tag">Place:</span> Cochin</p>
+                                            </li>
 
+                                        </ul>
+                                    </div>
+                                </div>
                                 <ul id="listing">
                                     <li class="panel panel-primary alert">
                                         <div class="panel-body all-list">
@@ -304,142 +338,191 @@
                                                         <span class="input-group-btn"><button id="close-bid" onclick="myFunction()" type="button" class="btn btn-warning">Bid</button></span>
                                                     </div></div></form></div>
 
+                                    </li>
+                                    <li class="panel panel-primary alert">
+
+                                        <div class="panel-body all-list">
+                                            <span class="label-list">Viewed</span>
+                                            <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                <p class="text-primary count-photo">8 photos</p></div>
+                                            <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4><p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                <p class="sale">Listing , <span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                <ul class="view-buttons pull-right"><li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                    <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                <ul class="col-xs-2 detail-wishlist">
+                                                    <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                    <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="panel panel-primary alert">
+
+                                        <div class="panel-body all-list">
+                                            <span class="label-list">Viewed</span>
+                                            <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                <p class="text-primary count-photo">8 photos</p></div>
+                                            <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4><p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                <p class="sale"><span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                <ul class="view-buttons pull-right"><li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                    <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                <ul class="col-xs-2 detail-wishlist">
+                                                    <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                    <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                            </div>
+                                        </div>
+
                                     </li></ul>
                             </div>
-                            <div class="col-xs-12 col-sm-4 filter">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">NARROW YOUR SEARCH FOR USED CAR</div>
-                                    <div class="panel-body">
-                                        <form method="get" class="form-horizontal">
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Car Sites:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker" multiple data-selected-text-format="count">
-                                                        <option value="">Cardekho</option><option value="">Quickr</option><option value="">Carwale</option><option value="">OLX</option>
-                                                    </select>
+                            
+                                <div class="col-xs-12 col-sm-4 accordsec">
+                            <button class="accordion active">Price Range</button>
+                            <div class="panel panel1 show">
+                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox1" name="price-filter">
+                                                    <label for="fCheckbox1">
+                                                        Rs. 1 lakh - Rs. 3 lakh
+                                                    </label>
+                                                    <span class="pull-right count-filter">200</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Car Make:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker" multiple data-selected-text-format="count">
-                                                        <option value="15">Audi</option><option value="2">BMW</option><option value="13">Chevrolet</option><option value="3">Ferarri</option><option value="21">Fiat</option><option value="11">Ford</option><option value="19">Honda</option><option value="10">Hyundai</option><option value="6">Jaguar</option><option value="22">Jeep</option><option value="14">Land Rover</option><option value="20">Mahindra</option><option value="4">Maruti Suzuki</option><option value="16">Mercedes Benz</option><option value="17">Mitsubishi</option><option value="1">Nissan</option><option value="8">Renault</option><option value="7">Skoda</option><option value="5">TATA</option><option value="9">Toyota</option><option value="18">Volkswagen</option>
-                                                    </select>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox2" name="price-filter">
+                                                    <label for="fCheckbox2">
+                                                        Rs. 3 lakh - Rs. 5 lakh
+                                                    </label>
+                                                    <span class="pull-right count-filter">500</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Car Model:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker">
-                                                        <option value="15">Audi R8</option><option value="2">Audi A3</option><option value="13">Audi A3 Cabriolet</option>
-                                                    </select>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox3" name="price-filter">
+                                                    <label for="fCheckbox3">
+                                                        Rs. 5 lakh - Rs. 10 lakh
+                                                    </label>
+                                                    <span class="pull-right count-filter">1000</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Car Year:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker">
-                                                        <option value="15">2015</option><option value="2">2014</option><option value="13">2016</option><option value="13">2013</option><option value="13">2012</option><option value="13">2011</option>
-                                                    </select>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox4" name="price-filter">
+                                                    <label for="fCheckbox4">
+                                                        Rs. 10 lakh - Rs. 20 lakh
+                                                    </label>
+                                                    <span class="pull-right count-filter">600</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Transmission:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker btn-success">
-                                                        <option value="15">Manual</option><option value="2">Transmission</option><option value="13">Automatic</option>
-                                                    </select>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox5" name="price-filter">
+                                                    <label for="fCheckbox5">
+                                                        Rs. 20 lakh - Rs. 50 lakh
+                                                    </label>
+                                                    <span class="pull-right count-filter">100</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-4 control-label">Fuel Type:</label>
-                                                <div class="col-xs-8">
-                                                    <select class="selectpicker btn-success">
-                                                        <option value="15">Gasoline</option><option value="2">Diesel</option><option value="13">Petrol</option>
-                                                    </select>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="fCheckbox6" name="price-filter">
+                                                    <label for="fCheckbox6">
+                                                        Rs. 50 lakh - Rs. 1 crore
+                                                    </label>
+                                                    <span class="pull-right count-filter">10</span>
                                                 </div>
-                                            </div>
-                                            <div class="hr-dashed"></div>
-                                            <div class="form-group">
-                                                <label class="col-xs-12 control-label">Price Range:
-                                                    <br>
-                                                </label>
-                                                <div class="col-xs-12">
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="fCheckbox1" name="price-filter">
-                                                        <label for="fCheckbox1">
-                                                            Rs. 1 LAKH - Rs. 3 LAKH
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="fCheckbox2" name="price-filter">
-                                                        <label for="fCheckbox2">
-                                                            Rs. 3 LAKH - Rs. 5 LAKH
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="fCheckbox3" name="price-filter">
-                                                        <label for="fCheckbox3">
-                                                            Rs. 5 LAKH - Rs. 10 LAKH
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="fCheckbox4" name="price-filter">
-                                                        <label for="fCheckbox4">
-                                                            Rs. 10 LAKH - Rs. 20 LAKH
-                                                        </label>
-                                                    </div>
 
+                            </div>
+                        </div>
+                             <div class="col-xs-12 col-sm-4 accordsec">
+                            <button class="accordion active">Car Model</button>
+                            <div class="panel panel1 show">
+                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="bCheckbox1" name="body-type">
+                                                    <label for="bCheckbox1">
+                                                        Sedan
+                                                    </label>
+                                                    <span class="pull-right count-filter">200</span>
                                                 </div>
-                                            </div>
-
-                                            <div class="hr-dashed"></div>
-
-                                            <div class="form-group">
-                                                <label class="col-sm-4 control-label">Body Type:
-                                                    <br>
-                                                </label>
-                                                <div class="col-sm-9">
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="bCheckbox1" name="price-filter">
-                                                        <label for="bCheckbox1">
-                                                            Sedan <span class="text-warning">(12)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="bCheckbox2" name="price-filter">
-                                                        <label for="bCheckbox2">
-                                                            Hatchback <span class="text-warning">(7)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="bCheckbox3" name="price-filter">
-                                                        <label for="bCheckbox3">
-                                                            Suv <span class="text-warning">(112)</span>
-                                                        </label>
-                                                    </div>
-                                                    <div class="checkbox checkbox-info">
-                                                        <input type="radio" id="bCheckbox4" name="price-filter">
-                                                        <label for="bCheckbox4">
-                                                            Coupe <span class="text-warning">(73)</span>
-                                                        </label>
-                                                    </div>
-
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="bCheckbox2" name="body-type">
+                                                    <label for="bCheckbox2">
+                                                        Hatchback
+                                                    </label>
+                                                    <span class="pull-right count-filter">500</span>
                                                 </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="bCheckbox3" name="body-type">
+                                                    <label for="bCheckbox3">
+                                                        Suv
+                                                    </label>
+                                                    <span class="pull-right count-filter">1000</span>
+                                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="bCheckbox4" name="body-type">
+                                                    <label for="bCheckbox4">
+                                                        Coupe
+                                                    </label>
+                                                    <span class="pull-right count-filter">600</span>
+                                                </div>
+
+                            </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-4 accordsec">
+                            <button class="accordion active">Fuel Type</button>
+                            <div class="panel panel1 show">
+                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="FTCheckbox1" name="body-type">
+                                                    <label for="FTCheckbox1">
+                                                        Petrol
+                                                    </label>
+                                                    <span class="pull-right count-filter">200</span>
+                                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="FTCheckbox2" name="body-type">
+                                                    <label for="FTCheckbox2">
+                                                       Diesel
+                                                    </label>
+                                                    <span class="pull-right count-filter">500</span>
+                                                </div>
+                                                
+
+                            </div>
+                        </div>
+                            <div class="col-xs-12 col-sm-4 accordsec">
+                            <button class="accordion active">Car Sites</button>
+                            <div class="panel panel1 show">
+                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="CCheckbox1" name="body-type">
+                                                    <label for="CCheckbox1">
+                                                        Quikr
+                                                    </label>
+                                                    <span class="pull-right count-filter">200</span>
+                                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="CCheckbox2" name="body-type">
+                                                    <label for="CCheckbox2">
+                                                        Car Wale
+                                                    </label>
+                                                    <span class="pull-right count-filter">500</span>
+                                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="CCheckbox3" name="body-type">
+                                                    <label for="CCheckbox3">
+                                                        Car Dekho
+                                                    </label>
+                                                    <span class="pull-right count-filter">1000</span>
+                                                </div>
+                                                <div class="checkbox checkbox1 checkbox-info">
+                                                    <input type="radio" id="CCheckbox4" name="body-type">
+                                                    <label for="CCheckbox4">
+                                                        OLX
+                                                    </label>
+                                                    <span class="pull-right count-filter">600</span>
+                                                </div>
+
+                            </div>
+                        </div>
+                                
                             </div>
 
                         </div>
                     </div>
-                    <nav aria-label="...">
+                    <nav>
                         <ul class="pagination pagination-md">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
@@ -511,6 +594,7 @@
             </div>
         </div>
 
+
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap-select.min.js"></script>
@@ -526,7 +610,8 @@
                                                             $("#email-alert-send").click(function () {
                                                                 $(".email").slideToggle(1000);
                                                             });
-        </script>
+                                                           
+           </script>
         <script>
             $(document).ready(function () {
                 $("#search-slide").slideUp(0);
@@ -552,6 +637,17 @@
                 $(this).parent(".dropdown").ToggleClass("open");
 //               $(this).children(".dropdown-menu").slideToggle();
             });
+        </script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function () {
+                    this.classList.toggle("active");
+                    this.nextElementSibling.classList.toggle("show");
+                }
+            }
         </script>
     </body>
 
