@@ -57,8 +57,8 @@
                         <li class="ts-account">
                             <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Hi Jeeva <i class="fa fa-angle-down hidden-side"></i></a>
                             <ul>
-                                <li><a href="myaccount.html">My Account</a></li>
-                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="myprofile.html">My Account</a></li>
+                                <li><a href="editprofile.html">Edit Account</a></li>
                                 <li><a href="#">Logout</a></li>
                             </ul>
 
@@ -73,9 +73,9 @@
                     <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
                     <li><a class="sub-active" href="mybuss-profile.html"><i class="fa fa-user"></i> My Business Profile</a></li>
                     <li><a href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
-                    <li><a href="mycontact.html"><i class="fa fa-list"></i> My Leads</a></li>
-                    <li><a href="mycontact.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
-                    <li><a href="mycontact.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-list"></i> My Leads</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
+                    <li><a href="mycustomer.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
                     <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
                     <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
                 </ul>
@@ -135,8 +135,8 @@
                         </ul>
                     </li>
                     <li class="ts-account"><a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
-                    <li><a href="myaccount.html">My Account</a></li>
-                    <li><a href="#">Edit Account</a></li>
+                    <li><a href="myprofile.html">My Account</a></li>
+                    <li><a href="editprofile.html">Edit Account</a></li>
                     <li><a href="#">Logout</a></li>
                     <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
                     <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
@@ -186,11 +186,7 @@
                                 </div>
                                 <div class="col-lg-8 col-sm-8 col-xs-12 profile-info pull-right">
                                     <div class="addcover pull-right">
-                                        <ul><li><i class="fa fa-camera" aria-hidden="true"></i></li></ul>
-                                        <ul class="addcoverul">
-                                            <li><a href=""><i class="fa fa-retweet" aria-hidden="true"></i> Change Cover Photo</a></li>
-                                            <li><a href=""><i class="fa fa-times" aria-hidden="true"></i> Remove Cover Photo</a></li>
-                                        </ul>
+                                        <ul><li><a href=""><i class="fa fa-camera" aria-hidden="true"></i></a></li></ul>
                                     </div>
                                     <div class="social pull-right">
                                         <ul class="social-network social-circle">
@@ -645,45 +641,23 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/dealerplus.js"></script>
-        <script>
-                                                                                $(document).ready(function () {
-                                                                                    $(".addcoverul").css({
-                                                                                        'height':'0px',
-                                                                                        'opacity':'0'
-                                                                                    });
-                                                                                    var i =0;
-                                                                                    $(".addcover").click(function () {
-                                                                                        if(i==0){
-                                                                                           $(".addcoverul").css({
-                                                                                        'height':'auto',
-                                                                                        'opacity':'1'
-                                                                                    });
-                                                                                    i=1;
-                                                                                }else if(i==1){
-                                                                                          $(".addcoverul").css({
-                                                                                     'height':'0px',
-                                                                                        'opacity':'0'
-                                                                                    }); 
-                                                                                    i=0;
-                                                                                }
-                                                                                    });
-                                                                                });
-        </script>
         <script src="js/main.js" type="text/javascript"></script>
-        <script src="js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
         <script src="js/label-slide.js" type="text/javascript"></script>
         <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
         <script>
-                                                                                $(document).ready(function () {
+                                                                                //tab js//
+                                                                                $(document).ready(function (e) {
                                                                                     $("#flip").click(function () {
                                                                                         $("#panel").slideToggle("5000");
                                                                                     });
+                                                                                });
 
-                                                                                });
-                                                                                $('.BSbtninfo').filestyle({
-                                                                                    buttonName: 'btn-info',
-                                                                                    buttonText: ' Select a File'
-                                                                                });
+        </script>
+        <script>
+            $('.BSbtninfo').filestyle({
+                buttonName: 'btn-info',
+                buttonText: ' Select a File'
+            });
         </script>
     </body>
 
