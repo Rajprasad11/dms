@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 try {
     $('.date').datetimepicker();
+    $.validate();
     
 } catch (err) {
 
@@ -92,7 +93,7 @@ $('.data-name').keydown(function (e) {
         }
     });
 });
-$.validate();
+
 $(document).on('click', '.btn-primary', function ($this) {
 	$.validate();
 });
