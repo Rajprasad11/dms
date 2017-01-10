@@ -11,19 +11,14 @@
 
         <title>DMS</title>
 
-
         <!-- Font awesome -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Sandstone Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- Bootstrap Datatables -->
-        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
         <!-- Bootstrap social button library -->
         <link rel="stylesheet" href="css/bootstrap-social.css">
         <!-- Bootstrap select -->
         <link rel="stylesheet" href="css/bootstrap-select.css">
-        <!-- Bootstrap file input -->
-        <link rel="stylesheet" href="css/fileinput.min.css">
         <!-- Awesome Bootstrap checkbox -->
         <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
         <!-- Admin Stye -->
@@ -174,15 +169,16 @@
                                     <div class="profile-headimg">
                                         <img src="img/logo.png" class="img-responsive" alt="Dealer Name"/>
                                     </div>
-                                    <h5>Name</h5>
+                                    <h5><i class="fa fa-check-square-o" aria-hidden="true"></i> Name</h5>
                                     <p>Dealership Name </p>
-                                    <ul>
+                                    <p class="btn btn-primary" id="flip">View Contact Details <i class="fa fa-hand-o-left" aria-hidden="true"></i></p>
+                                    <ul id="panel">
                                         <li><span class="glyphicon glyphicon-phone-alt"></span> Landline No</li>
                                         <li><span class="glyphicon glyphicon-print"></span> Fax No</li>
                                         <li><span class="glyphicon glyphicon-phone"></span> Mobile No</li>
                                         <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">sample@gmail.com</a></li>
                                     </ul>
-                                    <span>20 Cars</span>
+                                    <span class="btn btn-primary col-xs-6">20 Cars</span>
                                 </div>
                                 <div class="col-lg-8 col-sm-8 col-xs-12 profile-info pull-right">
                                     <div class="addcover pull-right">
@@ -648,32 +644,32 @@
         <script>
                                                                                 $(document).ready(function () {
                                                                                     $(".addcoverul").css({
-                                                                                        'height':'0px',
-                                                                                        'opacity':'0'
+                                                                                        'height': '0px',
+                                                                                        'opacity': '0'
                                                                                     });
-                                                                                    var i =0;
+                                                                                    var i = 0;
                                                                                     $(".addcover").click(function () {
-                                                                                        if(i==0){
-                                                                                           $(".addcoverul").css({
-                                                                                        'height':'auto',
-                                                                                        'opacity':'1'
-                                                                                    });
-                                                                                    i=1;
-                                                                                }else if(i==1){
-                                                                                          $(".addcoverul").css({
-                                                                                     'height':'0px',
-                                                                                        'opacity':'0'
-                                                                                    }); 
-                                                                                    i=0;
-                                                                                }
+                                                                                        if (i == 0) {
+                                                                                            $(".addcoverul").css({
+                                                                                                'height': 'auto',
+                                                                                                'opacity': '1'
+                                                                                            });
+                                                                                            i = 1;
+                                                                                        } else if (i == 1) {
+                                                                                            $(".addcoverul").css({
+                                                                                                'height': '0px',
+                                                                                                'opacity': '0'
+                                                                                            });
+                                                                                            i = 0;
+                                                                                        }
                                                                                     });
                                                                                 });
         </script>
         <script src="js/main.js" type="text/javascript"></script>
-        <script src="js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
         <script src="js/label-slide.js" type="text/javascript"></script>
         <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
         <script>
+                                                                                $("#panel").slideUp(0);
                                                                                 $(document).ready(function () {
                                                                                     $("#flip").click(function () {
                                                                                         $("#panel").slideToggle("5000");
