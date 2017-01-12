@@ -1,13 +1,16 @@
-<html lang="en" >
+<!Doctype html>
+<html>
    <head>
 	<title>Register</title>
 	<meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-      <link rel="stylesheet" href="css/angular-material.min.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <link rel="stylesheet" href="css/style2.css">
-	   <script src="js/test.js"></script>
+		
+		<link rel="stylesheet" href="css/angular-material.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" href="css/style2.css">
+		<script src="js/test.js"></script>
 </head>
 
 <body ng-app="firstApplication"> 
@@ -16,11 +19,12 @@
 	<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
 			<img src="images/logo.png" >
 		</section>
-		
+	
+	<div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">	
 	<md-content layout-padding class="md-padding _md layout-xs-column layout-row" layout-xs="column" layout="row">
 	
 	<!---ROW1-->
-	<div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+	
         <md-card>
         <form name="registerForm">
 			 <md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
@@ -140,7 +144,9 @@
 						</md-content>
 					</md-tab>
 				</md-tabs>
-										<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
+				
+				
+					<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
 
 							<a href="order-summary.html"><button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Submit</span></button></a>
 					</section>
@@ -159,18 +165,14 @@
 			
 
 	</div>
-</div>
+
 	
 
   
   </md-content>
+	</div>
 	
-		
-
-	
-
-		
-		  <script src="js/angular.min.js"></script>
+	 <script src="js/angular.min.js"></script>
 		  <script src="js/angular-animate.min.js"></script>
 		  <script src="js/angular-aria.min.js"></script>
 		  <script src="js/angular-messages.min.js"></script>
