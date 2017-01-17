@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="theme-color" content="#3e454c">
+
+        <title>DMS</title>
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Sandstone Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Bootstrap social button library -->
+        <link rel="stylesheet" href="css/bootstrap-social.css">
+        <!-- Bootstrap select -->
+        <link rel="stylesheet" href="css/bootstrap-select.css">
+        <!-- Awesome Bootstrap checkbox -->
+        <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+        <!-- Admin Stye -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
+
+    <body>
+        <div class="brand container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-8"><a href="index.html" class="logo"><img src="img/logo.png" class="img-responsive" alt=""></a></div>
+                <span class="menu-btn"><i class="fa fa-bars"></i></span>
+                <span class="searching-click hidden-sm hidden-md hidden-lg"><a href="#" class="search-click"><i class="fa fa-search"></i></a></span>
+                <div class="col-sm-9 col-xs-9"><ul class="ts-profile-nav row">
+
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="buy.html">Buy</a></li>
+                        <li><a href="inventory.html">Sell</a></li>
+                        <li class="active"><a href="myprofile.html">Manage</a></li>
+                        <li><a href="#">Communications</a></li>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#" class="search-click"><i class="fa fa-search"></i></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                        <li class="notification"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+
+                        <li class="ts-account">
+                            <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Hi Jeeva <i class="fa fa-angle-down hidden-side"></i></a>
+                            <ul>
+                                <li><a href="myaccount.html">My Account</a></li>
+                                <li><a href="#">Edit Account</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+
+                        </li>
+                    </ul></div>
+            </div>
+
+        </div>
+        <div class="ts-main-content">
+            <nav class="ts-sidebar">
+                <ul class="ts-sidebar-menu hidden-sm hidden-xs">
+                    <li><a href="myprofile.html"><i class="fa fa-user"></i> My Profile</a></li>
+                    <li><a class="sub-active" href="mybuss-profile.html"><i class="fa fa-user"></i> My Business Profile</a></li>
+                    <li><a href="mybranch.html"><i class="fa fa-sitemap"></i> My Branches</a></li>
+                    <li><a href="mycontact.html"><i class="fa fa-list"></i> My Leads</a></li>
+                    <li><a href="mycontact.html"><i class="fa fa-user-plus"></i> My Customer</a></li>
+                    <li><a href="mycontact.html"><i class="fa fa-phone-square"></i> My Contacts</a></li>
+                    <li><a href="myuser.html"><i class="fa fa-users"></i> My Users</a></li>
+                    <li><a href="subscription.html"><i class="fa fa-street-view"></i> Subscriptions</a></li>
+                </ul>
+                <!-- Account from above -->
+                <ul class="ts-profile-nav ts-sidebar-menu">
+
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Buy</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="search.html">Search</a></li>
+                            <li><a href="saved.html">Saved Cars</a></li>
+                            <li><a class="test"  href="myquery.html">My Queries</a></li>
+                            <li><a href="bids.html">Bids Posted</a></li>
+                            <li><a href="fund.html">Apply Inventory Funding</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="listing.html">Sell</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="inventory.html">My Inventory</a></li>
+                            <li><a href="myposting.html">My Postings</a></li>
+                            <li><a class="test" href="myauction.html">My Auctions</a></li>
+                            <li><a href="queries.html">Queries Received</a></li>
+                            <li><a href="apply-loan.html">Apply Loan For Customers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="managelisting.html">Manage</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="myprofile.html">My Profile</a></li>
+                            <li><a href="mybranch.html">My Branches</a></li>
+                            <li><a href="mycontact.html">My Leads</a></li>
+                            <li><a class="test" href="mycontact.html">My Customer</a></li>
+                            <li><a href="mycontact.html">My Contacts</a></li>
+                            <li><a href="myuser.html">My Users</a></li>
+                            <li><a href="subscription.html">Subscriptions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="myaccount.html">Communication</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Groups</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a class="test" href="#">Promotions</a></li>
+                            <li><a href="#">Notifications</a></li>
+                            <li><a href="#">Messages</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="detail-list.html">Reports</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Inventory</a></li>
+                            <li><a class="test" href="#">Expenses</a></li>
+                            <li><a href="#">Profit & Loss</a></li>
+                            <li><a href="#">User Reports</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="ts-account"><a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a></li>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="#">Edit Account</a></li>
+                    <li><a href="#">Logout</a></li>
+                    <li class="notification"><a href="#"><i class="fa fa-envelope"></i><span>1</span></a></li>
+                    <li class="notification1"><a href="#"><i class="fa fa-comment"></i><span>3</span></a></li>
+                </ul>
+
+
+            </nav>
+            <div class="content-wrapper myprofile">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="content-header col-sm-12">
+                            <div class="row top-search" id="search-slide">
+                                <div class="input-group-btn search-panel">
+                                    <select class="col-xs-12 col-sm-12 btn btn-primary">
+                                        <option value="">Filter</option>
+                                        <option value="1">Inventory</option>
+                                        <option value="2">Customer</option>
+                                        <option value="3">Dealers</option>
+                                        <option value="4">Cars</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" class="" id="search_param">         
+                                <input type="text" class="form-control" name="x" placeholder="Search term...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span></div>
+                            <ol class="breadcrumb">
+                                <li><a href="myprofile.html"><i class="fa fa-dashboard"></i> Manage</a></li>
+                                <li class="active">My Business Profile</li>
+                            </ol>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="profile-head row">
+                                <div class="col-lg-4 col-sm-4 col-xs-12 profile-headdiv">
+                                    <div class="profile-headimg">
+                                        <img src="img/logo.png" class="img-responsive" alt="Dealer Name"/>
+                                    </div>
+                                    <h5><i class="fa fa-check-square-o" aria-hidden="true"></i> Name</h5>
+                                    <p>Dealership Name </p>
+                                    <p class="btn btn-primary" id="flip">View Contact Details <i class="fa fa-hand-o-left" aria-hidden="true"></i></p>
+                                    <ul id="panel">
+                                        <li><span class="glyphicon glyphicon-phone-alt"></span> Landline No</li>
+                                        <li><span class="glyphicon glyphicon-print"></span> Fax No</li>
+                                        <li><span class="glyphicon glyphicon-phone"></span> Mobile No</li>
+                                        <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">sample@gmail.com</a></li>
+                                    </ul>
+                                    <span class="btn btn-primary col-xs-6">20 Cars</span>
+                                </div>
+                                <div class="col-lg-8 col-sm-8 col-xs-12 profile-info pull-right">
+                                    <div class="addcover pull-right">
+                                        <ul><li><i class="fa fa-camera" aria-hidden="true"></i></li></ul>
+                                        <ul class="addcoverul">
+                                            <li><a href=""><i class="fa fa-retweet" aria-hidden="true"></i> Change Cover Photo</a></li>
+                                            <li><a href=""><i class="fa fa-times" aria-hidden="true"></i> Remove Cover Photo</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="social pull-right">
+                                        <ul class="social-network social-circle">
+                                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                        </ul>
+                                        <!--<a href=""><i class="fa fa-eye" aria-hidden="true"></i> Preview Public Profile</a>-->
+                                        <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact Now</a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sticky" class="row">
+
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs nav-menu" role="tablist">
+                                    <li class="active">
+                                        <a href="#profile" role="tab" data-toggle="tab">
+                                            <i class="fa fa-male"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li><a href="#change" role="tab" data-toggle="tab">
+                                            <i class="fa fa-key"></i> Edit Profile
+                                        </a>
+                                    </li>
+                                </ul><!--nav-tabs close-->
+
+                                <!-- Tab panes -->
+                                <div class="tab-content col-xs-12">
+                                    <div class="tab-pane fade active in row card" id="profile">
+                                        <div class="col-xs-12">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <h4 class="pro-title">My Business Profile</h4>
+                                                </div><!--col-md-12 close-->
+
+
+                                                <div class="col-sm-8 col-xs-12">
+                                                    <ul id="listing">
+
+                                                        <li class="panel panel-primary alert">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-xs-12 col-sm-4"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p>
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-8 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li class="good-deal"><i data-toggle="tooltip" title="" data-original-title="Good deal" data-placement="left" class="fa fa-thumbs-o-up"></i></li>
+                                                                        <li><img src="img/online.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li>
+                                                                    </ul>
+                                                                    <ul class="detail-wishlist col-xs-2">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="col-xs-12 email">
+                                                                    <h4 class="col-xs-12 col-sm-12 email-alert">Get Email alerts for new listing this search</h4>
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="panel panel-primary alert bidding">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-xs-12 col-sm-4"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-xs-12 col-sm-8 list-detail list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span id="bid" class="list-offer">Auction, Make offer</span></p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li><img src="img/online1.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-auction.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+                                                                <div class="col-xs-12 email">
+                                                                    <h4 class="col-xs-12 col-sm-12 email-alert">Get Email alerts for new listing this search</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="all-list-bid" id="bid">
+                                                                <button type="button" class="close1"><i class="fa fa-remove"></i></button>
+                                                                <form><div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="mail" class="form-control">
+                                                                            <span class="input-group-btn"><button id="close-bid" onclick="myFunction()" type="button" class="btn btn-warning">Bid</button></span>
+                                                                        </div></div></form></div>
+
+                                                        </li>
+
+                                                        <li class="panel panel-primary alert bidding">
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4>
+                                                                    <p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale"><span id="list-offer" class="list-offer">Auction, Make offer</span></p>
+                                                                    <ul class="view-buttons pull-right">
+                                                                        <li class="good-deal"><i data-toggle="tooltip" title="" data-original-title="Good deal" data-placement="left" class="fa fa-thumbs-o-up"></i></li>
+                                                                        <li><img src="img/online1.png" alt=""/></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-auction.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="all-list-bid" id="bid">
+                                                                <button type="button" class="close1"><i class="fa fa-remove"></i></button>
+                                                                <form><div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="mail" class="form-control">
+                                                                            <span class="input-group-btn"><button id="close-bid" onclick="myFunction()" type="button" class="btn btn-warning">Bid</button></span>
+                                                                        </div></div></form></div>
+
+                                                        </li>
+                                                        <li class="panel panel-primary alert">
+
+                                                            <div class="panel-body all-list">
+                                                                <span class="label-list">Viewed</span>
+                                                                <div class="col-sm-4 col-xs-12"><img src="img/car1.jpg" class="img-responsive style_prevu_kit" alt=""/>
+                                                                    <p class="text-primary count-photo">8 photos</p></div>
+                                                                <div class="col-sm-8 col-xs-12 list-text"><h4 class="text-primary buy-list">Audi S6 4.0 TFSI Quattro</h4><p class="text-primary"><i class="fa fa-map-marker"></i>&nbsp;Alandur, Chennai <span class="list-date">- listed 2 days ago</span></p>
+                                                                    <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                                                    <p class="sale">Listing , <span class="rate"><i class="fa fa-rupee"></i></span> 50,00,000</p>
+                                                                    <ul class="view-buttons pull-right"><li><a href="detail-list.html" class="btn btn-warning all-list-btn btn-sm">View Similar</a></li>
+                                                                        <li><a href="detail-list.html" class="btn btn-primary all-list-btn btn-sm">View More</a></li></ul>
+                                                                    <ul class="col-xs-2 detail-wishlist">
+                                                                        <li id="email-alert-send"><span><i class="fa fa-bell"  data-toggle="tooltip" title="" data-original-title="Alert" data-placement="left"></i></span></li>
+                                                                        <li><a href="#"><i data-toggle="tooltip" title="" data-original-title="Saved cars" data-placement="left" class="fa fa-heart"></i></a></li>
+                                                                        <li><a href="#"><i class="fa fa-balance-scale" data-toggle="tooltip" title="" data-original-title="Compare" data-placement="left"></i></a></li></ul>
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                    </ul>
+
+                                                </div><!--col-md-6 close-->
+
+                                                <div class="col-sm-4 col-xs-12  businesscon">
+                                                    <div class="col-xs-12 card">
+                                                        <div class="panel-heading"><b>About Us</b></div>
+                                                        <p>Our revolutionary DMS is here to make your job easier than ever with our ground-breaking technology and our high domain expertise. It has never been easier than now to add/manage your stock inventory and posting them on multiple platforms with just one click of a button. Our latest innovation in this field of used car market is bound to be extremely beneficial and time saving for you, while your time on advertising is cut down to nearly 95% also your sales numbers will drastically improve as we are partnered with almost all the major classified and marketplace platforms. With just one click your stock is displayed to millions of potentials buyers!</p>
+                                                    </div>
+                                                    <div class="col-xs-12 card">
+                                                        <div class="panel-heading"><b>Map View </b></div>
+                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7775.259104962695!2d80.25971612276848!3d12.995529463360684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfalconnect!5e0!3m2!1sen!2sin!4v1480317457160" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                    </div>
+                                                    <div class="col-xs-12 card">
+                                                        <div class="panel-heading"><b>Private Details</b></div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">Line of Business</label>
+                                                            <p class="col-lg-7 col-xs-12">Car Dealership/Broker</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">Company status</label>
+                                                            <p class="col-lg-7 col-xs-12">Individual /Proprietor / Partnership / Private Ltd / Others</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">Dealership Started</label>
+                                                            <p class="col-lg-7 col-xs-12">19th dec 2014</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">PAN Number</label>
+                                                            <p class="col-lg-7 col-xs-12">ASD3483458SDFSD</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">Dealership Type</label>
+                                                            <p class="col-lg-7 col-xs-12">New Cars/Used Cars</p>
+                                                        </div>
+                                                        <div class="row">
+                                                            <label class="col-lg-5 col-xs-12">Company Incorporation Documents</label>
+                                                            <p class="col-lg-7 col-xs-12">Document.doc</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div><!--col-md-6 close-->
+                                            </div><!--row close-->
+                                        </div><!--container close-->
+                                    </div><!--tab-pane close-->
+                                    <div class="tab-pane fade  row card" id="change">
+                                        <div class="col-xs-12 fom-main">
+                                            <div class="col-xs-12">
+                                                <div class="row">
+
+                                                    <h2 class="register">Manage Your Business Profile</h2>
+                                                </div><!--col-sm-12 close-->
+                                            </div><!--row close-->
+                                            <br />
+                                            <div class="col-xs-12">
+                                                <div class="row">
+                                                    <form class="form-horizontal main_form text-left" action=" " method="post"  id="contact_form">
+                                                        <fieldset>
+                                                            <!-- Text input-->
+                                                            <div class="col-xs-12 col-sm-6">
+
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Dealership Name</label>
+                                                                        <input name="dealership_name" placeholder="Dealership Name" class="form-control"  type="text" value="Dealership Name" >
+                                                                    </div> 
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Dealer Name</label> 
+                                                                        <input  name="dealer_name" placeholder="Dealer Name" class="form-control"  type="text" value="Dealer Name">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <!-- Text input-->
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Landline Number</label> 
+                                                                        <input name="landline" placeholder="Landline Number" class="form-control"  type="text" value="Landline Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Fax Number</label>  
+                                                                        <input name="fax" placeholder="Fax Number" class="form-control" type="text" value="Fax Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Mobile Number</label>  
+                                                                        <input name="mobile" placeholder="Mobile Number" class="form-control" type="text" value="Mobile Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Email Id</label> 
+                                                                        <input name="email" placeholder="Email Id" class="form-control" type="text" value="Email Id">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-6"> 
+                                                                <div class="col-xs-12 selectContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Line Of Business</label>
+                                                                        <select class="form-control">
+                                                                            <option value=" " >Line Of Business</option>
+                                                                            <option selected="">Car Dealership</option>
+                                                                            <option>Broker</option>
+                                                                        </select>
+                                                                    </div> 
+                                                                </div>
+                                                            </div>                                                          
+
+                                                            <div class="col-xs-12 col-sm-6">
+                                                                <div class="col-md-12 selectContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Company Status</label>
+                                                                        <select class="form-control">
+                                                                            <option value=" " >Company Status</option>
+                                                                            <option>Individual</option>
+                                                                            <option>Proprietor</option>
+                                                                            <option selected>Partnership</option>
+                                                                            <option>Private Ltd</option>
+                                                                            <option>Others</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Dealership Started</label>  
+                                                                        <input name="startdealership" placeholder="Dealership Started" class="form-control" type="text" value="Dealership Started"> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Text input-->
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>PAN Number</label> 
+                                                                        <input name="pan" placeholder="PAN Number" class="form-control" type="text" value="PAN Number">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-12 col-sm-6">
+                                                                <div class="col-md-12 selectContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Preferences</label>
+                                                                        <select class="form-control">
+                                                                            <option value=" " >Preferences</option>
+                                                                            <option>1 year</option>
+                                                                            <option selected>2 years</option>
+                                                                            <option>3 years</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div> <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Facebook Link</label>  
+                                                                        <input name="facebook" placeholder="Facebook Link" class="form-control" type="text" value="Facebook Link">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">                                                              
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>Twitter Link</label>  
+                                                                        <input name="twitter" placeholder="Twitter Link" class="form-control" type="text" value="Twitter Link">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Text input-->
+
+                                                            <div class="col-xs-12 col-sm-6">                                                             
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>LinkedIn Link</label>  
+                                                                        <input name="linkedin" placeholder="LinkedIn Link" class="form-control" type="text" value="LinkedIn Link">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-xs-12">
+                                                                <div class="col-xs-12 inputGroupContainer">
+                                                                    <div class="form-group field-wrapper1">
+                                                                        <label>About Us</label>
+                                                                        <textarea class="form-control" name="comment" placeholder="About Us" >About Us</textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- upload profile picture -->
+                                                            <div class="col-xs-12 col-sm-6 mt">
+                                                                <label> Upload Company Logo</label>
+                                                                <input type="file" class="BSbtninfo"/></div>
+
+                                                            <div class="col-xs-12 col-sm-6 mt">
+                                                                <label> Upload Company Incorporation Documents</label>
+                                                                <input type="file" class="BSbtninfo"/></div>
+
+                                                            <!-- Button -->
+                                                            <div class="form-group col-xs-10 mt">
+                                                                <div class="col-xs-6">
+                                                                    <button type="submit" class="btn btn-primary submit-button" >Save</button>
+                                                                    <button type="reset" class="btn btn-primary submit-button" >Cancel</button>
+
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </form>
+                                                </div><!--row close-->
+                                            </div><!--container close -->          
+                                        </div><!--tab-pane close-->
+                                    </div><!--tab-content close-->
+                                </div><!--container close-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="col-xs-12">
+                    <div class="row dash-footer">
+                        <!--<div class="hr-dashed"></div>-->
+                        <div class="col-xs-12 col-lg-8 col-md-9 col-sm-9 park-diva">
+                            <div class="col-sm-3 col-xs-12">
+                                <h5><b>Overview</b></h5>
+                                <p><a href="about.html">About</a></p>
+                                <p><a href="feedback.html">Feedback</a></p>
+                                <p><a href="contactus.html">Contact Us</a></p>
+                                <p><a href="faqs.html">FAQs</a></p>
+                            </div>
+                            <div class="col-sm-2 col-xs-12">
+                                <h5><b>Service</b></h5>
+                                <p><a href="advertise.html">Advertise</a></p>
+                            </div>
+                            <div class="col-sm-3 col-xs-12">
+                                <h5><b>Others</b></h5>
+                                <p><a href="privacy_policy.html">Privacy Policy</a></p>
+                                <p><a href="terms_conditions.html">Terms And Conditions</a></p>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <h5><b>Feel free to contact us</b></h5>
+                                <p><a href=""><i class="fa fa-phone"></i> 987654321</a></p>
+                                <p><a href="">Support@dealerplus.in</a></p>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-4 col-md-3 col-sm-3 downloadsec">
+                            <div class="col-xs-12">    
+                                <h5><a href=""><i class="fa fa-download" aria-hidden="true"></i> Download Dealer Plus Mobile App</a></h5>
+                            </div>
+                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/google_play2.png" class="img-responsive"/></a></div>
+                            <div class="col-xs-12  footerlogo"><a href=""><img src="img/app_store2.png" class="img-responsive"/></a></div>
+                        </div>
+                        <!--<div class="col-xs-12 hr-dashed"></div>-->
+                        <div class="col-xs-12 lastfooter">
+                            <div class="col-sm-8 col-xs-12"> <em>Copyright &copy; <a href="#"> 2016 Dealer Plus</a></em></div>
+                            <div class="col-sm-4 col-xs-12">  
+                                <ul class="social-network social-circle pull-right col-xs-12">
+                                    <!--<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>-->
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <!--<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>-->
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                </ul></div>
+
+                        </div>
+
+                    </div>
+                </footer>   
+            </div>
+
+        </div>
+
+        <!-- Loading Scripts -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/dealerplus.js"></script>
+        <script>
+                                                                                $(document).ready(function () {
+                                                                                    $(".addcoverul").css({
+                                                                                        'height': '0px',
+                                                                                        'opacity': '0'
+                                                                                    });
+                                                                                    var i = 0;
+                                                                                    $(".addcover").click(function () {
+                                                                                        if (i == 0) {
+                                                                                            $(".addcoverul").css({
+                                                                                                'height': 'auto',
+                                                                                                'opacity': '1'
+                                                                                            });
+                                                                                            i = 1;
+                                                                                        } else if (i == 1) {
+                                                                                            $(".addcoverul").css({
+                                                                                                'height': '0px',
+                                                                                                'opacity': '0'
+                                                                                            });
+                                                                                            i = 0;
+                                                                                        }
+                                                                                    });
+                                                                                });
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+        <script src="js/label-slide.js" type="text/javascript"></script>
+        <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
+        <script>
+                                                                                $("#panel").slideUp(0);
+                                                                                $(document).ready(function () {
+                                                                                    $("#flip").click(function () {
+                                                                                        $("#panel").slideToggle("5000");
+                                                                                    });
+
+                                                                                });
+                                                                                $('.BSbtninfo').filestyle({
+                                                                                    buttonName: 'btn-info',
+                                                                                    buttonText: ' Select a File'
+                                                                                });
+        </script>
+    </body>
+
+</html>
