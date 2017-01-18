@@ -38,7 +38,7 @@ html {
     }
 
 }
-
+button{-webkit-transition: all 0.25s linear}
 /****************************
 *      BODY DEFAULTS        *
 ****************************/

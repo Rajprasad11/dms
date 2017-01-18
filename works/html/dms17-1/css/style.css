@@ -57,7 +57,7 @@ a:hover, a:focus {
 div, li, input, button, li >a , li > span, img, select{
     border-radius:0px !important;
 }
-
+ button{-webkit-transition: all 0.25s linear}
 li, input, button, li >a , li > span
 {
 }

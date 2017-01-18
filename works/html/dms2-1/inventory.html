@@ -250,14 +250,17 @@
                                                                 <span class="onoffswitch-inner"></span>
                                                                 <span class="onoffswitch-switch"></span>
                                                             </label></td>
-                                                        <td><select class="invent-select">
+                                                   <td>
+                                                            <select class="invent-select" id="inventid">
                                                                 <option value="">Status</option>
                                                                 <option value="1">Ready For Sale</option>
                                                                 <option value="2">Drafts</option>
                                                                 <option value="3">On Hold</option>
                                                                 <option value="3">Sold</option>
                                                                 <option value="4">Delete</option>
-                                                            </select></td>
+                                                            </select>
+                                                            <button class="btn btn-sm btn-primary"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                        </td>
                                                         <td class="">
                                                             <ul class="customize"><li><a href="detail-list.html" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a></li>
                                                                 <li><a href="#" class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i></a></li>
@@ -3283,6 +3286,22 @@
         <!-- Loading Scripts -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+            <script>
+            $(document).ready(function () {
+                $('.invent-select').hover(function () {
+                    var hhh = $("#" + this.id).parent().find("button");
+                    $(hhh).css({'background-color': 'red',
+                        'box-shadow': '1px 1px 3px #000',
+                        'color': '#000'});
+                }, function () {
+                    var hhh = $("#" + this.id).parent().find("button");
+                    $(hhh).css({'background-color': '',
+                        'box-shadow': '',
+                        'color': ''});
+                });
+
+            });
+        </script>
         <script src="js/fileinput.js"></script>
         <script src="js/bootstrap-select.min.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
