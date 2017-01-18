@@ -928,7 +928,13 @@
         <script src="js/label-slide.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(function () {
-                $('.date').datetimepicker();
+                $('.date').datetimepicker({
+                    autoclose: true,
+                    format: "yyyy-mm-dd",
+                    startView: "month",
+                    minView: "month",
+                    maxView: "decade"
+                });
             });
             $(".view-bid").click(function () {
                 $('html,body').animate({

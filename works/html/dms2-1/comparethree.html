@@ -1046,7 +1046,13 @@
                 buttonText: ' Upload Documents'
             });
             $(function () {
-                $('.date').datetimepicker();
+                $('.date').datetimepicker({
+                    autoclose: true,
+                    format: "yyyy-mm-dd",
+                    startView: "month",
+                    minView: "month",
+                    maxView: "decade"
+                });
             });
         </script>
         <script>

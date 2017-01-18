@@ -448,7 +448,13 @@
         <script src="js/jquery.accrue.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(function () {
-                $('#datetimepicker4').datetimepicker();
+                $('#datetimepicker4').datetimepicker({
+                    autoclose: true,
+                    format: "yyyy-mm-dd",
+                    startView: "month",
+                    minView: "month",
+                    maxView: "decade"
+                });
             });
             $(document).ready(function () {
 
