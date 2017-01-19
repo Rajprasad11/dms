@@ -178,11 +178,6 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
 
 /***Car View Details***/
 
-md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
-    min-height: 300px !important;
-}
-  
-  
 
   
  
