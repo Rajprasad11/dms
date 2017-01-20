@@ -2631,6 +2631,7 @@ div[data-role="editor-toolbar"] {
 
 
 
+
 /**Added by nandhini**/
 
 .addimage{border: 1px solid #ccc;position: relative;margin: 10px 0px;height:150px;}
@@ -2771,49 +2772,49 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 /*pricing table*/
 .pricingTable{text-align: center;background: #eeeeee;transition: all 0.6s ease 0s;margin-top: -149px;}
 .pricingTable:hover{margin-top: -161px;transition: all 0.6s ease 0s;box-shadow: 0px 0px 19px #000;}
-.pricingTable > .pricingTable-header{color:#fff;}
-.pricingTable .pricingTable-header > .heading{display: block;padding: 20px 0;background: #23527c;}
-.pricingTable .pricingTable-header > .heading > h3{margin: 0 0 12px 0;text-transform: uppercase;font-weight: bold;}
-.pricingTable .pricingTable-header > .heading > .glyphicon{font-size: 70px;opacity: 0.5;}
-.pricingTable .pricingTable-header > .price-value{display: block;background: #23527c;margin: 20px 0;padding: 10px 0;
+.pricingTable   .pricingTable-header{color:#fff;}
+.pricingTable .pricingTable-header   .heading{display: block;padding: 20px 0;background: #23527c;}
+.pricingTable .pricingTable-header   .heading   h3{margin: 0 0 12px 0;text-transform: uppercase;font-weight: bold;}
+.pricingTable .pricingTable-header   .heading   .glyphicon{font-size: 70px;opacity: 0.5;}
+.pricingTable .pricingTable-header   .price-value{display: block;background: #23527c;margin: 20px 0;padding: 10px 0;
                                                   font-size: 47px;font-weight: bold;}
-.pricingTable .pricingTable-header > .price-value > .month{display: block;font-size: 14px;}
-.pricingTable > .pricingContent{text-transform: capitalize;}
-.pricingTable > .pricingContent > ul{list-style: none;padding: 0;margin-bottom: 0;}
-.pricingTable > .pricingContent > ul > li{border-bottom: 1px solid #cdcdcd;padding: 10px 20px;text-align: left;
+.pricingTable .pricingTable-header   .price-value   .month{display: block;font-size: 14px;}
+.pricingTable   .pricingContent{text-transform: capitalize;}
+.pricingTable   .pricingContent   ul{list-style: none;padding: 0;margin-bottom: 0;}
+.pricingTable   .pricingContent   ul   li{border-bottom: 1px solid #cdcdcd;padding: 10px 20px;text-align: left;
                                           position: relative;z-index: 1;font-weight: 500;font-size: 17px;overflow: hidden;}
-.pricingTable > .pricingContent > ul > li i{font-weight: 600;}
-.pricingTable > .pricingContent > ul > li:after{content: "";width: 100%;height:100%;position: absolute;top:0;left:-100%;
+.pricingTable   .pricingContent   ul   li i{font-weight: 600;}
+.pricingTable   .pricingContent   ul   li:after{content: "";width: 100%;height:100%;position: absolute;top:0;left:-100%;
                                                 background: #d9dee2;z-index: -5;transition: all 0.4s ease 0s;}
-.pricingTable > .pricingContent > ul > li:hover:after{left:0;transition: all 0.4s ease 0s;}
+.pricingTable   .pricingContent   ul   li:hover:after{left:0;transition: all 0.4s ease 0s;}
 .pricingTable .pricingTable-sign-up{padding: 20px 0;}
-.pricingTable .pricingTable-sign-up > .btn-block{padding: 15px 0;text-transform: uppercase;font-size: 16px;font-weight: bold;
+.pricingTable .pricingTable-sign-up   .btn-block{padding: 15px 0;text-transform: uppercase;font-size: 16px;font-weight: bold;
                                                  border-radius: 0px;border: 1px solid #23527c;background: #e6e6e6;position: relative;transition: all 0.6s ease 0s;}
-.pricingTable .pricingTable-sign-up > .btn-block:before{content: "";position: absolute;top:0;left:0;width: 100%;height:0;
+.pricingTable .pricingTable-sign-up   .btn-block:before{content: "";position: absolute;top:0;left:0;width: 100%;height:0;
                                                         z-index: -1;transition: all 0.6s ease 0s;}
-.pricingTable .pricingTable-sign-up > .btn-block:after{content: "";position: absolute;bottom:0;right:0;width: 100%;height:0;
+.pricingTable .pricingTable-sign-up   .btn-block:after{content: "";position: absolute;bottom:0;right:0;width: 100%;height:0;
                                                        z-index: -1;transition: all 0.6s ease 0s;}
-.pricingTable .pricingTable-sign-up > .btn-block:hover{z-index: 1;color:#fff;transition: all 0.6s ease 0s;}
-.pricingTable .pricingTable-sign-up > .btn-block:hover:before,
-.pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #23527c;height:50%;transition: all 0.6s ease 0s;}
+.pricingTable .pricingTable-sign-up   .btn-block:hover{z-index: 1;color:#fff;transition: all 0.6s ease 0s;}
+.pricingTable .pricingTable-sign-up   .btn-block:hover:before,
+.pricingTable .pricingTable-sign-up   .btn-block:hover:after{background: #23527c;height:50%;transition: all 0.6s ease 0s;}
 .pricingContent .true{color: #288650;padding: 5px;border-radius: 50%;font-size: 20px;}
 .pricingContent .false{color: #a04137;padding: 5px;border-radius: 50%;font-size: 20px;}
-.basictable .pricingTable .pricingTable-header > .heading{background: #e64d3d;}
-.goldtable .pricingTable .pricingTable-header > .heading{background: #2dcc70;}
-.premiumtable .pricingTable .pricingTable-header > .heading{background: #1b7c9d;}
-.basictable .pricingTable .pricingTable-header > .price-value{background: #a04137;}
-.goldtable .pricingTable .pricingTable-header > .price-value{background: #288650;}
-.premiumtable .pricingTable .pricingTable-header > .price-value{background: #23527c;}
-.basictable .pricingTable .pricingTable-sign-up > .btn-block{color: #a04137;border: 1px solid #a04137;}
-.goldtable .pricingTable .pricingTable-sign-up > .btn-block{color: #288650;border: 1px solid #288650;}
-.premiumtable .pricingTable .pricingTable-sign-up > .btn-block{color: #23527c;border: 1px solid #23527c;}
-.basictable .pricingTable .pricingTable-sign-up > .btn-block:hover:before,
-.basictable .pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #e64d3d;color: #fff;}
-.goldtable .pricingTable .pricingTable-sign-up > .btn-block:hover:before,
-.goldtable .pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #2dcc70;color: #fff;}
-.premiumtable .pricingTable .pricingTable-sign-up > .btn-block:hover:before,
-.premiumtable .pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #1b7c9d;color: #fff;}
-.pricingTable .pricingTable-sign-up > .btn-block:hover{z-index: 1;color:#fff;}
+.basictable .pricingTable .pricingTable-header   .heading{background: #e64d3d;}
+.goldtable .pricingTable .pricingTable-header   .heading{background: #2dcc70;}
+.premiumtable .pricingTable .pricingTable-header   .heading{background: #1b7c9d;}
+.basictable .pricingTable .pricingTable-header   .price-value{background: #a04137;}
+.goldtable .pricingTable .pricingTable-header   .price-value{background: #288650;}
+.premiumtable .pricingTable .pricingTable-header   .price-value{background: #23527c;}
+.basictable .pricingTable .pricingTable-sign-up   .btn-block{color: #a04137;border: 1px solid #a04137;}
+.goldtable .pricingTable .pricingTable-sign-up   .btn-block{color: #288650;border: 1px solid #288650;}
+.premiumtable .pricingTable .pricingTable-sign-up   .btn-block{color: #23527c;border: 1px solid #23527c;}
+.basictable .pricingTable .pricingTable-sign-up   .btn-block:hover:before,
+.basictable .pricingTable .pricingTable-sign-up   .btn-block:hover:after{background: #e64d3d;color: #fff;}
+.goldtable .pricingTable .pricingTable-sign-up   .btn-block:hover:before,
+.goldtable .pricingTable .pricingTable-sign-up   .btn-block:hover:after{background: #2dcc70;color: #fff;}
+.premiumtable .pricingTable .pricingTable-sign-up   .btn-block:hover:before,
+.premiumtable .pricingTable .pricingTable-sign-up   .btn-block:hover:after{background: #1b7c9d;color: #fff;}
+.pricingTable .pricingTable-sign-up   .btn-block:hover{z-index: 1;color:#fff;}
 .pricingbanner{height: 500px;overflow: hidden}
 .aboutbanner_content{display: table;position: relative;height: 100%;top: 0;left: 0;}
 .about_bannerh1{display: table-cell;vertical-align: middle;}
@@ -2870,12 +2871,12 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .radiostyle input[type=radio]:checked ~ .check {border: 3px solid #ed1b24;}
 .radiostyle input[type=radio]:checked ~ .check::before{background: #ed1b24;}
 .radiostyle input[type=radio]:checked ~ label{color: #ed1b24;}
-.bk-light .nav-tabs > li.active > a, .bk-light .nav-tabs > li.active > a:focus, .bk-light .nav-tabs > li.active > a:hover { border-width: 0; }
-.bk-light .nav-tabs > li > a { border: none; color: #666; font-size: 16px; }
-.bk-light .nav-tabs > li.active > a, .bk-light .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
-.bk-light .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
-.bk-light .nav-tabs > li.active > a::after, .bk-light .nav-tabs > li:hover > a::after { transform: scale(1); }
-.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.bk-light .nav-tabs  li.active  a, .bk-light .nav-tabs   li.active  a:focus, .bk-light .nav-tabs  li.active  a:hover { border-width: 0; }
+.bk-light .nav-tabs   li  a { border: none; color: #666; font-size: 16px; }
+.bk-light .nav-tabs li.active  a, .bk-light .nav-tabs  li  a:hover { border: none; color: #4285F4 !important; background: transparent; }
+.bk-light .nav-tabs  li  a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.bk-light .nav-tabs  li.active  a::after, .bk-light .nav-tabs  li:hover  a::after { transform: scale(1); }
+.tab-nav  li  a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
 .tab-pane { padding: 15px 0; }
 .card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.54); margin-bottom: 30px; }
 .orderdiv{padding: 10px;}.orderdiv p span{float:right; font-size: 16px;}
@@ -2886,15 +2887,14 @@ td img{max-width: 200px;}.postingdetailtabel h4{font-size: 15px;}
 .regispop ul li .false{background:  #a04137;color:#fff;padding: 5px 7px;border-radius: 50%;margin-right: 5px;}
 
 .subscriptionsec .pricingTable{margin-top: 0px;}
-.subscriptionsec .pricingTable .pricingTable-header > .heading{background: #8e8f9b;}
-.subscriptionsec .pricingTable .pricingTable-header > .price-value{background: #8e8f9b;}
-.subscriptionsec .pricingTable .pricingTable-sign-up > .btn-block{border: 1px solid #23527c;color:#23527c;font-size: 14px;}
-.subscriptionsec .pricingTable .pricingTable-sign-up > .btn-block:hover:after{background: #8e8f9b;}
-.subscriptionsec .pricingTable .pricingTable-sign-up > .btn-block:hover:before{background: #8e8f9b;}
-.subscriptionsec .pricingTable .pricingTable-sign-up > .btn-block:hover{color:#fff;}
-.subscriptionsec .pricingTable > .pricingContent > ul > li{padding: 5px 0px;font-size: 15px;}
+.subscriptionsec .pricingTable .pricingTable-header   .heading{background: #8e8f9b;}
+.subscriptionsec .pricingTable .pricingTable-header   .price-value{background: #8e8f9b;}
+.subscriptionsec .pricingTable .pricingTable-sign-up   .btn-block{border: 1px solid #23527c;color:#23527c;font-size: 14px;}
+.subscriptionsec .pricingTable .pricingTable-sign-up   .btn-block:hover:after{background: #8e8f9b;}
+.subscriptionsec .pricingTable .pricingTable-sign-up   .btn-block:hover:before{background: #8e8f9b;}
+.subscriptionsec .pricingTable .pricingTable-sign-up  .btn-block:hover{color:#fff;}
+.subscriptionsec .pricingTable   .pricingContent   ul   li{padding: 5px 0px;font-size: 15px; width: 50%;float: left;}
 .subscriptionsec .pricingContent .true,.subscriptionsec .pricingContent .false{font-size: 15px;}
-.subscriptionsec .pricingTable{padding: 10px;}
 
 /*my profile page*/
 .page-header {background:#ccc;margin:0;}
@@ -3069,7 +3069,7 @@ figure.effect-ming:hover img {opacity: 0.4;}
     .nav-tabs-responsive > li.dropdown .dropdown-menu.pull-xs-center {right: auto;left: 50%;-webkit-transform: translateX(-50%);
                                                                       -moz-transform: translateX(-50%);-ms-transform: translateX(-50%);-o-transform: translateX(-50%);transform: translateX(-50%);}
     .nav-tabs-responsive > li.dropdown .dropdown-menu.pull-xs-right {left: auto;right: 0;}
-    .pricingTable .pricingTable-header > .price-value{font-size: 14px;}
+    .pricingTable .pricingTable-header  .price-value{font-size: 14px;}
     .section1{padding: 50px 0px;}
     .guestnav{min-height: 0px;float: none;border-top: 1px solid #ccc;}.guestnav .nav>li>a{text-align: center;padding-top: 5px!important;padding-bottom: 5px!important;} 
     .aboutbanner{height: 300px;top:60px;}.pricingbanner{height: 360px;}.grid1{padding: 30px 0px;}
@@ -3077,7 +3077,7 @@ figure.effect-ming:hover img {opacity: 0.4;}
                                                      left: -60px;right: 0;top: -19px;bottom: 0;}
     .secabout p{font-size: 14px;}.featuresec .grid2 h3{margin: 16px 10px;font-size: 20px;}
     .goldtable .pricingTable,.premiumtable .pricingTable {margin-top: 0px;}.jumbotron h1, .jumbotron .h1{font-size: 25px;}
-    .pricingTable .pricingTable-header > .heading > .glyphicon{font-size: 35px;}
+    .pricingTable .pricingTable-header  .heading  .glyphicon{font-size: 35px;}
     .section4 h2{font-size: 20px;}.section4 p{font-size: 14px;}.homeh1 h1 {font-size: 40px;}
     .homeh1 a {padding: 2px 9px;font-size: 15px;}.guestbanner,.bannerguest{height: 400px;}
     .section1 h3 {margin: 15px 0px 10px 0px;font-size: 20px;}
@@ -3094,7 +3094,7 @@ figure.effect-ming:hover img {opacity: 0.4;}
     .profile-info a{width:100%;margin: 5px;}.grid figure figcaption,figure.effect-ming p{padding:5px}
     figure.effect-ming figcaption::before{top:0px;bottom: 0px;left: 0px;right: 0px;}figure.effect-ming h2{padding-top: 170px;}
     .bk-light .nav-tabs > li > a{font-size: 11px;}.info h3 {font-size: 15px;}.info h3 span{font-size: 12px;}
-    .box-icon{height:100px;}
+    .box-icon{height:100px;}.subscriptionsec .pricingTable  .pricingContent  ul  li{width: 100%;}
 }
 @media only screen and (max-width: 408px) {.navbar-toggle {padding: 12px 0px;}}
 

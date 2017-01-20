@@ -182,179 +182,533 @@
                                 <div class="col-sm-2 col-xs-12"><b>Current Cost</b><p>3000</p></div>
 
                             </div>
-                            <div class="col-xs-12 card subscriptionsec">
 
-                                <div class="ordersum col-sm-8 col-xs-12">
-                                    <div class="form-group col-sm-5 col-xs-12">
-                                        <label>Payment Frequency</label>
-                                        <select class="form-control">
-                                            <option value="">Payment Frequency</option>
-                                            <option value="Customer">Monthly</option>
-                                            <option value="Lead">Yearly</option>
-                                        </select>
-                                    </div> 
-                                    <div class="form-group col-sm-5 col-xs-12">
-                                        <label>Add User</label>
-                                        <!--<input type="text" class="form-control" />
-                                        <span class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>-->
-                                        <div class="input-group">
-                                            <input type="number" class=" form-control" name="start" value="1">
-                                            <!--                                            <span class="input-group-addon btn btn-primary"><i class="fa fa-plus"></i></span>-->
-                                        </div>
-                                    </div> 
-                                    <div class="pricingContent">
-
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 col-xs-12 pricingTable">
-                                    <p class="btn-primary">ACTIVE</p>
-                                    <p>RS. 3000</p>
-                                    <a href="subscriptiondetail.html" class="btn btn-primary btn-sm">RENEW</a>
-                                </div>
-                            </div>
                             <div class="row">
                                 <section class="col-xs-12 section3 subscriptionsec">
-                                    <div class="row">
-                                        <div class="col-sm-4 col-xs-12 basictable">
-                                            <div class="pricingTable">
-                                                <div class="pricingTable-header">
-                                                    <span class="heading">
-                                                        <h3>Basic</h3>
-                                                        <span class="price-value">&#x20a8; <span>10</span><span class="month">/per month</span></span>
-                                                    </span>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <div class="row">
+                                            <div class="col-xs-12 basictable">
+                                                <div class="pricingTable col-xs-12">
+                                                    <div class="pricingTable-header row">
+                                                        <span class="heading">
+                                                            <h3>Basic</h3>
+                                                            <!--<span class="price-value">&#x20a8; <span>10</span><span class="month">/per month</span></span>-->
+                                                        </span>
+                                                    </div>
+                                                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#Basic1" role="tab" data-toggle="tab" aria-controls="div1" aria-expanded="true">
+                                                                    <span class="text">1 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation" class="next">
+                                                                <a href="#Basic2" role="tab"  data-toggle="tab" aria-controls="div2">
+                                                                    <span class="text">2 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#Basic3" role="tab"  data-toggle="tab" aria-controls="div3">
+                                                                    <span class="text">3 month</span>
+                                                                </a>
+                                                            </li>
+
+                                                            <li role="presentation">
+                                                                <a href="#Basic4" role="tab"  data-toggle="tab" aria-controls="div4">
+                                                                    <span class="text">4 month</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="myTabContent" class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="Basic1">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Basic2">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div> 
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Basic3" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div> 
+                                                            <div role="tabpanel" class="tab-pane fade" id="Basic4" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- /  CONTENT BOX-->
 
                                                     <div class="pricingTable-sign-up">
                                                         <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                    </div>
+                                                    </div><!-- BUTTON BOX-->
                                                 </div>
-
-                                                <div class="pricingContent">
-                                                    <ul>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
-                                                    </ul>
-                                                </div><!-- /  CONTENT BOX-->
-
-                                                <div class="pricingTable-sign-up">
-                                                    <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                </div><!-- BUTTON BOX-->
                                             </div>
-                                        </div>
-                                        <div class="col-sm-4 col-xs-12 goldtable">
-                                            <div class="pricingTable">
-                                                <div class="pricingTable-header">
-                                                    <span class="heading">
-                                                        <h3>Gold</h3>
-                                                        <span class="price-value">&#x20a8;  <span>10</span><span class="month">/per month</span></span>
-                                                    </span>
+                                            <div class="col-xs-12 goldtable mt-2x">
+                                                <div class="pricingTable col-xs-12">
+                                                    <div class="pricingTable-header row">
+                                                        <span class="heading">
+                                                            <h3>Gold</h3>
+                                                            <!--<span class="price-value">&#x20a8;  <span>10</span><span class="month">/per month</span></span>-->
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#Gold1" role="tab" data-toggle="tab" aria-controls="div1" aria-expanded="true">
+                                                                    <span class="text">1 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation" class="next">
+                                                                <a href="#Gold2" role="tab"  data-toggle="tab" aria-controls="div2">
+                                                                    <span class="text">2 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#Gold3" role="tab"  data-toggle="tab" aria-controls="div3">
+                                                                    <span class="text">3 month</span>
+                                                                </a>
+                                                            </li>
+
+                                                            <li role="presentation">
+                                                                <a href="#Gold4" role="tab"  data-toggle="tab" aria-controls="div4">
+                                                                    <span class="text">4 month</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="myTabContent" class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="Gold1">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Gold2">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div> 
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Gold3" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div> 
+                                                            <div role="tabpanel" class="tab-pane fade" id="Gold4" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- /  CONTENT BOX-->
 
                                                     <div class="pricingTable-sign-up">
                                                         <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                    </div>
+                                                    </div><!-- BUTTON BOX-->
                                                 </div>
-
-                                                <div class="pricingContent">
-                                                    <ul>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Rs. X</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>upto 100</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. B</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 1000</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 1000</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 1000</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction for <i>selling</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Monthly Call Support <i>upto 100</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Assessment & Analytics</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Business Website</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Sales Tracker</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Reports</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Image Editor with Watermark</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Video Editor with Watermark</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Document Capture</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
-                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
-
-                                                    </ul>
-                                                </div><!-- /  CONTENT BOX-->
-
-                                                <div class="pricingTable-sign-up">
-                                                    <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                </div><!-- BUTTON BOX-->
                                             </div>
-                                        </div>
-                                        <div class="col-sm-4 col-xs-12 premiumtable">
-                                            <div class="pricingTable">
-                                                <div class="pricingTable-header">
-                                                    <span class="heading">
-                                                        <h3>Premium</h3>
-                                                        <span class="price-value">&#x20a8; <span>10</span><span class="month">/per month</span></span>
-                                                    </span>
+                                            <div class="col-xs-12 premiumtable mt-2x">
+                                                <div class="pricingTable col-xs-12">
+                                                    <div class="pricingTable-header row">
+                                                        <span class="heading">
+                                                            <h3>Premium</h3>
+                                                            <!--<span class="price-value">&#x20a8; <span>10</span><span class="month">/per month</span></span>-->
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                                        <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#Premium1" role="tab" data-toggle="tab" aria-controls="div1" aria-expanded="true">
+                                                                    <span class="text">1 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation" class="next">
+                                                                <a href="#Premium2" role="tab"  data-toggle="tab" aria-controls="div2">
+                                                                    <span class="text">2 month</span>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#Premium3" role="tab"  data-toggle="tab" aria-controls="div3">
+                                                                    <span class="text">3 month</span>
+                                                                </a>
+                                                            </li>
+
+                                                            <li role="presentation">
+                                                                <a href="#Premium4" role="tab"  data-toggle="tab" aria-controls="div4">
+                                                                    <span class="text">4 month</span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <div id="myTabContent" class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane fade in active" id="Premium1">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Premium2">
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div> 
+                                                            </div>
+                                                            <div role="tabpanel" class="tab-pane fade" id="Premium3" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div> 
+                                                            <div role="tabpanel" class="tab-pane fade" id="Premium4" >
+                                                                <div class="pricingContent row">
+                                                                    <ul class="col-xs-12">
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Free</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>< 20</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. A</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is<i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>upto 100</i></li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
+                                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction <i>selling</i></li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Monthly Call Support</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Assessment & Analytics</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Business Website</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Tracker</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Reports</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Image Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Video Editor with Watermark</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Document Capture</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Market Trend Analysis</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Inventory Funding Access</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
+                                                                        <li><i class="fa fa-times false" aria-hidden="true"></i>  Auto Inspekt Integration</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- /  CONTENT BOX-->
 
                                                     <div class="pricingTable-sign-up">
                                                         <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                    </div>
+                                                    </div><!-- BUTTON BOX-->
                                                 </div>
-
-                                                <div class="pricingContent">
-                                                    <ul>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Website & Mobile Apps</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Pricing per User is <i>Rs. Y</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Posting to Multiple Portals</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Vehicle Listing is <i>Unlimited</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Premium Listing/ Ad is <i>Rs. C</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Customer Records is <i>Unlimited</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Contact Records is <i>Unlimited</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Lead SMS Alerts/ Month is <i>Unlimited</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Loan Offers</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  e-Auction for <i>Buying & Selling</i></li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Inventory Feed from Multiple Portals</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  <i>dedicated Support</i> for Monthly Call </li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Assessment & Analytics</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Business Website</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Sales Tracker</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Reports</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Image Editor with Watermark</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Video Editor with Watermark</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Document Capture</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Market Trend Analysis</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Inventory Funding Access</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Sales Application  - Mobile App</li>
-                                                        <li><i class="fa fa-check true" aria-hidden="true"></i>  Auto Inspekt Integration</li>
-                                                    </ul>
-                                                </div><!-- /  CONTENT BOX-->
-
-                                                <div class="pricingTable-sign-up">
-                                                    <a href="subscriptiondetail.html" class="btn btn-block btn-default">Activate</a>
-                                                </div><!-- BUTTON BOX-->
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-xs-12 col-sm-4 card subscriptionsec">
+
+                                        <div class="ordersum row">
+                                            <div class="form-group  col-xs-12">
+                                                <label>Plan Details</label>
+                                                <select class="form-control">
+                                                    <option value="">Payment Frequency</option>
+                                                    <option value="Customer">Monthly</option>
+                                                    <option value="Lead">Yearly</option>
+                                                </select>
+                                            </div> 
+                                            <div class="form-group  col-xs-12">
+                                                <label>Payment Frequency</label>
+                                                <select class="form-control">
+                                                    <option value="">Payment Frequency</option>
+                                                    <option value="Customer">Monthly</option>
+                                                    <option value="Lead">Yearly</option>
+                                                </select>
+                                            </div> 
+                                            <div class="form-group col-xs-12">
+                                                <label>Add User</label>
+                                                <div class="input-group">
+                                                    <input type="number" class=" form-control" name="start" value="1">
+                                                    <!--                                            <span class="input-group-addon btn btn-primary"><i class="fa fa-plus"></i></span>-->
+                                                </div>
+                                            </div> 
+                                            <div class="form-group col-xs-12">
+                                                <label>Total User</label>
+                                                <div class="input-group">
+                                                    <input type="number" class=" form-control" name="start" value="1">
+                                                    <!--                                            <span class="input-group-addon btn btn-primary"><i class="fa fa-plus"></i></span>-->
+                                                </div>
+                                            </div> 
+                                            <div class="pricingContent">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 pricingTable">
+                                            <p class="btn-primary">ACTIVE</p>
+                                            <p>RS. 3000</p>
+                                            <a href="subscriptiondetail.html" class="btn btn-primary btn-sm">RENEW</a>
+                                        </div>
+                                    </div>
+
                                 </section>
                             </div>
                         </div>
@@ -435,6 +789,29 @@
 //               $(this).children(".dropdown-menu").slideToggle();
             });
 
+        </script>
+        <script>
+            $(document).on('show.bs.tab', '.nav-tabs-responsive [data-toggle="tab"]', function (e) {
+                var $target = $(e.target);
+                var $tabs = $target.closest('.nav-tabs-responsive');
+                var $current = $target.closest('li');
+                var $parent = $current.closest('li.dropdown');
+                $current = $parent.length > 0 ? $parent : $current;
+                var $next = $current.next();
+                var $prev = $current.prev();
+                var updateDropdownMenu = function ($el, position) {
+                    $el
+                            .find('.dropdown-menu')
+                            .removeClass('pull-xs-left pull-xs-center pull-xs-right')
+                            .addClass('pull-xs-' + position);
+                };
+                $tabs.find('>li').removeClass('next prev');
+                $prev.addClass('prev');
+                $next.addClass('next');
+                updateDropdownMenu($prev, 'left');
+                updateDropdownMenu($current, 'center');
+                updateDropdownMenu($next, 'right');
+            });
         </script>
     </body>
 
