@@ -1,0 +1,18 @@
+.inputbox-pad
+{
+    padding-bottom:10px !important;
+}
+md-select.md-default-theme .md-select-value.md-select-placeholder, md-select .md-select-value.md-select-placeholder {
+    color: rgb(154, 154, 154) !important;
+    padding-bottom:7px;
+}
+md-select:not([disabled]):focus .md-select-value  {
+    color: rgb(154, 154, 154) !important;
+    padding-bottom:7px;
+}
+.input-adjmil{
+    margin: 0px;
+    margin-bottom: -20px;}
+.input-adjtot{
+     margin: 24px 0px 0px 0px;
+}

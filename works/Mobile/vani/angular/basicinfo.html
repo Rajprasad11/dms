@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <title>Basic Info</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/angular-material.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/extra.css">
+
+    </head>
+
+    <body ng-app="firstApplication"> 
+
+        <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+            <!--Register-->
+            <section layout="row" layout="column" layout-align="center center" layout-wrap="">
+                <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+
+
+                    <form name="registerForm">
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Registration Year" ng-model="year"  style="min-width: 100px;">
+                                <md-option value="1990">1990</md-option>
+                                <md-option value="1991">1991</md-option>
+                                <md-option value="1992">1992</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Select Make" ng-model="make"  style="min-width: 100px;">
+                                <md-option value="Maruti">Maruti</md-option>
+                                <md-option value="Tata Motors">Tata Motors</md-option>
+                                <md-option value="Hyundai">Hyundai</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Select Model" ng-model="model"  style="min-width: 100px;">
+                                <md-option value="BMW1 Series">BMW1 Series</md-option>
+                                <md-option value="Audi A6">Audi A6</md-option>
+                                <md-option value="Fiat Abarth">Fiat Abarth</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Select Varient" ng-model="varient"  style="min-width: 100px;">
+                                <md-option value="EMT Diesel">EMT Diesel</md-option>
+                                <md-option value="EMT Petrol">EMT Petrol</md-option>
+                                <md-option value="SAT Petrol">SAT Petrol</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Select Category" ng-model="category" style="min-width: 100px;">
+                                <md-option value="Sedan">Sedan</md-option>
+                                <md-option value="HatchBack">HatchBack</md-option>
+                                <md-option value="SUV">SUV</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container md-no-float="" class="md-block flex-gt-sm md-input-has-value input-adjtot">
+                            <input style="border-color:#CCC;" placeholder="Total Distance" type="text">
+                        </md-input-container>
+                        <md-input-container md-no-float="" class="md-block flex-gt-sm md-input-has-value input-adjmil">
+                            <input style="border-color:#CCC;" placeholder="Mileage" type="text">
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Ownership" ng-model="ownership" style="min-width: 100px;">
+                                <md-option value="First Owner">First Owner</md-option>
+                                <md-option value="Second Owner">Second Owner</md-option>
+                                <md-option value="Third Owner">Third Owner</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Car Status" ng-model="status" style="min-width: 100px;">
+                                <md-option value="Good">Good</md-option>
+                                <md-option value="Medium">Medium</md-option>
+                                <md-option value="Excellent">Excellent</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Color" ng-model="color" style="min-width: 100px;">
+                                <md-option value="Red">Red</md-option>
+                                <md-option value="Blue">Blue</md-option>
+                                <md-option value="Green">Green</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Location" ng-model="location" style="min-width: 100px;">
+                                <md-option value="Andaman">Andaman</md-option>
+                                <md-option value="Chennai">Chennai</md-option>
+                                <md-option value="Amravati">Amravati</md-option>
+                            </md-select>
+                        </md-input-container>
+                        <md-input-container class="md-block flex-gt-sm md-input-has-value">
+                            <md-select placeholder="Select Fuel Type" ng-model="fuel" style="min-width: 100px;">
+                                <md-option value="Petrol">Petrol</md-option>
+                                <md-option value="Diesel">Diesel</md-option>
+                                <md-option value="Gas">Gas</md-option>
+                            </md-select>
+                        </md-input-container>
+
+                    </form>
+                    <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
+                        
+                        <button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Cancel</button>
+                        <button class="md-primary md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Images & Videos</button>
+                       
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+        <script src="js/test.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-animate.min.js"></script>
+        <script src="js/angular-aria.min.js"></script>
+        <script src="js/angular-messages.min.js"></script>
+        <script src="js/angular-material.min.js"></script>
+
+        <script language="javascript">
+                                angular
+                                        .module('firstApplication', ['ngMaterial'])
+                                        .controller('inputController', inputController);
+
+                                function inputController($scope) {
+                                    $scope.project = {
+                                        comments: 'Comments',
+                                    };
+                                }
+        </script>
+
+
+
+
+    </body>
+
+
+</html>
