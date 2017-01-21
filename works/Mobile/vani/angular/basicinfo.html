@@ -8,17 +8,13 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/style2.css">
         <link rel="stylesheet" href="css/extra.css">
-
     </head>
 
     <body ng-app="firstApplication"> 
-
         <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
             <!--Register-->
             <section layout="row" layout="column" layout-align="center center" layout-wrap="">
                 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
-
-
                     <form name="registerForm">
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
                             <md-select placeholder="Registration Year" ng-model="year"  style="min-width: 100px;">
@@ -37,11 +33,15 @@
                         </md-input-container>
 
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <md-select placeholder="Select Model" ng-model="model"  style="min-width: 100px;">
-                                <md-option value="BMW1 Series">BMW1 Series</md-option>
-                                <md-option value="Audi A6">Audi A6</md-option>
-                                <md-option value="Fiat Abarth">Fiat Abarth</md-option>
-                            </md-select>
+                            <select placeholder="Select Model" ng-model="model"  style="min-width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 10px 0px;">
+                                <option value="">Select Model</option>
+                                <option value="BMW1 Series">BMW1 Series</option>
+                                <option value="Audi A6">Audi A6</option>
+                                <option value="Fiat Abarth">Fiat Abarth</option>
+                            </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
                             <md-select placeholder="Select Varient" ng-model="varient"  style="min-width: 100px;">
@@ -98,34 +98,21 @@
                                 <md-option value="Gas">Gas</md-option>
                             </md-select>
                         </md-input-container>
+                        <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
 
+                            <button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Cancel</button>
+                            <button class="md-primary md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Images & Videos</button>
+
+                        </div>
                     </form>
-                    <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
-                        
-                        <button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Cancel</button>
-                        <button class="md-primary md-raised md-hue-2 md-button md-ink-ripple" layout-padding flex="50" style="min-height: 54px;" type="button" ng-transclude="">Images & Videos</button>
-                       
-                    </div>
-
-
-
-
-
                 </div>
-            </section>
-
         </div>
-
-
-
-
         <script src="js/test.js"></script>
         <script src="js/angular.min.js"></script>
         <script src="js/angular-animate.min.js"></script>
         <script src="js/angular-aria.min.js"></script>
         <script src="js/angular-messages.min.js"></script>
         <script src="js/angular-material.min.js"></script>
-
         <script language="javascript">
                                 angular
                                         .module('firstApplication', ['ngMaterial'])
@@ -137,11 +124,5 @@
                                     };
                                 }
         </script>
-
-
-
-
     </body>
-
-
 </html>
