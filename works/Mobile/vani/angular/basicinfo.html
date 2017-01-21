@@ -17,23 +17,25 @@
                 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
                     <form name="registerForm">
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Registration Year" ng-model="year" class="selectbox-style">
-                                <md-option value="1990">1990</md-option>
-                                <md-option value="1991">1991</md-option>
-                                <md-option value="1992">1992</md-option>
+                            <select ng-model="year" class="selectbox-style">
+                                <option value="">Registration Year</option>
+                                <option value="1990">1990</option>
+                                <option value="1991">1991</option>
+                                <option value="1992">1992</option>
                             </select>
                         </md-input-container>
 
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Select Make" ng-model="make" class="selectbox-style">
-                                <md-option value="Maruti">Maruti</md-option>
-                                <md-option value="Tata Motors">Tata Motors</md-option>
-                                <md-option value="Hyundai">Hyundai</md-option>
+                            <select ng-model="make" class="selectbox-style">
+                                <option value="">Select Make</option>
+                                <option value="Maruti">Maruti</option>
+                                <option value="Tata Motors">Tata Motors</option>
+                                <option value="Hyundai">Hyundai</option>
                             </select>
                         </md-input-container>
 
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Select Model" ng-model="model" class="selectbox-style">
+                            <select ng-model="model" class="selectbox-style">
                                 <option value="">Select Model</option>
                                 <option value="BMW1 Series">BMW1 Series</option>
                                 <option value="Audi A6">Audi A6</option>
@@ -41,17 +43,19 @@
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Select Varient" ng-model="varient" >
-                                <md-option value="EMT Diesel">EMT Diesel</md-option>
-                                <md-option value="EMT Petrol">EMT Petrol</md-option>
-                                <md-option value="SAT Petrol">SAT Petrol</md-option>
+                            <select ng-model="varient" class="selectbox-style">
+                                <option value="">Select Varient</option>
+                                <option value="EMT Diesel">EMT Diesel</option>
+                                <option value="EMT Petrol">EMT Petrol</option>
+                                <option value="SAT Petrol">SAT Petrol</option>
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Select Category" ng-model="category" class="selectbox-style">
-                                <md-option value="Sedan">Sedan</md-option>
-                                <md-option value="HatchBack">HatchBack</md-option>
-                                <md-option value="SUV">SUV</md-option>
+                            <select ng-model="category" class="selectbox-style">
+                                <option value="">Select Category</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="HatchBack">HatchBack</option>
+                                <option value="SUV">SUV</option>
                             </select>
                         </md-input-container>
                         <md-input-container md-no-float="" class="md-block flex-gt-sm md-input-has-value input-adjtot">
@@ -61,38 +65,43 @@
                             <input style="border-color:#CCC;" placeholder="Mileage" type="text">
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Ownership" ng-model="ownership" class="selectbox-style">
-                                <md-option value="First Owner">First Owner</md-option>
-                                <md-option value="Second Owner">Second Owner</md-option>
-                                <md-option value="Third Owner">Third Owner</md-option>
+                            <select ng-model="ownership" class="selectbox-style">
+                                <option value="">Ownership</option>
+                                <option value="First Owner">First Owner</option>
+                                <option value="Second Owner">Second Owner</option>
+                                <option value="Third Owner">Third Owner</option>
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Car Status" ng-model="status"  class="selectbox-style">
-                                <md-option value="Good">Good</md-option>
-                                <md-option value="Medium">Medium</md-option>
-                                <md-option value="Excellent">Excellent</md-option>
+                            <select ng-model="status"  class="selectbox-style">
+                                <option value="">Car Status</option>
+                                <option value="Good">Good</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Excellent">Excellent</option>
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Color" ng-model="color" class="selectbox-style">
-                                <md-option value="Red">Red</md-option>
-                                <md-option value="Blue">Blue</md-option>
-                                <md-option value="Green">Green</md-option>
+                            <select ng-model="color" class="selectbox-style">
+                                <option value="">Color</option>
+                                <option value="Red">Red</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Green">Green</option>
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Location" ng-model="location" class="selectbox-style">
-                                <md-option value="Andaman">Andaman</md-option>
-                                <md-option value="Chennai">Chennai</md-option>
-                                <md-option value="Amravati">Amravati</md-option>
+                            <select ng-model="location" class="selectbox-style">
+                                <option value="">Location</option>
+                                <option value="Andaman">Andaman</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Amravati">Amravati</option>
                             </select>
                         </md-input-container>
                         <md-input-container class="md-block flex-gt-sm md-input-has-value">
-                            <select placeholder="Select Fuel Type" ng-model="fuel class="selectbox-style">
-                                <md-option value="Petrol">Petrol</md-option>
-                                <md-option value="Diesel">Diesel</md-option>
-                                <md-option value="Gas">Gas</md-option>
+                            <select ng-model="fuel" class="selectbox-style">
+                                <option value="">Select Fuel Type</option>
+                                <option value="Petrol">Petrol</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Gas">Gas</option>
                             </select>
                         </md-input-container>
                         <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">

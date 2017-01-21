@@ -25,4 +25,5 @@ md-select:not([disabled]):focus .md-select-value  {
     border: 0px;
     border-bottom: 1px solid #c5c5c5;
     padding: 10px 0px;  background:linear-gradient(#fff,#fff);
+    border-radius: 0px;
 }
