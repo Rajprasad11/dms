@@ -16,3 +16,13 @@ md-select:not([disabled]):focus .md-select-value  {
 .input-adjtot{
      margin: 24px 0px 0px 0px;
 }
+.car-images .card-media {
+    background-color: #999999;
+}
+.selectbox-style
+{
+    min-width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 10px 0px;  background:linear-gradient(#fff,#fff);
+}
