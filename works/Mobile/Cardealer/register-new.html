@@ -27,29 +27,29 @@
 	
 			 <form name="registerForm">
 			 <md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<md-icon style="color:#333;" class="material-icons">business</md-icon>
+					<md-icon md-svg-src="images/user-silhouette.svg"></md-icon>
 					<input style="border-color:#CCC;" placeholder="Dealer Name" aria-label="Dealer Name" type="text">
 				</md-input-container>
 			
 				<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<md-icon style="color:#333;" class="material-icons">phone</md-icon>
+					<md-icon md-svg-src="images/phone-call.svg"></md-icon>
 					<input style="border-color:#CCC;" placeholder="Contact" aria-label="Contact" type="text">
 				</md-input-container>
 				
 				 <md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					 <md-icon style="color:#333;" class="material-icons">mail</md-icon>
+					 <md-icon md-svg-src="images/envelope.svg"></md-icon>
 					<input style="border-color:#CCC;" placeholder="Email Id" aria-label="Email Id" type="text">
 				</md-input-container>
 				
 				
 				 <md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<md-icon style="color:#333;" class="material-icons">person</md-icon>
+					<md-icon md-svg-src="images/user-silhouette.svg"></md-icon>
 					<input style="border-color:#CCC;" placeholder="Dealer Ship Name" aria-label="Dealer Ship Name" type="text">
 				</md-input-container>
 			
 		
 			 <md-input-container class="md-block flex-gt-sm md-input-has-value" flex-gt-sm="">
-				  <md-icon style="color:#333;" class="material-icons">place</md-icon>
+				  <md-icon md-svg-src="images/place.svg"></md-icon>
 							<md-select placeholder="City" ng-model="user" style="min-width: 100px;">
 							<md-option value="app" tabindex="0" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_400"><div class="md-text">Chennai</div></md-option>
 							<md-option value="app" tabindex="0" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_400"><div class="md-text">Hyderabad</div></md-option>
@@ -95,26 +95,26 @@
 							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
 								
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="Basic" class="md-primary">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
 													<span class="md-subhead">
 													1 Month
 													</span>
 													<span class="md-subhead"><b>RS 3000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 											
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="gold" class="md-primary">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
 														<span class="md-subhead">2 Month</span>
 														<span class="md-subhead"><b>RS 3000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 											
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="Premium" class="md-primary">
+												<a href="order.html"><md-radio-button value="Premium" class="md-primary">
 														<span class="md-subhead">3 Years</span>
 														<span class="md-subhead"><b>RS 3000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 												
 												
@@ -128,17 +128,17 @@
 							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
 								
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="Basic" class="md-primary">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
 													<span class="md-subhead">Basic Plan</span>
 													<span class="md-subhead"><b>Rs 40000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 											
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="gold" class="md-primary">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
 														<span class="md-subhead">Premium Plan</span>
 														<span class="md-subhead"><b>RS 30000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 											</div>
 							</md-content>
@@ -150,31 +150,23 @@
 							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
 								
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="Basic" class="md-primary">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
 													<span class="md-subhead">Basic Plan</span>
 													<span class="md-subhead"><b>Rs 50000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 												</md-radio-group>
 											
 											<md-radio-group ng-model="data.group1">
-												<md-radio-button value="gold" class="md-primary">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
 														<span class="md-subhead">Premium Plan</span>
 														<span class="md-subhead"><b>RS 80000</b></span>
-												</md-radio-button>
+												</md-radio-button></a>
 											</md-radio-group>
 							</div>
 						</md-content>
 					</md-tab>
 				</md-tabs>
-								
-
-								
-				<!--Submit-->
-					<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
-
-								<a href="order.html"><button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Submit</span></button></a>
-						</section>
-						<br>
+				
 				</md-content>
 				</div>
 		</md-card>

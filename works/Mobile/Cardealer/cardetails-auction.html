@@ -56,11 +56,12 @@
 								</button>
 								
 							 </md-card-icon-actions>
-				
+				  <!--<button class="md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Action 1</span></button>
+				  <button class="md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Action 2</span></button>-->
 			
 										
 					</div>
-					<div flex="33" class="md-label md-caption">IMAGES: 3 Videos: 1</div>
+					<div flex="33" class="md-label md-caption">Images: 3  Videos: 1</div>
 					</div>			
 				</div>
 					</section>
@@ -70,10 +71,19 @@
 				<div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
 						<div flex="" layout="row" layout-padding="" layout-align="start center" class="layout-align-start-center layout-row flex">
 								<div flex="" class="ng-binding flex"><b>Hyundai I10 Era 1080 cc </b><br>Rs 40000 </div>
-						</div>			
+					
+						</div>	
+</section>
+
+
+					<section layout="row" layout-sm="row" layout-align="center" layout-wrap="">
+						<div flex-xs="" flex-gt-xs="99" layout="column" class="layout-column flex-xs flex-gt-xs-99">
+								<div flex="99" layout="row" layout-padding="" layout-align="start center" class="layout-align-start-center layout-row flex">
+								<span>Current Bids: 40000</span>
+								<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Make Offer</span></button></div>						
 				</div>
+			</div>
 			</section>
-			
 		
 					<section layout="row" layout-sm="row" layout-align="center" layout-wrap="">
 			
@@ -672,9 +682,7 @@
 		
 		
 		
-
-			
-		<section layout="row" layout-sm="row" layout-align="center" layout-wrap="">
+<section layout="row" layout-sm="row" layout-align="center" layout-wrap="">
 				 <div flex-xs="" flex-gt-xs="50" layout="row" class="layout-column flex-xs flex-gt-xs-50">
 			<md-icon style="cursor:pointer;" md-svg-src="images/message.svg" ng-click="showTabDialog($event)"></md-icon>
 			<md-icon style="cursor:pointer;" md-svg-src="images/information.svg" ng-click="showAdvanced($event)"></md-icon>
@@ -714,7 +722,7 @@
 			 }    
 			 
 			 
-			 angular.module('firstApplication', ['ngMaterial'])
+			  angular.module('firstApplication', ['ngMaterial'])
 			.controller('inputController', function($scope, $mdDialog) {
 			  $scope.status = '  ';
 			  $scope.customFullscreen = false;
@@ -737,8 +745,6 @@
 				  };
 
 			  });
-			  
-
 			</script>
 			
 			

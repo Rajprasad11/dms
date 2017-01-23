@@ -33,6 +33,20 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
 }
 
 
+md-radio-button .md-label {
+    box-sizing: border-box;
+    color: #333 !important;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 0;
+    pointer-events: none;
+    position: relative;
+    vertical-align: middle;
+    white-space: normal;
+    width: auto;
+}
+
+
 
 
 .carddemoBasicUsage .card-media {
@@ -162,22 +176,135 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
   margin-bottom: 0; }
   
   
-.md-dialog {
+md-dialog {
     box-shadow: 0 7px 8px -4px rgba(0, 0, 0, 0.2), 0 13px 19px 2px rgba(0, 0, 0, 0.14), 0 5px 24px 4px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
     max-height: 80%;
-    max-width: 95% !important;
-    min-width: 80% !important;
-    opacity: 0;
+    max-width: 80%;
+    min-width: 330px !important;
     overflow: auto;
     position: relative;
 }
 
 
+/***queries chat***/
 
-/***Car View Details***/
+.chat-conversation-user[_ngcontent-moy-131] {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    padding: 0 2rem;
+    width: 100%;
+}
 
+
+.them[_ngcontent-moy-131] .chat-conversation-message[_ngcontent-moy-131]::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #57c1e3 #57c1e3 transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 5px;
+    content: "";
+    height: 0;
+    left: -7px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+.chat-conversation-message[_ngcontent-moy-131] {
+    background-color: #57c1e3;
+    border-radius: 4px;
+    padding: 0.625rem 1rem;
+    position: relative;
+}
+
+
+.chat-conversation-message[_ngcontent-moy-131] p[_ngcontent-moy-131] {
+    margin: 0;
+	color:#FFF;
+}
+
+.chat-conversation-message2[_ngcontent-moy-131] p[_ngcontent-moy-131] {
+    margin: 0;
+	color:#333;
+}
+
+
+.ms-date {
+    color: #FFF !important;
+    display: block;
+    margin-top: 7px;
+}
+
+.ms-date2 {
+    color: #333 !important;
+    display: block;
+    margin-top: 7px;
+}
+
+
+
+
+.chat-conversation-message[_ngcontent-moy-131] .chat-date[_ngcontent-moy-131] {
+    display: block;
+    font-size: 11px;
+    padding-top: 2px;
+}
+
+
+
+.me[_ngcontent-moy-131] {
+    -moz-box-pack: end;
+    justify-content: flex-end;
+	color:#333;
+}
+.chat-conversation-user[_ngcontent-moy-131] {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+
+
+.me[_ngcontent-moy-131] .chat-conversation-message[_ngcontent-moy-131]::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #e8ebe9 #e8ebe9;
+    border-image: none;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: -7px;
+    width: 0;
+	color:#333;
+}
+.chat-conversation-user.me[_ngcontent-moy-131] .chat-conversation-message[_ngcontent-moy-131] {
+    background-color: #e8ebe9;
+    float: right;
+    position: relative;
+}
+.me[_ngcontent-moy-131] .chat-conversation-message[_ngcontent-moy-131] {
+    -moz-box-ordinal-group: 2;
+    order: 1;
+
+}
+
+
+
+  
 
   
  
