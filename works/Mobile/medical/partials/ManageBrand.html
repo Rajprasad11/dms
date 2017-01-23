@@ -1,0 +1,199 @@
+<section id="content">
+    <div class="container">
+        <div class="block-header">
+            <h2>Manage Your Latest Brand</h2>
+            
+            <ul class="actions">
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-trending-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-check-all"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <i class="zmdi zmdi-more-vert"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#">Refresh</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Widgets</a>
+                        </li>
+                        <li>
+                            <a href="#">Widgets Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mini-charts">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-cyan">
+                        <div class="clearfix">
+                            <div class="chart stats-bar"></div>
+                            <div class="count">
+                                <small>Total Drug</small>
+                                <h2>107</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-lightgreen">
+                        <div class="clearfix">
+                            <div class="chart stats-bar-2"></div>
+                            <div class="count">
+                                <small>Website Impressions</small>
+                                <h2>356,785K</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-orange">
+                        <div class="clearfix">
+                            <div class="chart stats-line"></div>
+                            <div class="count">
+                                <small>Total Sales</small>
+                                <h2>$ 458,778</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-bluegray">
+                        <div class="clearfix">
+                            <div class="chart stats-line-2"></div>
+                            <div class="count">
+                                <small>Support Tickets</small>
+                                <h2>23,856</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2>
+	                Add New Brand 
+	                <button class="btn bgm-red btn-float waves-effect" style="right: -10px !important;position: relative !important;bottom: 5px;" ng-click="addBrandRow()"><i class="zmdi zmdi-plus"></i></button>
+	             </h2>
+
+            </div>
+            
+            <div class="table-responsive z-depth-3">
+				<table id="brandTalble" class="table table-striped">
+				    <thead>
+				        <tr>
+				            <th>S.no</th>
+				            <th>Brand Name</th>           
+				            <th>Action</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+					    <tr ng-repeat="brand in brand_details | orderBy: 'brand_id'">
+					    	<td>{{$index+1}}</td>
+					    	<td ng-show="editbrand == $index+0"> 
+					    		<div class="form-group fg-float">
+	                                <div class="fg-line fg-toggled">
+	                                    <input class="form-control fg-input" type="text" ng-model="brand.brand_name">
+	                                    <label class="fg-label">Enter Brand Name</label>
+	                                </div>
+	                            </div>
+					    	</td>
+				            <td ng-hide="brand.brand_id==0 || editbrand == $index+0">{{brand.brand_name}}</td>
+				            <td ng-hide="brand.brand_id!=0">
+				            	<div class="form-group fg-float">
+	                                <div class="fg-line">
+	                                    <input class="form-control fg-input" type="text" ng-model="brandname[$index+0]">
+	                                    <label class="fg-label">Enter Brand Name</label>
+	                                </div>
+	                            </div>
+				            </td>                                   
+				            <td class="actions text-center">
+				            	<div ng-hide="brand.brand_id==0 || editbrand == $index+0">			    
+				            		<button type="button" class="btn btn-primary btn-icon waves-effect waves-circle waves-float" ng-click="editBrand($index+0)"><span class="zmdi zmdi-edit"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><span class="zmdi zmdi-delete" ng-click="delete_brand(brand.brand_id)"></span></button>
+				            	</div>
+				            	<div ng-show="editbrand == $index+0">				            		
+				            		<button type="button" class="btn btn-lightgreen btn-icon waves-effect waves-circle waves-float" ng-click="updateBrand(brand.brand_name,brand.brand_id)"><span class="zmdi zmdi-arrow-forward"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float" ng-click="cancelBrandUpdate()"><span class="zmdi zmdi-close"></span></button>
+				            	</div>
+				            	<div ng-hide="brand.brand_id!=0">				            		
+				            		<button type="button" class="btn bgm-lime  btn-icon waves-effect waves-circle waves-float" ng-click="addBrand(brandname[$index+0])"><span class="zmdi zmdi-check"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon command-delete waves-effect waves-circle" ng-click="deleteBrandRow(brand)"><span class="zmdi zmdi-close"></span></button>					
+					            </div>
+				            </td>
+					    </tr>
+				    </tbody>
+				</table>				
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<script type="text/javascript">
+            /*
+             * Notifications
+             */
+    function notify(from, align, icon, type, animIn, animOut){
+        $.growl({
+            icon: icon,                    
+            message: 'Your Brand has been added successfully &nbsp <img src="img/profile-pics/2.jpg" width="50" height="50" /> ',
+            url: ''
+        },{
+                element: 'body',
+                type: type,
+                allow_dismiss: true,
+                placement: {
+                        from: from,
+                        align: align
+                },
+                offset: {
+                    x: 20,
+                    y: 85
+                },
+                spacing: 10,
+                z_index: 1031,
+                delay: 2500,
+                timer: 1000,
+                url_target: '_blank',
+                mouse_over: false,
+                animate: {
+                        enter: animIn,
+                        exit: animOut
+                },
+                icon_type: 'class',
+                template: '<div data-growl="container" class="alert" role="alert">' +
+                                '<button type="button" class="close" data-growl="dismiss">' +
+                                    '<span aria-hidden="true">&times;</span>' +
+                                    '<span class="sr-only">Close</span>' +
+                                '</button>' +
+                                '<span data-growl="icon"></span>' +
+                                '<span data-growl="message"></span>' +
+                                '<a href="#" data-growl="url"></a>' +
+                            '</div>'
+        });
+    };
+    
+    
+</script>
+
+<script src="js/flot-charts/curved-line-chart.js"></script>
+<script src="js/flot-charts/line-chart.js"></script>
+<script src="js/charts.js"></script>

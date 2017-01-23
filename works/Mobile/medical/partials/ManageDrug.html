@@ -1,0 +1,252 @@
+
+<section id="content">
+    <div class="container">
+        <div class="block-header">
+            <h2>Manage Your Latest Drugs</h2>
+            
+            <ul class="actions">
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-trending-up"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="zmdi zmdi-check-all"></i>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">
+                        <i class="zmdi zmdi-more-vert"></i>
+                    </a>
+                    
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href="#">Refresh</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Widgets</a>
+                        </li>
+                        <li>
+                            <a href="#">Widgets Settings</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="mini-charts">
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-cyan">
+                        <div class="clearfix">
+                            <div class="chart stats-bar"></div>
+                            <div class="count">
+                                <small>Total Drug</small>
+                                <h2>107</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-lightgreen">
+                        <div class="clearfix">
+                            <div class="chart stats-bar-2"></div>
+                            <div class="count">
+                                <small>Website Impressions</small>
+                                <h2>356,785K</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-orange">
+                        <div class="clearfix">
+                            <div class="chart stats-line"></div>
+                            <div class="count">
+                                <small>Total Sales</small>
+                                <h2>$ 458,778</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-6 col-md-3">
+                    <div class="mini-charts-item bgm-bluegray">
+                        <div class="clearfix">
+                            <div class="chart stats-line-2"></div>
+                            <div class="count">
+                                <small>Support Tickets</small>
+                                <h2>23,856</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>
+	                Add New Drug List 
+	                <button class="btn bgm-red btn-float waves-effect" style="right: -10px !important;position: relative !important;bottom: 5px;" ng-click="addDrugRow()"><i class="zmdi zmdi-plus"></i></button>
+	             </h2>
+            </div>
+
+            <!-- <div class="card-body card-padding">
+                <div class="row">
+                    <div class="col-sm-3 m-b-15">
+                        <p class="f-500 c-black m-b-15">Basic Example</p>
+                        <select class="chosen" data-placeholder="Choose a Country...">
+                            <option ng-repeat="drug in drugDetails">{{drug.brand_name}}</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                        </select>
+                    </div>
+                </div>
+            </div> -->
+            
+            <div class="table-responsive z-depth-3">
+				<table id="drugTalble" class="table table-striped">
+				    <thead>
+				        <tr>
+				            <th>S.no</th>
+				            <th>Brand Name</th>   
+                            <th>Drug Name</th>          
+				            <th>Action</th>
+				        </tr>
+				    </thead>
+				    <tbody>
+					    <tr ng-repeat="drug in drugDetails | orderBy: 'product_id'">
+					    	<td>{{$index+1}}</td>
+
+                            <!-- when edit  -->
+					    	<td ng-show="editdrug == $index+0"> 
+					    		<select class="form-control" placeholder="Choose a Brand..."  ng-model="drug.productBrandId">
+                                    <option>Choose Brand </option>
+                                    <option value="{{brand.brand_id}}" ng-repeat="brand in brand_details  ">{{brand.brand_name}}</option>
+                                </select>
+					    	</td>
+                            <td ng-show="editdrug == $index+0"> 
+                                <div class="form-group fg-float">
+                                    <div class="fg-line fg-toggled">
+                                        <input class="form-control fg-input" type="text" ng-model="drug.product_name">
+                                        <label class="fg-label">Enter Drug Name</label>
+                                    </div>
+                                </div>
+                            </td>
+                            <!-- end when edit -->
+
+                            <!-- no action  -->
+				            <td ng-hide="drug.product_id==0 || editdrug == $index+0">{{drug.brand_name}}  </td>
+                            <td ng-hide="drug.product_id==0 || editdrug == $index+0">{{drug.product_name}}</td>
+                            <!-- end no action -->
+
+                            <!-- when add drug -->
+				            <td ng-hide="drug.product_id!=0">
+				            	
+                                    <select class="form-control" placeholder="Choose a Brand..." ng-model="brandId[$index+0]">
+                                        <option>Choose Brand</option>
+                                        <option value="{{brand.brand_id}}" ng-repeat="brand in brand_details">{{brand.brand_name}}</option>
+                                    </select>
+                               
+				            </td>    
+                            <td ng-hide="drug.product_id!=0">
+                                <div class="form-group fg-float">
+                                    <div class="fg-line">
+                                        <input class="form-control fg-input" type="text" ng-model="drugName[$index+0]">
+                                        <label class="fg-label">Enter Drug Name</label>
+                                    </div>
+                                </div>
+                            </td>          
+                            <!-- end when add drug -->
+
+				            <td class="actions text-center">
+
+                            <!-- edit row -->
+				            	<div ng-hide="drug.product_id==0 || editdrug == $index+0">			   
+                                    <button type="button" class="btn btn-primary btn-icon waves-effect waves-circle waves-float" ng-click="editDrug($index+0,drug.productBrandId)"><span class="zmdi zmdi-edit"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float"><span class="zmdi zmdi-delete" ng-click="delete_drug(drug.product_id)"></span></button>
+				            	</div>
+                            <!-- end edit row -->
+
+                            <!-- update Edited Row -->
+				            	<div ng-show="editdrug == $index+0">				            		
+				            		<button type="button" class="btn btn-lime btn-icon waves-effect waves-circle waves-float" ng-click="updateDrug(drug.product_id,drug.productBrandId,drug.product_name)"><span class="zmdi zmdi-arrow-forward"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon waves-effect waves-circle waves-float" ng-click="cancelDrugUpdate()"><span class="zmdi zmdi-close"></span></button>
+				            	</div>
+                            <!-- end update edited row --> 
+
+                            <!-- add new row -->
+				            	<div ng-hide="drug.product_id!=0">				            		
+				            		<button type="button" class="btn bgm-lime  btn-icon waves-effect waves-circle waves-float" ng-click="addDrug(brandId[$index+0],drugName[$index+0])"><span class="zmdi zmdi-check"></span></button>
+					              	<button type="button" class="btn bgm-deeporange btn-icon command-delete waves-effect waves-circle" ng-click="deleteDrugRow(drug)"><span class="zmdi zmdi-close"></span></button>					
+					            </div>
+                            <!-- end add new row -->
+				            </td>
+					    </tr>
+				    </tbody>
+				</table>    
+			</div>
+		</div>            
+	</div>
+</section>
+
+<script type="text/javascript">
+            /*
+             * Notifications
+             */
+    function notify(from, align, icon, type, alertMessage, animIn, animOut){
+        console.log(alertMessage);
+        $.growl({
+            icon: icon,                    
+            message: alertMessage,
+            url: ''
+        },{
+                element: 'body',
+                type: type,
+                allow_dismiss: true,
+                placement: {
+                        from: from,
+                        align: align
+                },
+                offset: {
+                    x: 20,
+                    y: 85
+                },
+                spacing: 10,
+                z_index: 1031,
+                delay: 2500,
+                timer: 1000,
+                url_target: '_blank',
+                mouse_over: false,
+                animate: {
+                        enter: animIn,
+                        exit: animOut
+                },
+                icon_type: 'class',
+                template: '<div data-growl="container" class="alert" role="alert">' +
+                                '<button type="button" class="close" data-growl="dismiss">' +
+                                    '<span aria-hidden="true">&times;</span>' +
+                                    '<span class="sr-only">Close</span>' +
+                                '</button>' +
+                                '<span data-growl="icon"></span>' +
+                                '<span data-growl="message"></span>' +
+                                '<a href="#" data-growl="url"></a>' +
+                            '</div>'
+        });
+    };
+    
+    
+</script>
+
+<script src="js/flot-charts/curved-line-chart.js"></script>
+<script src="js/flot-charts/line-chart.js"></script>
+<script src="js/charts.js"></script>
+       
