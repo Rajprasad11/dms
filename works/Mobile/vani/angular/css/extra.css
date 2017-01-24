@@ -39,3 +39,20 @@ md-select:not([disabled]):focus .md-select-value  {
 :-moz-placeholder { /* Firefox 18- */
   color: #333;
 }
+.phone-text .md-headline
+{
+    font-size:16px;
+}
+.phone-text .md-subhead
+{
+    font-size:14px;
+}
+.phone-text{
+        margin-left: 20px;
+}
+.slide-carname
+{
+    color:#c5c5c5;
+    margin-top:10px;
+    font-size: 14px;
+}

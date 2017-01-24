@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/style2.css">
         <link rel="stylesheet" href="css/extra.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
     </head>
 
     <body ng-app="firstApplication"> 
@@ -16,29 +18,41 @@
             <section layout="row" layout="column" layout-align="center center" layout-wrap="">
                 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
                     <md-card layout="row">
-                        
-                       <md-card-title>
-                           <md-card-title-media class="car-images" layout-padding>
-                            <div class="md-media-lg card-media"><img src="images/logo.png" alt=""/></div>
-          </md-card-title-media>
-          <md-card-title-text>
-            <span class="md-headline">Card with image</span>
-            <span class="md-subhead">Large</span>
-          </md-card-title-text>
-          
-        </md-card-title>
-        <md-card-actions layout="column">
-            <md-button class="md-icon-button" aria-label="Favorite">
-              <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Settings">
-              <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-            </md-button>
-            <md-button class="md-icon-button" aria-label="Share">
-              <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-            </md-button>
-          </md-card-actions>
+
+                        <md-card-title>
+                            <md-card-title-media class="car-images" flex="40" fill>
+                                <div class="md-media-xs card-media"><img src="images/logo.png" alt=""/></div>
+                            </md-card-title-media>
+                            <md-card-title-text class="md-media-xs phone-text" flex="60">
+                                <span class="md-headline">Hyundai i10</span>
+                                <span class="md-subhead">Rs. 4,50,0000 - 5,50,000</span>
+                                <span class="md-subhead"><span>19,2000km</span> | <span>Petrol</span> | <span>2005</span> | <span>2'nd Owner</span></span>
+                                <span class="md-subhead">Adyar,Chennai</span>
+                            </md-card-title-text>
+
+                        </md-card-title>
+                        <!--        <md-card-actions layout="column">
+                                    <md-button class="md-icon-button" aria-label="Favorite">
+                                      <md-icon style="color:red;" class="material-icons">favorite</md-icon>
+                                    </md-button>
+                                    <md-button class="md-icon-button" aria-label="Settings">
+                                      <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
+                                    </md-button>
+                                    <md-button class="md-icon-button" aria-label="Share">
+                                      <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+                                    </md-button>
+                                  </md-card-actions>-->
                     </md-card>
+                    <md-card layout="row">
+                        <div class="owl-carousel">
+                            <div> <img src="images/01.jpg" alt=""/><div style="text-align: center;"><p class="slide-carname">Car Front Image</p> 01/20</div></div>
+                            <div flex="100"> <img src="images/02.jpg" alt=""/><div style="text-align: center;"><p class="slide-carname">Car Front Image</p> 02/20</div></div>
+                            <div flex="100"> <img src="images/01.jpg" alt=""/><div style="text-align: center;"><p class="slide-carname">Car Front Image</p> 03/20</div></div>
+                            <div flex="100"> <img src="images/01.jpg" alt=""/><div style="text-align: center;"><p class="slide-carname">Car Front Image</p> 04/20</div></div>
+                        </div>
+                    </md-card>
+                    
+                    
                 </div>
             </section>
         </div>
@@ -48,7 +62,15 @@
         <script src="js/angular-aria.min.js"></script>
         <script src="js/angular-messages.min.js"></script>
         <script src="js/angular-material.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+                    $(document).ready(function () {
+                        $(".owl-carousel").owlCarousel();
+                    });
+        </script>
         <script language="javascript">
+
             angular
                     .module('firstApplication', ['ngMaterial'])
                     .controller('inputController', inputController);

@@ -1,0 +1,127 @@
+<html lang="en" >
+   <head>
+	<title>Order Summary</title>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="css/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style2.css">
+	   <script src="js/test.js"></script>
+</head>
+
+<body ng-app="firstApplication"> 
+	
+    <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+
+	<md-content layout-padding class="md-padding _md layout-xs-column layout-row" layout-xs="column" layout="row">
+	
+				<!---ROW1-->
+				<div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+				
+					<md-card>
+					<!--TOP Button-->
+							<section layout="row" layout-padding layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
+								
+								<a href="register-new.html"><button class="md-primary md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Plan Details</span></button></a>
+								
+								<button class="md-warn md-raised md-hue-4 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Change Plan</span></button>
+								
+								
+							</section>
+							
+							
+						<!---Purchansing--->	
+							<div layout padding layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="center">
+								<span align="center" class="md-subhead">Your Purchasing Basic Four Years</span>
+							</div>	
+							
+							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-align="center">
+								<h2 align="center">Rs 4000</h2>
+							</div>	
+									
+								
+								<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+									<input style="border-color:#CCC;" placeholder="Have a Coupon ?" aria-label="Have a Coupon?" type="text">
+								</md-input-container>
+								
+								<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
+
+								<a href="register-new.html"><button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Apply</span></button></a>
+							</section>
+							
+					</md-card>
+				 
+				</div>
+				
+	
+	
+				<!---ROW2-->
+			   <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+					<md-card layout-padding>
+						<!---Your Order Total--->	
+					<span class="md-title"><b>Your Order Total</bold></span>
+						<hr>
+				<md-card-content>
+				  <div layout="row" layout-align="space-between center" class="layout-align-space-between-center layout-row">
+					<span class="md-body-2">Subtotal</span>
+					<span class="md-body-1">3299.0</span>
+				</div>
+			   </md-card-content>
+			   
+			   <md-card-content>
+				  <div layout="row" layout-align="space-between center" class="layout-align-space-between-center layout-row">
+					<span class="md-body-2">Coupon Discount</span>
+					<span class="md-body-1">0</span>
+				</div>
+			   </md-card-content>
+			   
+			   
+				<md-card-content>
+				  <div layout="row" layout-align="space-between center" class="layout-align-space-between-center layout-row">
+					<span class="md-body-2">Payable Amount</span>
+					<span class="md-body-1">0 (Taxes)</span>
+				</div>
+			   </md-card-content>
+			   
+			   <hr>
+			   <br>
+			  <div layout="row" layout-align="left" class="layout-row">
+			   <md-checkbox md-no-ink ng-model="hasInk">
+					 <span class="md-body-1">Terms and Conditions</span>
+				  </md-checkbox>
+				  </md-card>
+				  
+				</div>
+			</md-content>
+				</div>
+					
+
+	
+
+		
+		  <script src="js/angular.min.js"></script>
+		  <script src="js/angular-animate.min.js"></script>
+		  <script src="js/angular-aria.min.js"></script>
+		  <script src="js/angular-messages.min.js"></script>
+		  <script src="js/angular-material.min.js"></script>
+		
+			 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+			</script>
+			
+			
+		
+	  
+ </body>
+
+
+ </html>
