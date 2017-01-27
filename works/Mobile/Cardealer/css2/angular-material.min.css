@@ -12079,7 +12079,7 @@ md-tabs {
     flex-shrink: 0;
 }
 md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
-    min-height: 250px;
+    min-height: 700px;
 }
 md-tabs[md-align-tabs=bottom] {
     padding-bottom: 48px;

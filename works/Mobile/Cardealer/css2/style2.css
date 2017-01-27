@@ -179,9 +179,6 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
  
 
 
-md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
-    min-height:auto !important;
-}
 
 
 
