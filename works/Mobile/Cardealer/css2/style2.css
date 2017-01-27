@@ -174,8 +174,31 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
   
   
   
-
+  
+  /****Car View Details***/
  
+
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height:730px !important;
+}
+
+
+
+
+md-tab-content {
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow: hidden !important;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: transform 0.5s cubic-bezier(0.35, 0, 0.25, 1) 0s;
+}
+
+
+  
   /***Dialog***/
   
   .dialogdemoBasicUsage #popupContainer {
