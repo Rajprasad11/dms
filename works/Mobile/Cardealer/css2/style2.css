@@ -170,6 +170,18 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
 .radioButtondemoBasicUsage .ipsum {
   color: saddlebrown;
   font-size: 0.9em; }
+  
+  
+  
+  
+  
+  /****Car View Details***/
+ 
+
+
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height:1000px !important;
+}
 
 
   
