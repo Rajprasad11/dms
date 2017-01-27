@@ -8322,8 +8322,8 @@ button.md-button::-moz-focus-inner {
     z-index: 20;
     line-height: 56px;
     min-width: 0;
-    width: 56px;
-    height: 56px;
+    width: 45px;
+    height: 45px;
     vertical-align: middle;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
     border-radius: 50%;
@@ -12079,7 +12079,7 @@ md-tabs {
     flex-shrink: 0;
 }
 md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
-    min-height: 1001px;
+    min-height: 1000px;
 }
 md-tabs[md-align-tabs=bottom] {
     padding-bottom: 48px;
