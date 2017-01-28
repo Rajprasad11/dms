@@ -540,7 +540,7 @@ li {
 }
 .chart-dot-list li {
     margin-left: 4px;
-    float: left;
+    float: none;
 }
 .chart-dot-list li:before {
     content: '';
@@ -551,6 +551,16 @@ li {
     background: #222;
     border-radius: 50%;
 }
+.progress-a1{
+background: #F7464A;}
+.progress-a2{
+background: #46BFBD;}
+.progress-a3{
+background: #FDB45C;}
+.progress-a4{
+background: #949FB1;}
+.progress-a5{
+background: #4D5360;}
 .chart-dot-list li.a1:before {
     background: #F7464A;
 }
@@ -560,8 +570,18 @@ li {
 .chart-dot-list li.a3:before {
     background: #FDB45C;
 }
+.chart-dot-list li.a4:before {
+    background: #949FB1;
+}
+.chart-dot-list li.a5:before {
+    background: #4D5360;
+}
 .chart-doughnut {
     padding: 41px 0;
+}
+.chart-progress .progress
+{
+    height:4px;
 }
 /* component */
 .bootstrap-select button{
