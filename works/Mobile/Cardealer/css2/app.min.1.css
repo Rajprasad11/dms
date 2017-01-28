@@ -15048,6 +15048,9 @@ a.thumbnail.active {
   margin: 0 !important;
 }
 
+.browsebtn { color:#FFF; margin-top:12px; }
+
+
 .ms-reply textarea {
   width: 100%;
   font-size: 13px;
