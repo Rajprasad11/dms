@@ -1,0 +1,136 @@
+<html lang="en" >
+   <head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="css2/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css2/style2.css">
+	  
+</head>
+
+<body ng-app="firstApplication"> 
+	
+    <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+	
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
+			    <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+      
+	
+			 <form name="registerForm">
+			 <md-input-container md-no-float="" class="md-block md-icon-right md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Search City Name" aria-label="Search City Name" type="text">
+					<md-icon md-svg-src="images/search.svg"></md-icon>
+				</md-input-container>
+			
+			<hr>
+			
+			<div layout="column" layout-sm="column" layout-align="center">
+											
+			
+				<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Ahmedabad</div>
+					</div>
+				
+				<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Bangalore</div>
+					</div>
+					
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<a href="register-new.html"><div class="md-label">Chennai</div></a>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Ghaziabad</div>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Gurgaon</div>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Hyderabad</div>
+					</div>
+					
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Jaipur</div>
+					</div>
+				
+				<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Cochin</div>
+					</div>
+					
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Lucknow</div>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Mumbai</div>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">New Delhi</div>
+					</div>
+					
+					<div flex="" layout="row" layout-padding layout-align="start center" >
+					<div class="md-label">Noida</div>
+					</div>
+				 
+												
+												
+													
+											</div>
+			
+			 
+
+				
+			 </form>	
+			 
+			
+	
+		
+		
+		
+			
+
+	</div>
+	 </section>
+	
+
+	 
+
+	</div>
+	
+
+	
+
+			 <script src="js2/test.js"></script>
+		  <script src="js2/angular.min.js"></script>
+		  <script src="js2/angular-animate.min.js"></script>
+		  <script src="js2/angular-aria.min.js"></script>
+		  <script src="js2/angular-messages.min.js"></script>
+		  <script src="js2/angular-material.min.js"></script>
+		
+			 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+			</script>
+			
+			
+		
+	  
+ </body>
+
+
+ </html>

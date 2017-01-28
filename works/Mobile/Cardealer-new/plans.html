@@ -1,0 +1,189 @@
+<html lang="en" >
+   <head>
+	<title>Plan Details</title>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="css2/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css2/style2.css">
+	  
+</head>
+
+<body ng-app="firstApplication"> 
+	
+    <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+	
+		<!--PLAN-->
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="" style="height="100%">
+			    <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+      
+			<md-card style="height="100%">
+			<div ng-cloak>
+				<md-content>
+					<md-tabs md-dynamic-height md-border-bottom>
+					 <md-tab label="basic">
+						<md-content >
+						
+							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
+								
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
+													<span class="md-subhead">
+													1 Month
+													</span>
+													<span class="md-subhead"><b>RS 3000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+											
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
+														<span class="md-subhead">2 Month</span>
+														<span class="md-subhead"><b>RS 3000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+											
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="Premium" class="md-primary">
+														<span class="md-subhead">3 Years</span>
+														<span class="md-subhead"><b>RS 3000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+												
+												
+										</div>
+										
+										</md-content>
+						</md-tab>
+						
+					<md-tab label="gold">
+						<md-content>
+							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
+								
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
+													<span class="md-subhead">Basic Plan</span>
+													<span class="md-subhead"><b>Rs 40000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+											
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
+														<span class="md-subhead">Premium Plan</span>
+														<span class="md-subhead"><b>RS 30000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+											</div>
+							</md-content>
+						</md-tab>	
+						
+						
+					<md-tab label="Premium">
+						<md-content>
+							<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
+								
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="Basic" class="md-primary">
+													<span class="md-subhead">Basic Plan</span>
+													<span class="md-subhead"><b>Rs 50000</b></span>
+												</md-radio-button></a>
+												</md-radio-group>
+											
+											<md-radio-group ng-model="data.group1">
+												<a href="order.html"><md-radio-button value="gold" class="md-primary">
+														<span class="md-subhead">Premium Plan</span>
+														<span class="md-subhead"><b>RS 80000</b></span>
+												</md-radio-button></a>
+											</md-radio-group>
+							</div>
+						</md-content>
+					</md-tab>
+				</md-tabs>
+				
+				</md-content>
+				
+				<md-content>
+				<hr>
+				<div layout layout-align="center" >
+        <md-title class="md-subhead">Vechicle Listing</md-title>
+      </div>
+				<hr>
+				
+				
+				<div layout layout-align="center" >
+        <md-title class="md-subhead">Premium Listing</md-title>
+      </div>
+	  
+	  <hr>
+	  
+	  
+	  	
+				<div layout layout-align="center" >
+        <md-title class="md-subhead">Loan Offers</md-title>
+      </div>
+	  
+	  <hr>
+	  
+	  
+	  <div layout layout-align="center" >
+        <md-title class="md-subhead">Contact Records upto 100</md-title>
+      </div>
+	  
+	  <hr>
+	  
+	  <div layout layout-align="center" >
+        <md-title class="md-subhead">Reports</md-title>
+      </div>
+	<br>
+				</md-content>
+				
+				
+				</div>
+		</md-card>
+		</section>	
+		
+		
+				<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="" class="layout-wrap layout-sm-column layout-align-center-center layout-row">
+					<!--Payment & Trial-->
+					
+					<div layout-gt-sm="row" class="layout-gt-sm-row" layout-padding layout-align="left">
+							<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Payment Process</span></button>
+							
+							
+							<button class="md-accent md-raised md-hue-1 md-button md-ink-ripple" type="button" ng-transclude=""><span class="ng-scope">Trial</span></button>
+						</div>
+			</section>
+	
+	 
+
+	</div>
+	
+
+	
+
+			 <script src="js2/test.js"></script>
+		  <script src="js2/angular.min.js"></script>
+		  <script src="js2/angular-animate.min.js"></script>
+		  <script src="js2/angular-aria.min.js"></script>
+		  <script src="js2/angular-messages.min.js"></script>
+		  <script src="js2/angular-material.min.js"></script>
+		
+			 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+			</script>
+			
+			
+		
+	  
+ </body>
+
+
+ </html>
