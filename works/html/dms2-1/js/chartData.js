@@ -26,19 +26,24 @@ var swirlData = {
 
 var doughnutData = [
     {
-        value: 20,
+        value: 300,
         color:"#F7464A",
         highlight: "#FF5A5E",
-        label: "Photos"
+        label: "Red"
     },
-    
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Green"
+    },
     {
         value: 100,
         color: "#FDB45C",
         highlight: "#FFC870",
-        label: "Remain"
+        label: "Yellow"
     }
-];
+]
 
 var radarData = {
     labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
@@ -65,7 +70,39 @@ var radarData = {
         }
     ]
 };
+var pieData = [
+    {
+        value: 200,
+        color:"#F7464A",
+        highlight: "#FF5A5E",
+        label: "Product 1"
+    },
+    {
+        value: 50,
+        color: "#46BFBD",
+        highlight: "#5AD3D1",
+        label: "Product 2"
+    },
+    {
+        value: 100,
+        color: "#FDB45C",
+        highlight: "#FFC870",
+        label: "Product 3"
+    },
+    {
+        value: 40,
+        color: "#949FB1",
+        highlight: "#A8B3C5",
+        label: "Product 4"
+    },
+    {
+        value: 120,
+        color: "#4D5360",
+        highlight: "#616774",
+        label: "Product 5"
+    }
 
+];
 
 var polarData = [
     {
@@ -121,4 +158,4 @@ var barChartData = {
             data: [28, 48, 40, 19, 86, 27, 90]
         }
     ]
-};
+}
