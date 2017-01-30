@@ -1,16 +1,13 @@
 
-@import url('http://getbootstrap.com/dist/css/bootstrap.css');
 
-
-
-/**********Slider*************/
+/**********Bootstrap Slider*************/
 
 
 div.pp_default .pp_social{margin-top:7px}
 div.pp_default .pp_gallery a.pp_arrow_previous,div.pp_default .pp_gallery a.pp_arrow_next{position:static;left:auto}
 
 div.pp_default .pp_nav .pp_pause{background-position:-51px -29px}
-div.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{background:url(../images/default/sprite.png) -31px -3px no-repeat;height:20px;width:20px;margin:4px 0 0}
+div.pp_default a.pp_arrow_previous,div.pp_default a.pp_arrow_next{background:url(images/sprite.png) -31px -3px no-repeat;height:20px;width:20px;margin:4px 0 0}
 div.pp_default a.pp_arrow_next{left:52px;background-position:-82px -3px}
 div.pp_default .pp_content_container .pp_details{margin-top:5px}
 div.pp_default .pp_nav{clear:none;height:30px;width:110px;position:relative}
@@ -21,7 +18,7 @@ div.pp_default .pp_nav .currentTextHolder{font-family:Georgia;font-style:italic;
 div.pp_pic_holder a:focus{outline:none}
 div.pp_overlay{background:#000;display:none;left:0;position:absolute;top:0;width:100%;z-index:9500}
 div.pp_pic_holder{display:none;position:absolute;width:100px;z-index:10000}
-.pp_content{height:40px;min-width:40px}
+.pp_content{height:40px;min-width:40px;background-color:#FFF;}
 * html .pp_content{width:40px}
 .pp_content_container{position:relative;text-align:left;width:100%}
 .pp_content_container .pp_left{padding-left:20px}
@@ -42,8 +39,8 @@ a.pp_arrow_previous,a.pp_arrow_next{display:block;float:left;height:15px;margin-
 .pp_gallery li{display:block;float:left;margin:0 5px 0 0;padding:0}
 .pp_gallery li.default a{background:url(../images/facebook/default_thumbnail.gif) 0 0 no-repeat;display:block;height:33px;width:50px}
 .pp_gallery .pp_arrow_previous,.pp_gallery .pp_arrow_next{margin-top:7px!important}
-a.pp_next{background:url(../images/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%}
-a.pp_previous{background:url(../images/light_rounded/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%}
+a.pp_next{background:url(../images/btnNext.png) 10000px 10000px no-repeat;display:block;float:right;height:100%;text-indent:-10000px;width:49%}
+a.pp_previous{background:url(../images/btnNext.png) 10000px 10000px no-repeat;display:block;float:left;height:100%;text-indent:-10000px;width:49%}
 a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
 a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
 .pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
