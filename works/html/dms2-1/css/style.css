@@ -3281,5 +3281,6 @@ figure.effect-ming:hover img {opacity: 0.4;}
     
 }
 .btn-adding i{
-    top: -3px;
+        top: -4px;
+    transform: rotate(134deg);
 }
