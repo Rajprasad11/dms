@@ -3274,3 +3274,12 @@ figure.effect-ming:hover img {opacity: 0.4;}
 {
        margin-right: 30px;
 }
+.btn-adding
+{
+    width:20px !important;
+    height:20px !important;
+    
+}
+.btn-adding i{
+    top: -3px;
+}
