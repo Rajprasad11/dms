@@ -203,47 +203,37 @@
                                 <div class="col-sm-4 col-xs-12" style="border-right: 1px solid #ccc;">
                                     <h4 class="page-title">Make/Model</h4>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="" placeholder="Enter make" value=''>
+                                        <select class="selectpicker" multiple data-selected-text-format="count">
+                                            <option value="1">Honda</option>
+                                            <option value="2">Audi</option>
+                                            <option value="3">Honda</option>
+                                            <option value="4">Honda</option>
+                                        </select>
                                     </div> 
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox checkbox-primary">
-                                                <input id="Maruti" type="checkbox" >
-                                                <label for="Maruti">
-                                                    Maruti
-                                                </label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox checkbox-primary">
-                                                <input id="Honda" type="checkbox" >
-                                                <label for="Honda">
-                                                    Honda
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    
                                     <hr>
                                     <h4 class="page-title">Model</h4>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="" placeholder="Enter model" value=''>
+                                           <select class="selectpicker" multiple data-selected-text-format="count">
+                                            <option value="1">Honda</option>
+                                            <option value="2">Honda</option>
+                                            <option value="3">Car dekho</option>
+                                            <option value="4">Honda</option>
+                                        </select>
                                     </div> 
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox checkbox-primary">
-                                                <input id="Model" type="checkbox" >
-                                                <label for="Model">
-                                                    HondaModel
-                                                </label>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <!--                                    <ul>
+                                                                            <li>
+                                                                                <div class="checkbox checkbox-primary">
+                                                                                    <input id="Model" type="checkbox" >
+                                                                                    <label for="Model">
+                                                                                        HondaModel
+                                                                                    </label>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>-->
                                 </div>
                                 <div class="col-sm-4 col-xs-12"  style="border-right: 1px solid #ccc;">
                                     <h4 class="page-title">Price Range</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="" placeholder="Enter price limit" value=''>
-                                    </div>
                                     <ul>
                                         <li>
                                             <div class="checkbox checkbox-primary">
@@ -277,9 +267,6 @@
                             <div class="row">
                                 <div class="col-sm-6 col-xs-12" style="border-right: 1px solid #ccc;">
                                     <h4 class="page-title">Buy Timeline</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="" placeholder="Enter Buy timeline" value=''>
-                                    </div>
                                     <ul>
                                         <li>
                                             <div class="checkbox checkbox-primary">
@@ -291,9 +278,33 @@
                                         </li>
                                         <li>
                                             <div class="checkbox checkbox-primary">
+                                                <input id="month2" type="checkbox" >
+                                                <label for="month2">
+                                                    within 2 month
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox checkbox-primary">
                                                 <input id="month3" type="checkbox" >
                                                 <label for="month3">
                                                     within 3 month
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="month4" type="checkbox" >
+                                                <label for="month4">
+                                                    within 4 month
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="checkbox checkbox-primary">
+                                                <input id="month5" type="checkbox" >
+                                                <label for="month5">
+                                                    within 5 month
                                                 </label>
                                             </div>
                                         </li>
@@ -309,9 +320,6 @@
                                 </div>
                                 <div class="col-sm-6 col-xs-12">
                                     <h4 class="page-title">Buy From</h4>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="" placeholder="Enter buy name" value=''>
-                                    </div>
                                     <ul>
                                         <li>
                                             <div class="checkbox checkbox-primary">
@@ -407,12 +415,7 @@
         <script src="js/bootstrap-filestyle.min.js" type="text/javascript"></script>
         <script src="js/menu.js"></script>
         <script src="js/main.js"></script>
-
-
         <script src="js/bootstrap-select.min.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script src="js/fileinput.js"></script>
-        <script src="js/chartData.js"></script>
 
         <script type="text/javascript">
             $('.BSbtninfo').filestyle({
