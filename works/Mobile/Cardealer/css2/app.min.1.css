@@ -15050,9 +15050,8 @@ a.thumbnail.active {
 
 .browsebtn { color:#FFF; margin-top:12px; }
 
-
 .ms-reply textarea {
-  width: 100%;
+  width: 90%;
   font-size: 13px;
   border: 0;
   padding: 10px 8px;
