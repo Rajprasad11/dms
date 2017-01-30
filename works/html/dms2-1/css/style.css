@@ -3284,3 +3284,7 @@ figure.effect-ming:hover img {opacity: 0.4;}
         top: -4px;
     transform: rotate(134deg);
 }
+.dropdown-menu>li>a
+{
+    padding:9px 20px !important;
+}
