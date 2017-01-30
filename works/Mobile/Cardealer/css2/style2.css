@@ -27,27 +27,19 @@
 }
 
 
-md-input-container .md-input {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 0 0 1px;
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    height: 30px;
-    line-height: 26px;
-    margin-top: 0;
-    order: 2;
-    padding: 2px 2px 1px;
+/***Input Error***/
+
+.notifications .btn {
+    margin-bottom: 20px;
     width: 100%;
 }
-md-input-container.md-default-theme .md-input, md-input-container .md-input {
-    border-color:# CCC !important;
-    color:# CCC !important;
+.btn:not(.btn-link) {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16), 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
-
+md-input-container.md-input-focused label {
+  display: none
+}
 
 md-select.md-default-theme .md-select-value, md-select .md-select-value {
     border-bottom-color: #CCC !important);
@@ -170,12 +162,7 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
 .radioButtondemoBasicUsage .ipsum {
   color: saddlebrown;
   font-size: 0.9em; }
-  
-  
-  
-  
-  
-  /****Car View Details***/
+
 
   
   /***Dialog***/
@@ -345,20 +332,4 @@ md-card md-card-title {
   
 
   
- .footer {
-    background-color: #FFF;
-    bottom: 0;
-    height: 60px;
-    position: absolute;
-    width: 100%;
-	padding-top:10px;
-	z-index:1000;
-}
-
-
-.container .text-muted {
-    margin: 20px 0;
-}
-.text-muted {
-    color: #777;
-}
+ 
