@@ -3288,3 +3288,23 @@ figure.effect-ming:hover img {opacity: 0.4;}
 {
     padding:9px 20px !important;
 }
+.add-contact{
+    border-bottom: 1px solid #f9f9f9;
+    padding: 10px 0px;
+}
+.add-contact:hover{
+    background-color: #f9f9f9;
+}
+.add-contact .checkbox
+{
+    margin:0px;
+    padding:0px;
+}
+.add-contact .checkbox label::after {
+    
+    left: 10px;
+    top: 1px;}
+.add-contact .checkbox label::before {
+    
+    left: 10px;
+    top: 1px;}
