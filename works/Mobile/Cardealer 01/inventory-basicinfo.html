@@ -21,6 +21,8 @@
 <body ng-app="firstApplication"> 
 
 <!---Body--->
+	<div id="rect">
+	<div id="content1">
 	 <div id="inputContainer" class="inputdemoErrors" ng-controller="inputController as ctrl" ng-cloak>
 		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
 			 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
@@ -199,21 +201,29 @@
 					</form>
 			 </div>			
 		</section>
-		
+	</div>
+	</div>
+		 </div>
+		<div id="footer-bottom">
+	
 		<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
 		 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
              <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
 				<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple bth-height " layout-padding flex="50" 
-				type="button" ng-transclude="">Cancel</button>
+				type="button" ng-transclude=""><a href="#">Cancel</a></button>
 				<button class="md-primary md-raised md-hue-2 md-button md-ink-ripple bth-height " layout-padding flex="50" 
-				type="button" ng-transclude="">Images & Videos</button>
+				type="button" ><a href="inventory-images.html">Images & Videos</a></button>
 			</div>
 		  </div>
     </section>
+	</div>
+	
+	
+	
+	
 	
 	 
-		
-     </div>
+	
 
 
 <!---Body--->
