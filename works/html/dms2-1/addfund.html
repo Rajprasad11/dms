@@ -209,11 +209,7 @@
                                                     </div></div>
                                             </div>
                                             <div class="col-xs-12">
-                                                <div class="col-xs-12 col-sm-3">
-                                                    <div class="form-group field-wrapper1">
-                                                        <label>Amount required</label>
-                                                        <input type="mail" class="form-control" placeholder="Amount Required">
-                                                    </div></div>
+                                               
                                                 <div class="col-xs-12 col-sm-3">
                                                     <div class="form-group field-wrapper1">
                                                         <label>Date</label>
@@ -276,7 +272,13 @@
 
                                         </form></div>
                                     <div class="card col-xs-12">
-                                        <div class="col-sm-6 col-xs-10"><input type="text" placeholder="Inventory Items" class="form-control"/></div>
+                                        <div class="col-sm-6 col-xs-10"><div class="input-group">
+
+                                                <input type="text" class="form-control" placeholder="Inventory Item">
+                                                <span data-toggle="modal" data-target="#car_list" title="Chooce customer" class="input-group-addon btn btn-primary">
+                                                    <i class="fa fa-car"></i>
+                                                </span>
+                                            </div></div>
                                         <div class="col-sm-1 col-xs-2"><button class="btn btn-primary"><i class="fa fa-plus"></i></button></div>
                                         <div class="col-sm-3 col-xs-12"><div class="input-group">
                                                 <span class="input-group-addon">
@@ -458,6 +460,81 @@
                 </footer>
             </div>
         </div>
+		<!--popup-->
+		<div class="modal fade" id="car_list" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Select Cars</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <table id="zctb" class="display table inventory-table car-fund" cellspacing="0" width="100%">
+
+                                <tbody>
+                                    <tr>
+                                        <td class="col-sm-1"><div class="checkbox checkbox-info"><input type="checkbox" id="car1" name="price-filter">
+                                                <label for="car1"></label>
+                                            </div></td>
+                                        <td class="col-sm-3"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/></td>
+                                        <td class="col-sm-8"><h4>Make, Model, Varient, Year</h4>
+                                            <h5>Rs.3,60,000</h5>
+                                            <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-1"><div class="checkbox checkbox-info"><input type="checkbox" id="car6" name="price-filter">
+                                                <label for="car6"></label>
+                                            </div></td>
+                                        <td class="col-sm-3"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/></td>
+                                        <td class="col-sm-8"><h4>Make, Model, Varient, Year</h4>
+                                            <h5>Rs.3,60,000</h5>
+                                            <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-1"><div class="checkbox checkbox-info"><input type="checkbox" id="car2" name="price-filter">
+                                                <label for="car2"></label>
+                                            </div></td>
+                                        <td class="col-sm-3"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/></td>
+                                        <td class="col-sm-8"><h4>Make, Model, Varient, Year</h4>
+                                            <h5>Rs.3,60,000</h5>
+                                            <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-1"><div class="checkbox checkbox-info"><input type="checkbox" id="car3" name="price-filter">
+                                                <label for="car3"></label>
+                                            </div></td>
+                                        <td class="col-sm-3"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/></td>
+                                        <td class="col-sm-8"><h4>Make, Model, Varient, Year</h4>
+                                            <h5>Rs.3,60,000</h5>
+                                            <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-sm-1"><div class="checkbox checkbox-info"><input type="checkbox" id="car4" name="price-filter">
+                                                <label for="car4"></label>
+                                            </div></td>
+                                        <td class="col-sm-3"><img src="img/car1.jpg" alt="" class="img-responsive table-img"/></td>
+                                        <td class="col-sm-8"><h4>Make, Model, Varient, Year</h4>
+                                            <h5>Rs.3,60,000</h5>
+                                            <p class="list-detail"><span class="text-muted">9,990 km</span> | <span class="text-muted">Petrol</span> | <span class="text-muted">2015</span> | <span class="text-muted">2 Owners</span></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
 
 
 
