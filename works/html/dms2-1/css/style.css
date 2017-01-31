@@ -71,8 +71,18 @@ li, input, button, li >a , li > span
 .btn-primary{background:#183055}
 .btn i {
     position: relative;
-    top: -2px;
+/*    top: -2px;*/
     color:#fff;
+}
+.btn-adding
+{
+    width:20px !important;
+    height:20px !important;
+    
+}
+.btn-adding i{
+        top: -4px;
+    transform: rotate(134deg);
 }
 .btn.text-left {
     text-align: left;
@@ -1401,6 +1411,11 @@ background: #4D5360;}
 }
 @media (max-width:991px)
 {
+    .product-summary
+    {
+        width:100% !important;
+        margin-top: 10px;
+    }
     .ts-sidebar {
 
         top: 67px;}
@@ -3274,16 +3289,6 @@ figure.effect-ming:hover img {opacity: 0.4;}
 {
        margin-right: 30px;
 }
-.btn-adding
-{
-    width:20px !important;
-    height:20px !important;
-    
-}
-.btn-adding i{
-        top: -4px;
-    transform: rotate(134deg);
-}
 .dropdown-menu>li>a
 {
     padding:9px 20px !important;
@@ -3308,3 +3313,43 @@ figure.effect-ming:hover img {opacity: 0.4;}
     
     left: 10px;
     top: 1px;}
+.product-summary
+{
+        width: 19%;
+    
+    padding: 10px;
+    text-align: center;
+    float: left;
+    margin-left: 10px;
+  
+}
+
+.product-summary button
+{
+    color:#fff;
+}
+.summary1
+{
+    border: 2px solid #F7464A;
+}
+.summary2
+{
+    border: 2px solid #46BFBD;
+}
+.summary3
+{
+    border: 2px solid #FDB45C;
+}
+.summary4
+{
+    border: 2px solid #949FB1;
+}
+.summary5
+{
+    border: 2px solid #4D5360;
+}
+.product-summary img
+{
+        width: 50%;
+    margin: 0 auto;
+}
