@@ -79,7 +79,7 @@ a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-i
 }
 
 
-/***Input Error***/
+/***Input Error
 
 .notifications .btn {
     margin-bottom: 20px;
@@ -95,7 +95,7 @@ md-input-container.md-input-focused label {
 
 md-select.md-default-theme .md-select-value, md-select .md-select-value {
     border-bottom-color: #CCC !important);
-}
+}***/
 
 
 md-radio-button .md-label {
@@ -369,19 +369,70 @@ md-dialog {
 
 
 
-/*****SELL*****/
+/*****Inventory********/
+
+/***Basic Info****/
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
+
+.inputdemoErrors md-input-container > p {
+  font-size: 0.8em;
+  text-align: left;
+  width: 100%; }
+  
+  
+ /***Button Height***/
+ .bth-height {
+ min-height: 50px; width:100%; padding:10px;}
+ 
+ 
+ 
+ /****Images and videos***/
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
 
 
-/***Images and Videos***/
 
 md-card md-card-title {
     display: flex;
     flex: 1 1 0;
     flex-direction: row;
-    padding: 9px 1px 1px !important;
+    padding: 0 16px 16px !important;
 }
 
-  
+
+a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.acolor{ color:#333 !important; }
+
+
+.img-text-height { height:30px; }
+
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/***Images***/
+.space { margin:5px 0 5px 0; }
 
   
  
