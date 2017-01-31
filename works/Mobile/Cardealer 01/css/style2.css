@@ -10,6 +10,12 @@
 	padding-bottom:100px; /* Height of the footer element */
 }
 
+#header1 {
+	background:#ededed;
+	padding:10px;
+
+}
+
 
 #footer-bottom{
 	background:#FFF;
