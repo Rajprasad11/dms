@@ -413,10 +413,11 @@ a {
 .dropify-wrapper {
     background-color: #fff;
     background-image: none;
-    border: 2px solid #e5e5e5;
+    border: 1px solid #f2f2f2;
     color: #777;
     cursor: pointer;
     display: block;
+	margin-bottom:5px;
     font-size: 14px;
     height: 200px;
     line-height: 22px;
