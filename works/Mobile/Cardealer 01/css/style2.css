@@ -23,6 +23,16 @@
 
 
 
+md-input-container {
+    display: inline-block;
+    margin: 0px 0 !important;
+    padding: 2px;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+
 
 
  .btn-red { background-color:#FF0000 !important; color:#000; width:auto;}
@@ -493,11 +503,16 @@ a {
 /****Switch****/
 
 
-.switchdemoBasicUsage .inset {
-  padding-left: 25px;
-  padding-top: 25px; }
-
-
+md-switch .md-container {
+    -moz-user-select: none;
+    cursor: grab;
+    float: left;
+    height: 24px;
+    margin-left: 8px !important;
+    margin-right: 8px;
+    position: relative;
+    width: 36px;
+}
 
 
   

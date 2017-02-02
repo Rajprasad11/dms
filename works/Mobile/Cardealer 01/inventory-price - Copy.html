@@ -93,18 +93,16 @@
 			 <div ng-cloak>
 			 <!---Park and Sell--->	
 			 <md-content>
-					<md-tabs md-dynamic-height>
+					<md-tabs md-dynamic-height md-border-bottom>
+					
 					 <md-tab label="Park and Sell">
 						<md-content >
 						
 				<div layout-padding layout-align="left">
 					
 						<h3>Purchase Information</h3>
+					<md-input-container class="md-block flex-gt-sm md-input-has-value" >
 						
-						
-		
-						<span>Recieved From</span>
-						<md-input-container md-no-float="" class="md-block" >
 						 <label>Customer</label>
 							<md-select name="type" ng-model="">
 							<md-option value="app">Dealer</md-option>
@@ -114,47 +112,48 @@
 						</md-select>
 						</md-input-container>
 						<br>
-												
-					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<input style="border-color:#CCC;" placeholder="Name" aria-label="Name" type="text">
-					</md-input-container>
-					
-					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<input style="border-color:#CCC;" placeholder="From Date" aria-label="From Date" type="text">
-					</md-input-container>
-					
-					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-					<input style="border-color:#CCC;" placeholder="Starting Km" aria-label="Starting Km" type="text">
-					</md-input-container>
-														
-					<md-input-container class="md-block flex-gt-sm md-input-has-value" >
-					 <label>Fuel Indication</label>
-						<md-select name="type" ng-model="">
-						<md-option value="app">Yes</md-option>
-						<md-option value="web">No</md-option>
-					</md-select>
-					</md-input-container>
-					<br>
 						
-					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
-						<input style="border-color:#CCC;" placeholder="Customer Asking Price" aria-label="Customer Asking Price" type="text">
-					</md-input-container>
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Name" aria-label="Name" type="text">
+						</md-input-container>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="From Date" aria-label="From Date" type="text">
+						</md-input-container>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Starting Km" aria-label="Starting Km" type="text">
+						</md-input-container>					
+																
+						<md-input-container class="md-block flex-gt-sm md-input-has-value" >
+						 <label>Fuel Indication</label>
+							<md-select name="type" ng-model="">
+							<md-option value="app">Yes</md-option>
+							<md-option value="web">No</md-option>
+						</md-select>
+						</md-input-container>
+						<br>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Customer Asking Price" aria-label="Customer Asking Price" type="text">
+						</md-input-container>
 						
 						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
 							<input style="border-color:#CCC;" placeholder="Dealer Markup Price" aria-label="Dealer Markup Price" type="text">
 						</md-input-container>
-														
+						
+													
 						 <div flex-xs="" flex-gt-xs="50" layout="column" >
-						 <div flex="50" layout layout-align="left end" style="padding-right:10px;">
-							<span flex="50">Keys Received</span>
-							<div flex="30">
+						 <div flex="50" layout layout-align="left end" style="padding--right:10px;">
+							<span flex="45">Keys Received</span>
+							<div flex="20">
 							<md-radio-group ng-model="data.group1">
 											<md-radio-button value="Yes" class="md-primary">
 												<span class="md-subhead">Yes</span>
 										</md-radio-button>
 									</md-radio-group>
 							</div>
-							<div flex="10">
+							<div flex="20">
 							<md-radio-group ng-model="data.group1">
 											<md-radio-button value="No" class="md-primary">
 												<span class="md-subhead">No</span>
@@ -165,18 +164,90 @@
 					</div>
 					<br>
 					
+												
+						 <div flex-xs="" flex-gt-xs="50" layout="column" >
+						 <div flex="50" layout layout-align="left end" style="padding--right:10px;">
+							<span flex="45">Document Received</span>
+							<div flex="20">
+							<md-radio-group ng-model="data.group1">
+											<md-radio-button value="Yes1" class="md-primary">
+												<span class="md-subhead">Yes</span>
+										</md-radio-button>
+									</md-radio-group>
+							</div>
+							<div flex="20">
+							<md-radio-group ng-model="data.group1">
+											<md-radio-button value="No1" class="md-primary">
+												<span class="md-subhead">No</span>
+										</md-radio-button>
+									</md-radio-group>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</md-content>
+		
+					
+					 <md-tab label="Park and Sell">
+						<md-content >
+						
+				<div layout-padding layout-align="left">
+					
+						<h3>Purchase Information</h3>
+					<md-input-container class="md-block flex-gt-sm md-input-has-value" >
+						
+						 <label>Customer</label>
+							<md-select name="type" ng-model="">
+							<md-option value="app">Dealer</md-option>
+							<md-option value="web">Broker</md-option>
+							<md-option value="web">Car ale</md-option>
+							<md-option value="web">OLX</md-option>
+						</md-select>
+						</md-input-container>
+						<br>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Name" aria-label="Name" type="text">
+						</md-input-container>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="From Date" aria-label="From Date" type="text">
+						</md-input-container>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Starting Km" aria-label="Starting Km" type="text">
+						</md-input-container>					
+																
+						<md-input-container class="md-block flex-gt-sm md-input-has-value" >
+						 <label>Fuel Indication</label>
+							<md-select name="type" ng-model="">
+							<md-option value="app">Yes</md-option>
+							<md-option value="web">No</md-option>
+						</md-select>
+						</md-input-container>
+						<br>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Customer Asking Price" aria-label="Customer Asking Price" type="text">
+						</md-input-container>
+						
+						<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+							<input style="border-color:#CCC;" placeholder="Dealer Markup Price" aria-label="Dealer Markup Price" type="text">
+						</md-input-container>
+						
 													
 						 <div flex-xs="" flex-gt-xs="50" layout="column" >
-						 <div flex="50" layout layout-align="left end" style="padding-right:10px;">
-							<span flex="50">Document Received</span>
-							<div flex="30">
+						 <div flex="50" layout layout-align="left end" style="padding--right:10px;">
+							<span flex="45">Keys Received</span>
+							<div flex="20">
 							<md-radio-group ng-model="data.group1">
 											<md-radio-button value="Yes" class="md-primary">
 												<span class="md-subhead">Yes</span>
 										</md-radio-button>
 									</md-radio-group>
 							</div>
-							<div flex="10">
+							<div flex="20">
 							<md-radio-group ng-model="data.group1">
 											<md-radio-button value="No" class="md-primary">
 												<span class="md-subhead">No</span>
@@ -186,10 +257,33 @@
 						</div>
 					</div>
 					<br>
-			</md-content>
-			
-			
-					</md-tab>
+					
+												
+						 <div flex-xs="" flex-gt-xs="50" layout="column" >
+						 <div flex="50" layout layout-align="left end" style="padding--right:10px;">
+							<span flex="45">Document Received</span>
+							<div flex="20">
+							<md-radio-group ng-model="data.group1">
+											<md-radio-button value="Yes1" class="md-primary">
+												<span class="md-subhead">Yes</span>
+										</md-radio-button>
+									</md-radio-group>
+							</div>
+							<div flex="20">
+							<md-radio-group ng-model="data.group1">
+											<md-radio-button value="No1" class="md-primary">
+												<span class="md-subhead">No</span>
+										</md-radio-button>
+									</md-radio-group>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</md-content>
+		
+
+		</md-tab>
 					
 					
 					
