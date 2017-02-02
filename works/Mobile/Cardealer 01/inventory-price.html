@@ -75,8 +75,9 @@
 		<!---Type of Inventory--->
 	 
 	 <section layout="row" layout="column" layout-align="center center" layout-wrap="">
-			 <div flex-xs="" flex-gt-xs="50" layout="column" >
-			 <h2>Type of Inventroy</h2>
+
+			 <div flex-xs="" flex-gt-xs="50" layout-align="center" layout="column" >
+			 <h3>Type of Inventroy</h3>
 			 <div layout layout-padding layout-align="left end">
 				<md-switch ng-model="data.cb1" aria-label="Switch 1"></md-switch>
 			    <md-checkbox ng-model="AtDealerpoint" class="md-caption">At Dealer Point</md-checkbox>
@@ -382,11 +383,12 @@
 				</div>
 			</div>
 			
+			<div flex-xs="" flex-gt-xs="50" layout="column" >
 				<md-input-container class="md-block md-input-has-value" >
 						<h5>Sales Price</h5>
 							<input  required="" md-no-asterisk="" name="Sales Price" disabled="" >
 					</md-input-container>
-	
+			</div>
 		
 		 </div>
 </section>
