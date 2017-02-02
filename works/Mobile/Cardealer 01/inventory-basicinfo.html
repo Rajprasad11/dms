@@ -1,0 +1,260 @@
+<html lang="en" >
+   <head>
+	<title>Basic Info</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	
+	<!--Angular-->
+	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="css/angular-material.min.css">     
+	   <link rel="stylesheet" href="css2/style2.css">
+	  
+	 <!--Bootstrap-->
+	  <link rel="stylesheet" href="css/bootstrap.css"/>
+	  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+	  <link rel="stylesheet" href="css/style2.css"/>
+	</head>
+	
+<body ng-app="firstApplication"> 
+
+<!---Body--->
+	<div id="rect">
+	<div id="content1">
+	 <div id="inputContainer" class="inputdemoErrors" ng-controller="inputController as ctrl" ng-cloak>
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
+			 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+				<md-content layout-padding="">
+					<form name="projectForm">
+				
+					
+					 <md-input-container class="md-block flex-gt-sm md-input-has-value" >
+					 <label>Register Year</label>
+						<md-select name="type" ng-model="project.Registeryear" required="">
+						<md-option value="app">2017</md-option>
+						<md-option value="web">2016</md-option>
+						<md-option value="web">2015</md-option>
+						<md-option value="web">2014</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Registeryear.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					 <md-input-container class="md-block flex-gt-sm md-input-has-value" >
+					 <label>Make</label>
+						<md-select name="type" ng-model="project.Make" required="">
+						<md-option value="app">Make</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Make.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+				
+					
+					 <md-input-container class="md-block">
+					 <label>Model</label>
+						<md-select name="type" ng-model="project.Model" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Model.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					 <md-input-container class="md-block">
+					 <label>Varient</label>
+						<md-select name="type" ng-model="project.Varient" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Varient.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					<md-input-container class="md-block">
+					 <label>Body Type</label>
+						<md-select name="type" ng-model="project.BodyType" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.BodyType.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					
+					<br>
+					<md-input-container class="md-block md-input-has-value" >
+						<label>Total Distance</label>
+							<input  required="" md-no-asterisk="" name="TotalDistance" ng-model="project.TotalDistance">
+							<div ng-messages="projectForm.TotalDistance.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					
+					<md-input-container class="md-block md-input-has-value" >
+						<label>Mileage</label>
+							<input  required="" md-no-asterisk="" name="Mileage" ng-model="project.Mileage">
+							<div ng-messages="projectForm.Mileage.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					
+					
+					
+						<md-input-container class="md-block">
+					 <label>Ownership</label>
+						<md-select name="type" ng-model="project.Ownership" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Ownership.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					<md-input-container class="md-block">
+					 <label>Car status</label>
+						<md-select name="type" ng-model="project.Carstatus" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Carstatus.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+						<md-input-container class="md-block">
+					 <label>Color</label>
+						<md-select name="type" ng-model="project.Color" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Color.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+						<md-input-container class="md-block">
+					 <label>Location</label>
+						<md-select name="type" ng-model="project.Location" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.Location.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					<md-input-container class="md-block">
+					 <label>Fuel Type</label>
+						<md-select name="type" ng-model="project.FuelType" required="">
+						<md-option value="app">Model</md-option>
+						<md-option value="web">Maruthi</md-option>
+						<md-option value="web">Hyundai</md-option>
+						<md-option value="web">Audi</md-option>
+					</md-select>
+						<div ng-messages="projectForm.FuelType.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+					<br>
+					
+					<md-input-container class="md-block md-input-has-value" >
+						<label>Fuel Type</label>
+							<input  required="" md-no-asterisk="" placeholder="Fuel Type" name="FuelType" disabled="" ng-model="project.Fueltype">
+							<div ng-messages="projectForm.Fueltype.$error">
+							<div ng-message="required">This is required.</div>
+						</div>
+					</md-input-container>
+			</form>
+				</md-content>
+					</form>
+			 </div>			
+		</section>
+	</div>
+	</div>
+		 </div>
+		<div id="footer-bottom">
+	
+		<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+		 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+             <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
+				<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple bth-height " layout-padding flex="50" 
+				type="button" ng-transclude=""><a href="#">Cancel</a></button>
+				<button class="md-primary md-raised md-hue-2 md-button md-ink-ripple bth-height " layout-padding flex="50" 
+				type="button" ><a href="inventory-images.html">Images & Videos</a></button>
+			</div>
+		  </div>
+    </section>
+	</div>
+	
+	
+	
+	
+	
+	 
+	
+
+
+<!---Body--->
+
+<!-----Js Scripts------->
+
+	<!-----Angular js------->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+	<script src="js/angular-material.min.js"></script>
+	
+	<!-----Bootstrap js------->
+	<!---<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/npm.js"></script>-->
+	
+
+	
+	<!--Common Script-->
+	 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+	 </script>
+</body>
+</html>
