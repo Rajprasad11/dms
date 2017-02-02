@@ -1,0 +1,92 @@
+<html lang="en" >
+   <head>
+	<title>Send Message</title>
+	<meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="css/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style2.css">
+	  
+</head>
+
+<body ng-app="firstApplication"> 
+	
+    <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+	
+	
+		<section layout-sm="column" layout-align="center center" layout-wrap="" >
+	 <div flex-xs="" flex-gt-xs="99"  layout="column" class="layout-column flex-xs flex-gt-xs-99">
+				
+		      <md-toolbar class="_md _md-toolbar-transitions">
+      <div class="md-toolbar-tools">
+        <h2>Send Message to Dealer</h2>
+		<span class="flex" flex=""></span>
+        
+        <!--<button class="md-icon-button md-button md-ink-ripple" type="button" ng-transclude="" ng-click="cancel()">
+          <md-icon style="cursor:pointer;" md-svg-src="images/information.svg" ng-click="cancel()" aria-label="Close dialog" aria-hidden="true"></md-icon>
+		 </md-icon>
+        </button>-->
+      </div>
+	  
+    </md-toolbar>
+	</div>
+	 </section>
+	
+			<!--Loan-->
+		<section layout-sm="column" layout-align="center center" layout-wrap="">
+			   
+        <div flex-xs="" flex-gt-xs="99" layout-padding  layout="column" class="layout-column flex-xs flex-gt-xs-99">
+	
+			 <form name="sendmessage">
+				<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Name" aria-label="Name" type="text">
+				</md-input-container>
+				
+				<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Email Id" aria-label="Email Id" type="text">
+				</md-input-container>
+				
+				</div>
+			 
+				</form>
+
+		
+		
+	 </section>
+	 
+	 
+	 	<section layout="row" layout="column" layout-align="center center" layout-wrap="" >
+	 			 <div flex-xs="" flex-gt-xs="99" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-99">
+				<button layout-padding="" class="md-warn md-raised md-hue-2 md-button md-ink-ripple layout-padding btn-red" type="button" ng-transclude="">
+				<span class="ng-scope">Send</span></button>
+		</div>
+		 </section>
+	
+
+			 <script src="js/test.js"></script>
+		  <script src="js/angular.min.js"></script>
+		  <script src="js/angular-animate.min.js"></script>
+		  <script src="js/angular-aria.min.js"></script>
+		  <script src="js/angular-messages.min.js"></script>
+		  <script src="js/angular-material.min.js"></script>
+		
+			 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+			</script>
+			
+			
+		
+	  
+ </body>
+
+
+ </html>
