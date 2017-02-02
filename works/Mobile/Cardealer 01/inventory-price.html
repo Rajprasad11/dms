@@ -171,14 +171,14 @@
 							<span flex="50">Document Received</span>
 							<div flex="30">
 							<md-radio-group ng-model="data.group1">
-											<md-radio-button value="Yes" class="md-primary">
+											<md-radio-button value="Yes1" class="md-primary">
 												<span class="md-subhead">Yes</span>
 										</md-radio-button>
 									</md-radio-group>
 							</div>
 							<div flex="10">
 							<md-radio-group ng-model="data.group1">
-											<md-radio-button value="No" class="md-primary">
+											<md-radio-button value="No1" class="md-primary">
 												<span class="md-subhead">No</span>
 										</md-radio-button>
 									</md-radio-group>
@@ -197,13 +197,17 @@
 			<!---OWN--->		
 					
 					<md-tab label="Own">
-						<md-content >
+				
+								<md-content >
 						
 				<div layout-padding layout-align="left">
 					
 						<h3>Purchase Information</h3>
 						
-						<md-input-container class="md-block flex-gt-sm md-input-has-value" >
+						
+		
+						<span>Purchased From</span>
+						<md-input-container md-no-float="" class="md-block" >
 						 <label>Customer</label>
 							<md-select name="type" ng-model="">
 							<md-option value="app">Dealer</md-option>
@@ -213,67 +217,64 @@
 						</md-select>
 						</md-input-container>
 						<br>
-						
-						<md-input-container class="md-block md-input-has-value" >
-					<label>Name</label>
-						<input name="name" ng-model="project.name" >
-						</md-input-container>
+												
+					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Name" aria-label="Name" type="text">
+					</md-input-container>
 					
+					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Purchase Price" aria-label="Purchase Price" type="text">
+					</md-input-container>
 					
-					<md-input-container class="md-block md-input-has-value" >
-					<label>Purchase Price</label>
-						<input name="Purchaseprice" ng-model="project.Purchaseprice" >
-						</md-input-container>
-					
-					
-					<md-input-container class="md-block md-input-has-value" >
-					<label>Purchased Date</label>
-						<input name="Purchasedate" ng-model="project.Purchasedate" >
-						</md-input-container>
-					
-				<md-input-container class="md-block" >
-					<div layout-gt-sm="row" class="layout-row" layout-padding>
-						<span>Keys Received</span>
-					<div flex="30">
-					
-					<md-radio-group ng-model="data.group1">
-							<md-radio-button value="Yes" class="md-primary">
-								<span class="md-subhead">Yes</span>
-						</md-radio-button>
-					</md-radio-group>
+					<md-input-container md-no-float="" class="md-block md-icon-left md-input-placeholder">
+					<input style="border-color:#CCC;" placeholder="Purchased Date" aria-label="Purchased Date" type="text">
+					</md-input-container>
+												
+					 <div flex-xs="" flex-gt-xs="50" layout="column" >
+					 <div layout layout-align="left end">
+						<span flex="50">Keys Received</span>
+						<div flex="30">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="Yes" class="md-primary">
+											<span class="md-subhead">Yes</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
+						<div flex="10">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="No" class="md-primary">
+											<span class="md-subhead">No</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
 					</div>
-					<div flex="30">
-				<md-radio-group ng-model="data.group1">
-							<md-radio-button value="No" class="md-primary">
-								<span class="md-subhead">No</span>
-						</md-radio-button>
-					</md-radio-group>
-					</div>
-					</div>
-				</md-input-container>
-				
-				<md-input-container class="md-block" >
-					<div layout-gt-sm="row" class="layout-row" layout-padding>
-						<span>Docs Received</span>
-					<div flex="30">
+				</div>
+				<br>
 					
-					<md-radio-group ng-model="data.group1">
-							<md-radio-button value="Yes" class="md-primary">
-								<span class="md-subhead">Yes</span>
-						</md-radio-button>
-					</md-radio-group>
+													
+					 <div flex-xs="" flex-gt-xs="50" layout="column" >
+					 <div layout layout-align="left end" >
+						<span flex="50">Document Received</span>
+						<div flex="30">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="Yes1" class="md-primary">
+											<span class="md-subhead">Yes</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
+						<div flex="10">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="No1" class="md-primary">
+											<span class="md-subhead">No</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
 					</div>
-					<div flex="30">
-				<md-radio-group ng-model="data.group1">
-							<md-radio-button value="No" class="md-primary">
-								<span class="md-subhead">No</span>
-						</md-radio-button>
-					</md-radio-group>
-					</div>
-					</div>
-				</md-input-container>
-		</div>
-	</md-content>
+				</div>
+					<br>
+			</md-content>
+			
+					
 					</md-tab>
 						
 						
