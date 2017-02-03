@@ -71,6 +71,19 @@ md-input-container.md-default-theme .md-input, md-input-container .md-input {
 }
 
 
+.browsebtn { color:#FFF; margin-top:12px; }
+
+.fnt { font-size: 13px !important;}
+
+.ms-reply textarea {
+    border: 0 none;
+    font-size: 13px;
+    height: 60px;
+    padding: 10px 8px;
+    resize: none;
+    width: 90% !important;
+}
+
 /***Input Error
 
 .notifications .btn {
@@ -566,5 +579,11 @@ div.panel {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
+
+
+
+/***DatePicker****/
+
+
 
  

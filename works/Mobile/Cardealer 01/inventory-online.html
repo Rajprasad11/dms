@@ -1,0 +1,173 @@
+<html lang="en" >
+   <head>
+	<title>Online Portal</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="description" content="vAccordion - AngularJS multi-level accordion component.">
+    <meta name="author" content="Łukasz Wątroba">
+
+	<!--Angular-->
+	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="css/angular-material.min.css">     
+	   <link rel="stylesheet" href="css/style2.css">
+	 	
+	  
+	    <!---Card--->
+	  <link rel="stylesheet" href="css/material.css"/>
+	  <link rel="stylesheet" href="css/app.min.1.css"/>
+</head>
+	
+<body ng-app="firstApplication"> 
+
+
+
+
+<div id="rect">
+	<div id="content1">
+
+		<div id="inputContainer" class="" ng-controller="dateController as ctrl" ng-cloak>
+		
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
+		 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+		<md-toolbar class="_md _md-toolbar-transitions">
+			<div class="md-toolbar-tools">
+			<h4 class="inventitle">Listing-id : DPLID_1486098127</h4>
+		 </div>
+	  
+    </md-toolbar> 
+		</div>
+		</section>
+		
+		
+	
+					
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
+			 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+			  <div layout layout-align="left end" >
+					  <div flex="20">
+					<img src="images/dealer-logo.png" width="40" height="40">
+					</div>
+					  <div flex="70">
+					<h3>Dealer Plus</h3>
+					</div>
+					</div>
+		
+			
+					 <div layout layout-align="left end" >
+					 <div flex="50">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="Lisiting" class="md-primary">
+											<span class="md-subhead">Lisiting</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
+						<div flex="50">
+						<md-radio-group ng-model="data.group1">
+										<md-radio-button value="Auction" class="md-primary">
+											<span class="md-subhead">Auction</span>
+									</md-radio-button>
+								</md-radio-group>
+						</div>
+					</div>
+					 
+					<md-input-container md-no-float="" class="md-block">
+					<input style="border-color:#CCC;" placeholder="Min Price" type="value">
+					</md-input-container>
+					
+					
+					<div layout layout-align="left end" >
+						<div flex="30">
+					<md-container md-no-float="">
+					   <md-datepicker ng-model="" md-placeholder="Start date"></md-datepicker>
+					</md-container>
+					</div>
+					<div flex="30">
+				<md-container md-no-float="" class="md-block md-input-placeholder">
+					   <md-datepicker ng-model="" md-placeholder="End date"></md-datepicker>
+					</md-container>
+					</div>
+						</div>
+		</div>	
+			</section>	
+	
+
+</div>
+	</div>
+	
+		
+		
+			<div id="footer-bottom">
+		<section layout="row" layout-sm="column" layout-align="center center" layout-wrap="">
+		 <div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+             <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
+				<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple bth-height " layout-padding flex="50" 
+				type="button" ng-transclude=""><a href="inventory-images.html">Images & Videos</a></button>
+				<button class="md-primary md-raised md-hue-2 md-button md-ink-ripple bth-height" layout-padding flex="50" 
+				type="button" ng-transclude=""><a href="price-information.html">Price Information</a></button>
+			</div>
+		  </div>
+    </section>
+	
+	 
+		
+     </div>
+
+
+<!---Body--->
+
+<!-----Js Scripts------->
+
+	<!-----Angular js------->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+	<script src="js/angular-material.min.js"></script>
+	
+	
+	
+	<!--Common Script-->
+	 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }    
+	 </script>
+	 
+	  <script language="javascript">
+			 angular
+            .module('firstApplication', ['ngMaterial','ngMessages'])
+            .controller('dateController', dateController);
+
+         function dateController ($scope) {
+            $scope.myDate = new Date();
+            $scope.minDate = new Date(
+               $scope.myDate.getFullYear(),
+               $scope.myDate.getMonth() - 2,
+               $scope.myDate.getDate());
+            $scope.maxDate = new Date(
+               $scope.myDate.getFullYear(),
+               $scope.myDate.getMonth() + 2,
+               $scope.myDate.getDate());
+            $scope.onlyWeekendsPredicate = function(date) {
+               var day = date.getDay();
+               return day === 0 || day === 6;
+            }
+         }      
+	 </script>
+	 
+
+
+</body>
+
+
+
+</html>
