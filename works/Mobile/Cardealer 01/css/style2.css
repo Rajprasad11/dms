@@ -33,6 +33,13 @@ md-input-container {
 
 
 
+/*****Input*****/
+md-input-container.md-default-theme .md-input, md-input-container .md-input {
+    border-color: rgba(0, 0, 0, 0.12);
+    color: #797a7b !important;
+}
+
+
 
 
  .btn-red { background-color:#FF0000 !important; color:#000; width:auto;}
@@ -549,7 +556,7 @@ button.accordion.active:after {
 }
 
 div.panel {
-    padding: 0 18px;
+    padding: 0px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
