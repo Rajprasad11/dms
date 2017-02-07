@@ -1,0 +1,93 @@
+<html lang="en" >
+   <head>
+	<title>My Inventory</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+
+
+	<!--Angular-->
+	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="css/angular-material.min.css">     
+	   <link rel="stylesheet" href="css/style2.css">
+	 	
+	  
+	    <!---Card--->
+	  <link rel="stylesheet" href="css/material.css"/>
+	  <link rel="stylesheet" href="css/app.min.1.css"/>
+</head>
+	
+<body ng-app="firstApplication"> 
+	<div id="inputContainer" class="" ng-controller="inputController" ng-cloak>
+		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
+			 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
+				
+
+  <md-content class="md-padding">
+    <md-nav-bar
+      md-selected-nav-item="currentNavItem"
+      nav-bar-aria-label="navigation links">
+      <md-nav-item md-nav-click="goto('page1')" name="page1">
+        Page One
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('page2')" name="page2">
+        Page Two
+      </md-nav-item>
+      <md-nav-item md-nav-click="goto('page3')" name="page3">
+        Page Three
+      </md-nav-item>
+      <!-- these require actual routing with ui-router or ng-route, so they
+      won't work in the demo
+      <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
+      <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
+      You can also add options for the <code>ui-sref-opts</code> attribute.
+      <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
+        Page Six
+      </md-nav-item>
+      -->
+    </md-nav-bar>
+    <div class="ext-content">
+      External content for `<span>{{currentNavItem}}</span>`.
+    </div>
+
+    <md-checkbox ng-model="disableInkBar">Disable Ink Bar</md-checkbox>
+
+  </md-content>
+
+
+
+			 </div>
+	</section>
+ </div>
+
+
+	<!-----Angular js------->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+	<script src="js/angular-material.min.js"></script>
+	
+	
+	
+	<!--Common Script-->
+	 <script language="javascript">
+			 angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('inputController', inputController);
+				
+			function inputController($scope) {
+			$scope.currentNavItem = 'page1';
+			}
+		})();
+	 </script>
+
+
+
+</body>
+
+
+
+</html>
