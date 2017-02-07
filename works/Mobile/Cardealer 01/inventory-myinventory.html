@@ -4,90 +4,133 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-	<meta content="yes" name="apple-mobile-web-app-capable">
-	<meta content="yes" name="apple-touch-fullscreen">
-
-
-	<!--Angular-->
-	   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <link rel="stylesheet" href="css/angular-material.min.css">     
-	   <link rel="stylesheet" href="css/style2.css">
-	 	
-	  
-	    <!---Card--->
-	  <link rel="stylesheet" href="css/material.css"/>
-	  <link rel="stylesheet" href="css/app.min.1.css"/>
+	
+      <link rel="stylesheet" href="css/angular-material.min.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <link rel="stylesheet" href="css/style2.css">
+	
 </head>
-	
+
 <body ng-app="firstApplication"> 
-	<div id="inputContainer" class="" ng-controller="inputController" ng-cloak>
-		<section layout="row" layout="column" layout-align="center center" layout-wrap="">
-			 <div flex-xs="" flex-gt-xs="50" layout-padding layout="column" class="layout-column flex-xs flex-gt-xs-50">
-				
-
-  <md-content class="md-padding">
-    <md-nav-bar
-      md-selected-nav-item="currentNavItem"
-      nav-bar-aria-label="navigation links">
-      <md-nav-item md-nav-click="goto('page1')" name="page1">
-        Page One
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page2')" name="page2">
-        Page Two
-      </md-nav-item>
-      <md-nav-item md-nav-click="goto('page3')" name="page3">
-        Page Three
-      </md-nav-item>
-      <!-- these require actual routing with ui-router or ng-route, so they
-      won't work in the demo
-      <md-nav-item md-nav-href="#page4" name="page5">Page Four</md-nav-item>
-      <md-nav-item md-nav-sref="app.page5" name="page4">Page Five</md-nav-item>
-      You can also add options for the <code>ui-sref-opts</code> attribute.
-      <md-nav-item md-nav-sref="page6" sref-opts="{reload:true, notify:true}">
-        Page Six
-      </md-nav-item>
-      -->
-    </md-nav-bar>
-    <div class="ext-content">
-      External content for `<span>{{currentNavItem}}</span>`.
-    </div>
-
-    <md-checkbox ng-model="disableInkBar">Disable Ink Bar</md-checkbox>
-
-  </md-content>
 
 
-
-			 </div>
+ <div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+ 
+	<section layout="row" layout="column" layout-align="center center">
+		<div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+			
+             <div layout="row"  class="layout-sm-column layout-align-center-center layout-row">
+				<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple bth-height" type="button">
+				<a href="inventory-images.html">Apply Fund</a></button>
+					<button class="md-warn md-raised md-hue-2 md-button md-ink-ripple bth-height" type="button">
+				<a href="inventory-images.html">Add Inventory</a></button>
+			
+			</div>
+		
+		</div>
 	</section>
- </div>
-
-
-	<!-----Angular js------->
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-animate.min.js"></script>
-	<script src="js/angular-aria.min.js"></script>
-	<script src="js/angular-messages.min.js"></script>
-	<script src="js/angular-material.min.js"></script>
-	
-	
-	
-	<!--Common Script-->
-	 <script language="javascript">
+ 
+				
+	<section layout="row" layout="column" layout-align="center center">
+		<div flex-xs="" flex-gt-xs="50" layout="column" class="layout-column flex-xs flex-gt-xs-50">
+			<div ng-cloak>
+				<md-content style="height:500px !important;">
+					<md-tabs>
+						<md-tab-body>
+							<md-tab label="ALL" style="height:100px !important;">
+								<div flex="" layout="row" layout-align="start center">
+									<md-list>
+										<md-list-item>
+										 <md-checkbox ng-model="one" layout-padding>	
+									</md-checkbox>
+										<img class="md-avatar" src="images/car2.jpg">
+									<md-card-title-text>
+											<span class="md-body-2">Card with image</span><br>
+											<span class="md-body-2">Rs</span><br>
+											<span class="md-body-2">9,990 km | Petrol | 2015 | 2 Owner</span><br>
+						
+									</md-card-title-text>
+									</md-list-item>
+								</md-list>
+								</div>
+								
+								<div flex-xs="" flex-gt-xs="99" layout="column" >
+				 <div layout layout-align="center" >
+					<h5 flex="50">	<md-content>
+							<md-input-container class="md-block flex-gt-sm  flex-gt-sm="">
+							<md-select placeholder="Drafts" ng-model="user" style="min-width: 100px;">
+							<md-option value="app" tabindex="0" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_400"><div class="md-text">Drafts</div></md-option>
+							<md-option value="app" tabindex="0" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_400"><div class="md-text">Ready For Sale</div></md-option>
+							<md-option value="app" tabindex="0" class="md-ink-ripple" role="option" aria-selected="false" id="select_option_400"><div class="md-text">Delete</div></md-option>
+							</md-select>
+							</md-input-container>
+							</md-content></h5>
+					<div flex="20" style="padding-left:20px;">
+						<md-switch align="center" ng-model="data.cb1" aria-label="Switch 1"></md-switch>
+					</div>
+				</div>
+			</div>
+			<div flex-xs="99" layout-padding layout="row" >
+				<span class="md-body-1"><strong>Videos</strong> : 1</span>
+				<span class="md-body-1"><strong>Images</strong> : 25</span>
+				<span class="md-body-1"><strong>Docs</strong> : 10</span>
+				<span class="md-body-1"><strong>View</strong> : 110</span>
+			</div>
+			
+		</md-tab> 
+							 
+			 <md-tab label="PARK & SELL">
+				<div flex="" layout="row" layout-padding layout-align="start center">
+				sdasasas
+				</div>
+			 </md-tab>
+			  <md-tab label="OWN">
+				<div flex="" layout="row" layout-padding layout-align="start center">
+				sdasasas
+				</div>
+			 </md-tab>
+			  <md-tab label="HAS VIEWS">
+				<div flex="" layout="row" layout-padding layout-align="start center">
+				sdasasas
+				</div>
+			 </md-tab>
+			 <md-tab label="DELETED">
+				<div flex="" layout="row" layout-padding layout-align="start center">
+				sdasasas
+				</div>
+			 </md-tab>
+			 
+			</md-tab-body>	
+		</md-tabs>
+	</md-content>
+				</div>
+			</section>	
+		</div>	
+		 
+		  <script src="js/angular.min.js"></script>
+		  <script src="js/angular-animate.min.js"></script>
+		  <script src="js/angular-aria.min.js"></script>
+		  <script src="js/angular-messages.min.js"></script>
+		  <script src="js/angular-material.min.js"></script>
+		
+			 <script language="javascript">
 			 angular
 				.module('firstApplication', ['ngMaterial'])
 				.controller('inputController', inputController);
-				
-			function inputController($scope) {
-			$scope.currentNavItem = 'page1';
-			}
-		})();
-	 </script>
+
+			 function inputController ($scope) {
+			   $scope.project = {
+				  comments: 'Comments',    
+			   };
+			 }
+			</script>
+			
+	
+			
+			
+		
+	  
+ </body>
 
 
-
-</body>
-
-
-
-</html>
+ </html>

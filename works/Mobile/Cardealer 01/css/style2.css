@@ -33,14 +33,6 @@ md-input-container {
 
 
 
-/******NavBar*******/
-
-
-.navBardemoBasicUsage md-content .ext-content {
-  padding: 50px;
-  margin: 20px;
-  background-color: #FFF2E0; }
-
 
 
 /***********Progross Bar**************/
@@ -235,18 +227,12 @@ md-select.md-default-theme .md-select-value, md-select .md-select-value {
  /***Subscription***/
  
 
-/***Nav Bar***/
+/*** TAB ***/
 
-.tabsdemoDynamicHeight md-content {
-  background-color: transparent !important; }
-  .tabsdemoDynamicHeight md-content md-tabs {
-    background: #f6f6f6;
-    border: 1px solid #e1e1e1; }
-    .tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
-      background: white; }
-  .tabsdemoDynamicHeight md-content h1:first-child {
-  margin-top: 5px;}
-  
+md-tabs:not(.md-no-tab-content):not(.md-dynamic-height) {
+    min-height: 100% !important;
+}
+
   
   /***Radio Button***/
   
@@ -688,7 +674,13 @@ div.panel {
 
 
 
-/***DatePicker****/
+/******My Inventory*******/
+
+.md-list-item .md-avatar, md-list-item .md-list-item-inner .md-avatar {
+    height: 70px !important;
+    width: 70px !important;
+}
+
 
 
 
