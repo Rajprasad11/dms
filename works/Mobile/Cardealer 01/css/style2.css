@@ -683,5 +683,119 @@ div.panel {
 
 
 
+/****404****/
+.text-xs-center {
+    text-align: center !important; margin-top:100px;
+}
+
+.success-title::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ff5722 transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 8px;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -8px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.success-title {
+    background: #ff5722 none repeat scroll 0 0;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-table;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+
+
+/****Register****/
+.text-xs-center {
+    text-align: center !important; margin-top:100px;
+}
+
+.Register-title::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #4b962b transparent transparent;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -8px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.Register-title {
+    background: #4b962b none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-table;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 3;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+
+/****OOPS****/
+.text-xs-center {
+    text-align: center !important; margin-top:100px;
+}
+
+.oops-title::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fd8469 transparent transparent;
+    content: "";
+    height: 0;
+    left: 50%;
+    margin-left: -8px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+.oops-title {
+    background: #fd8469 none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-table;
+    font-size: 23px;
+    font-weight: 900;
+    line-height: 3;
+    margin: 0 0 1rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+
+
+
+
 
  
